@@ -35,9 +35,11 @@ body::-webkit-scrollbar-track {
 .section-padding {
   padding: 250px 60px;
 }
-
-
-
+.mainButton{
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
 
 /* ant design colors work */
 
