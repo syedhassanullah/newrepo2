@@ -14,8 +14,8 @@ function ContactSec() {
           <Row >
             <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
               <Col md={5} >
-              <div className='secText'>.....
-                  <h3>REACH US</h3>
+              <div className='component-heading'>.....
+                  <h2>REACH US</h2>
                   {/* <h1>Bayond Digitizing</h1> */}
                 </div>
               <ContactForm />

@@ -19,8 +19,8 @@ export const Service = () => {
                             }}
                             transition={{ type: 'tween', scale: 0.8,
                              }}
-                            className='ServiceSecText secText'>........
-                            <h3>OUR SERVICES</h3>
+                            className='ServiceSecText component-heading'>........
+                            <h2>OUR SERVICES</h2>
                             <h1>Bayond Digitizing</h1>
                         </motion.div>
                         <div className='ServiceSecContainer '>

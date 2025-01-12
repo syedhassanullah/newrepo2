@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #00a2ff;
-  --primary-colorbg: #029fcf33;
+  --primary-color: #ff0040;
+  --primary-colorbg: #ff004028;
   --secondary-color: #52cc47ec;
   --text-heading2: "Montserrat Alternates", serif;
   --text-heading: "Orbitron", serif;
@@ -10,7 +10,7 @@
     linear-gradient(to Right, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.959)),
     /* Gradient */
     url('./images/images/retrosupply-jLwVAUtLOAQ-unsplash.jpg');
-  --borderradius: 5px 120px 5px 120px;
+  --borderradius: 5px 130px 5px 130px;
   --borderradiushero: 120px 5px 120px 5px;
   --borderradiusCard: 60px 5px 60px 5px;
 }
@@ -33,7 +33,7 @@ body::-webkit-scrollbar-track {
 }
 
 .section-padding {
-  padding: 150px 60px;
+  padding: 250px 60px;
 }
 
 
@@ -370,7 +370,6 @@ body::-webkit-scrollbar-track {
 
 .about-text {
   padding-right: 200px;
-
 }
 
 .aboutSec {
@@ -393,6 +392,19 @@ body::-webkit-scrollbar-track {
   box-sizing: border-box;
 }
 
+/* Component Headings */
+
+.component-heading {
+  font-family: var(--text-heading2);
+  padding-bottom: 10px;
+}
+
+.component-heading h1 {
+  font-weight: 800;
+  font-size: 50px;
+  color: var(--primary-color);
+}
+
 
 /* SERVICE */
 .ServiceSec {}
@@ -409,15 +421,7 @@ body::-webkit-scrollbar-track {
 
 }
 
-.secText {
-  font-family: var(--text-heading2);
-  padding-bottom: 10px;
-}
 
-.secText h1 {
-  font-weight: 800;
-  color: var(--primary-color);
-}
 
 .ServiceSecCard {
   padding: 20px;
@@ -659,6 +663,10 @@ body::-webkit-scrollbar-track {
   }
 
   .head {
+    margin: 0px;
+  }
+
+  .about{
     margin: 0px;
   }
 

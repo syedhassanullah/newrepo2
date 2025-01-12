@@ -15,7 +15,7 @@ function AboutSec() {
         <>
             <div className='about'>
                 <Container >
-                    <div className='section-padding'>
+                    <div className='section-padding '>
                         <Row>
                             <div className='aboutSec'>
                                 <Col md={8} sm={12}>
@@ -30,8 +30,8 @@ function AboutSec() {
                                             transition={{ type: 'tween' }}
 
 
-                                            className='secText'>.....
-                                            <h3>WHO WE ARE</h3>
+                                            className='component-heading'>.....
+                                            <h2>WHO WE ARE</h2>
                                             <h1>Bayond Digitizing</h1>
                                         </motion.div>
                                         <motion.div
