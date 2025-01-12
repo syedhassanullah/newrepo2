@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Col } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import homeImage from '../Embroidery-Landing-Page-1-Parrot-600x600-TinyPNG-Compressed2.png'
 import { motion } from 'framer-motion';
 import {FadeIn} from '../Varient/Varient'

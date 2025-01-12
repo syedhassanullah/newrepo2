@@ -4,9 +4,6 @@ import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import Button from '@mui/material/Button';
 import '../App.css'
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-
 
 
 // const darkTheme = createTheme({

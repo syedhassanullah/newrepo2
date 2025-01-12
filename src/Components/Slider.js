@@ -7,7 +7,6 @@ import 'swiper/css/navigation';
 
 
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
-import { Container } from 'react-bootstrap';
 function Slider() {
   return (
     <div style={{height:'200px'}}>  

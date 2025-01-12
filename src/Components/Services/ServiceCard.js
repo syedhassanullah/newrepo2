@@ -15,12 +15,12 @@ function ServiceCard({ title, description, icon }) {
   return (
     <>
       <motion.div
-        variants={FadeUp(0.3)}  
+        variants={FadeUp(0.3)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.7 }} 
+        viewport={{ once: true, amount: 0.7 }}
         transition={{
-          type: 'spring',  
+          type: 'spring',
           stiffness: 300,
           damping: 20,
         }}
