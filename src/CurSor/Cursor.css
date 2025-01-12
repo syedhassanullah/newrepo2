@@ -1,0 +1,21 @@
+body{
+  overflow-x: hidden;
+}
+
+.custom-cursor {
+    z-index: 100000;
+    position: absolute;
+    width: 40px; /* Set the size of the image */
+    height: 40px; /* Set the size of the image */
+    background-image: url('../Embroidery-Landing-Page-1-Parrot-600x600-TinyPNG-Compressed2.png');  /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole cursor area */
+    pointer-events: none; /* Prevents the cursor from interacting with the elements */
+    transform: translate(-50%, -50%); /* Centers the cursor */
+    transition: transform 0.4s ease-out; /* Optional smooth transition for transform */
+    margin-top: 10px;
+    margin-left: 30px;
+    box-shadow: 0 0 50px 5px var(--primary-color);
+    border-radius: 50%;
+    overflow-x: hidden;
+  }
+  
