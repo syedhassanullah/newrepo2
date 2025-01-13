@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import ServiceCard from './ServiceCard'
 import ServiceData from './ServiceData'
 import { motion } from 'framer-motion'
@@ -25,12 +25,15 @@ export const Service = () => {
                         </motion.div>
                         <div className='ServiceSecContainer '>
                             {ServiceData.map(service => (
+ 
+
                                 <ServiceCard
                                     key={service.id}
                                     title={service.title}
                                     description={service.description}
                                     icon={service.icon}
                                 />
+                            
                             ))}
 
                         </div>

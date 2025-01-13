@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FadeUp } from '../../Varient/Varient2'
 
+
 function ServiceCard({ title, description, icon }) {
   const getPrimaryColorFromCSS = () => {
     // Read the primary color from the CSS root
@@ -14,6 +15,7 @@ function ServiceCard({ title, description, icon }) {
   const defaultColor = getPrimaryColorFromCSS();
   return (
     <>
+
       <motion.div
         variants={FadeUp(0.3)}
         initial="hidden"
@@ -36,8 +38,8 @@ function ServiceCard({ title, description, icon }) {
         <h1>{title}</h1>
         <p>{description}</p>
         <div>{icon}</div>
-
       </motion.div>
+
     </>
   )
 }
