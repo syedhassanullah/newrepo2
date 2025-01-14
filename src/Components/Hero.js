@@ -27,9 +27,17 @@ function Hero() {
                             <span className='chngecontent'></span>
                             <MainButton/>
                         </motion.div>
-                        <div className='about-image-sec col-md-4 heroimg' md={6} sm={12}>
+                        <motion.div className='about-image-sec col-md-4 heroimg' md={6} sm={12}
+                        variants={FadeIn('right', 0.2)}
+                        initial="hidden"
+                        whileInView={'show'}
+                        viewport={{
+                            once: false, amount: 0.7
+                        }}
+                        transition={{ type: 'tween' }}
+                        >
                             <img src={homeImage} alt='HERO' className='about-image img-fluid' ></img>
-                        </div>
+                        </motion.div>
                     </div>
 
                 </Container>

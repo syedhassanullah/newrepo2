@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import homeImage from '../Embroidery-Landing-Page-1-Parrot-600x600-TinyPNG-Compressed2.png'
-import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FadeIn } from '../Varient/Varient'
@@ -46,7 +45,15 @@ function AboutSec() {
                                         >
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
-                                            <Button variant="contained" size='large'><Link to={'/about'} style={{ textDecoration: 'none', color: 'white' }}>Get More</Link></Button>
+                                            {/* <Button variant="contained" size='large'><Link to={'/about'} style={{ textDecoration: 'none', color: 'white' }}>Get More</Link></Button> */}
+                                            <motion.div
+                                                whileHover={{ scale: 1.1 }}
+                                                whileTap={{ scale: 0.95 }}
+                                                className='mainButton2'
+                                            >
+                                               <Link to={'/about'} style={{ textDecoration: 'none', color: 'white' }}>Get More</Link>
+                                            </motion.div>
+
                                         </motion.div>
                                     </div>
                                 </Col>

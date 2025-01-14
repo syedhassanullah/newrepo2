@@ -36,9 +36,31 @@ body::-webkit-scrollbar-track {
   padding: 250px 60px;
 }
 .mainButton{
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 20px;
+ background-color: black;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer; 
+  padding: 10px;  
+  color: var(--primary-color); 
+  width: 200px; 
+  text-align: center; 
+  margin-top: 50px; 
+  box-shadow: 0 0 30px 3px rgba(253, 253, 253, 0.397);
+}
+
+.mainButton2{
+  background-color: black;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer; 
+  padding: 10px;  
+  color: var(--primary-color); 
+  width: 200px; 
+  text-align: center; 
+  margin-top: 50px; 
+  box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.397);
 }
 
 /* ant design colors work */
@@ -145,6 +167,9 @@ body::-webkit-scrollbar-track {
 /* fOOTER */
 .footer {
   background-color: #000000;
+  padding: 50px 0px;
+  
+  color: aliceblue;
 }
 
 

@@ -36,8 +36,16 @@ export const Service = () => {
                                 />
 
                             ))}
+                            <motion.div
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            className='mainButton2'
+                        >
+                            View All
+                        </motion.div>
 
                         </div>
+                         
                     </div>
                 </Container>
             </div>
