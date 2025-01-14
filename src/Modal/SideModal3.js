@@ -21,7 +21,7 @@ function SideModal3({ helo, onClose }) {
                     <motion.div
                         initial={{ x: '100%' }} // Sidebar starts off-screen to the left
                         animate={{ x: helo ? '0%' : '100%' }} // Sidebar slides in when `isOpen` is true
-                        transition={{ type: 'spring', stiffness: 300, damping: 5 }}
+                        transition={{ type: 'spring', stiffness: 600, damping: 50 }}
                         // transition={{ type: 'tween', duration: 0.5 }}
                         className={`Sidebar ${helo ? 'ActiveSide' : ''}`}
                     >

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import ServiceCard from './ServiceCard'
 import ServiceData from './ServiceData'
 import { motion } from 'framer-motion'
@@ -17,15 +17,16 @@ export const Service = () => {
                             viewport={{
                                 once: false, amount: 0.7
                             }}
-                            transition={{ type: 'tween', scale: 0.8,
-                             }}
+                            transition={{
+                                type: 'tween', scale: 0.8,
+                            }}
                             className='ServiceSecText component-heading'>........
                             <h2>OUR SERVICES</h2>
                             <h1>Bayond Digitizing</h1>
                         </motion.div>
                         <div className='ServiceSecContainer '>
                             {ServiceData.map(service => (
- 
+
 
                                 <ServiceCard
                                     key={service.id}
@@ -33,7 +34,7 @@ export const Service = () => {
                                     description={service.description}
                                     icon={service.icon}
                                 />
-                            
+
                             ))}
 
                         </div>

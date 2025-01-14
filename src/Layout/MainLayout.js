@@ -6,6 +6,7 @@ import Cursor from '../CurSor/Cursor';
 import Footer from '../Components/Footer';
 import Sec from '../Components/Sec';
 import '../App.css'
+import { motion } from 'framer-motion';
 
 
 
@@ -48,7 +49,15 @@ export default function MainLayout({ children }) {
                 
                 <Head />
 
-                {children}
+                <motion.div
+                        initial={{ opacity: 0 ,translateY: 100}}
+                        animate={{ opacity: 1,translateY: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1.0 }}
+                        style={{ width: '100%', height: '100%' }}
+                    >
+                        {children}  
+                    </motion.div>
                 <Footer/>
                 <Sec/>
             </ConfigProvider>

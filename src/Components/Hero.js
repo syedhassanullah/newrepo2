@@ -21,7 +21,7 @@ function Hero() {
                             }}
                             transition={{ type: 'tween' }}
 
-                            className='hero-text col-md-6' >
+                            className='hero-text col-md-8' >
                             <h3>Byond Digitizing <br />Agency</h3>
                             <h1>We are working on </h1>
                             <span className='chngecontent'></span>

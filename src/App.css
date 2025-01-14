@@ -305,7 +305,7 @@ body::-webkit-scrollbar-track {
   padding: 150px 0px;
   overflow: hidden;
   margin-top: 100px;
-
+  border-radius: 0px 0px  200px 0px ;
 }
 
 .heroimg {
@@ -440,8 +440,8 @@ body::-webkit-scrollbar-track {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 22rem;
-  height: 15rem;
+  width: 19rem;
+  height: rem;
 
 }
 
@@ -567,7 +567,7 @@ body::-webkit-scrollbar-track {
 }
 
 /* Small devices (phones, 600px and up) */
-@media only screen and (max-width: 776px) {
+@media only screen and (max-width: 800px) {
   .head-menu {
     min-width: 160px;
   }
@@ -603,7 +603,6 @@ body::-webkit-scrollbar-track {
     padding-top: 70px;
 
   }
-
 
 }
 
@@ -667,7 +666,7 @@ body::-webkit-scrollbar-track {
   .ServiceSecCard {
     padding: 20px;
     height: 14rem;
-    max-width: 13rem;
+    max-width: 10.5rem;
   }
 
   .ServiceSecContainer {
