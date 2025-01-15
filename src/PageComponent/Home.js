@@ -7,7 +7,8 @@ import { Container } from 'react-bootstrap';
 import AboutSec from '../Components/AboutSec';
 import Sec1 from '../Components/Sec1';
 import {Service} from '../Components/Services/Service'
-
+import FlagSlider from '../Components/Slider/FlagSlider';
+import LogoSlider from '../Components/Slider/LogoSlider'
 
 
 
@@ -22,9 +23,10 @@ function BasicExample() {
         <Hero />
         {/* <NEW/> */}
         <Service/>
-
+        <LogoSlider/>
         <AboutSec />
         <ContactSec />
+        <FlagSlider/>
         <Sec1 />
         <Container fluid>
           <Slider />

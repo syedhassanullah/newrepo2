@@ -1,0 +1,58 @@
+
+
+.marqueeSlide{
+    width: 200px;
+    height: 130px;
+    margin: 20px;
+    position: relative;  /* To position the pseudo-elements inside the div */
+    overflow: hidden;
+    border-radius: 4px;
+}
+.marqueeSlide1{
+    text-align: center;
+}
+.marqueeSlide1 h1{
+    font-family: var(--text-heading2);
+    font-weight: 800;
+    font-size: 50px;
+    color: black;
+    padding-bottom: 20px;
+}
+.marqueeSlide::before,
+.marqueeSlide::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.marqueeSlide::before {
+    top: 0;
+}
+
+.marqueeSlide::after {
+    bottom: 0;
+}
+.marqueeSlide:hover::before,
+.marqueeSlide:hover::after {
+    opacity: 0.5;
+    height: 50%;  /* Adjust this value to control the height of the black layer */
+}
+
+.marqueeSlide img{
+    width: 100%;
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+    .marqueeSlide{
+        width: 150px;
+        height: 90px;
+        margin: 15px;
+    }   
+}
