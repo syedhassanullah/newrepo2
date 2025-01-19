@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import homeImage from '../Embroidery-Landing-Page-1-Parrot-600x600-TinyPNG-Compressed2.png'
+import homeImage from '../images/WhatsApp Image 2025-01-20 at 1.57.28 AM.jpeg'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FadeIn } from '../Varient/Varient'

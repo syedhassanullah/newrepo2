@@ -16,8 +16,9 @@ export default function About() {
       </Container>
     </div>
       <AboutSec/>
-      <LogoSlider/>
+    
       <ContactSec/>
+      <LogoSlider/>
     </MainLayout>
   ) 
 }

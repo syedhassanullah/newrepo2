@@ -10,7 +10,7 @@
     linear-gradient(to Right, rgba(0, 0, 0, 0.781), rgba(58, 2, 2, 0.959)),
     /* Gradient */
     url('./images/images/retrosupply-jLwVAUtLOAQ-unsplash.jpg');
-  --borderradius: 5px 130px 5px 130px;
+  --borderradius: 5px 100px 5px 100px;
   --borderradiushero: 120px 5px 120px 5px;
   --borderradiusCard: 60px 5px 60px 5px;
 }
