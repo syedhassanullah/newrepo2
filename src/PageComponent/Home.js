@@ -2,8 +2,6 @@
 import MainLayout from '../Layout/MainLayout';
 import Hero from '../Components/Hero';
 import ContactSec from '../Components/ContactSec';
-import Slider from '../Components/Slider';
-import { Container } from 'react-bootstrap';
 import AboutSec from '../Components/AboutSec';
 import Sec1 from '../Components/Sec1';
 import {Service} from '../Components/Services/Service'
@@ -27,10 +25,7 @@ function BasicExample() {
         <AboutSec />
         <ContactSec />
         <FlagSlider/>
-        <Sec1 />
-        <Container fluid>
-          <Slider />
-        </Container>
+        {/* <Sec1 /> */}
       </MainLayout>
     </div>
   );

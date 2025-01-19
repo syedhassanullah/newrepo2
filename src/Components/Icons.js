@@ -17,7 +17,7 @@ function Icons() {
                 <motion.div 
                     key={icon.id}
                     className="ibtn"
-                    whileHover={{ scale: 1.7 }} 
+                    whileHover={{ scale: 1.5 }} 
                     whileTap={{ scale: 0.95 }}
                     // transition={{ duration: 0.1 }}
                 >

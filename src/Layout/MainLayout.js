@@ -4,7 +4,6 @@ import Head from '../Components/Head'
 import { ConfigProvider } from 'antd';
 import Cursor from '../CurSor/Cursor';
 import Footer from '../Components/Footer';
-import Sec from '../Components/Sec';
 import '../App.css'
 import { motion } from 'framer-motion';
 
@@ -59,7 +58,7 @@ export default function MainLayout({ children }) {
                         {children}  
                     </motion.div>
                 <Footer/>
-                <Sec/>
+
             </ConfigProvider>
             </div>
         </>
