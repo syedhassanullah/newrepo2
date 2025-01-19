@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 
 function MainButton() {
@@ -9,7 +10,7 @@ function MainButton() {
     whileTap={{ scale: 0.95 }}
     className='mainButton'
 >
-    GET STARTED
+    <Link to={'/contact'}>GET STARTED</Link>
 </motion.div>
   )
 }

@@ -33,7 +33,7 @@ body::-webkit-scrollbar-track {
 }
 
 .section-padding {
-  padding: 200px 60px;
+  padding: 120px 60px;
 }
 .mainButton{
  background-color: black;
@@ -47,6 +47,10 @@ body::-webkit-scrollbar-track {
   text-align: center; 
   margin-top: 50px; 
   box-shadow: 0 0 30px 3px rgba(253, 253, 253, 0.397);
+}
+.mainButton a{
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 .mainButton2{
@@ -185,20 +189,31 @@ body::-webkit-scrollbar-track {
 }
 
 
-
-
-.footer .itemsCol h2{
+.footer .iconcol{
   color: white;
-  font-family: var(--text-heading);
+}
+
+.footer .itemsCol h3{
+  color: white;
+  font-family: var(--text-heading2);
 }
 .footer-QuickLinks{
   padding-left: 30px;
 }
 
-.footer-QuickLinks .footerLinks{
+.footer-QuickLinks .footerLinks {
   padding-left: 15px;
 }
 
+.footer-QuickLinks .AddressLinks{
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.footer-QuickLinks .AddressLinks h6{
+  color: white;
+  font-family: var(--text-heading2);
+}
 .footer-QuickLinks h6 a:hover{
   color: var(--primary-color);
 }
@@ -478,7 +493,9 @@ body::-webkit-scrollbar-track {
 
 
 /* SERVICE */
-.ServiceSec {}
+.ServiceSec {
+  
+}
 
 .ServiceSecContainer {
   display: flex;

@@ -7,7 +7,7 @@ import { Image } from 'antd';
 import image1 from '../images (1).jpg'
 import image2 from '../images.jpg'
 import { Container } from 'react-bootstrap';
-
+import LogoSlider from '../Components/Slider/LogoSlider'
 
 function Portfolio() {
 
@@ -84,6 +84,8 @@ function Portfolio() {
                             </div>
 
                         </div>
+
+                        <LogoSlider/>
                     </div>
 
 

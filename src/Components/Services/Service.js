@@ -22,7 +22,7 @@ export const Service = () => {
                             }}
                             className='ServiceSecText component-heading'>........
                             <h2>OUR SERVICES</h2>
-                            <h1>Bayond Digitizing</h1>
+                            <h1>Beyond Digitizing</h1>
                         </motion.div>
                         <div className='ServiceSecContainer '>
                             {ServiceData.map(service => (

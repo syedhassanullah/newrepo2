@@ -12,16 +12,18 @@ function Footer() {
                     <Row>
                         <Col md={4}>
                             <div className='About-footer'>
-                                <h2>About</h2>
-                                <p>Lorem fkjahskjasfjsafjkjfsakjas slhagjasng
-                                    asfasjfasbfhjasbfsa asf aksjflkans lsafnsahf
-                                    Asfjashbfkjbasbfkjhasbfkjbasjkbfjas
-                                </p>
+                                <h2>About Beyond Digitizing</h2>
+                                <div className='footerLinks'>
+                                    {/* <p>We specialize in transforming your logos and images into high-quality embroidery designs. Our expert team ensures precision in every stitch, delivering flawless results that bring your vision to life. Trust us to make your brand stand out with exceptional embroidery.
+                                    </p> */}
+                                    <p>We specialize in turning logos and images into precise, high-quality embroidery designs.
+                                    Our expert team ensures every design is crafted with care and precision.</p>
+                                </div>
                             </div>
                         </Col>
                         <Col md={2}>
                             <div className='footer-QuickLinks'>
-                                <h2>Services</h2>
+                                <h3>Services</h3>
                                 <div className='footerLinks'>
                                     <MotionLink to={'/'}>Home</MotionLink>
                                     <MotionLink to={'/about'}>About</MotionLink>
@@ -29,13 +31,13 @@ function Footer() {
                                     <MotionLink to={'/contact'}>Contact</MotionLink>
                                     <MotionLink to={'/services'}>Services</MotionLink>
                                     <MotionLink to={'/'}>Home</MotionLink>
-                                    
+
                                 </div>
                             </div>
                         </Col>
                         <Col md={3}>
                             <div className='footer-QuickLinks'>
-                                <h2>Quick Links</h2>
+                                <h3>Quick Links</h3>
                                 <div className='footerLinks'>
                                     <MotionLink to={'/'}>Home</MotionLink>
                                     <MotionLink to={'/about'}>About</MotionLink>
@@ -45,18 +47,24 @@ function Footer() {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={3} className='iconcol'>
+                        <Col md={3} className='footer-QuickLinks'>
                             <div style={{ width: '100%' }}>
-                                
-                                <div><Icons /></div>
+                                {/* <h3>Our Address</h3> */}
+                                <div className='AddressLinks'>
+                                    <h6>15 Laurel pl, farmingville 11738 NY</h6>
+                                    <h6>702-900-9086</h6>
+                                    <h6>vegasdigitizing@gmail.com</h6>
+                                    <h6>Working Hours: 10:00 - 18:00 GST</h6>
+                                </div>
+                                <div style={{paddingTop:'40px'}}><Icons /></div>
                             </div>
                         </Col>
                     </Row>
                 </div>
                 <Row>
                     <Col md={12}>
-                        <div style={{ borderTop: '2px solid white', textAlign: 'center', color:'white' }}>
-                            <h3>Syed Hassan Ullah</h3>
+                        <div style={{ borderTop: '1px solid white', textAlign: 'end', color: 'white' ,padding:'15px 0px'}}>
+                        © 2024 Beyound Digitizing. All Rights Reserved. syedhassanullah.0900@gmail.com
                         </div>
                     </Col>
                 </Row>
