@@ -52,7 +52,7 @@ export default function MainLayout({ children }) {
                         initial={{ opacity: 0 ,translateY: 100}}
                         animate={{ opacity: 1,translateY: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 1.0 }}
+                        transition={{ duration: 0.8 }}
                         style={{ width: '100%', height: '100%' }}
                     >
                         {children}  

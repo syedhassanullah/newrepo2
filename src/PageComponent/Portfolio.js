@@ -5,9 +5,13 @@ import { useState } from 'react';
 import { Image } from 'antd';
 
 import image1 from '../images (1).jpg'
-import image2 from '../images.jpg'
+import image2 from '../images/images/cimg.jpg'
+// import image3 from '../images (1).jpg'
 import { Container } from 'react-bootstrap';
 import LogoSlider from '../Components/Slider/LogoSlider'
+
+import { motion } from 'framer-motion'
+import { FadeUp } from '../Varient/Varient2'
 
 function Portfolio() {
 
@@ -37,56 +41,99 @@ function Portfolio() {
         <MainLayout>
             <div className='heroother'>
                 <Container>
-                    
-                        <h1 >Our Portfolio</h1>
+
+                    <h1 >Our Portfolio</h1>
                 </Container>
             </div>
             <Container>
 
-                    <div className=' portfolio1'>
-                        <div className='portfolio'>
+                <div className=' portfolio1'>
+                    <div className='portfolio'>
 
-                            <div className='justify-content-center segment'>
-                                <Segmented size="large"
-                                    options={[
-                                        'Digitizing', 'Vector', 'Patches']}
-                                    onChange={handleChange}
-                                />
-                            </div>
-                            <div className='portfolio-Item'> 
-                                {selectedValue === 'Digitizing' &&
-                                    <div className='portfolio-image'>
-                                        <Image width={250} src={image1} />
-                                        <Image width={250} src={image1} />
-                                        <Image width={250} src={image1} />
-                                        <Image width={250} src={image1} />
-                                        <Image width={250} src={image1} />
-                                        <Image width={250} src={image1} />
-                                        <Image width={250} src={image1} />
-                                        <Image width={250} src={image1} />
-                                        <Image width={250} src={image1} />
-                                    </div>
-                                }
-                                {selectedValue === 'Vector' &&
-                                    <div className='portfolio-image'>
-                                        <Image width={250} src={image2} />
-                                        <Image width={250} src={image2} />
-                                        <Image width={250} src={image2} />
-                                        <Image width={250} src={image2} />
-                                        <Image width={250} src={image2} />
-                                        <Image width={250} src={image2} />
-                                        <Image width={250} src={image2} />
-                                        <Image width={250} src={image2} />
-                                        <Image width={250} src={image2} />
-                                    </div>
-                                }
-                                {selectedValue === 'Patches' && <p>Long text option clicked. Displaying something for long text.</p>}
-                            </div>
-
+                        <div className='justify-content-center segment'>
+                            <Segmented size="large"
+                                options={[
+                                    'Digitizing', 'Vector', 'Patches', 'Hoodies']}
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div className='portfolio-Item'>
+                            {selectedValue === 'Digitizing' &&
+                                <motion.div
+                                    variants={FadeUp(0.3)}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true, amount: 0.1 }}
+                                    transition={{
+                                        type: 'spring',
+                                        stiffness: 300,
+                                        damping: 20,
+                                    }}
+                                    className='portfolio-image'>
+                                    <Image src={image2} />
+                                    <Image src={image2} />
+                                    <Image src={image2} />
+                                    <Image src={image2} />
+                                    <Image src={image2} />
+                                    <Image src={image2} />
+                                    <Image src={image2} />
+                                    <Image src={image2} />
+                                    <Image src={image2} />
+                                </motion.div>
+                            }
+                            {selectedValue === 'Vector' &&
+                                <motion.div
+                                    variants={FadeUp(0.3)}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true, amount: 0.1 }}
+                                    transition={{
+                                        type: 'spring',
+                                        stiffness: 300,
+                                        damping: 20,
+                                    }}
+                                    className='portfolio-image'>
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                </motion.div>
+                            }
+                            {selectedValue === 'Patches' && <p>Long text option clicked. Displaying something for long text.</p>}
+                            {selectedValue === 'Hoodies' && <div className='portfolio-image'>
+                                <motion.div
+                                    variants={FadeUp(0.3)}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true, amount: 0.1 }}
+                                    transition={{
+                                        type: 'spring',
+                                        stiffness: 300,
+                                        damping: 20,
+                                    }}
+                                    className='portfolio-image'>
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                    <Image src={image1} />
+                                </motion.div>
+                            </div>}
                         </div>
 
-                        <LogoSlider/>
                     </div>
+
+                    <LogoSlider />
+                </div>
 
 
             </Container>
