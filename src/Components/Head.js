@@ -28,9 +28,9 @@ const items = [
     key: 'SubMenu',
     icon: <CaretDownOutlined />,
     children: [
-      { label: 'Option 1', key: 'setting:1' },
-      { label: 'Option 2', key: 'setting:2' },
-      { label: 'Option 3', key: 'setting:3' },
+      { label: <Link to={'/services/digitizing'}>Digitizing</Link>, key: 'setting:1' },
+      { label: <Link to={'/services/patches'}>Patches</Link>, key: 'setting:2' },
+      { label: <Link to={'/services/vector'}>vactor</Link>, key: 'setting:3' },
     ],
   },
   {
@@ -123,6 +123,12 @@ const Head = () => {
       setCurrent('alipay');
     } else if (location.pathname === '/Contact') {
       setCurrent('Contact');
+    }else if (location.pathname === '/services/digitizing') {
+      setCurrent('setting:1');
+    }else if (location.pathname === '/services/patches') {
+      setCurrent('setting:2');
+    }else if (location.pathname === '/services/vector') {
+      setCurrent('setting:3');
     }
   }, [location.pathname]);
   const onClick = (e) => {

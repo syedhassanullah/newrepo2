@@ -4,6 +4,7 @@ import ServiceCard from './ServiceCard'
 import ServiceData from './ServiceData'
 import { motion } from 'framer-motion'
 import { FadeIn } from '../../Varient/Varient'
+import { Link } from 'react-router-dom'
 export const Service = () => {
     return (
         <>
@@ -41,7 +42,7 @@ export const Service = () => {
                             whileTap={{ scale: 0.95 }}
                             className='mainButton2'
                         >
-                            View All
+                           <Link to={'/services/digitizing'}>View All</Link>
                         </motion.div>
 
                         </div>

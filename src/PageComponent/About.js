@@ -18,7 +18,7 @@ export default function About() {
       <AboutSec/>
     
       <ContactSec/>
-      <LogoSlider/>
+      <LogoSlider/> 
     </MainLayout>
   ) 
 }

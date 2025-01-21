@@ -53,7 +53,7 @@ body::-webkit-scrollbar-track {
   color: var(--primary-color);
 }
 
-.mainButton2{
+.mainButton2 { 
   background-color: black;
   border-radius: 10px;
   font-weight: 700;
@@ -66,8 +66,15 @@ body::-webkit-scrollbar-track {
   margin-top: 50px; 
   box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.397);
 }
-
+.mainButton2  a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
 /* ant design colors work */
+
+.ant-menu-title-content a{
+  text-decoration: none;
+}
 
 .MuiButtonBase-root {
   background-color: var(--primary-color) !important;

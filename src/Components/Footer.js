@@ -25,10 +25,10 @@ function Footer() {
                             <div className='footer-QuickLinks'>
                                 <h3>Services</h3>
                                 <div className='footerLinks'>
-                                    <MotionLink to={'/'}>Home</MotionLink>
-                                    <MotionLink to={'/about'}>About</MotionLink>
-                                    <MotionLink to={'/portfolio'}>Portfolio</MotionLink>
-                                    <MotionLink to={'/contact'}>Contact</MotionLink>
+                                    <MotionLink to={'/services/digitizing'}>Digitizing</MotionLink>
+                                    <MotionLink to={'/services/patches'}>Patche</MotionLink>
+                                    <MotionLink to={'/services/vector'}>Vector</MotionLink>
+                                    <MotionLink to={'/services/hoodie'}>Hoodies</MotionLink>
                                     <MotionLink to={'/services'}>Services</MotionLink>
                                     <MotionLink to={'/'}>Home</MotionLink>
 
@@ -52,8 +52,8 @@ function Footer() {
                                 {/* <h3>Our Address</h3> */}
                                 <div className='AddressLinks'>
                                     <h6>15 Laurel pl, farmingville 11738 NY</h6>
-                                    <h6>702-900-9086</h6>
-                                    <h6>vegasdigitizing@gmail.com</h6>
+                                    <h6>+1-719-900-4662</h6>
+                                    <h6>beyonddigitizing7@gmail.com</h6>
                                     <h6>Working Hours: 10:00 - 18:00 GST</h6>
                                 </div>
                                 <div style={{paddingTop:'40px'}}><Icons /></div>
@@ -64,7 +64,7 @@ function Footer() {
                 <Row>
                     <Col md={12}>
                         <div style={{ borderTop: '1px solid white', textAlign: 'end', color: 'white' ,padding:'15px 0px'}}>
-                        © 2024 Beyound Digitizing. All Rights Reserved. syedhassanullah.0900@gmail.com
+                        © 2025 Beyound Digitizing | All Rights Reserved | beyonddigitizing.com
                         </div>
                     </Col>
                 </Row>

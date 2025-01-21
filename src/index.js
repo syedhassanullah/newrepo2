@@ -8,6 +8,9 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import About from './PageComponent/About.js';
 import Portfolio from './PageComponent/Portfolio.js';
 import Contact from './PageComponent/Contact.js';
+import Digitizing from './Components/Services/ServicesComponent/Digitizing.js';
+import Patches from './Components/Services/ServicesComponent/Patches.js';
+import Vector from './Components/Services/ServicesComponent/Vector.js';
 
 
 
@@ -20,7 +23,11 @@ root.render(
       <Route path='/' element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/portfolio' element={<Portfolio />} />
-      <Route path='/Contact' element={<Contact/>}/>
+      <Route path='/Contact' element={<Contact />} />
+      <Route path='/services/digitizing' element={<Digitizing/>}/>
+      <Route path='/services/patches' element={<Patches/>}/>
+      <Route path='/services/vector' element={<Vector/>}/>
+
     </Routes>
   </BrowserRouter>
 );
