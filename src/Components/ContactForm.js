@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Stack, TextField } from '@mui/material'
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import Button from '@mui/material/Button';
 import '../App.css'
+// import { message } from 'antd';
 
 
 // const darkTheme = createTheme({
@@ -41,10 +42,26 @@ function ContactForm() {
       },
     },
   });
+  const [formData,SetFormData] = useState({
+    firstName:'',
+    lastName:'',
+    contact:'',
+    email:'',
+    message:''
+  })
+
+  const getValues = (e) =>{
+    const {name , value} = e.target;
+    SetFormData({
+      ...formData,
+      [name]: value,
+    })
+  }
+
 
   return (
-    <>
 
+    <>
       <ThemeProvider theme={darkTheme}>
         <div className='cform'>
           <div style={{ marginBottom: '30px' }}>
@@ -52,15 +69,15 @@ function ContactForm() {
           </div>
           <Stack spacing={3}>
             <Stack direction='row' spacing={2}>
-              <TextField label='name' variant='outlined' size='small' className='cinput' />
-              <TextField label='name' variant='outlined' size='small' className='cinput' />
+              <TextField label='First Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='firstName'/>
+              <TextField label='Last Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='lasttName'/>
             </Stack>
             <Stack direction='row' spacing={2}>
-              <TextField label='name' variant='outlined' size='small' className='cinput' />
-              <TextField label='name' variant='outlined' size='small' className='cinput' />
+              <TextField label='Phone' variant='outlined' size='small' className='cinput' onChange={getValues} name='contact'/>
+              <TextField label='Email' variant='outlined' size='small' className='cinput' onChange={getValues} name='email'/>
             </Stack>
             <Stack direction='row' >
-              <TextField label='Message' variant='outlined' size='small' className='cinputm' fullWidth multiline rows={4} />
+              <TextField label='Message' variant='outlined' size='small' className='cinputm' fullWidth multiline rows={4} onChange={getValues} name='message'/>
             </Stack>
           </Stack>
           <div style={{ right: '0px', textAlign: 'end', marginTop: '30px' }} >
