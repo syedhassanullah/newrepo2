@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import ContactForm from './ContactForm'
+import Cimg from '../images/MainLogo/beyondDigitizing.png'
 
 
 function ContactSec() {
@@ -13,16 +14,16 @@ function ContactSec() {
         
           <Row >
             <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
-              <Col md={5} >
+              <Col md={6} >
               <div className='component-heading'>.....
                   <h2>REACH US</h2>
                   {/* <h1>Bayond Digitizing</h1> */}
                 </div>
               <ContactForm />
               </Col>
-              <Col md={7}>
+              <Col md={6}>
                 <div className='cformimg'>
-                  {/* <img src={Cimg} alt='has' /> */}
+                  <img src={Cimg} alt='has' />
                 </div>
               </Col>
             </div>

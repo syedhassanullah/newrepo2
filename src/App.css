@@ -1,13 +1,13 @@
 :root {
-  --primary-color: #007eaf;
-  --primary-colorbg: #00b7ff28;
+  --primary-color: #D01F26;
+  --primary-colorbg: #d01f2544;
   --secondary-color: #52cc47ec;
   --text-heading2: "Montserrat Alternates", serif;
   --text-heading: "Orbitron", serif;
   --transaction1: right 0.3s ease;
   --transaction2: 0.3s;
   --backgroundimage:
-    linear-gradient(to Right, rgba(0, 0, 0, 0.781), rgba(2, 36, 58, 0.959)),
+    linear-gradient(to Right, rgba(0, 0, 0, 0.781), rgba(58, 2, 2, 0.603)),
     /* Gradient */
     url('./images/images/retrosupply-jLwVAUtLOAQ-unsplash.jpg');
   --borderradius: 5px 100px 5px 100px;
@@ -142,6 +142,9 @@ body::-webkit-scrollbar-track {
   height: 100px;
 }
 
+.head-item-img {
+  width: 9rem;
+}
 .head {
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
   background-color: #ffffff9a;
@@ -233,7 +236,7 @@ body::-webkit-scrollbar-track {
   padding-top: 20px;
 }
 
-.itemsCol .About-footer h2{
+.itemsCol .About-footer h1{
   color: var(--primary-color);
 }
 

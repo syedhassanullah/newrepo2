@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Menu } from 'antd';
 import { AppstoreOutlined, CaretDownOutlined, PhoneOutlined, UserOutlined } from '@ant-design/icons';
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 // import SideModal from '../Modal/SideModal';
 import { ConfigProvider } from 'antd';
 import { Link } from 'react-router-dom';
@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import SideModal3 from '../Modal/SideModal3';
 // import ToggleSide from '../Modal/ToggleSide';
 import { Sling as Hamburger } from 'hamburger-react';
+import beyond from '../images/MainLogo/beyondDigitizing.png'
 
 
 const items = [
@@ -164,8 +165,8 @@ const Head = () => {
 
           <div className='row'>
             <div className='head-item'>
-              <div >
-                <Button>hassan</Button>
+              <div className='head-item-img'>
+               <img src={beyond} alt='LOGO' style={{width:'100%'}}/>
               </div>
               <div className='head-menu'>
                 <Menu mode="horizontal" onClick={onClick} selectedKeys={[current]}>{renderMenuItems(items)}</Menu>
