@@ -22,8 +22,8 @@ export const Service = () => {
                                 type: 'tween', scale: 0.8,
                             }}
                             className='ServiceSecText component-heading'>........
-                            <h2>OUR SERVICES</h2>
-                            <h1>Beyond Digitizing</h1>
+                       
+                            <h1>OUR SERVICES</h1>
                         </motion.div>
                         <div className='ServiceSecContainer '>
                             {ServiceData.map(service => (

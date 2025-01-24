@@ -1,6 +1,6 @@
 :root {
   --primary-color: #D01F26;
-  --primary-colorbg: #d01f2544;
+  --primary-colorbg: #d01f2527;
   --secondary-color: #52cc47ec;
   --text-heading2: "Montserrat Alternates", serif;
   --text-heading: "Orbitron", serif;
@@ -334,7 +334,7 @@ body::-webkit-scrollbar-track {
 }
 
 .portfolio .segment {
-  max-width: 700px;
+  max-width: 800px;
   font-weight: 600;
 }
 
@@ -346,12 +346,25 @@ body::-webkit-scrollbar-track {
   max-width: 900px;
 }
 
+.portfolio-image {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+}
+
 
 .portfolio-image-div {}
 
 .portfolio-Item {
   margin: 50px 0px;
 }
+
+.ant-image {
+  width: 25% !important; 
+}
+
 
 
 
@@ -501,10 +514,36 @@ body::-webkit-scrollbar-track {
   color: var(--primary-color);
 }
 
+/* PROCESS */
+.Process{
+  background-color: rgba(0, 0, 0, 0.027);
+  border-radius: var(--borderradius);
+}
+.process-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.process-card{
+  width: 18rem;
+  height: 25rem;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.137);
+  border: 2px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
 
 /* SERVICE */
 .ServiceSec {
-  
+  width: 100%;
 }
 
 .ServiceSecContainer {
@@ -513,28 +552,65 @@ body::-webkit-scrollbar-track {
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* border: 2px solid rgb(0, 0, 0); */
   padding: 20px 0px;
   gap: 25px;
-
 }
-
 
 
 .ServiceSecCard {
   padding: 20px;
-  /* border: 2px solid rgb(0, 0, 0); */
   border-radius: var(--borderradiusCard);
-  /* background-color: var(--primary-colorbg); */
   cursor: pointer;
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.137);
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 19rem;
-  height: rem;
-
+  height: 15rem;
 }
+
+/* For smaller screens (mobile-first) */
+@media (max-width: 600px) {
+  .ServiceSecCard {
+    width: 48%;
+  }
+  .ServiceSecContainer{
+    gap: 7px;
+  }
+
+  /* POrtfolio */
+  .ant-image {
+    width: 48% !important; 
+  }
+  .portfolio-image{
+    gap: 10px;
+  }
+  .segment {
+    overflow: scroll;
+    width: 350px;
+  }
+}
+
+/* For medium screens (tablets, small laptops) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .ServiceSecCard {
+    width: 45%; /* Two cards in a row */
+  }
+  .ant-image {
+    width: 30% !important; /* Image size for medium screens */
+  }
+}
+
+/* For larger screens */
+@media (min-width: 1025px) {
+  .ServiceSecCard {
+    width: 19rem; /* Default width for larger screens */
+  }
+  .ant-image {
+    width: 26% !important; 
+  }
+}
+
 
 /* 
 .ServiceSecCard:hover {
@@ -704,16 +780,7 @@ body::-webkit-scrollbar-track {
   }
   
   /* portfolio Images */
-  .ant-image {
-    width: 160px !important;
-  }
-  .portfolio-image {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    max-width: 900px;
-  }
+
 
   /* hero */
   .hero{
@@ -754,15 +821,7 @@ body::-webkit-scrollbar-track {
   }
 
   /* service */
-  .ServiceSecCard {
-    padding: 20px;
-    height: 14rem;
-    max-width: 10.5rem;
-  }
 
-  .ServiceSecContainer {
-    gap: 5px;
-  }
 
   /*  */
 

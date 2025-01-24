@@ -53,7 +53,7 @@ function Portfolio() {
                         <div className='justify-content-center segment'>
                             <Segmented size="large"
                                 options={[
-                                    'Digitizing', 'Vector', 'Patches', 'Hoodies']}
+                                    'Digitizing', 'Vector', 'Patches', 'Hoodies','Caps','Botels']}
                                 onChange={handleChange}
                             />
                         </div>
