@@ -1,0 +1,64 @@
+
+.ServicesDetailcard{
+    margin: 50px 0px;
+}
+.ServicesDetailcard .card {
+    background-color: white;
+    border-radius: 50px 0px 50px 0px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative; /* Make sure the sliding background is positioned correctly */
+    margin: 10px;
+    cursor: pointer;
+    background-color: var(--primary-colorbg);
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    background-color: var(--primary-color);
+  }
+  
+  /* Adding the slide-in effect from the left
+  /* .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #3498db; 
+    transition: left 0.3s ease;
+    z-index: -1; 
+  } */
+  
+  /* .card:hover::before {
+    left: 0; 
+  }  */
+  
+  /* Changing the text color on hover */
+  .card h2{
+    font-family: var( --text-heading2);
+    font-weight: 600;
+  }
+  .card h3, .card p {
+    transition: color 0.3s ease;;
+  }
+  
+  .card:hover h3, .card:hover p {
+    color: white; /* Text color changes to white on hover */
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+  }
+  
