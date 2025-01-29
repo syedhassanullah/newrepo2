@@ -1,19 +1,17 @@
-/* //////////////////////////////////////////////////////// */
-
-  
-  .helo {
+/* Base nav styles */
+.helo {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    transition: background-color 0.8s ease; /* Smooth transition for background color */
-    background-color: rgba(44, 0, 0, 0); /* Initial transparent background */
-    z-index: 1000; /* Ensure navbar stays on top */
+    transition: background-color 0.8s ease;
+    background-color: rgba(44, 0, 0, 0);
+    z-index: 1000;
     color: white;
   }
   
   .helo.scrolled {
-    background-color: rgba(240, 248, 255, 0.788); /* Change background color when scrolled */
+    background-color: rgba(240, 248, 255, 0.788);
     color: black;
     backdrop-filter: blur(25px);
     padding: 0px;
@@ -26,59 +24,85 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-
-.helo.scrolled .logo {
+  }
+  
+  .helo.scrolled .logo {
     background-image: url(../../images/MainLogo/Beyonddigi-blue.png);
-    width: 205px;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.head-item {
+  }
+  
+  .head-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 120px;
   }
-  
-  
-  .nav-links {
-    display: flex;
+
+  .Nav-buttons{
     display: block;
   }
-
-
+  .nav-links {
+    display: flex;
+  }
   
-  .nav-links a {
+  .nav-links .main-menu {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px;
+    padding: 0px 12px;
+    transition: color 0.3s ease;
+    padding-bottom: 7px;
   }
   
   .helo.scrolled .nav-links a {
     color: rgb(0, 0, 0);
+  }
+  
+  .nav-links a:hover {
+    color: #f0f0f0;
+  }
+  
+  /* Services sub-menu styles */
+  .services-link {
+    position: relative;  
+    height: 100%;
+  }
+
+  
+  .services-link .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-colorbg);
+    backdrop-filter: blur(25px);
+    padding: 10px 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    min-width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .services-link:hover .sub-menu {
+    display: block;
+    opacity: 1;
+  }
+  
+  .sub-menu a {
+    color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
   }
   
-  /* Scrollable content styling */
-  .content {
-    margin-top: 70px;
+  .sub-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.397);
   }
   
-  .content h1 {
-    color: #333;
-    text-align: center;
+  @media only screen and (max-width: 800px) {
+    .Nav-buttons{
+      display: none;
+    }
   }
-  
-  .content p {
-    text-align: center;
-  }
-  
-  /* ////////////////////////////////////////////////////////// */

@@ -65,25 +65,69 @@ const Navbar = () => {
   
     
 
-  return (
+//   return (
+//     <>
+//       <div className="App fixed-top">
+//         <nav className={`helo ${scrolled ? 'scrolled' : ''}`}>
+//           <Container >
+//             <div className='head-item'>
+//               <div className="logo"></div>
+//               <div className="nav-links">
+//                 <Link >Home</Link>
+//                 <Link >About</Link>
+//                 <Link >Services</Link>
+//                 <Link >Contact</Link>
+//               </div>
+//               <div >
+//                 {/* <SideModal /> */}
+//                 {/* <Sidemodal2/> */}
+//                 {/* <SideModal3/> */}
+//                 <div 
+//                 className='humburger'>
+//                   <Hamburger
+//                     toggled={helo}
+//                     type="primary"
+//                     color={humburger}
+//                     direction='right'
+//                     size={25}
+//                     duration={0.5}
+//                     onToggle={HandelTogel}
+//                   />
+//                 </div>
+//                 <SideModal3 helo={helo} onClose={onClose} />
+//               </div>
+//             </div>
+//           </Container>
+//         </nav>
+
+//       </div>
+//     </>
+//   )
+
+return (
     <>
       <div className="App fixed-top">
         <nav className={`helo ${scrolled ? 'scrolled' : ''}`}>
           <Container >
-            <div className='head-item'>
+            <div className='head-item' >
               <div className="logo"></div>
+              <div className='Nav-buttons'>
               <div className="nav-links">
-                <Link >Home</Link>
-                <Link >About</Link>
-                <Link >Services</Link>
-                <Link >Contact</Link>
+                <Link className='main-menu'>Home</Link>
+                <Link className='main-menu'>About</Link>
+                <div className="services-link">
+                  <Link className='main-menu'>Services</Link>
+                  <div className="sub-menu">
+                    <Link>Web Design</Link>
+                    <Link>SEO Services</Link>
+                    <Link>App Development</Link>
+                  </div>
+                </div>
+                <Link className='main-menu'>Contact</Link>
               </div>
-              <div >
-                {/* <SideModal /> */}
-                {/* <Sidemodal2/> */}
-                {/* <SideModal3/> */}
-                <div 
-                className='humburger'>
+              </div>
+              <div>
+                <div className='humburger'>
                   <Hamburger
                     toggled={helo}
                     type="primary"
@@ -99,10 +143,10 @@ const Navbar = () => {
             </div>
           </Container>
         </nav>
-
       </div>
     </>
-  )
+  );
+  
 }
 
 export default Navbar;
