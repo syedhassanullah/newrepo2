@@ -1,11 +1,12 @@
 import React from 'react'
-import Head from '../Components/Head'
+// import Head from '../Components/Head'
 // import { Container } from 'react-bootstrap'
 import { ConfigProvider } from 'antd';
 import Cursor from '../CurSor/Cursor';
 import Footer from '../Components/Footer';
 import '../App.css'
 import { motion } from 'framer-motion';
+import Navbar from '../Components/NAV/Navbar';
 
 
 
@@ -46,7 +47,8 @@ export default function MainLayout({ children }) {
             >
                 <Cursor/>
                 
-                <Head />
+                {/* <Head /> */}
+                <Navbar/>
 
                 <motion.div
                         initial={{ opacity: 0 ,translateY: 100}}

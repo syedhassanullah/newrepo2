@@ -1,0 +1,84 @@
+/* //////////////////////////////////////////////////////// */
+
+  
+  .helo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.8s ease; /* Smooth transition for background color */
+    background-color: rgba(44, 0, 0, 0); /* Initial transparent background */
+    z-index: 1000; /* Ensure navbar stays on top */
+    color: white;
+  }
+  
+  .helo.scrolled {
+    background-color: rgba(240, 248, 255, 0.788); /* Change background color when scrolled */
+    color: black;
+    backdrop-filter: blur(25px);
+    padding: 0px;
+  }
+  
+  .helo .logo {
+    background-image: url(../../images/MainLogo/Beyonddigi-white.png);
+    width: 205px;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.helo.scrolled .logo {
+    background-image: url(../../images/MainLogo/Beyonddigi-blue.png);
+    width: 205px;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.head-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    display: block;
+  }
+
+
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .helo.scrolled .nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  /* Scrollable content styling */
+  .content {
+    margin-top: 70px;
+  }
+  
+  .content h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .content p {
+    text-align: center;
+  }
+  
+  /* ////////////////////////////////////////////////////////// */

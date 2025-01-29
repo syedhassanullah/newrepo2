@@ -1,17 +1,17 @@
 :root {
-  --primary-color: #D01F26;
-  --primary-colorbg: #d01f2527;
+  --primary-color: #008ecf;
+  --primary-colorbg: #006fa22d;
   --secondary-color: #52cc47ec;
   --text-heading2: "Montserrat Alternates", serif;
   --text-heading: "Orbitron", serif;
   --transaction1: right 0.3s ease;
   --transaction2: 0.3s;
   --backgroundimage:
-    linear-gradient(to Right, rgba(0, 0, 0, 0.781), rgba(58, 2, 2, 0.603)),
+    linear-gradient(to Top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.712)),
     /* Gradient */
-    url('./images/images/retrosupply-jLwVAUtLOAQ-unsplash.jpg');
+    url('./images/footer/rm314-bb-18.jpg');
   --borderradius: 5px 100px 5px 100px;
-  --borderradiushero: 120px 5px 120px 5px;
+  --borderradiushero: 0px 5px 150px 5px;
   --borderradiusCard: 60px 5px 60px 5px;
 }
 
@@ -377,11 +377,10 @@ body::-webkit-scrollbar-track {
   background-size: cover;
   background-position: center;
   color: aliceblue;
-  padding: 180px 0px;
+  padding: 220px 0px;
   font-family: var(--text-heading2);
   border-radius: var(--borderradiushero);
-  margin: 20px;
-  margin-top: 110px;
+  /* margin: 0px 20px; */
   text-align: center;
 }
 
@@ -404,9 +403,8 @@ body::-webkit-scrollbar-track {
   background: var(--backgroundimage);
   background-size: cover;
   background-position: center;
-  padding: 150px 0px;
+  padding: 170px 0px;
   overflow: hidden;
-  margin-top: 100px;
   border-radius: 0px 0px  200px 0px ;
 }
 

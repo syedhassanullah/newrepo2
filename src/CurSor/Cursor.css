@@ -7,7 +7,7 @@ body{
     position: absolute;
     width: 40px; /* Set the size of the image */
     height: 40px; /* Set the size of the image */
-    background-image: url('../images/MainLogo/Only\ BD\ logo.png');  /* Path to your image */
+    background-image: url('../images/MainLogo/Only\ BD\ logo-blue.png');  /* Path to your image */
     background-size: cover; /* Ensures the image covers the whole cursor area */
     pointer-events: none; /* Prevents the cursor from interacting with the elements */
     transform: translate(-50%, -50%); /* Centers the cursor */
@@ -17,5 +17,6 @@ body{
     box-shadow: 0 0 50px 5px var(--primary-color);
     border-radius: 50%;
     overflow-x: hidden;
+    background-color: aliceblue;
   }
   
