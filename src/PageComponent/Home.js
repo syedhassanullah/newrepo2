@@ -1,6 +1,6 @@
 
 import MainLayout from '../Layout/MainLayout';
-import Hero from '../Components/Hero';
+import Hero from '../Components/HERO/Hero';
 import ContactSec from '../Components/ContactSec';
 import AboutSec from '../Components/AboutSec';
 // import Sec1 from '../Components/Sec1';

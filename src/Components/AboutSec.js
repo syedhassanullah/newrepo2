@@ -47,15 +47,18 @@ function AboutSec() {
                                             {/* <p>As a leading digitizing company, we pride ourselves on delivering high-quality, flawless designs that not only meet but exceed your expectations. Whether it’s a logo, custom design, or a unique project, we specialize in making each stitch count. Our goal is simple: to create exceptional embroidery designs that add value and dimension to your brand, apparel, or promotional material.</p> */}
                                             {/* <p>Beyond just digitizing – we aim to bring your vision to life, crafting designs that resonate with perfection. Join us in turning your creative concepts into stunning embroidered realities.</p> */}
                                             {/* <Button variant="contained" size='large'><Link to={'/about'} style={{ textDecoration: 'none', color: 'white' }}>Get More</Link></Button> */}
-                                           
-                                           <p>At Beyond Digitizing, we turn your ideas into stunning embroidery designs. Our experienced team uses advanced techniques to transform logos and images into precise, high-quality artwork. We focus on every stitch, ensuring your design is flawless and vibrant.</p>
-                                           <p>As a trusted leader in the digitizing industry, we aim to bring your vision to life with perfection, making every project truly stand out. Let us help you create the perfect embroidered design that elevates your brand and captures attention.</p>
+
+                                            <p>At Beyond Digitizing, we turn your ideas into stunning embroidery designs. Our experienced team uses advanced techniques to transform logos and images into precise, high-quality artwork. We focus on every stitch, ensuring your design is flawless and vibrant.</p>
+                                            <p>As a trusted leader in the digitizing industry, we aim to bring your vision to life with perfection, making every project truly stand out. Let us help you create the perfect embroidered design that elevates your brand and captures attention.</p>
+                                            
                                             <motion.div
                                                 whileHover={{ scale: 1.1 }}
-                                                whileTap={{ scale: 0.95 }}
-                                                className='mainButton2'
+                                                whileTap={{ scale: 0.98 }}
+                                                className="mainButton"
                                             >
-                                               <Link to={'/about'} style={{ textDecoration: 'none', color: 'white' }}>Get More</Link>
+                                                <Link to="/about" className="buttonLink">
+                                                    GET STARTED
+                                                </Link>
                                             </motion.div>
 
                                         </motion.div>

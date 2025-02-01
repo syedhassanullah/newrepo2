@@ -21,7 +21,7 @@
   .sidebarin {
     background-color: var(--primary-colorbg);
     /* right: 0px; */
-    width: 90%;
+    width: 100%;
     top: 0;
     height: 100%;
     padding: 15px;
@@ -30,6 +30,7 @@
     justify-content: space-between;
     box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.5);
     border-radius: var(--borderradius1);
+    /* backdrop-filter: blur(40px); */
   }
   
   .close-btn {
@@ -39,10 +40,23 @@
     border-radius: 50%;
     box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.69);
     cursor: pointer;
+    display: block;
+  }
+  @media only screen and (max-width: 480px) {
+    .close-btn {
+      padding: 12px;
+      background-color: #000000;
+      margin: 15px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.69);
+      cursor: pointer;
+      display: none;
+    }
   }
   
+  
   .sidebarbak {
-    background-color: #000000cb;
+    background-color: #000000d0;
     width: 100%;
     right: 0px;
     top: 0;
@@ -52,7 +66,8 @@
     display: flex;
     align-items: center;
     overflow-x: hidden;
-    background-color: #000000c9;
+
+    /* backdrop-filter: blur(3px); */
   }
   
   .ActiveSide1 {

@@ -3,7 +3,6 @@
     margin: 50px 0px;
 }
 .ServicesDetailcard .card {
-    background-color: white;
     border-radius: 50px 0px 50px 0px ;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -14,6 +13,7 @@
     margin: 10px;
     cursor: pointer;
     background-color: var(--primary-colorbg);
+    backdrop-filter: var(--backdrop-filter);
   }
   
   .card:hover {

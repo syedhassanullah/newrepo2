@@ -1,0 +1,168 @@
+/* Hero */
+
+.hero {
+    background-color: #ffcfcf;
+    background: var(--backgroundimage);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 0px 0px 200px 0px;
+}
+
+.heroimg {
+    display: block;
+}
+
+.hero-comp {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+}
+
+.hero-comp .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.hero-comp .hero-text h3 {
+    font-size: 65px;
+    font-weight: 800;
+    color: var(--primary-color);
+    font-family: var(--text-heading2);
+}
+
+.hero-comp .hero-text h1 {
+    font-size: 40px;
+    color: aliceblue;
+    font-family: var(--text-heading2);
+}
+
+.hero-comp .hero-text h2 {
+    font-size: 50px;
+    color: rgb(0, 195, 255);
+    font-family: var(--text-heading2);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.hero-comp .hero-text span {
+    border-radius: 10px;
+    font-family: var(--text-heading2);
+    color: var(--primary-color);
+    text-shadow:
+        3px 3px 5px rgba(0, 0, 0, 0.6),
+        -3px -3px 5px rgba(0, 0, 0, 0.6),
+        3px -3px 5px rgba(0, 0, 0, 0.6),
+        -3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+
+@keyframes changetext {
+    0% {
+        content: "Digitizing";
+    }
+
+    14.28% {
+        content: "Patches";
+    }
+
+    28.57% {
+        content: "Vector";
+    }
+
+    42.85% {
+        content: "Hoodies";
+    }
+
+    57.14% {
+        content: "Sweat Shirts";
+    }
+
+    71.42% {
+        content: "Crewnecks";
+    }
+
+    85.71% {
+        content: "Caps";
+    }
+
+    100% {
+        content: "Digitizing";
+        /* Loops back to the first word */
+    }
+}
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 1024px) {}
+
+/* Small devices (phones, 600px and up) */
+@media only screen and (max-width: 800px) {
+
+    .hero-image {
+        width: 300px;
+        display: none;
+    }
+
+    .heroimg {
+        display: none;
+    }
+
+    .hero-comp {
+        justify-content: center;
+        padding: 150px 0px;
+    }
+
+    .hero-comp .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .hero-comp .hero-text h3 {
+        font-size: 50px;
+    }
+
+
+}
+
+/* Extra small devices (phones, 480px and up) */
+@media only screen and (max-width: 480px) {
+
+    .hero-comp {
+        padding: 0px 0px;
+    }
+
+    .hero-comp .hero-text h3 {
+        font-size: 60px;
+        color: var(--primary-color);
+        font-family: var(--text-heading2);
+    }
+
+    .hero-comp .hero-text h1 {
+        font-size: 30px;
+        font-family: var(--text-heading2);
+
+    }
+
+    /* .chngecontent::after {
+        content: '';
+        color: var(--primary-color);
+        animation: changetext 10s infinite linear;
+        font-size: 40px;
+    } */
+
+
+}

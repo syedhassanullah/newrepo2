@@ -22,7 +22,7 @@ export const Service = () => {
                                 type: 'tween', scale: 0.8,
                             }}
                             className='ServiceSecText component-heading'>........
-                       
+
                             <h1>OUR SERVICES</h1>
                         </motion.div>
                         <div className='ServiceSecContainer '>
@@ -38,15 +38,17 @@ export const Service = () => {
 
                             ))}
                             <motion.div
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }}
-                            className='mainButton2'
-                        >
-                           <Link to={'/services/digitizing'}>View All</Link>
-                        </motion.div>
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.98 }}
+                                className="mainButton"
+                            >
+                                <Link to={'/services/digitizing'} className="buttonLink">
+                                    View All
+                                </Link>
+                            </motion.div>
 
                         </div>
-                         
+
                     </div>
                 </Container>
             </div>
