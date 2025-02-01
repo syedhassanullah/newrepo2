@@ -29,10 +29,9 @@ function SideModal3({ helo, onClose }) {
                             whileHover={{ scale: 1.6 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={onClose} className="close-btn" >
-                            <SlArrowRight style={{ color: '#bb0000', width: '1.5rem', height: '1.5rem' }} />
+                            <SlArrowRight style={{ color: '#0091d4', width: '1.5rem', height: '1.5rem' }} />
                         </motion.div>
                         <div className='sidebarin'>
-                            <ContactForm />
                         </div>
                     </motion.div>
                 </motion.div>

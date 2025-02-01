@@ -12,6 +12,7 @@ import { Container } from 'react-bootstrap';
 
 function FlagSlider() {
     return (
+        <div >
         <Container>
             <div className='marqueeSlide1' >
             <h1>Software We Use</h1>
@@ -41,6 +42,7 @@ function FlagSlider() {
             </Marquee>
             </div>
         </Container>
+        </div>
     )
 }
 

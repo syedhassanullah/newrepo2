@@ -21,7 +21,7 @@
   .sidebarin {
     background-color: var(--primary-colorbg);
     /* right: 0px; */
-    width: 100%;
+    width: 35rem;
     top: 0;
     height: 100%;
     padding: 15px;
@@ -38,9 +38,10 @@
     background-color: #000000;
     margin: 15px;
     border-radius: 50%;
-    box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.69);
+    box-shadow: 0 0 20px 3px rgba(0, 162, 255, 0.69);
     cursor: pointer;
     display: block;
+    border: 1px solid var(--primary-color);
   }
   @media only screen and (max-width: 480px) {
     .close-btn {
