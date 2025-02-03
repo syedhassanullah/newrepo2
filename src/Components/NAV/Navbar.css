@@ -72,7 +72,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--primary-colorbg);
+    background-color: var(--primary-color);
     backdrop-filter: blur(25px);
     padding: 10px 0;
     display: none;

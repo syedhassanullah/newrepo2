@@ -1,9 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FadeUp } from '../../Varient/Varient2'
+import { Link } from 'react-router-dom';
 
 
-function ServiceCard({ title, description, icon }) {
+function ServiceCard({ title, description, icon, url }) {
   const getPrimaryColorFromCSS = () => {
     // Read the primary color from the CSS root
     return getComputedStyle(document.documentElement)
@@ -38,6 +39,10 @@ function ServiceCard({ title, description, icon }) {
         <h1>{title}</h1>
         <p>{description}</p>
         <div>{icon}</div>
+
+        <h6>
+          <Link to={url}>
+          see more</Link></h6>
       </motion.div>
 
     </>

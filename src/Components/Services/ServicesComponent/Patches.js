@@ -6,7 +6,10 @@ import './ServicesDetail.css'
 import PatchesData from '../../../DataFile/ServicesData/PatchesData';
 import Process from '../../Process';
 
+
 function Patches() {
+
+    console.log(PatchesData)
     return (
         <MainLayout>
             <div className='heroother'>

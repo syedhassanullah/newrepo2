@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SideModal3 from '../../Modal/SideModal3';
 import Hamburger from 'hamburger-react';
-
+import { AiOutlineDown } from "react-icons/ai";
 
 
 
@@ -116,10 +116,10 @@ return (
                 <Link className='main-menu'>Home</Link>
                 <Link className='main-menu'>About</Link>
                 <div className="services-link">
-                  <Link className='main-menu'>Services</Link>
+                  <Link className='main-menu'>Services <AiOutlineDown /></Link>
                   <div className="sub-menu">
                     <Link>Web Design</Link>
-                    <Link>SEO Services</Link>
+                    <Link>SEO Services </Link>
                     <Link>App Development</Link>
                   </div>
                 </div>

@@ -1,8 +1,7 @@
 import React from 'react'
-import ContactForm from '../Components/ContactForm'
-import { SlArrowRight } from "react-icons/sl";
 import './SideModal.css';
 import { motion } from 'framer-motion';
+import { ImArrowRight2 } from "react-icons/im";
 
 function SideModal3({ helo, onClose }) {
 
@@ -29,7 +28,7 @@ function SideModal3({ helo, onClose }) {
                             whileHover={{ scale: 1.6 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={onClose} className="close-btn" >
-                            <SlArrowRight style={{ color: '#0091d4', width: '1.5rem', height: '1.5rem' }} />
+                            <ImArrowRight2 style={{ color: '#0091d4', width: '1.5rem', height: '1.5rem' }} />
                         </motion.div>
                         <div className='sidebarin'>
                         </div>
