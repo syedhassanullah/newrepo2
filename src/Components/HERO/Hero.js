@@ -3,9 +3,9 @@ import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import MainButton from '../Buttons/MainButton';
 import { FadeUp } from '../../Varient/Varient2';
-import digitizingImage from '../../images/images/adrien-olichon-X8o-P23flgI-unsplash.jpg';
-import patchesImage from '../../images/images/cimg.jpg';
-import vectorImage from '../../images/images/5073414.jpg';
+import digitizingImage from '../../images/MainLogo/Beyonddigi-white.png';
+import patchesImage from '../../images/MainLogo/Only BD logo-blue.png';
+import vectorImage from '../../images/MainLogo/Only BD logo-blue.png';
 import './Hero.css';
 
 function Hero() {
@@ -20,7 +20,7 @@ function Hero() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex + 1) % contentData.length);
-        }, 3000); // Change every 3 seconds
+        }, 1500); // Change every 3 seconds
     
         return () => clearInterval(interval); // Cleanup on component unmount
     }, [contentData.length]); // Add contentData.length as a dependency

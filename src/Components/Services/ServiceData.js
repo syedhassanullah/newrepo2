@@ -1,31 +1,31 @@
-// servicesData.js
 const ServiceData = [
   {
     id: 1,
     title: "helo",
-    description: "Build responsive and user-friendly websites.",
+    description: "Build responsive and user-friendly websites.Build responsive and user-friendly websites.Build responsive and user-friendly websites.Build responsive and user-friendly websites.",
     icon: "🌐",
-    url: "http://localhost:3000/",
+    url: "/services/digitizing",
   },
   {
     id: 2,
-    title: "helo ",
+    title: "helo",
     description: "Create mobile apps for iOS and Android.",
     icon: "📱",
-    url: "http://localhost:3000/",
+    url: "/services/patches",
   },
   {
     id: 3,
     title: "helo",
     description: "Improve your website's visibility on search engines.",
-    icon: "http://localhost:3000/",
+    icon: "🔍", // Fixed icon to be an emoji for search engine optimization
+    url: "/services/seo", // Added the missing URL here
   },
   {
     id: 4,
     title: "helo",
     description: "Promote your business online to a wider audience.",
     icon: "📈",
-    url: "http://localhost:3000/",
+    url: "/services/patches",
   },
   {
     id: 5,

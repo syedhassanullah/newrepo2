@@ -9,7 +9,7 @@ export const FadeUp = (delay) => {
             scale: 1,     // Scale to normal size (zoom in)
             transition: {
                 type: 'spring',   // Use spring for smoothness
-                duration: 1.5,     // Adjust duration for smooth zoom   // Add delay for when the animation starts
+                duration: 2.5,     // Adjust duration for smooth zoom   // Add delay for when the animation starts
                 stiffness: 300,    // Adjust stiffness for smooth bounce
                 damping: 25,       // Adjust damping for bounce effect
             }

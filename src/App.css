@@ -1,6 +1,6 @@
 :root {
   --primary-color: #0091d4;
-  --primary-colorbg: #006fa24d;
+  --primary-colorbg: #0061a24d;
   --secondary-color: #52cc47ec;
   --text-heading2: "Montserrat Alternates", serif;
   --text-heading: "Orbitron", serif;
@@ -516,8 +516,15 @@ body::-webkit-scrollbar-track {
   gap: 25px;
 }
 
+.sCard a{
+  text-decoration: none;
+  color: black;
+}
 
-.ServiceSecCard {
+.sCard a h2{
+  color: var(p);
+}
+.sCard a .ServiceSecCard {
   padding: 30px;
   backdrop-filter: var(--backdrop-filter);
   border-radius: var(--borderradiusCard);
@@ -540,7 +547,7 @@ body::-webkit-scrollbar-track {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 1.5;
+    line-height: 1.4;
     /* font-size: 13px; */
 }
 

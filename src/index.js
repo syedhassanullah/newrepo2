@@ -11,7 +11,7 @@ import Contact from './PageComponent/Contact.js';
 import Digitizing from './Components/Services/ServicesComponent/Digitizing.js';
 import Patches from './Components/Services/ServicesComponent/Patches.js';
 import Vector from './Components/Services/ServicesComponent/Vector.js';
-
+// import ScrollToTop from './ScrollZero.js';
 
 
 
@@ -19,16 +19,20 @@ import Vector from './Components/Services/ServicesComponent/Vector.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/portfolio' element={<Portfolio />} />
-      <Route path='/Contact' element={<Contact />} />
-      <Route path='/services/digitizing' element={<Digitizing/>}/>
-      <Route path='/services/patches' element={<Patches/>}/>
-      <Route path='/services/vector' element={<Vector/>}/>
+      
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/portfolio' element={<Portfolio />} />
+        <Route path='/Contact' element={<Contact />} />
+        <Route path='/services/digitizing' element={<Digitizing />} />
+        <Route path='/services/patches' element={<Patches />} />
+        <Route path='/services/vector' element={<Vector />} />
+
 
     </Routes>
+
   </BrowserRouter>
 );
 
