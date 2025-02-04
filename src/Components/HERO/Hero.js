@@ -1,75 +1,60 @@
-import { React, useState, useEffect } from 'react'
-import { Container } from 'react-bootstrap'
+import { React, useState, useEffect } from 'react';
+import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import MainButton from '../Buttons/MainButton';
-import { FadeUp } from '../../Varient/Varient2'
+import { FadeUp } from '../../Varient/Varient2';
 import digitizingImage from '../../images/images/adrien-olichon-X8o-P23flgI-unsplash.jpg';
 import patchesImage from '../../images/images/cimg.jpg';
 import vectorImage from '../../images/images/5073414.jpg';
-import './Hero.css'
-
+import './Hero.css';
 
 function Hero() {
+    // Create an array with objects containing both text and image for each state
+    const contentData = [
+        { text: 'DIGITIZING', image: digitizingImage },
+        { text: 'PATCHES', image: patchesImage },
+        { text: 'VECTOR', image: vectorImage }
+    ];
 
-const content= ['DIGITIZNG', 'PATCHES', 'VECTOR'];
-    const contentList = content; // List of dynamic content
-    const [currentContent, setCurrentContent] = useState(contentList[0]);
-    const [currentImage, setCurrentImage] = useState(digitizingImage);
-
-    // Function to switch content and images
+    const [currentIndex, setCurrentIndex] = useState(0);
     useEffect(() => {
         const interval = setInterval(() => {
-            const currentIndex = contentList.indexOf(currentContent);
-            const nextIndex = (currentIndex + 1) % contentList.length;
-            const nextContent = contentList[nextIndex];
-            setCurrentContent(nextContent);
-
-            if (nextContent === 'DIGITIZING') {
-                setCurrentImage(digitizingImage);
-            } else if (nextContent === 'PATCHES') {
-                setCurrentImage(patchesImage);
-            } else if (nextContent === 'VECTOR') {
-                setCurrentImage(vectorImage);
-            }
+            setCurrentIndex(prevIndex => (prevIndex + 1) % contentData.length);
         }, 3000); // Change every 3 seconds
+    
+        return () => clearInterval(interval); // Cleanup on component unmount
+    }, [contentData.length]); // Add contentData.length as a dependency
+    
 
-        return () => clearInterval(interval);
-    }, [currentContent]);
-
-
+    const { text: currentContent, image: currentImage } = contentData[currentIndex];
 
     return (
         <>
             <div className='hero'>
                 <Container>
-                    <div className='hero-comp ' >
-                        <div
-
-                           
-
-                            className='hero-text col-md-8' >
+                    <div className='hero-comp'>
+                        <div className='hero-text col-md-8'>
                             <h3>Byond Digitizing <br />Agency</h3>
                             <h1>We are working on </h1>
-                            {/* <span className='chngecontent'></span> */}
                             <div className='chngecontent'>
-                            <motion.h2
-                                key={currentContent}
-                                variants={FadeUp(1.3)}
-                                initial="hidden"
-                                whileInView="show"
-                                viewport={{ once: true, amount: 0.7 }}
-                                transition={{
-                                    type: 'spring',
-                                    stiffness: 300,
-                                    damping: 20,
-                                }}
-                            >
-                                {currentContent}
-                            </motion.h2>
+                                <motion.h2
+                                    key={currentContent}
+                                    variants={FadeUp(1.3)}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true, amount: 0.7 }}
+                                    transition={{
+                                        type: 'spring',
+                                        stiffness: 300,
+                                        damping: 20,
+                                    }}
+                                >
+                                    {currentContent}
+                                </motion.h2>
                             </div>
                             <MainButton />
                         </div>
-                        <div className='about-image-sec col-md-4 heroimg' md={6} sm={12} >
+                        <div className='about-image-sec col-md-4 heroimg' md={6} sm={12}>
                             <motion.img
                                 key={currentContent}
                                 variants={FadeUp(1.3)}
@@ -81,17 +66,18 @@ const content= ['DIGITIZNG', 'PATCHES', 'VECTOR'];
                                     stiffness: 300,
                                     damping: 20,
                                 }}
-                                src={currentImage} alt='HERO' className=' img-fluid' ></motion.img>
+                                src={currentImage} alt='HERO' className=' img-fluid'
+                            />
                         </div>
                     </div>
-
                 </Container>
             </div>
         </>
-    )
+    );
 }
 
-export default Hero
+export default Hero;
+
 
 
 // import React, { useState, useEffect } from 'react';
