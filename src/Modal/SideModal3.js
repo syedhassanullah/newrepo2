@@ -10,14 +10,14 @@ function SideModal3({ helo, onClose }) {
         <>
             <div>
                 <motion.div
-                    initial={{ x: '100%' }} 
+                    initial={{ x: '100%' }}
                     animate={{ x: helo ? '0%' : '100%' }}
                     transition={{ type: 'tween', duration: 0.5 }}
                     className='sidebarbak'
                 >
                     <motion.div
-                        initial={{ x: '100%' }} 
-                        animate={{ x: helo ? '0%' : '100%' }} 
+                        initial={{ x: '100%' }}
+                        animate={{ x: helo ? '0%' : '100%' }}
                         transition={{ type: 'spring', stiffness: 600, damping: 50 }}
                         className={`Sidebar ${helo ? 'ActiveSide' : ''}`}
                     >
@@ -30,10 +30,10 @@ function SideModal3({ helo, onClose }) {
                         <div className='sidebarin'>
                             <h1>Our Address</h1>
                             <h6>218 W Colorado Ave #104, Colorado Springs, CO 80903, United States</h6>
-                                    <h6>+1-719-900-4662</h6>
-                                    <h6>beyonddigitizing7@gmail.com</h6>
-                                    <h6>Working Hours: 10:00 - 18:00 GST</h6>
-                                    <div style={{paddingTop:'40px'}}><Icons /></div>
+                            <h6>+1-719-900-4662</h6>
+                            <h6>beyonddigitizing7@gmail.com</h6>
+                            <h6>Working Hours: 10:00 - 18:00 GST</h6>
+                            <div style={{ paddingTop: '40px' }}><Icons /></div>
                         </div>
                     </motion.div>
                 </motion.div>

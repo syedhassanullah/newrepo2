@@ -29,7 +29,7 @@
     justify-content: center;
     display: flex;
     box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.5);
-    border-radius: var(--borderradius1);
+    border-radius: 50px 0px 0px 50px;
     flex-direction: column;
     /* backdrop-filter: blur(40px); */
   }
