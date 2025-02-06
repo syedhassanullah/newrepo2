@@ -52,7 +52,7 @@ body::-webkit-scrollbar-track {
 .mainButton {
   background-color: black;
   border-radius: 10px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 17px;
   cursor: pointer;
   padding: 5px;
@@ -61,6 +61,7 @@ body::-webkit-scrollbar-track {
   text-align: center;
   margin-top: 50px;
   box-shadow: 0 0 30px 3px rgba(0, 132, 255, 0.397);
+  border: 2px solid var(--primary-color);
 }
 
 .buttonLink {
@@ -518,41 +519,41 @@ body::-webkit-scrollbar-track {
 
 .sCard a{
   text-decoration: none;
-  color: black;
 }
 
-.sCard a h2{
-  color: var(p);
-}
-.sCard a .ServiceSecCard {
-  padding: 30px;
+.sCard {
   backdrop-filter: var(--backdrop-filter);
   border-radius: var(--borderradiusCard);
   cursor: pointer;
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.137);
+  width: 19rem;
+  height: 15rem;
+}
+.sCard .ServiceSecCard{
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 19rem;
-  height: 15rem;
+  padding: 30px;
+  color: #000000;
 }
-.ServiceSecCard h2{
+.sCard .ServiceSecCard h1{
   color: var(--primary-color);
 }
 
-.ServiceSecCard p{
+.sCard .ServiceSecCard p{
   display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.4;
-    /* font-size: 13px; */
+
 }
 
-.ServiceSecCard:hover h2{
-  color: aliceblue;
+.ServiceSecCard:hover h1{
+  color: black;
 }
 
 .ServiceSecCard:hover{
@@ -560,7 +561,7 @@ body::-webkit-scrollbar-track {
 }
 /* For smaller screens (mobile-first) */
 @media (max-width: 600px) {
-  .ServiceSecCard {
+  .sCard {
     width: 48%;
   }
   .ServiceSecContainer{
@@ -582,7 +583,7 @@ body::-webkit-scrollbar-track {
 
 /* For medium screens (tablets, small laptops) */
 @media (min-width: 601px) and (max-width: 1024px) {
-  .ServiceSecCard {
+  .sCard {
     width: 45%; /* Two cards in a row */
   }
   .ant-image {
@@ -592,7 +593,7 @@ body::-webkit-scrollbar-track {
 
 /* For larger screens */
 @media (min-width: 1025px) {
-  .ServiceSecCard {
+  .sCard {
     width: 19rem; /* Default width for larger screens */
   }
   .ant-image {

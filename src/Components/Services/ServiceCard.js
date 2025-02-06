@@ -11,10 +11,8 @@ function ServiceCard({ title, description, icon, url }) {
   };
 
   const defaultColor = getPrimaryColorFromCSS();
-  console.log(url,"hello")
+  console.log(url, "hello")
   return (
-    <div className='sCard'>
-    <Link to={url} >
     <motion.div
       variants={FadeUp(0.3)}
       initial="hidden"
@@ -33,13 +31,17 @@ function ServiceCard({ title, description, icon, url }) {
         borderRadius: '35px',
       }}
       whileTap={{ scale: 1 }}
-      className='ServiceSecCard'
-    >
-      <h1 >{title}</h1>
-      <p>{description}</p>
+      className='sCard' >
+      <Link to={url} >
+        <motion.div
+
+          className='ServiceSecCard'
+        >
+          <h1 >{title}</h1>
+          <p>{description}</p>
+        </motion.div>
+      </Link>
     </motion.div>
-    </Link>
-    </div>
   );
 }
 

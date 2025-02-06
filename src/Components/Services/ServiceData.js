@@ -2,7 +2,7 @@ const ServiceData = [
   {
     id: 1,
     title: "helo",
-    description: "Build responsive and user-friendly websites.Build responsive and user-friendly websites.Build responsive and user-friendly websites.Build responsive and user-friendly websites.",
+    description: "Build responsive and user-friendly websites.",
     icon: "🌐",
     url: "/services/digitizing",
   },

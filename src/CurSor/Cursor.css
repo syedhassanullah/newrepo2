@@ -18,7 +18,7 @@ body{
     border-radius: 50%;
     overflow-x: hidden;
     background-color: aliceblue;
-    display: block;
+    display: none;
   }
   @media only screen and (max-width: 700px) {
     .custom-cursor{

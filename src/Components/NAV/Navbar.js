@@ -12,7 +12,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 180) {
+    if (window.scrollY > 50) {
       setScrolled(true); // Change background color when scrolled
     } else {
       setScrolled(false); // Set to transparent when at the top
