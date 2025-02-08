@@ -149,12 +149,11 @@
     .hero-comp .hero-text h3 {
         font-size: 60px;
         color: var(--primary-color);
-        font-family: var(--text-heading2);
     }
 
     .hero-comp .hero-text h1 {
         font-size: 30px;
-        font-family: var(--text-heading2);
+        
 
     }
 

@@ -69,13 +69,14 @@ export default function MainLayout({ children }) {
                             position: 'fixed',
                             left: '20px', // Adjust the distance from the left side
                             bottom: '20px', // Adjust the distance from the bottom
-                            zIndex: 10000
+                            zIndex: 10000,
+                            cursor:'pointer'
                         }}
                     >
                         <img
                             src={Whatsapp}
                             alt='WhatsApp'
-                            style={{ width: '4rem' }}
+                            style={{ width: '4rem' , cursor:'pointer'}}
                         />
                     </a>
 

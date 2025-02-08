@@ -23,7 +23,7 @@ function Footer() {
                                     <p>We specialize in turning logos and images into precise, high-quality embroidery designs.
                                         Our expert team ensures every design is crafted with care and precision.</p>
                                         <a href={'https://paypal.me/beyonddigitizing'} target="_blank" rel="noopener noreferrer" style={{textAlign:'center'}}>
-                                    <img src={Paypal} alt='helo' style={{ width: '15rem', border: '3px solid white' }} />
+                                    <img src={Paypal} alt='helo' style={{ width: '15rem', border: '3px solid white',cursor:'pointer' }} />
                                 </a>
                                 {/* <a href={'https://paypal.me/beyonddigitizing'} target="_blank" rel="noopener noreferrer">
                                         <img src={Whatsapp} alt='helo' style={{ width: '12rem' }} />

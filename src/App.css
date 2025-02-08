@@ -527,9 +527,6 @@ body::-webkit-scrollbar-track {
   cursor: pointer;
 }
 
-.process-card:hover{
-  background-color: var(--primary-colorbg);
-}
 
 .process-csrd-logo{
   /* background-color: red; */
@@ -765,7 +762,6 @@ body::-webkit-scrollbar-track {
 
 
   .component-heading {
-    font-family: var(--text-heading2);
     padding-bottom: 10px;
   }
   

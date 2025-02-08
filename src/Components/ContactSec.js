@@ -2,35 +2,53 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import ContactForm from './ContactForm'
 import Cimg from '../images/MainLogo/BD BLACK LOGO VERSION PNG.png'
-
+import { motion } from 'framer-motion'
+import { FadeIn } from '../Varient/Varient'
 
 function ContactSec() {
 
   return (
     <>
-      
-        <Container>
+
+      <Container>
         <div className='ContactForm section-padding'>
-        
+
           <Row >
             <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
               <Col md={6} >
-              <div className='component-heading'>.....
-                  <h1>REACH US</h1>
+                <motion.div 
+                 variants={FadeIn('left', 0.2)}
+                 initial="hidden"
+                 whileInView={'show'}
+                 viewport={{
+                   once: false, amount: 0.3
+                 }}
+                 transition={{ type: 'tween' }}
+                 className='component-heading'>......
+                  <h1
+                   
+                  >CONTACT US</h1>
                   {/* <h1>Bayond Digitizing</h1> */}
-                </div>
-              <ContactForm />
+                </motion.div>
+                <ContactForm />
               </Col>
               <Col md={6}>
-                <div className='cformimg'>
+                <motion.div className='cformimg'
+                 variants={FadeIn('right', 0.2)}
+                 initial="hidden"
+                 whileInView={'show'}
+                 viewport={{
+                   once: false, amount: 0.3
+                 }}
+                 transition={{ type: 'tween' }}>
                   <img src={Cimg} alt='has' />
-                </div>
+                </motion.div>
               </Col>
             </div>
           </Row>
-          </div>
-        </Container>
-      
+        </div>
+      </Container>
+
     </>
   )
 }
