@@ -1,0 +1,46 @@
+.client-reviews {
+  
+  text-align: center;
+  background-color: var(--primary-colorbg);
+  border-radius: var(--borderradius);
+  margin: 20px;
+  overflow: hidden;
+}
+
+.review-slide {
+  padding: 20px;
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.reviewer-name {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.review-rating {
+  font-size: 1em;
+  color: gold;
+  margin-top: 5px;
+}
+
+.slick-prev,
+.slick-next {
+  color: #000;
+  /* Arrow color */
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-next {
+  right: -40px;
+}

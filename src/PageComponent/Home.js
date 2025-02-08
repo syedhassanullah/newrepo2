@@ -8,6 +8,7 @@ import {Service} from '../Components/Services/Service'
 import FlagSlider from '../Components/Slider/FlagSlider';
 import LogoSlider from '../Components/Slider/LogoSlider'
 import Process from '../Components/Process';
+import ClientReview from '../Components/ClientReview/ClientReview';
 
 
 
@@ -26,6 +27,7 @@ function BasicExample() {
         <AboutSec />
         <ContactSec />
         <Process/>
+        <ClientReview/>
         <FlagSlider/>
         {/* <Sec1 /> */}
       </MainLayout>

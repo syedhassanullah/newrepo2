@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import ContactForm from './ContactForm'
-import Cimg from '../images/MainLogo/BD BLACK LOGO VERSION PNG.png'
+import Cimg from '../images/MainLogo/Untitled-2.png'
 import { motion } from 'framer-motion'
 import { FadeIn } from '../Varient/Varient'
 

@@ -459,7 +459,6 @@ body::-webkit-scrollbar-track {
   border-radius: var(--borderradius);
   margin: 20px;
   overflow: hidden;
-  
 }
 
 .about-text {

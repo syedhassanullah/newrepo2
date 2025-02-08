@@ -15,6 +15,9 @@ import Apparel from './Components/Services/ServicesComponent/ApparelItems.js';
 import HatsAndBeanies from './Components/Services/ServicesComponent/HatsAndBeanies.js';
 import PromotionalProducts from './Components/Services/ServicesComponent/PromotionalProducts.js';
 import NotFound from './Components/NotFound.js';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 // import ScrollToTop from './ScrollZero.js';
 
 
@@ -30,6 +33,7 @@ root.render(
         <Route path='/about' element={<About />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/Contact' element={<Contact />} />
+        <Route path='/services' element={<Digitizing />} />
         <Route path='/services/digitizing' element={<Digitizing />} />
         <Route path='/services/patches' element={<Patches />} />
         <Route path='/services/vector' element={<Vector />} />
