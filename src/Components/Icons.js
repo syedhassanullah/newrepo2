@@ -1,14 +1,17 @@
 import React from 'react';
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";  // Correct import for FaFacebookSquare and FaInstagramSquare
-import { FaWhatsappSquare, FaTwitterSquare } from "react-icons/fa";  // Correct import for FaWhatsappSquare and FaTwitterSquare
+import { FaWhatsappSquare } from "react-icons/fa";  // Correct import for FaWhatsappSquare and FaTwitterSquare
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { IoLogoLinkedin } from "react-icons/io5";
 import { motion } from 'framer-motion';
 
 function Icons() {
     const icons = [
-        { component: <FaFacebookSquare />, id: 'facebook', url: 'https://www.facebook.com' },
-        { component: <FaWhatsappSquare />, id: 'whatsapp', url: 'https://www.whatsapp.com' },  
-        { component: <FaInstagramSquare />, id: 'instagram', url: 'https://www.instagram.com' },
-        { component: <FaTwitterSquare />, id: 'twitter', url: 'https://www.twitter.com' }  
+        { component: <FaFacebookSquare />, id: 'facebook', url: 'https://www.facebook.com/beyonddigitizingofficial' },
+        { component: <FaWhatsappSquare />, id: 'whatsapp', url: 'https://wa.me/03173347824' },  
+        { component: <FaInstagramSquare />, id: 'instagram', url: 'https://www.instagram.com/william_beyond/#' },
+        { component: <FaSquareXTwitter />, id: 'twitter', url: 'http://x.com/customsbybd' }, 
+        { component: <IoLogoLinkedin />, id: 'twitter', url: 'https://www.linkedin.com/in/beyonddigitizing' }  
     ];
 
     return (

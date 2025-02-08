@@ -11,6 +11,10 @@ import Contact from './PageComponent/Contact.js';
 import Digitizing from './Components/Services/ServicesComponent/Digitizing.js';
 import Patches from './Components/Services/ServicesComponent/Patches.js';
 import Vector from './Components/Services/ServicesComponent/Vector.js';
+import Apparel from './Components/Services/ServicesComponent/ApparelItems.js';
+import HatsAndBeanies from './Components/Services/ServicesComponent/HatsAndBeanies.js';
+import PromotionalProducts from './Components/Services/ServicesComponent/PromotionalProducts.js';
+import NotFound from './Components/NotFound.js';
 // import ScrollToTop from './ScrollZero.js';
 
 
@@ -29,6 +33,10 @@ root.render(
         <Route path='/services/digitizing' element={<Digitizing />} />
         <Route path='/services/patches' element={<Patches />} />
         <Route path='/services/vector' element={<Vector />} />
+        <Route path='/services/apparel-item' element={<Apparel />} />
+        <Route path='/services/hats-beanies' element={<HatsAndBeanies />} />
+        <Route path='/services/promotional' element={<PromotionalProducts />} />
+        <Route path='*' element={<NotFound />} />
 
 
     </Routes>

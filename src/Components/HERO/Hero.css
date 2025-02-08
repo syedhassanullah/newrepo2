@@ -35,7 +35,8 @@
     font-size: 65px;
     font-weight: 800;
     color: var(--primary-color);
-    font-family: var(--text-heading2);
+    /* font-family: var(--text-heading2); */
+    font-family: var(--text-heading3);
 }
 
 .hero-comp .hero-text h1 {

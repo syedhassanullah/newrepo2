@@ -33,21 +33,21 @@ function Footer() {
                         </Col>
                         <Col md={5}>
                             <Row>
-                                <Col md={5}>
+                                <Col md={6}>
                                     <div className='footer-QuickLinks'>
                                         <h3>Services</h3>
                                         <div className='footerLinks'>
                                             <MotionLink to={'/services/digitizing'}>Digitizing</MotionLink>
-                                            <MotionLink to={'/services/patches'}>Patche</MotionLink>
                                             <MotionLink to={'/services/vector'}>Vector</MotionLink>
-                                            <MotionLink to={'/services/hoodie'}>Hoodies</MotionLink>
-                                            <MotionLink to={'/services'}>Services</MotionLink>
-                                            <MotionLink to={'/'}>Home</MotionLink>
+                                            <MotionLink to={'/services/patches'}>Custom Patches</MotionLink>
+                                            <MotionLink to={'/services/promotional'}>Promotional Products</MotionLink>
+                                            <MotionLink to={'/services/apparel-item'}>Apparel Items</MotionLink>
+                                            <MotionLink to={'/services/hats-beanies'}>Hats & Beanies</MotionLink>
 
                                         </div>
                                     </div>
                                 </Col>
-                                <Col md={7}>
+                                <Col md={6}>
                                     <div className='footer-QuickLinks' >
                                         <h3>Quick Links</h3>
                                         <div className='footerLinks' >
@@ -55,7 +55,7 @@ function Footer() {
                                             <MotionLink to={'/about'}>About</MotionLink>
                                             <MotionLink to={'/portfolio'}>Portfolio</MotionLink>
                                             <MotionLink to={'/contact'}>Contact</MotionLink>
-                                            <MotionLink to={'/services'}>Services</MotionLink>
+                                            <MotionLink to={'/services/digitizing'}>Services</MotionLink>
 
                                         </div>
                                     </div>

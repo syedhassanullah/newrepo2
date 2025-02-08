@@ -11,13 +11,23 @@ import flg7 from '../../images/sliderIMG/flgs/flg7.png';
 import flg8 from '../../images/sliderIMG/flgs/flg8.png';
 import flg9 from '../../images/sliderIMG/flgs/flg9.png';
 import { Container } from 'react-bootstrap';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../Varient/Varient'
 
 function FlagSlider() {
     return (
         <div className='Slideee'>
         <Container>
             <div className='marqueeSlide1' >
-            <h1>Payment Methods</h1>
+            <motion.h1
+            variants={FadeIn('up', 0.2)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{
+                once: false, amount: 0.3
+            }}
+            transition={{ type: 'tween' }}
+            >Payment Methods</motion.h1>
             <Marquee pauseOnHover={true} speed={50} gradient={true} gradientWidth={50} >
 
                 <div className='marqueeSlide'>

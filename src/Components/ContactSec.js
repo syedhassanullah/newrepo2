@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import ContactForm from './ContactForm'
-import Cimg from '../images/MainLogo/beyondDigitizing.png'
+import Cimg from '../images/MainLogo/BD BLACK LOGO VERSION PNG.png'
 
 
 function ContactSec() {
@@ -16,7 +16,7 @@ function ContactSec() {
             <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
               <Col md={6} >
               <div className='component-heading'>.....
-                  <h2>REACH US</h2>
+                  <h1>REACH US</h1>
                   {/* <h1>Bayond Digitizing</h1> */}
                 </div>
               <ContactForm />

@@ -9,13 +9,23 @@ import soft5 from '../../images/sliderIMG/soft/soft5.png.png'
 import soft6 from '../../images/sliderIMG/soft/soft6.png.png'
 import soft7 from '../../images/sliderIMG/soft/soft7.png.png'
 import { Container } from 'react-bootstrap';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../Varient/Varient'
 
 function FlagSlider() {
     return (
         <div >
         <Container>
             <div className='marqueeSlide1' >
-            <h1>Software We Use</h1>
+            <motion.h1
+                        variants={FadeIn('up', 0.2)}
+                        initial="hidden"
+                        whileInView={'show'}
+                        viewport={{
+                            once: false, amount: 0.3
+                        }}
+                        transition={{ type: 'tween' }}
+                        >Software We Use</motion.h1>
             <Marquee pauseOnHover={true} speed={50} gradient={true} gradientWidth={70} direction={"right"}>
 
                 <div className='marqueeSlide' style={{paddingTop:'23px'}}>
