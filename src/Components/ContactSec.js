@@ -9,7 +9,7 @@ function ContactSec() {
 
   return (
     <>
-
+    <div className='cccc'>
       <Container>
         <div className='ContactForm section-padding'>
 
@@ -48,7 +48,7 @@ function ContactSec() {
           </Row>
         </div>
       </Container>
-
+      </div>
     </>
   )
 }
