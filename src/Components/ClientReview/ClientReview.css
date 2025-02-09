@@ -1,6 +1,5 @@
 .client-reviews {
-  
-  text-align: center;
+
   background-color: var(--primary-colorbg);
   border-radius: var(--borderradius);
   margin: 20px;
@@ -9,11 +8,22 @@
 
 .review-slide {
   padding: 20px;
-  
+  background-color: aliceblue;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  
+  align-items: center;
+  gap: 20px;
 }
 
+.client-img-bx{
+  padding: 20px;
+}
+
+.client-text{
+  background-color: antiquewhite;
+  padding: 0px 50px;
+}
 .review-text {
   font-size: 1.2em;
   color: #555;

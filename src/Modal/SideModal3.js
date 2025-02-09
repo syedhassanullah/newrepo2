@@ -4,7 +4,7 @@ import './SideModal.css';
 import { motion } from 'framer-motion';
 import { ImArrowRight2 } from "react-icons/im";
 import Icons from '../Components/Icons';
-import logo from '../images/MainLogo/BD WHITE LOGO VERSION PNG.png'
+import logo from '../images/MainLogo/BD WHITE LOGO VERSION PNG2.png'
 import { Link } from 'react-router-dom';
 import { AiOutlineDown } from 'react-icons/ai';
 
