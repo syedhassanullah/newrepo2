@@ -4,23 +4,44 @@ import Slider from 'react-slick';
 import './ClientReview.css'
 import { motion } from 'framer-motion';
 import { FadeIn } from '../../Varient/Varient';
-import img1 from '../../images/MainLogo/BD Black LOGO VERSION PNG1.png'
+import img1 from '../../images/ClientReview/client1.jpg'
+import img2 from '../../images/ClientReview/client2.jpeg'
+import img3 from '../../images/ClientReview/client4.jpg'
+import img4 from '../../images/ClientReview/client3.jpg'
+import img5 from '../../images/ClientReview/client6.jpg'
+
+
 // Sample data for the client reviews
 const reviews = [
     {
         name: "John Doe",
-        review: "Great service! Highly recommend this team. They did an amazing job.",
-        rating: "⭐⭐⭐⭐⭐",
+        review: "Wonderful work, the results exceeded my expectations.",
+        post: "Manager",
+        img: img1
     },
     {
         name: "Jane Smith",
-        review: "The best experience I’ve had! Professional and efficient.",
-        rating: "⭐⭐⭐⭐⭐",
+        review: "Wonderful work, the results exceeded my expectations.",
+        post: "Team Lead",
+        img: img2
     },
     {
         name: "James Wilson",
         review: "Wonderful work, the results exceeded my expectations.",
-        rating: "⭐⭐⭐⭐⭐",
+        post: "Manager",
+        img: img3
+    },
+    {
+        name: "James Wilson",
+        review: "Wonderful work, the results exceeded my expectations.",
+        post: "CEO",
+        img: img4
+    },
+    {
+        name: "James Wilson",
+        review: "Wonderful work, the results exceeded my expectations.",
+        post: "Manager",
+        img: img5
     },
     // Add more reviews as needed
 ];
@@ -32,9 +53,9 @@ const ClientReview = () => {
         speed: 500, // Transition speed
         slidesToShow: 1, // Show one review at a time
         slidesToScroll: 1, // Scroll one review at a time
-        // arrows: true, // Show next/previous arrows
-        // autoplay: true, // Enable autoplay
-        // autoplaySpeed: 2000, // Time between slides in milliseconds (3 seconds)
+        arrows: true, // Show next/previous arrows
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 2500, // Time between slides in milliseconds (3 seconds)
     };
 
 
@@ -68,17 +89,16 @@ const ClientReview = () => {
                                     <Col md={5}>
                                         <div className='client-img'>
                                             <div className='client-img-bx'>
-                                                <img src={img1} alt='Client' className='img-fluid' />
+                                                <img src={review.img} alt='Client' className='img-fluid' />
                                             </div>
                                         </div>
                                     </Col>
                                     <Col md={7}>
                                         <div className='client-text'>
-                                            <p className="review-text">"{review.review}"</p>
+                                            <p className="review-text"><span>"</span>{review.review}<span>"</span></p>
                                             <br/>
-                                            <br/>
-                                            <p className="reviewer-name">- {review.name}</p>
-                                            <p className="review-rating">{review.rating}</p>
+                                            <p className="reviewer-name">{review.name}</p>
+                                            <p className="review-rating">{review.post}</p>
                                         </div>
                                     </Col>
                                 </Row>

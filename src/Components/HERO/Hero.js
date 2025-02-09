@@ -13,7 +13,10 @@ function Hero() {
     const contentData = [
         { text: 'DIGITIZING', image: digitizingImage },
         { text: 'PATCHES', image: patchesImage },
-        { text: 'VECTOR', image: vectorImage }
+        { text: 'VECTOR', image: vectorImage },
+        { text: 'Apperal Items', image: vectorImage },
+        { text: 'Hats & Beanies', image: vectorImage },
+        { text: 'Promotional Products', image: vectorImage }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
