@@ -33,10 +33,11 @@
 
 .hero-comp .hero-text h3 {
     font-size: 65px;
-    font-weight: 800;
+    font-weight: 900;
     color: var(--primary-color);
     /* font-family: var(--text-heading2); */
     font-family: var(--text-heading3);
+    text-transform: uppercase;
 }
 
 .hero-comp .hero-text h1 {
@@ -46,14 +47,14 @@
 }
 
 .hero-comp .hero-text h2 {
-    font-size: 50px;
+    font-size: 60px;
     color: rgb(0, 195, 255);
-    font-family: var(--text-heading2);
+    font-family: var(--text-heading3);
     text-transform: uppercase;
     font-weight: 900;
 }
 
-.hero-comp .hero-text span {
+/* .hero-comp .hero-text span {
     border-radius: 10px;
     font-family: var(--text-heading2);
     color: var(--primary-color);
@@ -62,7 +63,7 @@
         -3px -3px 5px rgba(0, 0, 0, 0.6),
         3px -3px 5px rgba(0, 0, 0, 0.6),
         -3px 3px 5px rgba(0, 0, 0, 0.6);
-}
+} */
 
 
 
@@ -134,8 +135,15 @@
 
     .hero-comp .hero-text h3 {
         font-size: 50px;
+        text-transform: none;
     }
-
+    .hero-comp .hero-text h2 {
+        font-size: 30px;
+        color: rgb(0, 195, 255);
+        font-family: var(--text-heading3);
+        text-transform: uppercase;
+        font-weight: 900;
+    }
 
 }
 
@@ -149,12 +157,16 @@
     .hero-comp .hero-text h3 {
         font-size: 60px;
         color: var(--primary-color);
+        padding-top: 10px;
     }
 
     .hero-comp .hero-text h1 {
         font-size: 30px;
         
 
+    }
+    .hero-comp .hero-text h2{
+        height: 50px;
     }
 
     /* .chngecontent::after {

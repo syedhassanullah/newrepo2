@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'MyCustomFont';
-  src: url('./Fonts/Valentine Girls.otf') format('opentype'); /* You can use 'opentype' for .otf files */
+  src: url('./Fonts/Batangas\ Bold\ 700.otf') format('opentype'); /* You can use 'opentype' for .otf files */
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +12,8 @@
   --primary-colorbg: #0061a24d;
   --secondary-color: #52cc47ec;
   --text-heading2: "Montserrat Alternates", serif;
-  --text-heading3: "Montserrat Alternates", serif;
+  /* --text-heading3: "Montserrat Alternates", serif; */
+  --text-heading3: 'MyCustomFont', serif;
   --text-heading: "Orbitron", serif;
   --transaction1: right 0.3s ease;
   --transaction2: 0.3s;
@@ -230,6 +231,7 @@ body::-webkit-scrollbar-track {
   overflow: hidden;
   border-radius: 100px 0px 0px 0px;
 }
+
 .footer-QuickLinks h6 a{
   text-decoration: none;
   list-style: none;
@@ -248,7 +250,8 @@ body::-webkit-scrollbar-track {
 
 .footer .itemsCol h3{
   color: white;
-  font-family: var(--text-heading2);
+  font-weight: 600;
+  font-family: var(--text-heading3);
 }
 .footer-QuickLinks{
   padding-left: 30px;
@@ -266,6 +269,7 @@ body::-webkit-scrollbar-track {
 .footer-QuickLinks .AddressLinks h6{
   color: white;
   font-family: var(--text-heading2);
+  
 }
 .footer-QuickLinks h6 a:hover{
   color: var(--primary-color);
@@ -281,6 +285,8 @@ body::-webkit-scrollbar-track {
 
 .itemsCol .About-footer h1{
   color: var(--primary-color);
+  font-family: var(--text-heading3);
+  font-weight: 700;
 }
 
 /* ContactForm */
@@ -432,7 +438,7 @@ body::-webkit-scrollbar-track {
   background-position: center;
   color: aliceblue;
   padding: 180px 0px;
-  font-family: var(--text-heading2);
+  font-family: var(--text-heading3);
   border-radius: var(--borderradiushero);
   /* margin: 0px 20px; */
   text-align: center;
@@ -444,6 +450,7 @@ body::-webkit-scrollbar-track {
   color: var(--primary-color);
   font-size: 50px;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 
@@ -754,6 +761,18 @@ body::-webkit-scrollbar-track {
     position: relative;
     z-index: 1000000;
   }
+  .footer-QuickLinks{
+    margin-bottom: 40px;
+    padding-left: 0px;
+
+  }
+  .About-footer{
+    margin-bottom: 40px;
+  }
+  .footerLinks{
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+  }
   
 
 }
@@ -809,8 +828,7 @@ body::-webkit-scrollbar-track {
     padding: 50px 25px;
   }
 
-  
-  
+ 
 
 }
 

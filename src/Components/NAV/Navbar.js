@@ -97,7 +97,7 @@ const Navbar = () => {
                 </div>
                 <Link className='main-menu' to={'/portfolio'}>Portfolio</Link>
                 <Link className='main-menu' to={'/Contact'}>Contact</Link> */}
-                 <NavLink
+                  <NavLink
                   className="main-menu"
                   exact
                   to={'/'}
@@ -122,7 +122,7 @@ const Navbar = () => {
                     }}
                     activeClassName="active"
                   >
-                    Services <AiOutlineDown />
+                  Services <AiOutlineDown />
                   </NavLink>
                   <div className="sub-menu">
                     <NavLink

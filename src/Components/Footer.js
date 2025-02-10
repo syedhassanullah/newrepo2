@@ -17,15 +17,15 @@ function Footer() {
                         <Col md={4}>
                             <div className='About-footer'>
                                 <h1>About Beyond Digitizing</h1>
-                                <div className='footerLinks'>
+                                <div >
                                     {/* <p>We specialize in transforming your logos and images into high-quality embroidery designs. Our expert team ensures precision in every stitch, delivering flawless results that bring your vision to life. Trust us to make your brand stand out with exceptional embroidery.
                                     </p> */}
                                     <p>We specialize in turning logos and images into precise, high-quality embroidery designs.
                                         Our expert team ensures every design is crafted with care and precision.</p>
-                                        <a href={'https://paypal.me/beyonddigitizing'} target="_blank" rel="noopener noreferrer" style={{textAlign:'center'}}>
-                                    <img src={Paypal} alt='helo' style={{ width: '15rem', border: '3px solid white',cursor:'pointer' }} />
-                                </a>
-                                {/* <a href={'https://paypal.me/beyonddigitizing'} target="_blank" rel="noopener noreferrer">
+                                    <a href={'https://paypal.me/beyonddigitizing'} target="_blank" rel="noopener noreferrer" style={{ textAlign: 'center' }}>
+                                        <img src={Paypal} alt='helo' style={{ width: '15rem', border: '3px solid white', cursor: 'pointer' }} />
+                                    </a>
+                                    {/* <a href={'https://paypal.me/beyonddigitizing'} target="_blank" rel="noopener noreferrer">
                                         <img src={Whatsapp} alt='helo' style={{ width: '12rem' }} />
                                     </a> */}
                                 </div>
@@ -60,7 +60,7 @@ function Footer() {
                                         </div>
                                     </div>
                                 </Col>
-                                
+
                             </Row>
                         </Col>
                         <Col md={3} className='footer-QuickLinks'>

@@ -33,8 +33,22 @@
     flex-direction: column;
     /* backdrop-filter: blur(40px); */
   }
-  .sidebarin h6{
-    padding-left: 20px;
+  .sidebarin .Sidebarcontent p{
+    /* padding-left: 20px; */
+    /* font-size: 12px; */
+    font-family: var(--text-heading2);
+  }
+  .sidebarin .Sidebarcontent h5{
+    /* padding-left: 20px; */
+    /* font-size: 12px; */
+    font-family: var(--text-heading2);
+  }
+  .sidebarin .Sidebarcontent h2 {
+    color: var(--primary-color);
+  }
+  .sidebarin .Sidebarcontent h1{
+    font-family: var(--text-heading3);
+    color: var(--primary-color);
   }
   .close-btn {
     padding: 12px;
@@ -56,7 +70,10 @@
       cursor: pointer;
       display: none;
     }
+    .sidebarin .Sidebarcontent p{
+      font-size: 12px;
   }
+}
   
   
   .sidebarbak {
@@ -85,28 +102,32 @@
 
 
   /* Basic styling */
+  .side-navigation{
+    display: none;
+  }
 .navigation-links {
   display: flex;
   flex-direction: column;
   font-family: 'Arial', sans-serif;
-  padding: 20px;
-  background-color: #f8f8f8;
+  /* background-color: var(--primary-color); */
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);  */
+  margin-bottom: 10px;
 }
 
 .menu-item {
   text-decoration: none;
-  color: #333;
-  padding: 12px 16px;
+  color: #ffffff;
+  padding: 8px 16px;
   font-size: 18px;
   font-weight: 500;
-  border: 1px solid transparent;
   border-radius: 4px;
   transition: all 0.3s ease;
+  font-family: var(--text-heading2);
+  font-weight: 600;
 }
 
 .menu-item:hover {
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
 }
 
 /* Services dropdown styles */
@@ -127,11 +148,13 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #fff;
+  background-color: var(--primary-color);
   width: 100%;
-  border: 1px solid #ddd;
   border-top: none;
-  border-radius: 4px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3); 
+
 }
 
 .submenu.visible {
@@ -141,20 +164,24 @@
 
 .submenu-item {
   text-decoration: none;
-  color: #333;
-  padding: 12px 16px;
+  color: aliceblue;
+  font-family: var(--text-heading2);
+  padding: 8px 16px;
   display: block;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   transition: background-color 0.3s ease;
 }
 
 .submenu-item:hover {
-  background-color: #f4f4f4;
+  background-color: #000000;
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
+  .side-navigation{
+    display: block;
+  }
   .menu-item {
     font-size: 16px;
   }
