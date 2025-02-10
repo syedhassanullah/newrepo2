@@ -7,6 +7,7 @@ import LogoSlider from '../Components/Slider/LogoSlider'
 import { motion } from 'framer-motion'
 import { FadeIn } from '../Varient/Varient'
 import Process from '../Components/Process';
+import ClientReview from '../Components/ClientReview/ClientReview'
 export default function About() {
   return (
     <MainLayout>
@@ -26,6 +27,7 @@ export default function About() {
       <AboutSec />
       <Process/>
       <ContactSec />
+      <ClientReview/>
       <LogoSlider />
     </MainLayout>
   )

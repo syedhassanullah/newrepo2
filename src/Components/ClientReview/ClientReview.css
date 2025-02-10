@@ -1,7 +1,8 @@
 .client-reviews {
 
-  /* background-color: var(--primary-colorbg); */
+  background-color: rgba(0, 0, 0, 0.027);
   border-radius: var(--borderradius);
+  backdrop-filter: var(--backdrop-filter);
   margin: 20px;
   overflow: hidden;
 }
