@@ -1,0 +1,32 @@
+
+
+.backcount{
+    background-color: rgba(0, 0, 0, 0.027);
+    border-radius: var(--borderradius);
+    backdrop-filter: var(--backdrop-filter);
+    margin-bottom: 20px;
+}
+
+.counterBox{
+    padding: 100px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.backcount .count{
+    color: black;
+    font-family: var(--text-heading2);
+    width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+
+.backcount .count h1{
+    font-weight: 800;
+}

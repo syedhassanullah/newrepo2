@@ -1,10 +1,10 @@
 .client-reviews {
 
-  background-color: rgba(0, 0, 0, 0.027);
+  background-color: var(--primary-colorbg);
   border-radius: var(--borderradius);
-  backdrop-filter: var(--backdrop-filter);
+  /* backdrop-filter: var(--backdrop-filter); */
   margin: 20px;
-  overflow: hidden;
+    overflow: hidden; 
 }
 
 .review-slide {
@@ -26,7 +26,7 @@
 }
 .client-img-bx img{
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3); 
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 .client-text{
   /* background-color: antiquewhite; */
@@ -68,4 +68,12 @@
 
 .slick-next {
   right: -40px;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .client-reviews {
+    margin: 20px;
+  }
+  
 }

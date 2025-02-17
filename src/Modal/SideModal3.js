@@ -10,6 +10,7 @@ import { AiOutlineDown } from 'react-icons/ai';
 import { ImLocation } from "react-icons/im";
 import { MdPermPhoneMsg } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
+import { useEffect } from 'react';
 function SideModal3({ helo, onClose }) {
 
 
@@ -18,6 +19,24 @@ function SideModal3({ helo, onClose }) {
     const toggleSubMenu = () => {
         setIsSubMenuVisible(!isSubMenuVisible);
     }
+
+    useEffect(() => {
+        if (helo) {
+          // When the sidebar is open, add the "sidebar-open" class to the body
+          document.body.classList.add('sidebar-open');
+        } else {
+          // When the sidebar is closed, remove the "sidebar-open" class from the body
+          document.body.classList.remove('sidebar-open');
+        }
+    
+        // Clean up the class on component unmount or when sidebar is closed
+        return () => {
+          document.body.classList.remove('sidebar-open');
+        };
+      }, [helo]);  // Dependency array ensures this effect runs when `helo` changes
+
+      
+
     return (
         <>
             <div>

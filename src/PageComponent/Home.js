@@ -9,6 +9,7 @@ import FlagSlider from '../Components/Slider/FlagSlider';
 import LogoSlider from '../Components/Slider/LogoSlider'
 
 import ClientReview from '../Components/ClientReview/ClientReview';
+import Counter from '../Components/Counter/Counter';
 
 
 
@@ -24,6 +25,7 @@ function BasicExample() {
         {/* <NEW/> */}
         <Service/>
         <LogoSlider/>
+        <Counter/>
         <AboutSec />
         <ContactSec />
         <ClientReview/>
