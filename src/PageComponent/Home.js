@@ -9,8 +9,8 @@ import FlagSlider from '../Components/Slider/FlagSlider';
 import LogoSlider from '../Components/Slider/LogoSlider'
 
 import ClientReview from '../Components/ClientReview/ClientReview';
-import Counter from '../Components/Counter/Counter';
-import CountrySlider from '../Components/Slider/CountrySlider';
+// import Counter from '../Components/Counter/Counter';
+// import CountrySlider from '../Components/Slider/CountrySlider';
 import Process from '../Components/Process';
 
 

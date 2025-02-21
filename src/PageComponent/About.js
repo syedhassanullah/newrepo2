@@ -6,7 +6,6 @@ import ContactSec from '../Components/ContactSec'
 import LogoSlider from '../Components/Slider/LogoSlider'
 import { motion } from 'framer-motion'
 import { FadeIn } from '../Varient/Varient'
-import Process from '../Components/Process';
 import ClientReview from '../Components/ClientReview/ClientReview'
 import Counter from '../Components/Counter/Counter'
 import CountrySlider from '../Components/Slider/CountrySlider'
