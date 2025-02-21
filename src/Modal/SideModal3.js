@@ -11,6 +11,10 @@ import { ImLocation } from "react-icons/im";
 import { MdPermPhoneMsg } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Dropdown, Space } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
+
 function SideModal3({ helo, onClose }) {
 
 
@@ -22,20 +26,97 @@ function SideModal3({ helo, onClose }) {
 
     useEffect(() => {
         if (helo) {
-          // When the sidebar is open, add the "sidebar-open" class to the body
-          document.body.classList.add('sidebar-open');
+            // When the sidebar is open, add the "sidebar-open" class to the body
+            document.body.classList.add('sidebar-open');
         } else {
-          // When the sidebar is closed, remove the "sidebar-open" class from the body
-          document.body.classList.remove('sidebar-open');
+            // When the sidebar is closed, remove the "sidebar-open" class from the body
+            document.body.classList.remove('sidebar-open');
         }
-    
+
         // Clean up the class on component unmount or when sidebar is closed
         return () => {
-          document.body.classList.remove('sidebar-open');
+            document.body.classList.remove('sidebar-open');
         };
-      }, [helo]);  // Dependency array ensures this effect runs when `helo` changes
+    }, [helo]);  // Dependency array ensures this effect runs when `helo` changes
 
-      
+    const items = [
+        {
+            label: (
+                <NavLink
+                    to="/services/digitizing"
+                    activeClassName="active"
+                    className="main-menu"
+                >
+                    Digitizing
+                </NavLink>
+            ),
+            key: '0',
+
+        },
+        {
+            label: (
+                <NavLink
+                    to="/services/patches"
+                    activeClassName="active"
+                    className="main-menu"
+                >
+                    Patches
+                </NavLink>
+            ),
+            key: '1',
+        },
+        {
+            label: (
+                <NavLink
+                    to="/services/vector"
+                    activeClassName="active"
+                    className="main-menu"
+                >
+                    Vector
+                </NavLink>
+            ),
+            key: '2',
+        },
+        {
+            label: (
+                <NavLink
+                    to="/services/apparel-item"
+                    activeClassName="active"
+                    className="main-menu"
+                >
+                    Apparel-item
+                </NavLink>
+            ),
+            key: '3',
+        },
+        {
+            label: (
+                <NavLink
+                    to="/services/hats-beanies"
+                    activeClassName="active"
+                    className="main-menu"
+                >
+                    Hats-Beanies
+                </NavLink>
+            ),
+            key: '4',
+        },
+        {
+            label: (
+                <NavLink
+                    to="/services/promotional"
+                    activeClassName="active"
+                    className="main-menu"
+                >
+                    Promotional
+                </NavLink>
+            ),
+            key: '5',
+        },
+        {
+            type: 'divider',
+        },
+    ];
 
     return (
         <>
@@ -81,7 +162,21 @@ function SideModal3({ helo, onClose }) {
                                                 <Link to={'/services/hats-beanies'} className='submenu-item'>Hats & Beanies</Link>
                                                 <Link to={'/services/promotional'} className='submenu-item'>Promotional Products</Link>
                                             </div>
+
                                         </div>
+                                        <Dropdown menu={{ items }}>
+                                            <a onClick={(e) => e.preventDefault()}>
+                                                <Space>
+                                                    <Link
+                                                        className="main-menu"
+                                                        // to={'/services/digitizing'}
+                                                        activeClassName="active">
+                                                        Services
+                                                        {/* <DownOutlined /> */}
+                                                    </Link>
+                                                </Space>
+                                            </a>
+                                        </Dropdown>
 
                                         <Link className='menu-item' to={'/portfolio'}>Portfolio</Link>
                                         <Link className='menu-item' to={'/contact'}>Contact</Link>
@@ -92,22 +187,22 @@ function SideModal3({ helo, onClose }) {
 
 
                                 <h1>Our Address</h1>
-                                <div style={{ display: 'flex' , alignItems:'center', paddingTop:'0px', paddingLeft:'10px' }}><h2><ImLocation /></h2>
-                                    <div style={{paddingLeft:'20px'}}>
+                                <div style={{ display: 'flex', alignItems: 'center', paddingTop: '0px', paddingLeft: '10px' }}><h2><ImLocation /></h2>
+                                    <div style={{ paddingLeft: '20px' }}>
                                         <h5>Address</h5>
                                         <p>218 W Colorado Ave #104, Colorado Springs, CO 80903, United States</p>
                                     </div>
                                 </div>
-                                <div style={{ display: 'flex', alignItems: 'center', paddingTop:'0px', paddingLeft:'10px' }}><h2><MdPermPhoneMsg /></h2>
-                                <div style={{paddingLeft:'20px'}}>
+                                <div style={{ display: 'flex', alignItems: 'center', paddingTop: '0px', paddingLeft: '10px' }}><h2><MdPermPhoneMsg /></h2>
+                                    <div style={{ paddingLeft: '20px' }}>
                                         <h5>Contact</h5>
-                                    <p>+1-719-900-4662</p>
+                                        <p>+1-719-900-4662</p>
                                     </div>
                                 </div>
-                                <div style={{ display: 'flex', alignItems: 'center' , paddingTop:'0px' ,paddingLeft:'10px'}}><h2><MdEmail /></h2>
-                                <div style={{paddingLeft:'20px'}}>
-                                <h5>Email</h5>
-                                    <p>beyonddigitizing7@gmail.com</p>
+                                <div style={{ display: 'flex', alignItems: 'center', paddingTop: '0px', paddingLeft: '10px' }}><h2><MdEmail /></h2>
+                                    <div style={{ paddingLeft: '20px' }}>
+                                        <h5>Email</h5>
+                                        <p>beyonddigitizing7@gmail.com</p>
                                     </div>
                                 </div>
                                 {/* <div style={{ display: 'flex', alignItems: 'center' }}><h2><ImLocation /></h2>

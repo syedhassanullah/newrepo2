@@ -1,6 +1,6 @@
 import React from 'react';
 import { Collapse } from 'antd';
-
+import './Counter.css'
 
 const counterItems = [
   {
@@ -41,11 +41,9 @@ const ChooseQues = () => {
     };
 
   return (
-    <div style={{ justifyContent: 'space-between', padding: '20px' }}>
+    <div style={{ justifyContent: 'space-between', padding: '20px' }} className='choose'>
       {/* Left Side Content */}
-      <div style={{ width: '45%' }}>
-        <p><strong>Why Choose Us?</strong></p>
-      </div>
+      
 
       {/* Right Side Counter (Collapse Items) */}
       <div >

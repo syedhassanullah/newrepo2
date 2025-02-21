@@ -8,6 +8,8 @@ import { motion } from 'framer-motion'
 import { FadeIn } from '../Varient/Varient'
 import Process from '../Components/Process';
 import ClientReview from '../Components/ClientReview/ClientReview'
+import Counter from '../Components/Counter/Counter'
+import CountrySlider from '../Components/Slider/CountrySlider'
 export default function About() {
   return (
     <MainLayout>
@@ -25,9 +27,11 @@ export default function About() {
         </Container>
       </div>
       <AboutSec />
-      <Process/>
-      <ContactSec />
+      <Counter/>
+      <CountrySlider/>
       <ClientReview/>
+      <ContactSec />
+      
       <LogoSlider />
     </MainLayout>
   )

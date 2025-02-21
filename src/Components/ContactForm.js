@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Stack, TextField } from '@mui/material'
+import { Alert, Stack, TextField } from '@mui/material'
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import Button from '@mui/material/Button';
@@ -44,7 +44,7 @@ function ContactForm() {
   });
   const [formData,SetFormData] = useState({
     firstName:'',
-    lastName:'',
+    lastname:'',
     contact:'',
     email:'',
     message:''
@@ -58,10 +58,56 @@ function ContactForm() {
     })
   }
 
+  const Clickme = (e) =>{
+    e.preventDefault();
+    
+    if(formData.firstName == '' || formData.lastname == '' || formData.email == '' || formData.contact ){
+      // toast.error("Please fill in all the fields.");
+      // return;
+  }
+
+  const data ={
+    ...formData
+  }
+  // try {
+  //   const response = await fetch('https://script.google.com/macros/s/AKfycbyR46UvNx_orRyHKO7OGc556p1QI6HewdmzpFI19Wdtk1C0nLicqxj7q-p166Nd_F-r/exec', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',  // Ensure Content-Type is application/json
+  //     },
+  //     body: JSON.stringify(data),
+  //     mode: 'no-cors'
+  //   });
+
+  //   const result = await response;
+
+
+  //   if (result) {
+  //     console.log('send data:', response.data);
+  //     toast.success("Your Applications send Successfully", {
+  //       position: 'top-center'
+  //     });
+  //   } else {
+  //     console.error('Error sending data:', result);
+  //     toast.error(`${result.error}`, {
+  //       position: 'top-center'
+  //     });
+  //   }
+
+  // } catch (error) {
+  //   console.error('Error:', error);
+  // }
+
+
+  console.log(data);
+}
+
 
   return (
 
     <>
+            {/* <div onClick={Clickme} style={{backgroundColor:'red'}}>hasssan</div> */}
+
       <ThemeProvider theme={darkTheme}>
         <div className='cform' >
           <div style={{ marginBottom: '30px' }}>
@@ -70,7 +116,7 @@ function ContactForm() {
           <Stack spacing={3}>
             <Stack direction='row' spacing={2}>
               <TextField label='First Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='firstName'/>
-              <TextField label='Last Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='lasttName'/>
+              <TextField label='Last Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='lasttname'/>
             </Stack>
             <Stack direction='row' spacing={2}>
               <TextField label='Phone' variant='outlined' size='small' className='cinput' onChange={getValues} name='contact'/>
@@ -81,8 +127,8 @@ function ContactForm() {
             </Stack>
           </Stack>
           <div style={{ right: '0px', textAlign: 'end', marginTop: '30px' }} >
-
-            <Button variant="contained" size='small'>Submit Now</Button>
+            
+            <Button variant="contained" size='small' onClick={Clickme}>Submit Now</Button>
           </div>
         </div>
 

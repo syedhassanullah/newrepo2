@@ -3,6 +3,7 @@ import MainLayout from '../Layout/MainLayout'
 import { Container } from 'react-bootstrap'
 import ContactSec from '../Components/ContactSec'
 import FlagSlider from '../Components/Slider/FlagSlider';
+import Counter from '../Components/Counter/Counter';
 
 
 
@@ -15,6 +16,7 @@ function Contact() {
       </Container>
     </div>
     <ContactSec/>
+    <Counter/>
     <FlagSlider/>
   </MainLayout>
   )

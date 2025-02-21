@@ -22,6 +22,7 @@
     /* Gradient */
     url('./images/footer/rm373batch2-08.jpg');
   --borderradius: 5px 100px 5px 100px;
+  --borderradius2: 100px 5px 100px 5px;
   --borderradiushero: 0px 5px 150px 5px;
   --borderradiusCard: 60px 5px 60px 5px;
   --backdrop-filter: blur(20px);
@@ -294,6 +295,10 @@ body::-webkit-scrollbar-track {
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.027);
+  border-radius: var(--borderradius);
+  backdrop-filter: var(--backdrop-filter);
+  margin: 20px;
 }
 .ContactForm {
   align-items: center;
@@ -308,7 +313,12 @@ body::-webkit-scrollbar-track {
 .ContactForm .cformimg {
   padding: 30px 10px;
   max-width: 700px;
+  
 }
+.ContactForm .cformimg p{
+  font-weight: 500;
+}
+
 
 .ContactForm .cformimg img {
   width: 100%;
@@ -508,8 +518,9 @@ body::-webkit-scrollbar-track {
 /* PROCESS */
 .Process{
   background-color: rgba(0, 0, 0, 0.027);
-  border-radius: var(--borderradius);
+  border-radius: var(--borderradius2);
   backdrop-filter: var(--backdrop-filter);
+  margin: 20px;
 }
 .process-container{
   display: flex;
@@ -660,7 +671,7 @@ body::-webkit-scrollbar-track {
 
 /* sec1 */
 
-.sec1 {
+/* .sec1 {
   background-image: url(./images/images/adrien-olichon-X8o-P23flgI-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -672,7 +683,7 @@ body::-webkit-scrollbar-track {
   justify-content: center;
   text-align: center;
   align-items: center;
-}
+} */
 
 
 

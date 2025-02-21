@@ -5,9 +5,9 @@ import { Container } from 'react-bootstrap';
 import SideModal3 from '../../Modal/SideModal3';
 import Hamburger from 'hamburger-react';
 import { AiOutlineDown } from "react-icons/ai";
-import { NavLink } from 'react-router-dom'; 
-
-
+import { NavLink } from 'react-router-dom';
+import { Dropdown, Space } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -70,7 +70,84 @@ const Navbar = () => {
   // };
 
 
-
+  const items = [
+    {
+      label: (
+        <NavLink
+          to="/services/digitizing"
+          activeClassName="active"
+          className="main-menu"
+        >
+          Digitizing
+        </NavLink>
+      ),
+      key: '0',
+      
+    },
+    {
+      label: (
+        <NavLink
+          to="/services/patches"
+          activeClassName="active"
+          className="main-menu"
+        >
+          Patches
+        </NavLink>
+      ),
+      key: '1',
+    },
+    {
+      label: (
+        <NavLink
+          to="/services/vector"
+          activeClassName="active"
+          className="main-menu"
+        >
+          Vector
+        </NavLink>
+      ),
+      key: '2',
+    },
+    {
+      label: (
+        <NavLink
+          to="/services/apparel-item"
+          activeClassName="active"
+          className="main-menu"
+        >
+          Apparel-item
+        </NavLink>
+      ),
+      key: '3',
+    },
+    {
+      label: (
+        <NavLink
+          to="/services/hats-beanies"
+          activeClassName="active"
+          className="main-menu"
+        >
+          Hats-Beanies
+        </NavLink>
+      ),
+      key: '4',
+    },
+    {
+      label: (
+        <NavLink
+          to="/services/promotional"
+          activeClassName="active"
+          className="main-menu"
+        >
+          Promotional
+        </NavLink>
+      ),
+      key: '5',
+    },
+    {
+      type: 'divider',
+    },
+  ];
 
 
   return (
@@ -98,21 +175,21 @@ const Navbar = () => {
                 <Link className='main-menu' to={'/portfolio'}>Portfolio</Link>
                 <Link className='main-menu' to={'/Contact'}>Contact</Link> */}
                   <NavLink
-                  className="main-menu"
-                  exact
-                  to={'/'}
-                  activeClassName="active"
-                >
-                  Home
-                </NavLink>
-                <NavLink
-                  className="main-menu"
-                  to={'/about'}
-                  activeClassName="active"
-                >
-                  About
-                </NavLink>
-                <div className="services-link">
+                    className="main-menu"
+                    exact
+                    to={'/'}
+                    activeClassName="active"
+                  >
+                    Home
+                  </NavLink>
+                  <NavLink
+                    className="main-menu"
+                    to={'/about'}
+                    activeClassName="active"
+                  >
+                    About
+                  </NavLink>
+                  {/* <div className="services-link">
                   <NavLink
                     className="main-menu"
                     to={'/services'}
@@ -168,21 +245,37 @@ const Navbar = () => {
                       Promotional Products
                     </NavLink>
                   </div>
-                </div>
-                <NavLink
-                  className="main-menu"
-                  to={'/portfolio'}
-                  activeClassName="active"
-                >
-                  Portfolio
-                </NavLink>
-                <NavLink
-                  className="main-menu"
-                  to={'/contact'}
-                  activeClassName="active"
-                >
-                  Contact
-                </NavLink>
+                </div> */}
+
+                  <Dropdown menu={{ items }}>
+                    <a onClick={(e) => e.preventDefault()}>
+                      <Space>
+                        <NavLink
+                          className="main-menu"
+                          to={'/services/digitizing'}
+                          activeClassName="active">
+                          Services
+                          {/* <DownOutlined /> */}
+                          <AiOutlineDown/>
+                        </NavLink>
+                      </Space>
+                    </a>
+                  </Dropdown>
+
+                  <NavLink
+                    className="main-menu"
+                    to={'/portfolio'}
+                    activeClassName="active"
+                  >
+                    Portfolio
+                  </NavLink>
+                  <NavLink
+                    className="main-menu"
+                    to={'/contact'}
+                    activeClassName="active"
+                  >
+                    Contact
+                  </NavLink>
 
 
 
@@ -215,3 +308,49 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
+
+
+// import React from 'react';
+// import { DownOutlined } from '@ant-design/icons';
+// import { Dropdown, Space } from 'antd';
+
+// const items = [
+//   {
+//     label: (
+//       <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+//         1st menu item
+//       </a>
+//     ),
+//     key: '0',
+//   },
+//   {
+//     label: (
+//       <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+//         2nd menu item
+//       </a>
+//     ),
+//     key: '1',
+//   },
+//   {
+//     type: 'divider',
+//   },
+//   {
+//     label: '3rd menu item（disabled）',
+//     key: '3',
+//     disabled: true,
+//   },
+// ];
+
+// const App = () => (
+// <Dropdown menu={{ items }}>
+//   <a onClick={(e) => e.preventDefault()}>
+//     <Space>
+//       Hover me
+//       <DownOutlined />
+//     </Space>
+//   </a>
+// </Dropdown>
+// );
+
+// export default App;

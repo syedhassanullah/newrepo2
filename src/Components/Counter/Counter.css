@@ -4,11 +4,14 @@
     background-color: rgba(0, 0, 0, 0.027);
     border-radius: var(--borderradius);
     backdrop-filter: var(--backdrop-filter);
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
+
+.backcount h4{
+    font-family: var(--text-heading3);
+}
 .counterBox{
-    padding: 100px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,14 +22,52 @@
 .backcount .count{
     color: black;
     font-family: var(--text-heading2);
-    width: 320px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    gap: 0px;
     width: 45%;
+    background-color: rgba(255, 255, 255, 0.993);
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px ;
+}
+
+.backcount .count .countNun{
+    /* text-align: left; */
+}
+
+.backcount .count h2{
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+
+.backcount .count p{
+    font-size: 12px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.backcount .count h3{
+    color: var(--primary-color);
+    font-family: var(--text-heading3);
+    text-transform: uppercase;
+    width: 50px;
+    
+    position: relative;
+}
+
+.backcount .count h3 img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 
-.backcount .count h1{
-    font-weight: 800;
+/* ////// */
+
+.choose h4{
+    font-family: var(--text-heading3);
+    width: 180%;
 }

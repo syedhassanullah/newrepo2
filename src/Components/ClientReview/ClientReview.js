@@ -71,7 +71,7 @@ const ClientReview = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{
-                            once: false, amount: 0.7
+                            once: true, amount: 0.7
                         }}
                         transition={{
                             type: 'tween', scale: 0.8,

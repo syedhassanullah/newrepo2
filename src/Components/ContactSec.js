@@ -21,7 +21,7 @@ function ContactSec() {
                     initial="hidden"
                     whileInView={'show'}
                     viewport={{
-                      once: false, amount: 0.3
+                      once: true, amount: 0.3
                     }}
                     transition={{ type: 'tween' }}
                     className='component-heading'>......
@@ -42,7 +42,7 @@ function ContactSec() {
                     initial="hidden"
                     whileInView={'show'}
                     viewport={{
-                      once: false, amount: 0.3
+                      once: true, amount: 0.3
                     }}
                     transition={{ type: 'tween' }}>
                     <div style={{ display: 'flex', alignItems: 'center', }}><h2><ImLocation /></h2>

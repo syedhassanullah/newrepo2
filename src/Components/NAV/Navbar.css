@@ -4,10 +4,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    transition: background-color 0.8s ease;
+    transition: background-color 0.5s ease;
     background-color: rgba(44, 0, 0, 0);
     z-index: 1000;
-    color: white;
+    color: aliceblue;
   }
   
   .helo.scrolled {
@@ -42,8 +42,27 @@
     font-weight: 500;
     /* font-family: var(--text-heading2); */
   }
+ .ant-space-item{
+  color: white;
+ }
+
+ .helo.scrolled .ant-space-item{
+  color: black;
+ }
   .helo.scrolled .nav-links{
     color: black;
+  }
+
+  .helo .nav-links Space{
+    color: aliceblue !important;
+  }
+
+  .ant-dropdown-menu-title-content a{
+    text-decoration: none !important;
+  }
+  .ant-dropdown-menu{
+    text-decoration: none !important;
+    width: 180px;
   }
   .nav-links {
     display: flex;
@@ -55,7 +74,7 @@
     text-decoration: none;
     font-size: 18px;
     padding: 0px 12px;
-    transition: color 0.3s ease;
+    /* transition: color 0.3s ease; */
     padding-bottom: 7px;
   }
   

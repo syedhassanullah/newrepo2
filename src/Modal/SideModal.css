@@ -37,6 +37,21 @@ body.sidebar-open {
     flex-direction: column;
     backdrop-filter: blur(40px);
   }
+  .ant-space-item{
+    color: white;
+   }
+   .helo .nav-links Space{
+    color: aliceblue !important;
+  }
+
+  .ant-dropdown-menu-title-content a{
+    text-decoration: none !important;
+  }
+  .ant-dropdown-menu{
+    text-decoration: none !important;
+    width: 180px;
+  }
+  
   .sidebarin .Sidebarcontent p{
     /* padding-left: 20px; */
     /* font-size: 12px; */

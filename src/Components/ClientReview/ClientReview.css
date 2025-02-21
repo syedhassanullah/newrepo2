@@ -1,7 +1,7 @@
 .client-reviews {
 
   background-color: var(--primary-colorbg);
-  border-radius: var(--borderradius);
+  border-radius: var(--borderradius2);
   /* backdrop-filter: var(--backdrop-filter); */
   margin: 20px;
     overflow: hidden; 

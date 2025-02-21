@@ -3,12 +3,11 @@ import MainLayout from '../Layout/MainLayout'
 import { Segmented } from 'antd';
 import { useState } from 'react';
 import { Image } from 'antd';
-
-import image1 from '../images (1).jpg'
-import image2 from '../images/images/cimg.jpg'
-// import image3 from '../images (1).jpg'
-import { Container } from 'react-bootstrap';
 import LogoSlider from '../Components/Slider/LogoSlider'
+import jre from './helo.jpeg'
+
+import { Container } from 'react-bootstrap';
+
 
 import { motion } from 'framer-motion'
 import { FadeUp } from '../Varient/Varient2'
@@ -53,7 +52,7 @@ function Portfolio() {
                         <div className='justify-content-center segment'>
                             <Segmented size="large"
                                 options={[
-                                    'Digitizing', 'Vector', 'Patches', 'Hoodies','Caps','Botels']}
+                                    'Digitizing', 'Vector', 'Patches', 'Apparel-Items','Hats-And-Bean','Promotional-Products']}
                                 onChange={handleChange}
                             />
                         </div>
@@ -70,6 +69,7 @@ function Portfolio() {
                                         damping: 20,
                                     }}
                                     className='portfolio-image'>
+                                    {/* <Image src={image2} />
                                     <Image src={image2} />
                                     <Image src={image2} />
                                     <Image src={image2} />
@@ -77,11 +77,19 @@ function Portfolio() {
                                     <Image src={image2} />
                                     <Image src={image2} />
                                     <Image src={image2} />
-                                    <Image src={image2} />
-                                    <Image src={image2} />
+                                    <Image src={image2} /> */}
                                 </motion.div>
                             }
                             {selectedValue === 'Vector' &&
+                            <>
+                            <div style={{display:'flex'}}>
+                                <h1>hello</h1>
+                                <h1>hello</h1>
+                                <h1>hello</h1>
+                                <h1>hello</h1>
+                                <h1>hello</h1>
+                                
+                            </div>
                                 <motion.div
                                     variants={FadeUp(0.3)}
                                     initial="hidden"
@@ -93,19 +101,19 @@ function Portfolio() {
                                         damping: 20,
                                     }}
                                     className='portfolio-image'>
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
+                                    <Image src={jre} />
+                                    <Image src={jre} />
+                                    <Image src={jre} />
+                                    <Image src={jre} />
+                                    <Image src={jre} />
+                                    <Image src={jre} />
+                                    <Image src={jre} />
+                                    <Image src={jre} />
                                 </motion.div>
+                                </>
                             }
                             {selectedValue === 'Patches' && <p>Long text option clicked. Displaying something for long text.</p>}
-                            {selectedValue === 'Hoodies' && <div className='portfolio-image'>
+                            {selectedValue === 'Apparel-Items' && <div className='portfolio-image'>
                                 <motion.div
                                     variants={FadeUp(0.3)}
                                     initial="hidden"
@@ -117,6 +125,7 @@ function Portfolio() {
                                         damping: 20,
                                     }}
                                     className='portfolio-image'>
+                                    {/* <Image src={image1} />
                                     <Image src={image1} />
                                     <Image src={image1} />
                                     <Image src={image1} />
@@ -124,18 +133,14 @@ function Portfolio() {
                                     <Image src={image1} />
                                     <Image src={image1} />
                                     <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
+                                    <Image src={image1} /> */}
                                 </motion.div>
                             </div>}
                         </div>
 
                     </div>
-
-                    <LogoSlider />
                 </div>
-
-
+<LogoSlider/>
             </Container>
         </MainLayout>
     )
