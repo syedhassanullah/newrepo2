@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import { Alert, Stack, TextField } from '@mui/material'
+import {  Stack, TextField } from '@mui/material'
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import Button from '@mui/material/Button';
 import '../App.css'
 // import { message } from 'antd';
-
 
 // const darkTheme = createTheme({
 //   palette: {
@@ -61,7 +60,7 @@ function ContactForm() {
   const Clickme = (e) =>{
     e.preventDefault();
     
-    if(formData.firstName == '' || formData.lastname == '' || formData.email == '' || formData.contact ){
+    if(formData.firstName === '' || formData.lastname === '' || formData.email === '' || formData.contact === '' ){
       // toast.error("Please fill in all the fields.");
       // return;
   }

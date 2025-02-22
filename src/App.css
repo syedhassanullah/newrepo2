@@ -825,6 +825,9 @@ body::-webkit-scrollbar-track {
   .cccc{
     margin: 20px 3px; 
   }
+  .Process{
+    margin: 20px 3px;
+  }
 
   .about-image-sec {
     padding-top: 50px;
