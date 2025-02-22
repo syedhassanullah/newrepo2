@@ -5,9 +5,9 @@ import { Container } from 'react-bootstrap';
 import SideModal3 from '../../Modal/SideModal3';
 import Hamburger from 'hamburger-react';
 import { AiOutlineDown } from "react-icons/ai";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Dropdown, Space } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
+// import { DownOutlined } from '@ant-design/icons';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -248,7 +248,7 @@ const Navbar = () => {
                 </div> */}
 
                   <Dropdown menu={{ items }}>
-                    <a onClick={(e) => e.preventDefault()}>
+                    <Link onClick={(e) => e.preventDefault()}>
                       <Space>
                         <NavLink
                           className="main-menu"
@@ -259,7 +259,7 @@ const Navbar = () => {
                           <AiOutlineDown/>
                         </NavLink>
                       </Space>
-                    </a>
+                    </Link>
                   </Dropdown>
 
                   <NavLink
