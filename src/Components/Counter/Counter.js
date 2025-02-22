@@ -41,7 +41,7 @@ export default function Counter() {
                                         className="count" >
                                         <h3><img src={img3} alt="logo" /></h3>
                                         <div className="countNun">
-                                            <h2> {inView ? <CountUp end={50} duration={2} /> : 0}
+                                            <h2> {inView ? <CountUp end={100} duration={2} /> : 0}
                                                 +</h2>
                                             <p>Our Team</p>
                                         </div>

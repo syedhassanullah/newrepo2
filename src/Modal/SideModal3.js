@@ -13,7 +13,7 @@ import { MdEmail } from "react-icons/md";
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Dropdown, Space } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
+// import { DownOutlined } from '@ant-design/icons';
 
 function SideModal3({ helo, onClose }) {
 
@@ -165,7 +165,7 @@ function SideModal3({ helo, onClose }) {
 
                                         </div>
                                         <Dropdown menu={{ items }}>
-                                            <a onClick={(e) => e.preventDefault()}>
+                                            <Link onClick={(e) => e.preventDefault()}>
                                                 <Space>
                                                     <Link
                                                         className="main-menu"
@@ -175,7 +175,7 @@ function SideModal3({ helo, onClose }) {
                                                         {/* <DownOutlined /> */}
                                                     </Link>
                                                 </Space>
-                                            </a>
+                                            </Link>
                                         </Dropdown>
 
                                         <Link className='menu-item' to={'/portfolio'}>Portfolio</Link>
