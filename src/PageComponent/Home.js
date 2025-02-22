@@ -26,7 +26,6 @@ function BasicExample() {
         <Hero />
         <Service/>
         <AboutSec />
-        {/* <NEW/> */}
         <ClientReview/>
         <FlagSlider/>
         

@@ -15,7 +15,7 @@ export default function About() {
       <div className='heroother'>
         <Container>
           <motion.h1
-            variants={FadeIn('left', 0.2)}
+            variants={FadeIn('left')}
             initial="hidden"
             whileInView={'show'}
             viewport={{

@@ -1,6 +1,4 @@
-
-
-.backcount{
+.backcount {
     background-color: rgba(0, 0, 0, 0.027);
     border-radius: var(--borderradius);
     backdrop-filter: var(--backdrop-filter);
@@ -8,10 +6,11 @@
 }
 
 
-.backcount h4{
+.backcount h4 {
     font-family: var(--text-heading3);
 }
-.counterBox{
+
+.counterBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,7 +18,7 @@
     width: 100%;
 }
 
-.backcount .count{
+.backcount .count {
     color: black;
     font-family: var(--text-heading2);
     text-align: center;
@@ -31,35 +30,35 @@
     width: 45%;
     background-color: rgba(255, 255, 255, 0.993);
     padding: 20px;
-    border-radius: 10px 10px 10px 10px ;
+    border-radius: 10px 10px 10px 10px;
 }
 
-.backcount .count .countNun{
+.backcount .count .countNun {
     /* text-align: left; */
 }
 
-.backcount .count h2{
+.backcount .count h2 {
     font-weight: 600;
     font-size: 28px;
     margin-bottom: 0px;
 }
 
-.backcount .count p{
+.backcount .count p {
     font-size: 12px;
     margin-bottom: 0px;
     font-weight: 600;
 }
 
-.backcount .count h3{
+.backcount .count h3 {
     color: var(--primary-color);
     font-family: var(--text-heading3);
     text-transform: uppercase;
     width: 50px;
-    
+
     position: relative;
 }
 
-.backcount .count h3 img{
+.backcount .count h3 img {
     width: 100%;
     border-radius: 10px;
 }
@@ -67,7 +66,13 @@
 
 /* ////// */
 
-.choose h4{
+.choose h4 {
     font-family: var(--text-heading3);
     width: 180%;
+}
+
+@media only screen and (max-width: 480px) {
+    .backcount {
+        margin: 20px 3px; 
+    }
 }

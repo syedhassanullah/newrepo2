@@ -73,7 +73,7 @@
 @media only screen and (max-width: 480px) {
 
   .client-reviews {
-    margin: 20px;
+    margin: 20px 3px; 
   }
   
 }

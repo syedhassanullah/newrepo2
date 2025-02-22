@@ -1,6 +1,9 @@
 import React from 'react';
 import { Collapse } from 'antd';
-import './Counter.css'
+import './Counter.css';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../Varient/Varient';
+
 
 const counterItems = [
   {
@@ -36,17 +39,24 @@ const counterItems = [
 ];
 
 const ChooseQues = () => {
-    const onChange = (key) => {
-      console.log(key);
-    };
+  const onChange = (key) => {
+    console.log(key);
+  };
 
   return (
     <div style={{ justifyContent: 'space-between', padding: '20px' }} className='choose'>
       {/* Left Side Content */}
-      
+
 
       {/* Right Side Counter (Collapse Items) */}
-      <div >
+      <motion.div
+        variants={FadeIn('left')}
+        initial="hidden"
+        whileInView={'show'}
+        viewport={{
+          once: true, amount: 0.3
+        }}
+        transition={{ type: 'tween' }} >
         <Collapse defaultActiveKey={['1']} onChange={onChange}>
           {counterItems.map(item => (
             <Collapse.Panel header={item.label} key={item.key}>
@@ -54,7 +64,7 @@ const ChooseQues = () => {
             </Collapse.Panel>
           ))}
         </Collapse>
-      </div>
+      </motion.div>
     </div>
   );
 };

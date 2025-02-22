@@ -820,7 +820,10 @@ body::-webkit-scrollbar-track {
   }
 
   .about{
-    margin: 0px;
+    margin: 20px 3px; 
+  }
+  .cccc{
+    margin: 20px 3px; 
   }
 
   .about-image-sec {

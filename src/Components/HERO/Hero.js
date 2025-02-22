@@ -37,7 +37,7 @@ function Hero() {
                 <Container>
                     <div className='hero-comp'>
                         <div className='hero-text col-md-8'>
-                            <h3>Byond Digitizing <br />Agency</h3>
+                            <h3>Beyond Digitizing <br />Agency</h3>
                             <h1>We are working on </h1>
                             <div className='chngecontent'>
                                 <motion.h2

@@ -24,11 +24,11 @@ function FlagSlider() {
             initial="hidden"
             whileInView={'show'}
             viewport={{
-                once: false, amount: 0.3
+                once: true, amount: 0.3
             }}
             transition={{ type: 'tween' }}
             >Payment Methods</motion.h1>
-            <Marquee pauseOnHover={true} speed={50} gradient={true} gradientWidth={50} >
+            <Marquee pauseOnHover={false} speed={50} gradient={true} gradientWidth={50} >
 
                 <div className='marqueeSlide'>
                     <img src={flg1} alt='flag' />

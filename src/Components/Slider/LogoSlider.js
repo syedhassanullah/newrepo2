@@ -22,11 +22,11 @@ function FlagSlider() {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{
-                            once: false, amount: 0.3
+                            once: true, amount: 0.3
                         }}
                         transition={{ type: 'tween' }}
                         >Software We Use</motion.h1>
-            <Marquee pauseOnHover={true} speed={50} gradient={true} gradientWidth={70} direction={"right"}>
+            <Marquee pauseOnHover={false} speed={50} gradient={true} gradientWidth={70} direction={"right"}>
 
                 <div className='marqueeSlide' style={{paddingTop:'23px'}}>
                     <img src={soft1} alt='flag' />

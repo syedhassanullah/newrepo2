@@ -31,7 +31,7 @@ function ContactSec() {
                     {/* <h1>Bayond Digitizing</h1> */}
                   </motion.div>
             <Row >
-              <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between',padding:'0px' }}>
                 <Col md={6} >
                   
                   <ContactForm />

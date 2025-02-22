@@ -32,7 +32,7 @@ export default function Counter() {
                                         variants={FadeUp(0.3)}
                                         initial="hidden"
                                         whileInView="show"
-                                        viewport={{ once: false, amount: 0.7 }}
+                                        viewport={{ once: true, amount: 0.7 }}
                                         transition={{
                                             type: 'spring',
                                             stiffness: 300,
@@ -50,7 +50,7 @@ export default function Counter() {
                                         variants={FadeUp(0.3)}
                                         initial="hidden"
                                         whileInView="show"
-                                        viewport={{ once: false, amount: 0.7 }}
+                                        viewport={{ once: true, amount: 0.7 }}
                                         transition={{
                                             type: 'spring',
                                             stiffness: 300,
@@ -68,7 +68,7 @@ export default function Counter() {
                                         variants={FadeUp(0.3)}
                                         initial="hidden"
                                         whileInView="show"
-                                        viewport={{ once: false, amount: 0.7 }}
+                                        viewport={{ once: true, amount: 0.7 }}
                                         transition={{
                                             type: 'spring',
                                             stiffness: 300,
@@ -86,7 +86,7 @@ export default function Counter() {
                                         variants={FadeUp(0.3)}
                                         initial="hidden"
                                         whileInView="show"
-                                        viewport={{ once: false, amount: 0.7 }}
+                                        viewport={{ once: true, amount: 0.7 }}
                                         transition={{
                                             type: 'spring',
                                             stiffness: 300,
