@@ -20,7 +20,7 @@
   --backgroundimage:
     linear-gradient(to Top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.712)),
     /* Gradient */
-    url('./images/footer/rm373batch2-08.jpg');
+    url('./images/footer/backimg.jpg');
   --borderradius: 5px 100px 5px 100px;
   --borderradius2: 100px 5px 100px 5px;
   --borderradiushero: 0px 5px 150px 5px;
@@ -226,7 +226,7 @@ body::-webkit-scrollbar-track {
 /* fOOTER */
 
 .footer {
-  background: linear-gradient(to right, rgba(0, 0, 49, 0.397) 30%, rgba(46, 0, 0, 0.664)),url('../src/images/footer/rm373batch2-08.jpg');
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.555) 30%, rgba(46, 0, 0, 0)),url('../src/images/footer/backimg.jpg');
   background-size:cover;
   background-position: Bottom;
   overflow: hidden;
@@ -428,11 +428,33 @@ body::-webkit-scrollbar-track {
 .portfolio-image-div {}
 
 .portfolio-Item {
-  margin: 50px 0px;
+  margin: 20px 0px;
 }
 
 .ant-image {
   width: 25% !important; 
+}
+
+.portfolio_select_item{
+  display: flex;
+  /* background-color: #0091d4; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: black;
+  /* font-family: var(--text-heading2); */
+  text-transform: uppercase; 
+  margin-bottom: 20px;
+}
+.portfolio_select_item p{
+  font-weight: 500;
+  background-color: var(--primary-colorbg);
+  padding: 7px;
+  border-radius: 5px;
+  cursor:pointer;
+}
+.portfolio_select_item .active{
+  color:var(--primary-color);
 }
 
 
