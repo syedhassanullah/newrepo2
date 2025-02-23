@@ -247,17 +247,18 @@ const Navbar = () => {
                   </div>
                 </div> */}
 
-                  <Dropdown menu={{ items }}>
+                  <Dropdown menu={{ items }} >
                     <Link onClick={(e) => e.preventDefault()}>
                       <Space>
-                        <NavLink
+                        <Link
                           className="main-menu"
-                          to={'/services/digitizing'}
-                          activeClassName="active">
+                          //  activeClassName="active"
+                          //  to={'/services/digitizing'}
+                          >
                           Services
-                          {/* <DownOutlined /> */}
+                          {/* <DownOutlined/> */}
                           <AiOutlineDown/>
-                        </NavLink>
+                        </Link>
                       </Space>
                     </Link>
                   </Dropdown>

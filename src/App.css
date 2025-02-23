@@ -231,6 +231,7 @@ body::-webkit-scrollbar-track {
   background-position: Bottom;
   overflow: hidden;
   border-radius: 100px 0px 0px 0px;
+  padding: 10px;
 }
 
 .footer-QuickLinks h6 a{

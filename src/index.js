@@ -33,7 +33,7 @@ root.render(
         <Route path='/about' element={<About />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/Contact' element={<Contact />} />
-        <Route path='/services' element={<Digitizing />} />
+        {/* <Route path='/services' element={<Digitizing />} /> */}
         <Route path='/services/digitizing' element={<Digitizing />} />
         <Route path='/services/patches' element={<Patches />} />
         <Route path='/services/vector' element={<Vector />} />

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+// import { useState } from 'react';
 import './SideModal.css';
 import { motion } from 'framer-motion';
 import { ImArrowRight2 } from "react-icons/im";
@@ -18,11 +18,11 @@ import { Dropdown, Space } from 'antd';
 function SideModal3({ helo, onClose }) {
 
 
-    const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
+    // const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
 
-    const toggleSubMenu = () => {
-        setIsSubMenuVisible(!isSubMenuVisible);
-    }
+    // const toggleSubMenu = () => {
+    //     setIsSubMenuVisible(!isSubMenuVisible);
+    // }
 
     useEffect(() => {
         if (helo) {
@@ -149,7 +149,7 @@ function SideModal3({ helo, onClose }) {
                                         <Link className='menu-item' to={'/'}>Home</Link>
                                         <Link className='menu-item' to={'/about'}>About</Link>
 
-                                        <div className={`services-dropdown ${isSubMenuVisible ? 'expanded' : ''}`}>
+                                        {/* <div className={`services-dropdown ${isSubMenuVisible ? 'expanded' : ''}`}>
                                             <Link className='menu-item' to={'#'} onClick={toggleSubMenu}>
                                                 Services <AiOutlineDown />
                                             </Link>
@@ -163,16 +163,17 @@ function SideModal3({ helo, onClose }) {
                                                 <Link to={'/services/promotional'} className='submenu-item'>Promotional Products</Link>
                                             </div>
 
-                                        </div>
-                                        <Dropdown menu={{ items }}>
+                                        </div> */}
+                                        <Dropdown menu={{ items }} trigger={['click']}>
                                             <Link onClick={(e) => e.preventDefault()}>
                                                 <Space>
                                                     <Link
                                                         className="main-menu"
-                                                        // to={'/services/digitizing'}
-                                                        activeClassName="active">
+                                                    // to={'/services/digitizing'}
+                                                    >
                                                         Services
                                                         {/* <DownOutlined /> */}
+                                                        <AiOutlineDown />
                                                     </Link>
                                                 </Space>
                                             </Link>
