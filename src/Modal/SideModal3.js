@@ -6,7 +6,7 @@ import { ImArrowRight2 } from "react-icons/im";
 import Icons from '../Components/Icons';
 // import logo from '../images/MainLogo/BD WHITE LOGO VERSION PNG2.png'
 import { Link } from 'react-router-dom';
-import { AiOutlineDown } from 'react-icons/ai';
+// import { AiOutlineDown } from 'react-icons/ai';
 import { ImLocation } from "react-icons/im";
 import { MdPermPhoneMsg } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
@@ -14,6 +14,7 @@ import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Dropdown, Space } from 'antd';
 // import { DownOutlined } from '@ant-design/icons';
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 function SideModal3({ helo, onClose }) {
 
@@ -173,7 +174,8 @@ function SideModal3({ helo, onClose }) {
                                                     >
                                                         Services
                                                         {/* <DownOutlined /> */}
-                                                        <AiOutlineDown />
+                                                        {/* <AiOutlineDown /> */}
+                                                        <MdKeyboardArrowDown/>
                                                     </Link>
                                                 </Space>
                                             </Link>

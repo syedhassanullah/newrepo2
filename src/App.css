@@ -440,24 +440,25 @@ body::-webkit-scrollbar-track {
   display: flex;
   /* background-color: #0091d4; */
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
+  gap: 13px;
   color: black;
   /* font-family: var(--text-heading2); */
   text-transform: uppercase; 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .portfolio_select_item p{
   font-weight: 500;
-  background-color: var(--primary-colorbg);
-  padding: 7px;
-  border-radius: 5px;
   cursor:pointer;
+  margin-bottom: 0px;
 }
 .portfolio_select_item .active{
   color:var(--primary-color);
 }
-
+/* .segment{
+  display: flex;
+} */
 
 
 
@@ -829,7 +830,9 @@ body::-webkit-scrollbar-track {
   }
   /*  */
 
-  
+  .heroother{
+    padding: 150px 0px;
+  }
   .heroother h1 {
     font-weight: 700;
     color: var(--primary-color);

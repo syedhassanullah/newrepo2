@@ -4,7 +4,8 @@ import { Container } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
 import SideModal3 from '../../Modal/SideModal3';
 import Hamburger from 'hamburger-react';
-import { AiOutlineDown } from "react-icons/ai";
+// import { AiOutlineDown } from "react-icons/ai";
+import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link, NavLink } from 'react-router-dom';
 import { Dropdown, Space } from 'antd';
 // import { DownOutlined } from '@ant-design/icons';
@@ -257,7 +258,7 @@ const Navbar = () => {
                           >
                           Services
                           {/* <DownOutlined/> */}
-                          <AiOutlineDown/>
+                          <MdKeyboardArrowDown/>
                         </Link>
                       </Space>
                     </Link>

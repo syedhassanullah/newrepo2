@@ -8,8 +8,8 @@ import jre from './helo.jpeg'
 import jre1 from '../images/ServiceShowsIMG/Patches.png'
 import jre2 from '../images/ServiceShowsIMG/hello.jpg'
 import jre3 from '../images/ServiceShowsIMG/hello2.jpg'
-
-
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Container } from 'react-bootstrap';
 
 
@@ -59,13 +59,16 @@ function Portfolio() {
 
                 <div className=' portfolio1'>
                     <div className='portfolio'>
-
-                        <div className='justify-content-center segment'>
-                            <Segmented size="large"
-                                options={[
-                                    'Digitizing', 'Vector', 'Patches', 'Apparel-Items', 'Hats-And-Bean', 'Promotional-Products']}
-                                onChange={handleChange}
-                            />
+                        <div style={{display:'flex',alignItems:'center'}}>
+                        <MdKeyboardArrowLeft />
+                            <div className='justify-content-center segment'>
+                                <Segmented size="large"
+                                    options={[
+                                        'Digitizing', 'Vector', 'Patches', 'Apparel-Items', 'Hats-And-Bean', 'Promotional-Products']}
+                                    onChange={handleChange}
+                                />
+                            </div>
+                            <MdKeyboardArrowRight />
                         </div>
                         <div className='portfolio-Item'>
                             {selectedValue === 'Digitizing' &&
@@ -121,16 +124,16 @@ function Portfolio() {
 
                                         <p onClick={() => handlePatchClick('Patch1')}
                                             className={`${selectedPatch === 'Patch1' ? 'active' : ''}`}>
-                                            Embroidered </p>
+                                            Embroidered </p>|
                                         <p onClick={() => handlePatchClick('Patch2')}
                                             className={`${selectedPatch === 'Patch2' ? 'active' : ''}`}>
-                                            Woven </p>
+                                            Woven </p>|
                                         <p onClick={() => handlePatchClick('Patch3')}
                                             className={`${selectedPatch === 'Patch3' ? 'active' : ''}`}
-                                        >PVC </p>
+                                        >PVC </p>|
                                         <p onClick={() => handlePatchClick('Patch4')}
                                             className={`${selectedPatch === 'Patch4' ? 'active' : ''}`}
-                                        >Sublimated</p>
+                                        >Sublimated</p>|
                                     </div>
                                     {selectedPatch === 'Patch1' &&
                                         <motion.div
