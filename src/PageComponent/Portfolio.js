@@ -9,6 +9,7 @@ import jre from './helo.jpeg'
 import jre2 from '../images/ServiceShowsIMG/hello.jpg'
 import jre3 from '../images/ServiceShowsIMG/hello2.jpg'
 
+// PATCHES----------------------------------
 import Sublimated1 from '../images/PortfolioImg/Patches/sublimated patches/sublimated1.jpg'
 import Sublimated2 from '../images/PortfolioImg/Patches/sublimated patches/sublimated2.jpg'
 import Sublimated3 from '../images/PortfolioImg/Patches/sublimated patches/sublimated3.jpg'
@@ -28,6 +29,12 @@ import Woven6 from '../images/PortfolioImg/Patches/woven patches/woven6.jpg'
 import Woven7 from '../images/PortfolioImg/Patches/woven patches/woven7.jpg'
 import Woven8 from '../images/PortfolioImg/Patches/woven patches/woven8.jpg'
 import Woven9 from '../images/PortfolioImg/Patches/woven patches/woven9.jpg'
+
+
+// APPERAL -------------------------------------
+import Apperal1 from '../images/PortfolioImg/Apparel Items/Hoodies/h1.jpeg'
+
+
 // import Woven10 from '../images/PortfolioImg/Patches/woven patches/woven10.jpg'
 // import Woven11 from '../images/PortfolioImg/Patches/woven patches/woven11.jpg'
 
@@ -44,6 +51,7 @@ function Portfolio() {
 
     const [selectedValue, setSelectedValue] = useState('Digitizing');
     const [selectedPatch, setSelectedPatch] = useState('Patch1');
+    const [selectedApperal, setSelectedApperal] = useState('apperal1');
 
     // Handler for the onChange event
     const handleChange = (value) => {
@@ -53,8 +61,10 @@ function Portfolio() {
 
     const handlePatchClick = (patch) => {
         setSelectedPatch(patch)
+    }
 
-        console.log(`Selected Vector: ${patch}`);
+    const handleapperalClick = (apperal) =>{
+        setSelectedApperal(apperal)
     }
 
     // const CustomToken = {
@@ -252,27 +262,47 @@ function Portfolio() {
                                 </>
                             }
                             {selectedValue === 'Apparel-Items' && <div className='portfolio-image'>
-                                <motion.div
-                                    variants={FadeUp(0.3)}
-                                    initial="hidden"
-                                    whileInView="show"
-                                    viewport={{ once: true, amount: 0.1 }}
-                                    transition={{
-                                        type: 'spring',
-                                        stiffness: 300,
-                                        damping: 20,
-                                    }}
-                                    className='portfolio-image'>
-                                    {/* <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} />
-                                    <Image src={image1} /> */}
-                                </motion.div>
+                                <>
+                                    <div className='portfolio_select_item'>
+
+                                        <p onClick={() => handleapperalClick('apperal1')}
+                                            className={`${selectedApperal === 'apperal1' ? 'active' : ''}`}>
+                                            Hoodies</p>|
+                                        <p onClick={() => handleapperalClick('apperal2')}
+                                            className={`${selectedApperal === 'apperal2' ? 'active' : ''}`}>
+                                            Jerseys </p>|
+                                        <p onClick={() => handleapperalClick('apperal3')}
+                                            className={`${selectedApperal === 'apperal3' ? 'active' : ''}`}
+                                        >Sweat Shirt </p>|
+                                        <p onClick={() => handleapperalClick('apperal4')}
+                                            className={`${selectedApperal === 'apperal4' ? 'active' : ''}`}
+                                        >Towels</p>|
+                                        <p onClick={() => handleapperalClick('apperal5')}
+                                            className={`${selectedApperal === 'apperal5' ? 'active' : ''}`}
+                                        >R-Shirts</p>
+                                    </div>
+                                    <motion.div
+                                        variants={FadeUp(0.3)}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        viewport={{ once: true, amount: 0.1 }}
+                                        transition={{
+                                            type: 'spring',
+                                            stiffness: 300,
+                                            damping: 20,
+                                        }}
+                                        className='portfolio-image'>
+                                        <Image src={Apperal1} />
+                                    <Image src={Apperal1} />
+                                    <Image src={Apperal1} />
+                                    <Image src={Apperal1} />
+                                    <Image src={Apperal1} />
+                                    <Image src={Apperal1} />
+                                    <Image src={Apperal1} />
+                                    <Image src={Apperal1} />
+                                    <Image src={Apperal1} />
+                                    </motion.div>
+                                </>
                             </div>}
                         </div>
 

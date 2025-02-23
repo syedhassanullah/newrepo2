@@ -17,6 +17,7 @@ import PromotionalProducts from './Components/Services/ServicesComponent/Promoti
 import NotFound from './Components/NotFound.js';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Scroll from './PageComponent/Scroll.js';
 
 // import ScrollToTop from './ScrollZero.js';
 
@@ -26,9 +27,9 @@ import "slick-carousel/slick/slick-theme.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-
+<Scroll/>
     <Routes>
-      
+     
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/portfolio' element={<Portfolio />} />
@@ -42,9 +43,9 @@ root.render(
         <Route path='/services/promotional' element={<PromotionalProducts />} />
         <Route path='*' element={<NotFound />} />
 
-
+        
     </Routes>
-
+    
   </BrowserRouter>
 );
 

@@ -9,7 +9,11 @@ import { FadeIn } from '../Varient/Varient'
 import ClientReview from '../Components/ClientReview/ClientReview'
 import Counter from '../Components/Counter/Counter'
 import CountrySlider from '../Components/Slider/CountrySlider'
+
 export default function About() {
+
+
+
   return (
     <MainLayout>
       <div className='heroother'>

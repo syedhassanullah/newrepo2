@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FadeUp } from '../../Varient/Varient2';
 import { Link } from 'react-router-dom';
 
+
 function ServiceCard({ title, description, icon, url }) {
   const getPrimaryColorFromCSS = () => {
     return getComputedStyle(document.documentElement)
@@ -19,7 +20,7 @@ function ServiceCard({ title, description, icon, url }) {
       whileInView="show"
       viewport={{ once: false, amount: 0.7 }}
       transition={{
-        type: 'spring',
+        type: 'tween',
         stiffness: 300,
         damping: 20,
       }}
@@ -27,20 +28,27 @@ function ServiceCard({ title, description, icon, url }) {
         scale: 1.1,
         backgroundColor: defaultColor,
         boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.27)',
-        rotate: -2,
-        borderRadius: '35px',
+        rotate: -3,
+        borderRadius: '5px',
       }}
       whileTap={{ scale: 1 }}
       className='sCard' >
-      <Link to={url} >
-        <motion.div
 
-          className='ServiceSecCard'
-        >
-          <h1 >{title}</h1>
-          <p>{description}</p>
-        </motion.div>
-      </Link>
+      <motion.div
+
+        className='ServiceSecCard'
+      >
+
+        <div className='service_icon'>{icon}</div>
+        <h4 >{title}</h4>
+        <p>{description}</p>
+        <div className='buttom'>
+          <Link to={url} >
+            <h6>see more</h6>
+          </Link>
+        </div>
+      </motion.div>
+
     </motion.div>
   );
 }

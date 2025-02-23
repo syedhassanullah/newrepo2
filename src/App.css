@@ -24,7 +24,7 @@
   --borderradius: 5px 100px 5px 100px;
   --borderradius2: 100px 5px 100px 5px;
   --borderradiushero: 0px 5px 150px 5px;
-  --borderradiusCard: 60px 5px 60px 5px;
+  --borderradiusCard: 5px 60px 5px 60px;
   --backdrop-filter: blur(20px);
 }
 
@@ -613,18 +613,58 @@ body::-webkit-scrollbar-track {
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.137);
   width: 19rem;
   height: 15rem;
+  /* background-color: white; */
 }
 .sCard .ServiceSecCard{
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  padding: 30px;
+  padding: 25px;
   color: #000000;
+  gap: 5px;
 }
-.sCard .ServiceSecCard h1{
+
+/* .sCard .ServiceSecCard .buttom{
+  text-align: right;
+  width: 100%;
+  color: red;
+  position: relative;
+}
+.sCard .ServiceSecCard .buttom h6{
+  transform: translateX(50%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sCard .ServiceSecCard:hover .buttom .h6{
+  opacity: 1;
+  transform: translateX(0);
+  
+} */
+.sCard .ServiceSecCard .buttom {
+  text-align: right;
+  width: 100%;
+  color: aliceblue;
+  position: relative; /* Needed to position the h6 element properly */
+}
+
+.sCard .ServiceSecCard .buttom h6 {
+  transform: translateX(20%); /* Initially, place the text out of view */
+  opacity: 0; /* Initially hidden */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+  color: aliceblue;
+}
+
+.sCard .ServiceSecCard:hover .buttom h6 {
+  opacity: 1; /* Make text visible */
+  transform: translateX(0); /* Slide text into position */
+}
+
+.sCard .ServiceSecCard h4{
   color: var(--primary-color);
+  margin: 0px;
 }
 
 .sCard .ServiceSecCard p{
@@ -637,17 +677,29 @@ body::-webkit-scrollbar-track {
 
 }
 
-.ServiceSecCard:hover h1{
+.ServiceSecCard:hover h4{
   color: black;
 }
 
-.ServiceSecCard:hover{
+.ServiceSecCard:hover p{
   color: aliceblue;
 }
+.service_icon img{
+  width: 75%;
+}
+.service_icon{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 60px;
+  height: 60px;
+  padding: 7px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 28px;
+}
 /* For smaller screens (mobile-first) */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .sCard {
-    width: 48%;
+    width: 100%;
   }
   .ServiceSecContainer{
     gap: 7px;

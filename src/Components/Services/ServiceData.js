@@ -1,44 +1,51 @@
+import { GiSewingNeedle } from "react-icons/gi";
+import { BsVectorPen } from "react-icons/bs";
+import patch from '../../images/Service_icon/patch.png'
+import apperal from '../../images/Service_icon/apperal.png'
+import promotional from '../../images/Service_icon/promotional-removebg.png'
+import { GiWinterHat } from "react-icons/gi";
+
 const ServiceData = [
   {
     id: 1,
-    title: "helo",
+    title: "DIGITIZING",
     description: "Build responsive and user-friendly websites.",
-    icon: "🌐",
+    icon: <GiSewingNeedle/>,
     url: "/services/digitizing",
   },
   {
     id: 2,
-    title: "helo",
+    title: "PATCH",
     description: "Create mobile apps for iOS and Android.",
-    icon: "📱",
+    icon: < img src={patch} alt="patch"/>,
     url: "/services/patches",
   },
   {
     id: 3,
-    title: "helo",
-    description: "Improve your website's visibility on search engines.",
-    icon: "🔍", // Fixed icon to be an emoji for search engine optimization
+    title: "VECTOR",
+    description: "Improve your website's visibility on search engines.Improve your website's visibility on search engines.Improve your website's visibility on search engines.",
+    icon:<BsVectorPen/> ,
     url: "/services/seo", // Added the missing URL here
   },
   {
     id: 4,
-    title: "helo",
+    title: "APPERAL ITEM",
     description: "Promote your business online to a wider audience.",
-    icon: "📈",
+    icon:< img src={apperal} alt="patch"/>,
     url: "/services/patches",
   },
   {
     id: 5,
-    title: "helo",
+    title: "PROMOTIONAL",
     description: "Promote your business online to a wider audience.",
-    icon: "📈",
+    icon: < img src={promotional} alt="patch"/>,
     url: "http://localhost:3000/",
   },
   {
     id: 6,
-    title: "helo",
+    title: "HATS AND BEANIES",
     description: "Promote your business online to a wider audience.",
-    icon: "📈",
+    icon: <GiWinterHat/>,
     url: "http://localhost:3000/",
   },
 ];

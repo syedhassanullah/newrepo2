@@ -15,11 +15,16 @@ import Process from '../Components/Process';
 
 
 
+
 // import NEW  from '../Modal/NEW';
 
 
 
-function BasicExample() {
+function Home() {
+
+
+
+
   return (
     <div >
       <MainLayout>
@@ -45,4 +50,4 @@ function BasicExample() {
 
 
 
-export default BasicExample;
+export default Home;
