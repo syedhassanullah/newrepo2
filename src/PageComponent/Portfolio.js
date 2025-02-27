@@ -33,6 +33,43 @@ import Woven9 from '../images/PortfolioImg/Patches/woven patches/woven9.jpg'
 
 // APPERAL -------------------------------------
 import Apperal1 from '../images/PortfolioImg/Apparel Items/Hoodies/h1.jpeg'
+import Apperal2 from '../images/PortfolioImg/Apparel Items/Hoodies/h2.jpeg'
+import Apperal3 from '../images/PortfolioImg/Apparel Items/Hoodies/h3.jpeg'
+import Apperal4 from '../images/PortfolioImg/Apparel Items/Hoodies/h4.jpeg'
+import Apperal5 from '../images/PortfolioImg/Apparel Items/Hoodies/h5.jpeg'
+import Apperal6 from '../images/PortfolioImg/Apparel Items/Hoodies/h6.jpeg'
+import Apperal7 from '../images/PortfolioImg/Apparel Items/Hoodies/h7.jpeg'
+
+import jersy1 from '../images/PortfolioImg/Apparel Items/Jerseys/j1.jpeg'
+import jersy2 from '../images/PortfolioImg/Apparel Items/Jerseys/j2.jpeg'
+import jersy3 from '../images/PortfolioImg/Apparel Items/Jerseys/j3.jpeg'
+import jersy4 from '../images/PortfolioImg/Apparel Items/Jerseys/j4.jpeg'
+import jersy5 from '../images/PortfolioImg/Apparel Items/Jerseys/j5.jpeg'
+import jersy6 from '../images/PortfolioImg/Apparel Items/Jerseys/j6.jpeg'
+import jersy7 from '../images/PortfolioImg/Apparel Items/Jerseys/j7.jpeg'
+
+import sweetShirt1 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s1.jpeg'
+import sweetShirt2 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s2.jpeg'
+import sweetShirt3 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s3.jpeg'
+import sweetShirt4 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s4.jpeg'
+// import sweetShirt5 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s5.jpeg'
+import sweetShirt6 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s6.jpeg'
+import sweetShirt7 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s7.jpeg'
+import sweetShirt8 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s8.jpeg'
+import sweetShirt9 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s9.jpeg'
+import sweetShirt10 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s10.jpeg'
+
+import towel1 from '../images/PortfolioImg/Apparel Items/Towels/t1.jpg'
+import towel2 from '../images/PortfolioImg/Apparel Items/Towels/t2.jpg'
+import towel3 from '../images/PortfolioImg/Apparel Items/Towels/t3.jpg'
+import towel4 from '../images/PortfolioImg/Apparel Items/Towels/t4.jpg'
+import towel5 from '../images/PortfolioImg/Apparel Items/Towels/t5.jpg'
+
+import tshirt1 from '../images/PortfolioImg/Apparel Items/T-Shirts/ts1.jpg'
+import tshirt2 from '../images/PortfolioImg/Apparel Items/T-Shirts/ts2.jpg'
+import tshirt3 from '../images/PortfolioImg/Apparel Items/T-Shirts/ts3.jpg'
+import tshirt4 from '../images/PortfolioImg/Apparel Items/T-Shirts/ts4.jpeg'
+import tshirt5 from '../images/PortfolioImg/Apparel Items/T-Shirts/ts5.jpeg'
 
 
 // import Woven10 from '../images/PortfolioImg/Patches/woven patches/woven10.jpg'
@@ -63,7 +100,7 @@ function Portfolio() {
         setSelectedPatch(patch)
     }
 
-    const handleapperalClick = (apperal) =>{
+    const handleapperalClick = (apperal) => {
         setSelectedApperal(apperal)
     }
 
@@ -164,10 +201,13 @@ function Portfolio() {
                                             Woven </p>|
                                         <p onClick={() => handlePatchClick('Patch3')}
                                             className={`${selectedPatch === 'Patch3' ? 'active' : ''}`}
-                                        >PVC </p>|
+                                        >CHENILLE</p>|
                                         <p onClick={() => handlePatchClick('Patch4')}
                                             className={`${selectedPatch === 'Patch4' ? 'active' : ''}`}
                                         >Embroidered</p>|
+                                        <p onClick={() => handlePatchClick('Patch5')}
+                                            className={`${selectedPatch === 'Patch5' ? 'active' : ''}`}
+                                        >lEATEHER</p>
                                     </div>
                                     {selectedPatch === 'Patch1' &&
                                         <motion.div
@@ -261,56 +301,145 @@ function Portfolio() {
                                     }
                                 </>
                             }
-                            {selectedValue === 'Apparel-Items' && <div className='portfolio-image'>
+                            {selectedValue === 'Apparel-Items' &&
                                 <>
-                                    <div className='portfolio_select_item'>
+                                    <div className='portfolio-image'>
 
-                                        <p onClick={() => handleapperalClick('apperal1')}
-                                            className={`${selectedApperal === 'apperal1' ? 'active' : ''}`}>
-                                            Hoodies</p>|
-                                        <p onClick={() => handleapperalClick('apperal2')}
-                                            className={`${selectedApperal === 'apperal2' ? 'active' : ''}`}>
-                                            Jerseys </p>|
-                                        <p onClick={() => handleapperalClick('apperal3')}
-                                            className={`${selectedApperal === 'apperal3' ? 'active' : ''}`}
-                                        >Sweat Shirt </p>|
-                                        <p onClick={() => handleapperalClick('apperal4')}
-                                            className={`${selectedApperal === 'apperal4' ? 'active' : ''}`}
-                                        >Towels</p>|
-                                        <p onClick={() => handleapperalClick('apperal5')}
-                                            className={`${selectedApperal === 'apperal5' ? 'active' : ''}`}
-                                        >R-Shirts</p>
+                                        <div className='portfolio_select_item'>
+
+                                            <p onClick={() => handleapperalClick('apperal1')}
+                                                className={`${selectedApperal === 'apperal1' ? 'active' : ''}`}>
+                                                Hoodies</p>|
+                                            <p onClick={() => handleapperalClick('apperal2')}
+                                                className={`${selectedApperal === 'apperal2' ? 'active' : ''}`}>
+                                                Jerseys </p>|
+                                            <p onClick={() => handleapperalClick('apperal3')}
+                                                className={`${selectedApperal === 'apperal3' ? 'active' : ''}`}
+                                            >Sweat Shirt </p>|
+                                            <p onClick={() => handleapperalClick('apperal4')}
+                                                className={`${selectedApperal === 'apperal4' ? 'active' : ''}`}
+                                            >Towels</p>|
+                                            <p onClick={() => handleapperalClick('apperal5')}
+                                                className={`${selectedApperal === 'apperal5' ? 'active' : ''}`}
+                                            >T-Shirts</p>
+                                        </div>
+                                        {selectedApperal === 'apperal1' &&
+                                            <motion.div
+                                                variants={FadeUp(0.3)}
+                                                initial="hidden"
+                                                whileInView="show"
+                                                viewport={{ once: true, amount: 0.1 }}
+                                                transition={{
+                                                    type: 'spring',
+                                                    stiffness: 300,
+                                                    damping: 20,
+                                                }}
+                                                className='portfolio-image'>
+                                                <Image src={Apperal1} />
+                                                <Image src={Apperal2} />
+                                                <Image src={Apperal3} />
+                                                <Image src={Apperal4} />
+                                                <Image src={Apperal5} />
+                                                <Image src={Apperal6} />
+                                                <Image src={Apperal7} />
+                                            </motion.div>
+                                        }
+                                        
+                                        {selectedApperal === 'apperal2' &&
+                                            <motion.div
+                                                variants={FadeUp(0.3)}
+                                                initial="hidden"
+                                                whileInView="show"
+                                                viewport={{ once: true, amount: 0.1 }}
+                                                transition={{
+                                                    type: 'spring',
+                                                    stiffness: 300,
+                                                    damping: 20,
+                                                }}
+                                                className='portfolio-image'>
+                                                <Image src={jersy1} />
+                                                <Image src={jersy2} />
+                                                <Image src={jersy3} />
+                                                <Image src={jersy4} />
+                                                <Image src={jersy5} />
+                                                <Image src={jersy6} />
+                                                <Image src={jersy7} />
+                                            </motion.div>
+                                        }
+                                        
+                                        {selectedApperal === 'apperal3' &&
+                                            <motion.div
+                                                variants={FadeUp(0.3)}
+                                                initial="hidden"
+                                                whileInView="show"
+                                                viewport={{ once: true, amount: 0.1 }}
+                                                transition={{
+                                                    type: 'spring',
+                                                    stiffness: 300,
+                                                    damping: 20,
+                                                }}
+                                                className='portfolio-image'>
+                                                <Image src={sweetShirt1} />
+                                                <Image src={sweetShirt2} />
+                                                <Image src={sweetShirt3} />
+                                                <Image src={sweetShirt4} />
+                                                <Image src={sweetShirt6} />
+                                                <Image src={sweetShirt7} />
+                                                <Image src={sweetShirt8} />
+                                                <Image src={sweetShirt9} />
+                                                <Image src={sweetShirt10} />
+                                            </motion.div>
+                                        }
+                                        
+                                        {selectedApperal === 'apperal4' &&
+                                            <motion.div
+                                                variants={FadeUp(0.3)}
+                                                initial="hidden"
+                                                whileInView="show"
+                                                viewport={{ once: true, amount: 0.1 }}
+                                                transition={{
+                                                    type: 'spring',
+                                                    stiffness: 300,
+                                                    damping: 20,
+                                                }}
+                                                className='portfolio-image'>
+                                                <Image src={towel1} />
+                                                <Image src={towel2} />
+                                                <Image src={towel3} />
+                                                <Image src={towel4} />
+                                                <Image src={towel5} />
+                                            </motion.div>
+                                        }
+
+                                        {selectedApperal === 'apperal5' &&
+                                            <motion.div
+                                                variants={FadeUp(0.3)}
+                                                initial="hidden"
+                                                whileInView="show"
+                                                viewport={{ once: true, amount: 0.1 }}
+                                                transition={{
+                                                    type: 'spring',
+                                                    stiffness: 300,
+                                                    damping: 20,
+                                                }}
+                                                className='portfolio-image'>
+                                                <Image src={tshirt1} />
+                                                <Image src={tshirt2} />
+                                                <Image src={tshirt3} />
+                                                <Image src={tshirt4} />
+                                                <Image src={tshirt5} />
+                                            </motion.div>
+                                        }
                                     </div>
-                                    <motion.div
-                                        variants={FadeUp(0.3)}
-                                        initial="hidden"
-                                        whileInView="show"
-                                        viewport={{ once: true, amount: 0.1 }}
-                                        transition={{
-                                            type: 'spring',
-                                            stiffness: 300,
-                                            damping: 20,
-                                        }}
-                                        className='portfolio-image'>
-                                        <Image src={Apperal1} />
-                                    <Image src={Apperal1} />
-                                    <Image src={Apperal1} />
-                                    <Image src={Apperal1} />
-                                    <Image src={Apperal1} />
-                                    <Image src={Apperal1} />
-                                    <Image src={Apperal1} />
-                                    <Image src={Apperal1} />
-                                    <Image src={Apperal1} />
-                                    </motion.div>
                                 </>
-                            </div>}
+                            }
                         </div>
 
                     </div>
                 </div>
                 <LogoSlider />
             </Container>
-        </MainLayout>
+        </MainLayout >
     )
 }
 
