@@ -7,7 +7,7 @@ import LogoSlider from '../Components/Slider/LogoSlider'
 import jre from './helo.jpeg'
 // import jre1 from '../images/ServiceShowsIMG/Patches.png'
 import jre2 from '../images/ServiceShowsIMG/hello.jpg'
-import jre3 from '../images/ServiceShowsIMG/hello2.jpg'
+// import jre3 from '../images/ServiceShowsIMG/hello2.jpg'
 
 // PATCHES----------------------------------
 import Sublimated1 from '../images/PortfolioImg/Patches/sublimated patches/sublimated1.jpg'
@@ -29,6 +29,43 @@ import Woven6 from '../images/PortfolioImg/Patches/woven patches/woven6.jpg'
 import Woven7 from '../images/PortfolioImg/Patches/woven patches/woven7.jpg'
 import Woven8 from '../images/PortfolioImg/Patches/woven patches/woven8.jpg'
 import Woven9 from '../images/PortfolioImg/Patches/woven patches/woven9.jpg'
+
+import Chenille1 from '../images/PortfolioImg/Patches/Chenille Patches/C1.jpg'
+import Chenille2 from '../images/PortfolioImg/Patches/Chenille Patches/C2.jpg'
+import Chenille3 from '../images/PortfolioImg/Patches/Chenille Patches/C3.jpg'
+import Chenille4 from '../images/PortfolioImg/Patches/Chenille Patches/C4.jpg'
+import Chenille5 from '../images/PortfolioImg/Patches/Chenille Patches/C5.jpg'
+import Chenille6 from '../images/PortfolioImg/Patches/Chenille Patches/C6.jpg'
+import Chenille7 from '../images/PortfolioImg/Patches/Chenille Patches/C7.jpg'
+import Chenille8 from '../images/PortfolioImg/Patches/Chenille Patches/C8.jpg'
+import Chenille9 from '../images/PortfolioImg/Patches/Chenille Patches/C9.jpg'
+import Chenille10 from '../images/PortfolioImg/Patches/Chenille Patches/C10.jpg'
+
+import emb1 from '../images/PortfolioImg/Patches/Embroidered Patches/E1.jpg'
+import emb2 from '../images/PortfolioImg/Patches/Embroidered Patches/E2.jpg'
+import emb3 from '../images/PortfolioImg/Patches/Embroidered Patches/E3.jpg'
+import emb4 from '../images/PortfolioImg/Patches/Embroidered Patches/E4.jpg'
+import emb5 from '../images/PortfolioImg/Patches/Embroidered Patches/E5.jpg'
+import emb6 from '../images/PortfolioImg/Patches/Embroidered Patches/E6.jpg'
+import emb7 from '../images/PortfolioImg/Patches/Embroidered Patches/E7.jpg'
+import emb8 from '../images/PortfolioImg/Patches/Embroidered Patches/E8.jpg'
+import emb9 from '../images/PortfolioImg/Patches/Embroidered Patches/E9.jpg'
+
+import lather1 from '../images/PortfolioImg/Patches/Leather Patches/L1.jpg'
+import lather2 from '../images/PortfolioImg/Patches/Leather Patches/L2.jpg'
+import lather3 from '../images/PortfolioImg/Patches/Leather Patches/L3.jpg'
+import lather4 from '../images/PortfolioImg/Patches/Leather Patches/L4.jpg'
+import lather5 from '../images/PortfolioImg/Patches/Leather Patches/L5.jpg'
+import lather6 from '../images/PortfolioImg/Patches/Leather Patches/L6.jpg'
+
+import PVC1 from '../images/PortfolioImg/Patches/PVC Patches/P1.jpg'
+import PVC2 from '../images/PortfolioImg/Patches/PVC Patches/P2.jpg'
+import PVC3 from '../images/PortfolioImg/Patches/PVC Patches/P3.jpg'
+import PVC4 from '../images/PortfolioImg/Patches/PVC Patches/P4.jpg'
+import PVC5 from '../images/PortfolioImg/Patches/PVC Patches/P5.jpg'
+import PVC6 from '../images/PortfolioImg/Patches/PVC Patches/P6.jpg'
+import PVC7 from '../images/PortfolioImg/Patches/PVC Patches/P7.jpg'
+import PVC8 from '../images/PortfolioImg/Patches/PVC Patches/P8.jpg'
 
 
 // APPERAL -------------------------------------
@@ -72,6 +109,24 @@ import tshirt4 from '../images/PortfolioImg/Apparel Items/T-Shirts/ts4.jpeg'
 import tshirt5 from '../images/PortfolioImg/Apparel Items/T-Shirts/ts5.jpeg'
 
 
+// Hats -------------------------------------------------------------------------
+import hat1 from '../images/PortfolioImg/Caps/Caps/C1.jpeg'
+import hat2 from '../images/PortfolioImg/Caps/Caps/C2.jpg'
+import hat3 from '../images/PortfolioImg/Caps/Caps/C3.jpg'
+import hat4 from '../images/PortfolioImg/Caps/Caps/C4.jpg'
+import hat5 from '../images/PortfolioImg/Caps/Caps/C5.jpg'
+import hat6 from '../images/PortfolioImg/Caps/Caps/C6.jpg'
+import hat7 from '../images/PortfolioImg/Caps/Caps/C7.jpg'
+import hat8 from '../images/PortfolioImg/Caps/Caps/C8.jpeg'
+import hat9 from '../images/PortfolioImg/Caps/Caps/C9.jpeg'
+import hat10 from '../images/PortfolioImg/Caps/Caps/C10.jpeg'
+
+
+import Beanies1 from '../images/PortfolioImg/Caps/Beanies/b1.jpeg'
+import Beanies2 from '../images/PortfolioImg/Caps/Beanies/b2.jpeg'
+import Beanies3 from '../images/PortfolioImg/Caps/Beanies/b3.jpeg'
+import Beanies4 from '../images/PortfolioImg/Caps/Beanies/b4.jpeg'
+import Beanies5 from '../images/PortfolioImg/Caps/Beanies/b5.jpeg'
 // import Woven10 from '../images/PortfolioImg/Patches/woven patches/woven10.jpg'
 // import Woven11 from '../images/PortfolioImg/Patches/woven patches/woven11.jpg'
 
@@ -89,6 +144,7 @@ function Portfolio() {
     const [selectedValue, setSelectedValue] = useState('Digitizing');
     const [selectedPatch, setSelectedPatch] = useState('Patch1');
     const [selectedApperal, setSelectedApperal] = useState('apperal1');
+    const [selectedHat, setSelectedHat] = useState('hat1')
 
     // Handler for the onChange event
     const handleChange = (value) => {
@@ -102,6 +158,10 @@ function Portfolio() {
 
     const handleapperalClick = (apperal) => {
         setSelectedApperal(apperal)
+    }
+
+    const handleHatClick = (hat) => {
+        setSelectedHat(hat)
     }
 
     // const CustomToken = {
@@ -154,15 +214,15 @@ function Portfolio() {
                                         damping: 20,
                                     }}
                                     className='portfolio-image'>
-                                    {/* <Image src={image2} />
-                                    <Image src={image2} />
-                                    <Image src={image2} />
-                                    <Image src={image2} />
-                                    <Image src={image2} />
-                                    <Image src={image2} />
-                                    <Image src={image2} />
-                                    <Image src={image2} />
-                                    <Image src={image2} /> */}
+                                    <Image src={jre2} />
+                                    <Image src={jre2} />
+                                    <Image src={jre2} />
+                                    <Image src={jre2} />
+                                    <Image src={jre2} />
+                                    <Image src={jre2} />
+                                    <Image src={jre2} />
+                                    <Image src={jre2} />
+                                    <Image src={jre2} />
                                 </motion.div>
                             }
                             {selectedValue === 'Vector' &&
@@ -207,7 +267,12 @@ function Portfolio() {
                                         >Embroidered</p>|
                                         <p onClick={() => handlePatchClick('Patch5')}
                                             className={`${selectedPatch === 'Patch5' ? 'active' : ''}`}
-                                        >lEATEHER</p>
+                                        >lEATEHER</p>|
+                                        <p onClick={() => handlePatchClick('Patch6')}
+                                            className={`${selectedPatch === 'Patch6' ? 'active' : ''}`}
+                                        >PVC</p>
+
+
                                     </div>
                                     {selectedPatch === 'Patch1' &&
                                         <motion.div
@@ -266,15 +331,16 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
-                                            <Image src={jre3} />
-                                            <Image src={jre3} />
-                                            <Image src={jre3} />
-                                            <Image src={jre3} />
-                                            <Image src={jre3} />
-                                            <Image src={jre3} />
-                                            <Image src={jre3} />
-                                            <Image src={jre3} />
-                                            <Image src={jre3} />
+                                            <Image src={Chenille1} />
+                                            <Image src={Chenille2} />
+                                            <Image src={Chenille3} />
+                                            <Image src={Chenille4} />
+                                            <Image src={Chenille5} />
+                                            <Image src={Chenille6} />
+                                            <Image src={Chenille7} />
+                                            <Image src={Chenille8} />
+                                            <Image src={Chenille9} />
+                                            <Image src={Chenille10} />
                                         </motion.div>
                                     }{selectedPatch === 'Patch4' &&
                                         <motion.div
@@ -288,17 +354,61 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
-                                            <Image src={jre2} />
-                                            <Image src={jre2} />
-                                            <Image src={jre2} />
-                                            <Image src={jre2} />
-                                            <Image src={jre2} />
-                                            <Image src={jre2} />
-                                            <Image src={jre2} />
-                                            <Image src={jre2} />
-                                            <Image src={jre2} />
+                                            <Image src={emb1} />
+                                            <Image src={emb2} />
+                                            <Image src={emb3} />
+                                            <Image src={emb4} />
+                                            <Image src={emb5} />
+                                            <Image src={emb6} />
+                                            <Image src={emb7} />
+                                            <Image src={emb8} />
+                                            <Image src={emb9} />
                                         </motion.div>
                                     }
+                                    {selectedPatch === 'Patch5' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={lather1} />
+                                            <Image src={lather2} />
+                                            <Image src={lather3} />
+                                            <Image src={lather4} />
+                                            <Image src={lather5} />
+                                            <Image src={lather6} />
+                                        </motion.div>
+                                    }
+                                    {selectedPatch === 'Patch6' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={PVC1} />
+                                            <Image src={PVC2} />
+                                            <Image src={PVC3} />
+                                            <Image src={PVC4} />
+                                            <Image src={PVC5} />
+                                            <Image src={PVC6} />
+                                            <Image src={PVC7} />
+                                            <Image src={PVC8} />
+
+                                        </motion.div>
+                                    }
+
                                 </>
                             }
                             {selectedValue === 'Apparel-Items' &&
@@ -344,7 +454,7 @@ function Portfolio() {
                                                 <Image src={Apperal7} />
                                             </motion.div>
                                         }
-                                        
+
                                         {selectedApperal === 'apperal2' &&
                                             <motion.div
                                                 variants={FadeUp(0.3)}
@@ -366,7 +476,7 @@ function Portfolio() {
                                                 <Image src={jersy7} />
                                             </motion.div>
                                         }
-                                        
+
                                         {selectedApperal === 'apperal3' &&
                                             <motion.div
                                                 variants={FadeUp(0.3)}
@@ -390,7 +500,7 @@ function Portfolio() {
                                                 <Image src={sweetShirt10} />
                                             </motion.div>
                                         }
-                                        
+
                                         {selectedApperal === 'apperal4' &&
                                             <motion.div
                                                 variants={FadeUp(0.3)}
@@ -431,6 +541,63 @@ function Portfolio() {
                                             </motion.div>
                                         }
                                     </div>
+                                </>
+                            }
+                            {selectedValue === 'Hats-And-Bean' &&
+                                <>
+                                    <div className='portfolio_select_item'>
+                                        <p onClick={() => handleHatClick('hat1')}
+                                            className={`${selectedHat === 'hat1' ? 'active' : ''}`}>
+                                            hats
+                                        </p>|
+                                        <p onClick={() => handleHatClick('hat2')}
+                                            className={`${selectedHat === 'hat2' ? 'active' : ''}`}>
+                                            Beanies
+                                        </p>
+                                    </div>
+                                    {selectedHat === 'hat1' &&
+                                            <motion.div
+                                                variants={FadeUp(0.3)}
+                                                initial="hidden"
+                                                whileInView="show"
+                                                viewport={{ once: true, amount: 0.1 }}
+                                                transition={{
+                                                    type: 'spring',
+                                                    stiffness: 300,
+                                                    damping: 20,
+                                                }}
+                                                className='portfolio-image'>
+                                                <Image src={hat1} />
+                                                <Image src={hat2} />
+                                                <Image src={hat3} />
+                                                <Image src={hat4} />
+                                                <Image src={hat5} />
+                                                <Image src={hat6} />
+                                                <Image src={hat7} />
+                                                <Image src={hat8} />
+                                                <Image src={hat9} />
+                                                <Image src={hat10} />
+                                            </motion.div>
+                                        }
+                                         {selectedHat === 'hat2' &&
+                                            <motion.div
+                                                variants={FadeUp(0.3)}
+                                                initial="hidden"
+                                                whileInView="show"
+                                                viewport={{ once: true, amount: 0.1 }}
+                                                transition={{
+                                                    type: 'spring',
+                                                    stiffness: 300,
+                                                    damping: 20,
+                                                }}
+                                                className='portfolio-image'>
+                                                <Image src={Beanies1} />
+                                                <Image src={Beanies2} />
+                                                <Image src={Beanies3} />
+                                                <Image src={Beanies4} />
+                                                <Image src={Beanies5} />
+                                            </motion.div>
+                                        }
                                 </>
                             }
                         </div>

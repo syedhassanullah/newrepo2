@@ -15,14 +15,14 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
     position: relative; 
     cursor: pointer;
-    background-color: var(--primary-colorbg);
+    background-color: var(--primary-color);
     backdrop-filter: var(--backdrop-filter);
   }
 
   /* For smaller screens (mobile-first) */
   @media (max-width: 600px) {
     .ServicesDetailcard .card {
-      width: 48%;
+      width: 100%;
     }
     .ServicesDetailcard{
       gap: 10px;
@@ -48,7 +48,7 @@
 
   .card:hover {
   transform: scale(1.03);
-  background-color: var(--primary-color);
+  background-color: var(--primary-colorbg);
 }
 
 /* Changing the text color on hover */
@@ -65,19 +65,18 @@
 
 .card:hover h3,
 .card:hover p {
-  color: white;
-  /* Text color changes to white on hover */
+  color: black;
 }
 
 .card h3 {
   font-size: 1.5rem;
-  color: #333;
+color: aliceblue;
   font-family: var(--text-heading2);
   font-weight: 600;
 }
 
 .card p {
   font-size: 1rem;
-  color: #222222;
+  color: aliceblue;
   margin-top: 10px;
 }

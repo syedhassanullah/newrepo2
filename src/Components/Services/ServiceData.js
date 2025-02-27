@@ -25,28 +25,28 @@ const ServiceData = [
     title: "VECTOR",
     description: "Improve your website's visibility on search engines.Improve your website's visibility on search engines.Improve your website's visibility on search engines.",
     icon:<BsVectorPen/> ,
-    url: "/services/seo", // Added the missing URL here
+    url: "/services/vector", // Added the missing URL here
   },
   {
     id: 4,
     title: "APPERAL ITEM",
     description: "Promote your business online to a wider audience.",
     icon:< img src={apperal} alt="patch"/>,
-    url: "/services/patches",
+    url: "/services/apparel-item",
   },
   {
     id: 5,
     title: "PROMOTIONAL",
     description: "Promote your business online to a wider audience.",
     icon: < img src={promotional} alt="patch"/>,
-    url: "http://localhost:3000/",
+    url: "/services/promotional",
   },
   {
     id: 6,
     title: "HATS AND BEANIES",
     description: "Promote your business online to a wider audience.",
     icon: <GiWinterHat/>,
-    url: "http://localhost:3000/",
+    url: "/services/hats-beanies",
   },
 ];
 
