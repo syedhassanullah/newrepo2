@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
 import DegitizingData from '../../../DataFile/ServicesData/DegitizingData'
-import Process from '../../Process'
+import Process from '../../Process/Process'
 
 function Digitizing() {
     return (

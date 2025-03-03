@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 import LogoSlider from '../../Slider/LogoSlider';
 import './ServicesDetail.css';
 import VectorData from '../../../DataFile/ServicesData/VectorData';
-import Process from '../../Process';
+import Process from '../../Process/Process';
 
 function Vector() {
     return (

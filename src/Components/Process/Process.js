@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { motion } from 'framer-motion'
-import { FadeIn } from '../Varient/Varient'
+import { FadeIn } from '../../Varient/Varient'
 import { IoIosCloudUpload } from "react-icons/io";
 import { GiPencilBrush } from "react-icons/gi";
 import { FaTruckArrowRight } from "react-icons/fa6";

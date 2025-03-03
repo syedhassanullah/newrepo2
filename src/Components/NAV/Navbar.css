@@ -11,7 +11,7 @@
   }
   
   .helo.scrolled {
-    background-color: rgba(240, 248, 255, 0.788);
+    background-color: rgba(255, 255, 255, 0.63);
     backdrop-filter: blur(25px);
     padding: 0px;
   }
@@ -137,6 +137,9 @@
   @media only screen and (max-width: 800px) {
     .Nav-buttons{
       display: none;
+    }
+    .head-item{
+      height: 80px;
     }
   }
 

@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    border-radius: 0px 0px 200px 0px;
+    border-radius: 0px 0px 150px 0px;
 }
 
 .heroimg {
@@ -32,7 +32,7 @@
 }
 
 .hero-comp .hero-text h3 {
-    font-size: 65px;
+    font-size: 50px;
     font-weight: 900;
     color: var(--primary-color);
     /* font-family: var(--text-heading2); */
@@ -41,13 +41,13 @@
 }
 
 .hero-comp .hero-text h1 {
-    font-size: 40px;
+    font-size: 30px;
     color: aliceblue;
     font-family: var(--text-heading2);
 }
 
 .hero-comp .hero-text h2 {
-    font-size: 60px;
+    font-size: 40px;
     color: rgb(0, 195, 255);
     font-family: var(--text-heading3);
     text-transform: uppercase;

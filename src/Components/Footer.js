@@ -82,7 +82,7 @@ function Footer() {
                 </div>
                 <Row>
                     <Col md={12}>
-                        <div style={{ borderTop: '1px solid white', textAlign: 'end', color: 'white', padding: '15px 0px' }}>
+                        <div className='f-line' >
                             © 2025 Beyound Digitizing | All Rights Reserved | beyonddigitizing.com
                         </div>
                     </Col>

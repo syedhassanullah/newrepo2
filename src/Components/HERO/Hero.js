@@ -23,7 +23,7 @@ function Hero() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex + 1) % contentData.length);
-        }, 1500); // Change every 3 seconds
+        }, 2000); // Change every 3 seconds
     
         return () => clearInterval(interval); // Cleanup on component unmount
     }, [contentData.length]); // Add contentData.length as a dependency

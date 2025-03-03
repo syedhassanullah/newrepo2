@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
 import ApparelItemsData from '../../../DataFile/ServicesData/ApparelItemsData'
-import Process from '../../Process'
+import Process from '../../Process/Process'
 
 function ApparelItems() {
     return (

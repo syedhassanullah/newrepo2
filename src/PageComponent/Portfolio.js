@@ -131,6 +131,65 @@ import Beanies5 from '../images/PortfolioImg/Caps/Beanies/b5.jpeg'
 // import Woven11 from '../images/PortfolioImg/Patches/woven patches/woven11.jpg'
 
 
+// promotional products
+import pleather1 from '../images/PortfolioImg/promotional/leather keychine/l1.jpg'
+import pleather2 from '../images/PortfolioImg/promotional/leather keychine/l2.jpg'
+import pleather3 from '../images/PortfolioImg/promotional/leather keychine/l3.jpg'
+import pleather4 from '../images/PortfolioImg/promotional/leather keychine/l4.jpg'
+import pleather5 from '../images/PortfolioImg/promotional/leather keychine/l5.jpg'
+
+import pwood1 from '../images/PortfolioImg/promotional/wood keychine/w1.jpg'
+import pwood2 from '../images/PortfolioImg/promotional/wood keychine/w2.jpg'
+import pwood3 from '../images/PortfolioImg/promotional/wood keychine/w3.jpg'
+import pwood4 from '../images/PortfolioImg/promotional/wood keychine/w4.jpg'
+import pwood5 from '../images/PortfolioImg/promotional/wood keychine/w5.jpg'
+import pwood6 from '../images/PortfolioImg/promotional/wood keychine/w6.jpg'
+import pwood7 from '../images/PortfolioImg/promotional/wood keychine/w7.jpg'
+import pwood8 from '../images/PortfolioImg/promotional/wood keychine/w8.jpg'
+import pwood9 from '../images/PortfolioImg/promotional/wood keychine/w9.jpg'
+
+import metal1 from '../images/PortfolioImg/promotional/metal keychines/m1.jpg'
+import metal2 from '../images/PortfolioImg/promotional/metal keychines/m2.jpg'
+import metal3 from '../images/PortfolioImg/promotional/metal keychines/m3.jpg'
+import metal4 from '../images/PortfolioImg/promotional/metal keychines/m4.jpg'
+import metal5 from '../images/PortfolioImg/promotional/metal keychines/m5.jpg'
+import metal6 from '../images/PortfolioImg/promotional/metal keychines/m6.jpg'
+import metal7 from '../images/PortfolioImg/promotional/metal keychines/m7.jpg'
+import metal8 from '../images/PortfolioImg/promotional/metal keychines/m8.jpg'
+
+import pv1 from '../images/PortfolioImg/promotional/pvc keychine/p1.jpg'
+import pv2 from '../images/PortfolioImg/promotional/pvc keychine/p2.jpg'
+import pv3 from '../images/PortfolioImg/promotional/pvc keychine/p3.jpg'
+import pv4 from '../images/PortfolioImg/promotional/pvc keychine/p4.jpg'
+import pv5 from '../images/PortfolioImg/promotional/pvc keychine/p5.jpg'
+
+import sticker1 from '../images/PortfolioImg/promotional/stikers/s1.jpg'
+import sticker2 from '../images/PortfolioImg/promotional/stikers/s2.jpg'
+import sticker3 from '../images/PortfolioImg/promotional/stikers/s3.jpg'
+import sticker4 from '../images/PortfolioImg/promotional/stikers/s4.jpg'
+import sticker5 from '../images/PortfolioImg/promotional/stikers/s5.jpg'
+import sticker6 from '../images/PortfolioImg/promotional/stikers/s6.jpg'
+import sticker7 from '../images/PortfolioImg/promotional/stikers/s7.jpg'
+import sticker8 from '../images/PortfolioImg/promotional/stikers/s8.jpg'
+
+import wrist1 from '../images/PortfolioImg/promotional/wrist band/w1.jpg'
+import wrist2 from '../images/PortfolioImg/promotional/wrist band/w2.jpg'
+import wrist3 from '../images/PortfolioImg/promotional/wrist band/w3.jpg'
+import wrist4 from '../images/PortfolioImg/promotional/wrist band/w4.jpg'
+import wrist5 from '../images/PortfolioImg/promotional/wrist band/w5.jpg'
+import wrist6 from '../images/PortfolioImg/promotional/wrist band/w6.jpg'
+import wrist7 from '../images/PortfolioImg/promotional/wrist band/w7.jpg'
+import wrist8 from '../images/PortfolioImg/promotional/wrist band/w8.jpg'
+
+import dtf1 from '../images/PortfolioImg/promotional/dtf sheets/d1.jpg'
+import dtf2 from '../images/PortfolioImg/promotional/dtf sheets/d2.jpg'
+import dtf3 from '../images/PortfolioImg/promotional/dtf sheets/d3.jpg'
+import dtf4 from '../images/PortfolioImg/promotional/dtf sheets/d4.jpg'
+import dtf5 from '../images/PortfolioImg/promotional/dtf sheets/d5.jpg'
+import dtf6 from '../images/PortfolioImg/promotional/dtf sheets/d6.jpg'
+import dtf7 from '../images/PortfolioImg/promotional/dtf sheets/d7.jpg'
+
+
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Container } from 'react-bootstrap';
@@ -144,7 +203,8 @@ function Portfolio() {
     const [selectedValue, setSelectedValue] = useState('Digitizing');
     const [selectedPatch, setSelectedPatch] = useState('Patch1');
     const [selectedApperal, setSelectedApperal] = useState('apperal1');
-    const [selectedHat, setSelectedHat] = useState('hat1')
+    const [selectedHat, setSelectedHat] = useState('hat1');
+    const [selectpromotional, setSelectedpromotioanl] = useState('promotional1');
 
     // Handler for the onChange event
     const handleChange = (value) => {
@@ -162,6 +222,10 @@ function Portfolio() {
 
     const handleHatClick = (hat) => {
         setSelectedHat(hat)
+    }
+
+    const handlePromotionalClick = (promotional) => {
+        setSelectedpromotioanl(promotional)
     }
 
     // const CustomToken = {
@@ -556,48 +620,224 @@ function Portfolio() {
                                         </p>
                                     </div>
                                     {selectedHat === 'hat1' &&
-                                            <motion.div
-                                                variants={FadeUp(0.3)}
-                                                initial="hidden"
-                                                whileInView="show"
-                                                viewport={{ once: true, amount: 0.1 }}
-                                                transition={{
-                                                    type: 'spring',
-                                                    stiffness: 300,
-                                                    damping: 20,
-                                                }}
-                                                className='portfolio-image'>
-                                                <Image src={hat1} />
-                                                <Image src={hat2} />
-                                                <Image src={hat3} />
-                                                <Image src={hat4} />
-                                                <Image src={hat5} />
-                                                <Image src={hat6} />
-                                                <Image src={hat7} />
-                                                <Image src={hat8} />
-                                                <Image src={hat9} />
-                                                <Image src={hat10} />
-                                            </motion.div>
-                                        }
-                                         {selectedHat === 'hat2' &&
-                                            <motion.div
-                                                variants={FadeUp(0.3)}
-                                                initial="hidden"
-                                                whileInView="show"
-                                                viewport={{ once: true, amount: 0.1 }}
-                                                transition={{
-                                                    type: 'spring',
-                                                    stiffness: 300,
-                                                    damping: 20,
-                                                }}
-                                                className='portfolio-image'>
-                                                <Image src={Beanies1} />
-                                                <Image src={Beanies2} />
-                                                <Image src={Beanies3} />
-                                                <Image src={Beanies4} />
-                                                <Image src={Beanies5} />
-                                            </motion.div>
-                                        }
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={hat1} />
+                                            <Image src={hat2} />
+                                            <Image src={hat3} />
+                                            <Image src={hat4} />
+                                            <Image src={hat5} />
+                                            <Image src={hat6} />
+                                            <Image src={hat7} />
+                                            <Image src={hat8} />
+                                            <Image src={hat9} />
+                                            <Image src={hat10} />
+                                        </motion.div>
+                                    }
+                                    {selectedHat === 'hat2' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={Beanies1} />
+                                            <Image src={Beanies2} />
+                                            <Image src={Beanies3} />
+                                            <Image src={Beanies4} />
+                                            <Image src={Beanies5} />
+                                        </motion.div>
+                                    }
+                                </>
+                            }
+                            {selectedValue === 'Promotional-Products' &&
+                                <>
+                                    <div className='portfolio_select_item'>
+
+                                        <p onClick={() => handlePromotionalClick('promotional1')}
+                                            className={`${selectpromotional === 'promotional1' ? 'active' : ''}`}>
+                                            Leather Keychain</p>|
+                                        <p onClick={() => handlePromotionalClick('promotional2')}
+                                            className={`${selectpromotional === 'promotional2' ? 'active' : ''}`}>
+                                            wood keychain </p>|
+                                        <p onClick={() => handlePromotionalClick('promotional3')}
+                                            className={`${selectpromotional === 'promotional3' ? 'active' : ''}`}
+                                        >Metal keychain</p>|
+                                        <p onClick={() => handlePromotionalClick('promotional4')}
+                                            className={`${selectpromotional === 'promotional4' ? 'active' : ''}`}
+                                        >pvc keychain</p>|
+                                        <p onClick={() => handlePromotionalClick('promotional5')}
+                                            className={`${selectpromotional === 'promotional5' ? 'active' : ''}`}
+                                        >Sticker</p>|
+                                        <p onClick={() => handlePromotionalClick('promotional6')}
+                                            className={`${selectpromotional === 'promotional6' ? 'active' : ''}`}
+                                        >wrist band</p>|
+                                        <p onClick={() => handlePromotionalClick('promotional7')}
+                                            className={`${selectpromotional === 'promotional7' ? 'active' : ''}`}
+                                        >dtf sheet</p>
+                                    </div>
+                                    {selectpromotional === 'promotional1' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={pleather1} />
+                                            <Image src={pleather2} />
+                                            <Image src={pleather3} />
+                                            <Image src={pleather4} />
+                                            <Image src={pleather5} />
+                                        </motion.div>
+                                    }  {selectpromotional === 'promotional2' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={pwood1} />
+                                            <Image src={pwood2} />
+                                            <Image src={pwood3} />
+                                            <Image src={pwood4} />
+                                            <Image src={pwood5} />
+                                            <Image src={pwood6} />
+                                            <Image src={pwood7} />
+                                            <Image src={pwood8} />
+                                            <Image src={pwood9} />
+                                            
+                                        </motion.div>
+                                    }
+                                    {selectpromotional === 'promotional3' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={metal1} />
+                                            <Image src={metal2} />
+                                            <Image src={metal3} />
+                                            <Image src={metal4} />
+                                            <Image src={metal5} />
+                                            <Image src={metal6} />
+                                            <Image src={metal7} />
+                                            <Image src={metal8} />                                            
+                                        </motion.div>
+                                    }
+                                    {selectpromotional === 'promotional4' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={pv1} />
+                                            <Image src={pv2} />
+                                            <Image src={pv3} />
+                                            <Image src={pv4} />
+                                            <Image src={pv5} />                                           
+                                        </motion.div>
+                                    }
+                                    {selectpromotional === 'promotional5' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={sticker1} />
+                                            <Image src={sticker2} />
+                                            <Image src={sticker3} />
+                                            <Image src={sticker4} />
+                                            <Image src={sticker5} />
+                                            <Image src={sticker6} />
+                                            <Image src={sticker7} />
+                                            <Image src={sticker8} />                                            
+                                        </motion.div>
+                                    }
+                                    {selectpromotional === 'promotional6' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={wrist1} />
+                                            <Image src={wrist2} />
+                                            <Image src={wrist3} />
+                                            <Image src={wrist4} />
+                                            <Image src={wrist5} />
+                                            <Image src={wrist6} />
+                                            <Image src={wrist7} />
+                                            <Image src={wrist8} />                                            
+                                        </motion.div>
+                                    }
+                                    {selectpromotional === 'promotional7' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={dtf1} />
+                                            <Image src={dtf2} />
+                                            <Image src={dtf3} />
+                                            <Image src={dtf4} />
+                                            <Image src={dtf5} />
+                                            <Image src={dtf6} />
+                                            <Image src={dtf7} />                                      
+                                        </motion.div>
+                                    }
                                 </>
                             }
                         </div>

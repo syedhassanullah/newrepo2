@@ -11,7 +11,7 @@ import LogoSlider from '../Components/Slider/LogoSlider'
 import ClientReview from '../Components/ClientReview/ClientReview';
 // import Counter from '../Components/Counter/Counter';
 // import CountrySlider from '../Components/Slider/CountrySlider';
-import Process from '../Components/Process';
+import Process from '../Components/Process/Process';
 
 
 
