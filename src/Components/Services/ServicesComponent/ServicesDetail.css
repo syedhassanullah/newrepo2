@@ -21,14 +21,30 @@
 
   .servicedesc{
     background-color: var(--primary-color);
-    height: 80vh;
+    padding:0px 60px;
   }
-  .servicedesc .sDescImg{
-    background-image: url(../../../images/ServiceShowsIMG/Capture.PNG);
-    background-size: cover;
-    background-position: center;
+  .servicedesc .sDescImg {
+    width: 100%; /* Adjust as per layout */
+    height: 100%;
+    overflow: hidden; /* Prevent overflow */
+  }
+  .servicedesc .sDescImg img {
     width: 100%;
     height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  .servicedesc .sDescImg img{
+    width: 100%;
+    height: 100%;
+  }
+  .servicedesc .sDesctext h1{ 
+    font-family: var(--text-heading3);
+    font-weight: 700;
+    color: aliceblue;
+  }
+  .servicedesc .sDesctext{
+    color: aliceblue;
+    padding-top: 20px;
   }
 
 

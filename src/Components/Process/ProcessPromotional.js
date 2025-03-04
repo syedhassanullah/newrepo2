@@ -12,20 +12,20 @@ function ProcessPromotional() {
     {
       id: '1',
       img: <IoIosCloudUpload />,
-      title: 'Submit Your Idea',
-      description: 'Submit your logo, artwork, or design in any digital format, including JPEG, PNG, and PDF.'
+      title: 'Select & Upload',
+      description: 'Choose from mugs, keychains, pens, and more, then submit your logo or message.'
     },
     {
       id: '2',
       img: <GiPencilBrush />,
-      title: 'Digitizing & Preview',
-      description: 'Our skilled team will transform your design into a professional embroidery file. You’ll receive a preview for approval and we’ll fine-tune it to perfection.'
+      title: 'Mockup & Approval',
+      description: 'We create a digital preview and make adjustments as needed'
     },
     {
       id: '3',
       img: <FaTruckArrowRight />,
-      title: 'Production & Delivery',
-      description: 'Once approved, we’ll create your patches with meticulous attention to detail and deliver them to you, ready to enhance your look!'
+      title: 'Printing & Shipping',
+      description: 'Once approved, we print your design and send the customized products to you.'
     }
   ];
 

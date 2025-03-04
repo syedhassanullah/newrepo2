@@ -12,20 +12,20 @@ function ProcessApperal() {
     {
       id: '1',
       img: <IoIosCloudUpload />,
-      title: 'Submit Your Idea',
-      description: 'Submit your logo, artwork, or design in any digital format, including JPEG, PNG, and PDF.'
+      title: 'Choose & Upload ',
+      description: 'Select t-shirts, hoodies, or jackets and submit your artwork.'
     },
     {
       id: '2',
       img: <GiPencilBrush />,
-      title: 'Digitizing & Preview',
-      description: 'Our skilled team will transform your design into a professional embroidery file. You’ll receive a preview for approval and we’ll fine-tune it to perfection.'
+      title: 'Mockup & Approval',
+      description: 'We create a digital preview and adjust it as per your feedback.'
     },
     {
       id: '3',
       img: <FaTruckArrowRight />,
       title: 'Production & Delivery',
-      description: 'Once approved, we’ll create your patches with meticulous attention to detail and deliver them to you, ready to enhance your look!'
+      description: 'Your custom apparel is printed or embroidered and shipped to you.'
     }
   ];
 

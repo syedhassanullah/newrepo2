@@ -5,6 +5,8 @@ import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
 import HatsAndBeaniesData from '../../../DataFile/ServicesData/HatsAndBeaniesData'
 import Process from '../../Process/processHats'
+import digi from '../../../images/ServiceShowsIMG/hello.jpg'
+import { Row, Col } from 'react-bootstrap'
 
 function HatsAndBeanies() {
     return (
@@ -16,6 +18,22 @@ function HatsAndBeanies() {
             </div>
 
             <Container>
+                <Row className='servicedesc d-flex flex-wrap align-items-center justify-content-center'>
+
+                    <Col md={6} >
+                        <div className='sDescImg '>
+                            <img src={digi} alt='img' />
+                        </div>
+                    </Col>
+                    <Col md={6}>
+                        <div className='sDesctext'>
+                            <h1>
+                            Hats & Beanies</h1>
+                            <p>Make a statement with custom-embroidered hats and beanies. Whether for a brand, event, or personal style, we deliver premium embroidery that stands out and lasts.</p>
+                        </div>
+                    </Col>
+
+                </Row>
                 <div className='ServicesDetailcard'>
                     {HatsAndBeaniesData?.map((data) => {
                         return (
@@ -27,7 +45,7 @@ function HatsAndBeanies() {
                     })}
                 </div>
             </Container>
-            <Process/>
+            <Process />
             <LogoSlider />
         </MainLayout>
     )

@@ -12,20 +12,20 @@ function ProcessHats() {
     {
       id: '1',
       img: <IoIosCloudUpload />,
-      title: 'Submit Your Idea',
-      description: 'Submit your logo, artwork, or design in any digital format, including JPEG, PNG, and PDF.'
+      title: 'Pick Style & Send',
+      description: 'Pick from a variety of styles and upload your logo or artwork.'
     },
     {
       id: '2',
       img: <GiPencilBrush />,
-      title: 'Digitizing & Preview',
-      description: 'Our skilled team will transform your design into a professional embroidery file. You’ll receive a preview for approval and we’ll fine-tune it to perfection.'
+      title: 'Preview & Refinements',
+      description: 'We digitize your design and share a preview for approval.'
     },
     {
       id: '3',
       img: <FaTruckArrowRight />,
       title: 'Production & Delivery',
-      description: 'Once approved, we’ll create your patches with meticulous attention to detail and deliver them to you, ready to enhance your look!'
+      description: 'Your design is carefully embroidered, checked for quality, and delivered to you.'
     }
   ];
 

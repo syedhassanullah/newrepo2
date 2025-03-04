@@ -145,9 +145,9 @@ const Navbar = () => {
       ),
       key: '5',
     },
-    {
-      type: 'divider',
-    },
+    // {
+    //   type: 'divider',
+    // },
   ];
 
 
