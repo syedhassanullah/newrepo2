@@ -14,13 +14,13 @@
 }
 
 .hero-comp {
-    height: 100vh;
+  min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    min-height: 60vh;
+    
 }
 
 .hero-comp .hero-text {
@@ -29,10 +29,11 @@
     align-items: start;
     justify-content: space-between;
     text-align: start;
+    /* padding: 180px 0px ; */
 }
 
 .hero-comp .hero-text h3 {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 900;
     color: var(--primary-color);
     /* font-family: var(--text-heading2); */

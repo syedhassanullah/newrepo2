@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
 import HatsAndBeaniesData from '../../../DataFile/ServicesData/HatsAndBeaniesData'
-import Process from '../../Process/Process'
+import Process from '../../Process/processHats'
 
 function HatsAndBeanies() {
     return (

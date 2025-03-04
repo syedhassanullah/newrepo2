@@ -41,8 +41,8 @@ export default function Counter() {
                                         className="count" >
                                         <h3><img src={img3} alt="logo" /></h3>
                                         <div className="countNun">
-                                            <h2> {inView ? <CountUp end={100} duration={2} /> : 0}
-                                                +</h2>
+                                            <h2> {inView ? <CountUp end={10} duration={2} /> : 0}
+                                                K+</h2>
                                             <p>Our Team</p>
                                         </div>
                                     </motion.div>
@@ -59,7 +59,7 @@ export default function Counter() {
                                         className="count" >
                                         <h3><img src={img1} alt="logo" /></h3>
                                         <div className="countNun">
-                                            <h2> {inView ? <CountUp end={500} duration={5} /> : 0}
+                                            <h2> {inView ? <CountUp end={5000} duration={5} /> : 0}
                                                 +</h2>
                                             <p>Happy Clients</p>
                                         </div>
@@ -77,7 +77,7 @@ export default function Counter() {
                                         className="count" >
                                         <h3><img src={img2} alt="logo" /></h3>
                                         <div className="countNun">
-                                            <h2> {inView ? <CountUp end={1050} duration={5} /> : 0}
+                                            <h2> {inView ? <CountUp end={10000} duration={5} /> : 0}
                                                 +</h2>
                                             <p>Complete Projects</p>
                                         </div>
@@ -95,7 +95,7 @@ export default function Counter() {
                                         className="count" >
                                         <h3><img src={img4} alt="logo" /></h3>
                                         <div className="countNun">
-                                            <h2> {inView ? <CountUp end={10} duration={4} /> : 0}
+                                            <h2> {inView ? <CountUp end={23} duration={4} /> : 0}
                                                 +</h2>
                                             <p>Years In Experience</p>
                                         </div>

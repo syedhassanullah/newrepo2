@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { Image } from 'antd';
 import LogoSlider from '../Components/Slider/LogoSlider'
 import jre from './helo.jpeg'
+import { motion } from 'framer-motion'
+import { FadeIn } from '../Varient/Varient'
 // import jre1 from '../images/ServiceShowsIMG/Patches.png'
 import jre2 from '../images/ServiceShowsIMG/hello.jpg'
 // import jre3 from '../images/ServiceShowsIMG/hello2.jpg'
@@ -193,9 +195,6 @@ import dtf7 from '../images/PortfolioImg/promotional/dtf sheets/d7.jpg'
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Container } from 'react-bootstrap';
-
-
-import { motion } from 'framer-motion'
 import { FadeUp } from '../Varient/Varient2'
 
 function Portfolio() {
@@ -246,8 +245,15 @@ function Portfolio() {
         <MainLayout>
             <div className='heroother'>
                 <Container>
-
-                    <h1 >Our Portfolio</h1>
+                    <motion.h1
+                        variants={FadeIn('left')}
+                        initial="hidden"
+                        whileInView={'show'}
+                        viewport={{
+                            once: false, amount: 0.3
+                        }}
+                        transition={{ type: 'tween' }}
+                    >Our Portfolio</motion.h1>
                 </Container>
             </div>
             <Container>
@@ -729,7 +735,7 @@ function Portfolio() {
                                             <Image src={pwood7} />
                                             <Image src={pwood8} />
                                             <Image src={pwood9} />
-                                            
+
                                         </motion.div>
                                     }
                                     {selectpromotional === 'promotional3' &&
@@ -751,7 +757,7 @@ function Portfolio() {
                                             <Image src={metal5} />
                                             <Image src={metal6} />
                                             <Image src={metal7} />
-                                            <Image src={metal8} />                                            
+                                            <Image src={metal8} />
                                         </motion.div>
                                     }
                                     {selectpromotional === 'promotional4' &&
@@ -770,7 +776,7 @@ function Portfolio() {
                                             <Image src={pv2} />
                                             <Image src={pv3} />
                                             <Image src={pv4} />
-                                            <Image src={pv5} />                                           
+                                            <Image src={pv5} />
                                         </motion.div>
                                     }
                                     {selectpromotional === 'promotional5' &&
@@ -792,7 +798,7 @@ function Portfolio() {
                                             <Image src={sticker5} />
                                             <Image src={sticker6} />
                                             <Image src={sticker7} />
-                                            <Image src={sticker8} />                                            
+                                            <Image src={sticker8} />
                                         </motion.div>
                                     }
                                     {selectpromotional === 'promotional6' &&
@@ -814,7 +820,7 @@ function Portfolio() {
                                             <Image src={wrist5} />
                                             <Image src={wrist6} />
                                             <Image src={wrist7} />
-                                            <Image src={wrist8} />                                            
+                                            <Image src={wrist8} />
                                         </motion.div>
                                     }
                                     {selectpromotional === 'promotional7' &&
@@ -835,7 +841,7 @@ function Portfolio() {
                                             <Image src={dtf4} />
                                             <Image src={dtf5} />
                                             <Image src={dtf6} />
-                                            <Image src={dtf7} />                                      
+                                            <Image src={dtf7} />
                                         </motion.div>
                                     }
                                 </>

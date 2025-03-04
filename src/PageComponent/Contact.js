@@ -4,7 +4,8 @@ import { Container } from 'react-bootstrap'
 import ContactSec from '../Components/ContactSec'
 import FlagSlider from '../Components/Slider/FlagSlider';
 import Counter from '../Components/Counter/Counter';
-
+import { motion } from 'framer-motion'
+import { FadeIn } from '../Varient/Varient'
 
 
 function Contact() {
@@ -12,7 +13,15 @@ function Contact() {
     <MainLayout>
     <div className='heroother'>
       <Container>
-        <h1>Contact US</h1>
+      <motion.h1
+            variants={FadeIn('left')}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{
+              once: false, amount: 0.3
+            }}
+            transition={{ type: 'tween' }}
+          >CONTACT US</motion.h1>
       </Container>
     </div>
     <ContactSec/>

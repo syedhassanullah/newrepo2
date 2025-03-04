@@ -8,6 +8,10 @@ import Paypal from '../images/MainLogo/Pay-with-paypal.png'
 // import Whatsapp from '../images/MainLogo/whatsapplogo.png'
 // import beyond from '../images/MainLogo/beyondDigitizing.png'
 
+import { ImLocation } from "react-icons/im";
+import { MdPermPhoneMsg } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+
 function Footer() {
     return (
         <div className='footer'>
@@ -70,9 +74,9 @@ function Footer() {
                                     {/* <div style={{width:'7rem',backgroundColor:'white'}} >
                                     <img src={beyond} alt='LOGO' style={{width:'100%'}}/>
                                     </div> */}
-                                    <h6>218 W Colorado Ave #104, Colorado Springs, CO 80903, United States</h6>
-                                    <h6>+1-719-900-4662</h6>
-                                    <h6>beyonddigitizing7@gmail.com</h6>
+                                    <div style={{display:'flex' }}><h4><ImLocation/></h4><h6>218 W Colorado Ave #104, Colorado Springs, CO 80903, United States</h6></div>
+                                    <div style={{display:'flex' ,alignItems:'center'}}><h4><MdPermPhoneMsg/></h4> <h6>+1-719-900-4662</h6></div>
+                                    <div style={{display:'flex' ,alignItems:'center'}}><h4><MdEmail/></h4><h6>beyonddigitizing7@gmail.com</h6></div>
                                     <h6>Working Hours: 10:00 - 18:00 GST</h6>
                                 </div>
                                 <div style={{ paddingTop: '40px' }}><Icons /></div>

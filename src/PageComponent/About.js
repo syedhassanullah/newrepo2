@@ -34,7 +34,6 @@ export default function About() {
       <CountrySlider/>
       <ClientReview/>
       <ContactSec />
-      
       <LogoSlider />
     </MainLayout>
   )

@@ -38,6 +38,7 @@ function Home() {
        
         <ContactSec />
         <Process/>
+        {/* <Counter/> */}
         <LogoSlider/>
         
         {/* <CountrySlider/> */}
