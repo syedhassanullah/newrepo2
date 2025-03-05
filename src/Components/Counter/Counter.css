@@ -44,7 +44,7 @@
 }
 
 .backcount .count p {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 0px;
     font-weight: 600;
 }
@@ -65,7 +65,10 @@
 
 
 /* ////// */
-
+.choose .Collapse{
+    font-family: var(--text-heading2);
+    font-weight: 600;
+}
 .choose h4 {
     font-family: var(--text-heading3);
     width: 180%;

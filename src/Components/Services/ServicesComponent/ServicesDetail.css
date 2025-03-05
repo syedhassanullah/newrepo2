@@ -21,12 +21,16 @@
 
   .servicedesc{
     background-color: var(--primary-color);
-    padding:0px 60px;
+    margin: 0px  3px;
+    border-radius: 3px;
   }
   .servicedesc .sDescImg {
     width: 100%; /* Adjust as per layout */
     height: 100%;
     overflow: hidden; /* Prevent overflow */
+    background-color: black;
+    padding: 40px;
+
   }
   .servicedesc .sDescImg img {
     width: 100%;
@@ -44,7 +48,8 @@
   }
   .servicedesc .sDesctext{
     color: aliceblue;
-    padding-top: 20px;
+    font-family: var(--text-heading2);
+    padding: 35px;
   }
 
 
@@ -55,6 +60,11 @@
     }
     .ServicesDetailcard{
       gap: 10px;
+    }
+    .servicedesc .sDesctext{
+      color: aliceblue;
+      
+      padding: 0px;
     }
  
   }

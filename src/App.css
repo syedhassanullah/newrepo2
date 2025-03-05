@@ -612,6 +612,7 @@ body::-webkit-scrollbar-track {
   width: 100%;
   padding: 20px 0px;
   gap: 25px;
+  overflow: hidden;
 }
 
 .sCard a{

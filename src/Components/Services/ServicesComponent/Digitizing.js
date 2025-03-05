@@ -17,22 +17,7 @@ function Digitizing() {
             </div>
 
             <Container>
-            <Row className='servicedesc d-flex flex-wrap align-items-center justify-content-center'>
 
-<Col md={6} >
-    <div className='sDescImg '>
-        <img src={digi} alt='img'/>
-    </div>
-</Col>
-<Col md={6}>
-    <div className='sDesctext'>
-        <h1>Digitizing</h1>
-        <p>At Beyond Digitizing, we specialize in transforming your artwork into high-quality embroidery files. Our expert team ensures precision, clarity, and efficiency, making your designs stitch perfectly on any fabric.
-        </p>
-    </div>
-</Col>
-
-</Row>
                 <div className='ServicesDetailcard'>
                     {DegitizingData?.map((data) => {
                         return (
@@ -43,7 +28,22 @@ function Digitizing() {
                         );
                     })}
                 </div>
+                <Row className='servicedesc d-flex flex-wrap align-items-center justify-content-center'>
 
+                    <Col md={6} style={{padding:'0px'}}>
+                        <div className='sDescImg '>
+                            <img src={digi} alt='img' />
+                        </div>
+                    </Col>
+                    <Col md={6}>
+                        <div className='sDesctext'>
+                            <h1>Digitizing</h1>
+                            <p>At Beyond Digitizing, we specialize in transforming your artwork into high-quality embroidery files. Our expert team ensures precision, clarity, and efficiency, making your designs stitch perfectly on any fabric.
+                            </p>
+                        </div>
+                    </Col>
+
+                </Row>
 
 
 

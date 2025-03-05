@@ -18,9 +18,20 @@ function HatsAndBeanies() {
             </div>
 
             <Container>
+               
+                <div className='ServicesDetailcard'>
+                    {HatsAndBeaniesData?.map((data) => {
+                        return (
+                            <div className="card" key={data.id}>
+                                <h3>{data.name}</h3>
+                                <p>{data.description}</p>
+                            </div>
+                        );
+                    })}
+                </div>
                 <Row className='servicedesc d-flex flex-wrap align-items-center justify-content-center'>
 
-                    <Col md={6} >
+                    <Col md={6} style={{padding:'0px'}}>
                         <div className='sDescImg '>
                             <img src={digi} alt='img' />
                         </div>
@@ -33,17 +44,7 @@ function HatsAndBeanies() {
                         </div>
                     </Col>
 
-                </Row>
-                <div className='ServicesDetailcard'>
-                    {HatsAndBeaniesData?.map((data) => {
-                        return (
-                            <div className="card" key={data.id}>
-                                <h3>{data.name}</h3>
-                                <p>{data.description}</p>
-                            </div>
-                        );
-                    })}
-                </div>
+                </Row> 
             </Container>
             <Process />
             <LogoSlider />
