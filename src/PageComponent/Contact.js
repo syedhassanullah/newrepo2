@@ -1,7 +1,7 @@
 import React from 'react'
 import MainLayout from '../Layout/MainLayout'
 import { Container } from 'react-bootstrap'
-import ContactSec from '../Components/ContactSec'
+import ContactSec from '../Components/ContactSec2'
 import FlagSlider from '../Components/Slider/FlagSlider';
 import Counter from '../Components/Counter/Counter';
 import { motion } from 'framer-motion'

@@ -5,6 +5,9 @@ import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
 import PromotionalProductsData from '../../../DataFile/ServicesData/PromotionalProducts'
 import Process from '../../Process/ProcessPromotional'
+import digi from '../../../images/ServiceShowsIMG/pro.jpg'
+import { Row, Col } from 'react-bootstrap'
+
 
 function PromotionalProducts() {
     return (
@@ -26,6 +29,20 @@ function PromotionalProducts() {
                         );
                     })}
                 </div>
+                <Row className=' servicedesc d-flex flex-wrap align-items-center justify-content-center'>
+
+<Col md={6} style={{padding:'0px'}}>
+    <div className='sDescImg '>
+        <img src={digi} alt='img' />
+    </div>
+</Col>
+<Col md={6}>
+    <div className='sDesctext'>
+        <h1>Promotional Items</h1>
+        <p>Boost your brand with customized promotional items like mugs, keychains, and tote bags. Our printing and embroidery services ensure high-quality branding that leaves a lasting impression.</p>
+    </div>
+</Col>
+</Row>
             </Container>
             <Process/>
             <LogoSlider />

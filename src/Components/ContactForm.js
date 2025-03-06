@@ -110,16 +110,18 @@ function ContactForm() {
       <ThemeProvider theme={darkTheme}>
         <div className='cform' >
           <div style={{ marginBottom: '30px' }}>
-            <h2>Contact Us</h2>
+            <h2>Lets Talk</h2>
+            <p style={{color:"aliceblue"}}>We aim to respond to all inquiries within 24 hours on business days. We're here to help!</p>
+            
           </div>
           <Stack spacing={3}>
             <Stack direction='row' spacing={2}>
-              <TextField label='First Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='firstName'/>
-              <TextField label='Last Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='lasttname'/>
+              <TextField fullWidth label='First Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='firstName'/>
+              <TextField fullWidth label='Last Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='lasttname'/>
             </Stack>
             <Stack direction='row' spacing={2}>
-              <TextField label='Phone' variant='outlined' size='small' className='cinput' onChange={getValues} name='contact'/>
-              <TextField label='Email' variant='outlined' size='small' className='cinput' onChange={getValues} name='email'/>
+              <TextField fullWidth label='Phone' variant='outlined' size='small' className='cinput' onChange={getValues} name='contact'/>
+              <TextField fullWidth label='Email' variant='outlined' size='small' className='cinput' onChange={getValues} name='email'/>
             </Stack>
             <Stack direction='row' >
               <TextField label='Message' variant='outlined' size='small' className='cinputm' fullWidth multiline rows={4} onChange={getValues} name='message'/>
@@ -127,7 +129,7 @@ function ContactForm() {
           </Stack>
           <div style={{ right: '0px', textAlign: 'end', marginTop: '30px' }} >
             
-            <Button variant="contained" size='small' onClick={Clickme}>Submit Now</Button>
+            <Button variant="contained" size='medium' onClick={Clickme}>Submit Now</Button>
           </div>
         </div>
 

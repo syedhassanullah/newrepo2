@@ -7,6 +7,7 @@ import { FadeIn } from '../Varient/Varient'
 import { ImLocation } from "react-icons/im";
 import { MdPermPhoneMsg } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
+import ChooseQues from './Counter/ChooseQues'
 
 
 function ContactSec() {
@@ -32,12 +33,13 @@ function ContactSec() {
                   </motion.div>
             <Row >
               <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between',padding:'0px' }}>
+              
                 <Col md={6} >
                   
                   <ContactForm />
                 </Col>
                 <Col md={6}>
-                  <motion.div className='cformimg'
+                  {/* <motion.div className='cformimg'
                     variants={FadeIn('right', 0.2)}
                     initial="hidden"
                     whileInView={'show'}
@@ -64,8 +66,10 @@ function ContactSec() {
                       </div>
                     </div>
                     <img src={Cimg} alt='has' />
-                  </motion.div>
-                </Col>
+                  </motion.div> */}
+                  
+                  <ChooseQues/>
+                </Col>  
               </div>
             </Row>
           </div>

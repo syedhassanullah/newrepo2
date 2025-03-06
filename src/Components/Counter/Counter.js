@@ -20,7 +20,6 @@ export default function Counter() {
             <div className="backcount">
                 <Container>
                     <div className="section-padding">
-                        <h4>Why Choose Us?</h4>
 
                         <Row className="d-flex flex-wrap align-items-center justify-content-space-between ">
                             <Col md={6}>

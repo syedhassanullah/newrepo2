@@ -49,6 +49,7 @@ const ChooseQues = () => {
 
 
       {/* Right Side Counter (Collapse Items) */}
+      <h4>Why Choose Us ?</h4>
       <motion.div
         variants={FadeIn('left')}
         initial="hidden"
@@ -57,7 +58,7 @@ const ChooseQues = () => {
           once: true, amount: 0.3
         }}
         transition={{ type: 'tween' }} >
-        <Collapse className='Collapse' defaultActiveKey={['1']} onChange={onChange}>
+        <Collapse className='Collapse ' defaultActiveKey={['1']} onChange={onChange}>
           {counterItems.map(item => (
             <Collapse.Panel header={item.label} key={item.key}>
               <p>{item.content}</p>

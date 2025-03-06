@@ -2,7 +2,7 @@ import React from 'react'
 import MainLayout from '../Layout/MainLayout'
 import { Container } from 'react-bootstrap'
 import AboutSec from '../Components/AboutSec'
-import ContactSec from '../Components/ContactSec'
+// import ContactSec from '../Components/ContactSec'
 import LogoSlider from '../Components/Slider/LogoSlider'
 import { motion } from 'framer-motion'
 import { FadeIn } from '../Varient/Varient'
@@ -33,7 +33,7 @@ export default function About() {
       <Counter/>
       <CountrySlider/>
       <ClientReview/>
-      <ContactSec />
+      {/* <ContactSec /> */}
       <LogoSlider />
     </MainLayout>
   )

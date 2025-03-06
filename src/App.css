@@ -324,7 +324,7 @@ body::-webkit-scrollbar-track {
 }
 
 .ContactForm .cformimg {
-  padding: 30px 10px;
+  padding: 30px 30px;
   max-width: 700px;
   
 }
@@ -338,7 +338,7 @@ body::-webkit-scrollbar-track {
 }
 
 .cform {
-  max-width: 478px;
+  max-width: 100%;
   padding: 50px 35px;
   border-radius: var(--borderradius);
   background-color: #000000;
@@ -347,6 +347,10 @@ body::-webkit-scrollbar-track {
 .cform h2 {
   font-family: var(--text-heading2);
   font-weight: 600;
+  color: var(--primary-color);
+}
+.cform p {
+  font-family: var(--text-heading2);
   color: var(--primary-color);
 }
 
@@ -625,7 +629,9 @@ body::-webkit-scrollbar-track {
   cursor: pointer;
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.137);
   width: 19rem;
-  height: 15rem;
+  height: 22rem;
+  position:relative;
+  transition: 0.1s ease all;
   /* background-color: white; */
 }
 .sCard .ServiceSecCard{
@@ -682,7 +688,7 @@ body::-webkit-scrollbar-track {
 
 .sCard .ServiceSecCard p{
   display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -729,6 +735,21 @@ body::-webkit-scrollbar-track {
     overflow: scroll;
     width: 335px;
   }
+  .sCard .ServiceSecCard .buttom h6 {
+    transform: translateX(0); /* Initially, place the text out of view */
+    opacity: 1; /* Initially hidden */
+     /* Smooth transition */
+    color: var(--primary-color);
+
+  }
+  .ServiceSecCard:hover h4{
+    color: var(--primary-color);
+  }
+  
+  .ServiceSecCard:hover p{
+    color: black;
+  }
+  
 }
 
 /* For medium screens (tablets, small laptops) */
@@ -796,7 +817,17 @@ body::-webkit-scrollbar-track {
 
 
 
-
+@keyframes whats {
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
 
 
 

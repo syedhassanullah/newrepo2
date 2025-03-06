@@ -18,7 +18,7 @@ function ServiceCard({ title, description, icon, url }) {
       variants={FadeUp(5.3)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.7 }}
+      viewport={{ once: true, amount: 0.9 }}
       transition={{
         type: 'tween',
         stiffness: 300,
@@ -28,7 +28,7 @@ function ServiceCard({ title, description, icon, url }) {
         scale: 1.1,
         backgroundColor: defaultColor,
         boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.27)',
-        rotate: -3,
+        // rotate: -3,
         borderRadius: '5px',
       }}
       whileTap={{ scale: 1 }}
