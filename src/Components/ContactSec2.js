@@ -14,7 +14,7 @@ function ContactSec2() {
 
   return (
     <>
-      <div className='cccc'>
+      <div className='cccc' style={{overflowX:'hidden'}}>
         <Container>
           <div className='ContactForm section-padding'>
           {/* <motion.div

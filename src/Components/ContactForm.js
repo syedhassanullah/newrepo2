@@ -4,6 +4,7 @@ import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import Button from '@mui/material/Button';
 import '../App.css'
+import { toast } from 'react-toastify';
 // import { message } from 'antd';
 
 // const darkTheme = createTheme({
@@ -57,17 +58,14 @@ function ContactForm() {
     })
   }
 
-  const Clickme = (e) =>{
+  const Clickme = async (e) =>{
     e.preventDefault();
     
     if(formData.firstName === '' || formData.lastname === '' || formData.email === '' || formData.contact === '' ){
-      // toast.error("Please fill in all the fields.");
-      // return;
+      toast.error("Please fill in all the fields.");
+      return;
   }
 
-  const data ={
-    ...formData
-  }
   // try {
   //   const response = await fetch('https://script.google.com/macros/s/AKfycbyR46UvNx_orRyHKO7OGc556p1QI6HewdmzpFI19Wdtk1C0nLicqxj7q-p166Nd_F-r/exec', {
   //     method: 'POST',
@@ -97,6 +95,11 @@ function ContactForm() {
   //   console.error('Error:', error);
   // }
 
+
+  const data ={
+    ...formData
+  }
+  
 
   console.log(data);
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import ContactForm from './ContactForm'
-import Cimg from '../images/MainLogo/Untitled-2.png'
+// import Cimg from '../images/MainLogo/Untitled-2.png'
 import { motion } from 'framer-motion'
 import { FadeIn } from '../Varient/Varient'
-import { ImLocation } from "react-icons/im";
-import { MdPermPhoneMsg } from "react-icons/md";
-import { MdEmail } from "react-icons/md";
+// import { ImLocation } from "react-icons/im";
+// import { MdPermPhoneMsg } from "react-icons/md";
+// import { MdEmail } from "react-icons/md";
 import ChooseQues from './Counter/ChooseQues'
 
 
