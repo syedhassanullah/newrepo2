@@ -35,7 +35,6 @@ function ContactSec() {
               <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between',padding:'0px' }}>
               
                 <Col md={6} >
-                  
                   <ContactForm />
                 </Col>
                 <Col md={6}>

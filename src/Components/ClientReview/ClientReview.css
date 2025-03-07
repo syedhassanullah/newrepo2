@@ -13,8 +13,8 @@
   backdrop-filter: blur(50px);
   border-radius: 10px;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-  /* background-color: var(--primary-colorbg); */
-  background-color: aliceblue;
+  background-color: var(--primary-color);
+  /* background-color: aliceblue; */
   align-items: center;
 }
 
@@ -26,17 +26,17 @@
 }
 .client-img-bx img{
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3); 
-  /* border-radius: 50%; */
+  border-radius: 10%;
 }
 .client-text{
   /* background-color: antiquewhite; */
   padding: 25px 20px;
   font-family: var(--text-heading2);
+  border-left: 3px solid black;
 }
 .review-text {
   font-size: 1.1em;
   color: #000000;
-  
   /* text-align: center; */
 }
 
@@ -74,6 +74,12 @@
 
   .client-reviews {
     margin: 20px 3px; 
+  }
+  .client-text{
+    /* background-color: antiquewhite; */
+    padding: 25px 20px;
+    font-family: var(--text-heading2);
+    border-left: 0px;
   }
   
 }

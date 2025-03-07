@@ -5,6 +5,8 @@ import { ThemeProvider } from '@mui/material';
 import Button from '@mui/material/Button';
 import '../App.css'
 import { toast } from 'react-toastify';
+import { Alert } from 'react-bootstrap';
+
 // import { message } from 'antd';
 
 // const darkTheme = createTheme({
@@ -58,13 +60,26 @@ function ContactForm() {
     })
   }
 
-  const Clickme = async (e) =>{
+
+
+  const Clickme = (e) =>{
     e.preventDefault();
-    
-    if(formData.firstName === '' || formData.lastname === '' || formData.email === '' || formData.contact === '' ){
-      toast.error("Please fill in all the fields.");
-      return;
-  }
+   if(!formData.firstName){
+    console.log("something is wrong")
+    alert("some thing wrong")
+   } else{
+    console.log("gooo")
+    alert("googoggoggo")
+    // toast.success("Your Applications send Successfully", {
+    //         position: 'top-center'
+    //       });
+    //       return;
+   }
+  //   if(formData.firstName === '' || formData.lastname === '' || formData.email === '' || formData.contact === '' ){
+  //     toast.warning("Please fill in all the fields.");
+  //     // return;
+  //     // console.log('input_______________________________________________')
+  // }
 
   // try {
   //   const response = await fetch('https://script.google.com/macros/s/AKfycbyR46UvNx_orRyHKO7OGc556p1QI6HewdmzpFI19Wdtk1C0nLicqxj7q-p166Nd_F-r/exec', {

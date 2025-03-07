@@ -22,7 +22,7 @@ export default function Counter() {
                     <div className="section-padding">
 
                         <Row className="d-flex flex-wrap align-items-center justify-content-space-between ">
-                            <Col md={6}>
+                            <Col md={6} style={{overflowX:'hidden'}}>
                                 <ChooseQues />
                             </Col>
                             <Col md={6}>
@@ -40,8 +40,8 @@ export default function Counter() {
                                         className="count" >
                                         <h3><img src={img3} alt="logo" /></h3>
                                         <div className="countNun">
-                                            <h2> {inView ? <CountUp end={10} duration={2} /> : 0}
-                                                K+</h2>
+                                            <h2> {inView ? <CountUp end={50} duration={2} /> : 0}
+                                                +</h2>
                                             <p>Our Team</p>
                                         </div>
                                     </motion.div>
@@ -94,7 +94,7 @@ export default function Counter() {
                                         className="count" >
                                         <h3><img src={img4} alt="logo" /></h3>
                                         <div className="countNun">
-                                            <h2> {inView ? <CountUp end={23} duration={4} /> : 0}
+                                            <h2> {inView ? <CountUp end={10} duration={4} /> : 0}
                                                 +</h2>
                                             <p>Years In Experience</p>
                                         </div>

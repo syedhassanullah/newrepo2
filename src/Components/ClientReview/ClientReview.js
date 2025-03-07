@@ -53,7 +53,7 @@ const ClientReview = () => {
         speed: 500, // Transition speed
         slidesToShow: 1, // Show one review at a time
         slidesToScroll: 1, // Scroll one review at a time
-        arrows: true, // Show next/previous arrows
+        arrows: false, // Show next/previous arrows
         autoplay: true, // Enable autoplay
         autoplaySpeed: 2500, // Time between slides in milliseconds (3 seconds)
     };
