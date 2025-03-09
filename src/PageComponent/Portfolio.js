@@ -69,6 +69,17 @@ import PVC6 from '../images/PortfolioImg/Patches/PVC Patches/P6.jpg'
 import PVC7 from '../images/PortfolioImg/Patches/PVC Patches/P7.jpg'
 import PVC8 from '../images/PortfolioImg/Patches/PVC Patches/P8.jpg'
 
+import seque1 from  '../images/PortfolioImg/Patches/Sequince Patches/s1.jpg'
+import seque2 from  '../images/PortfolioImg/Patches/Sequince Patches/s2.jpg'
+import seque3 from  '../images/PortfolioImg/Patches/Sequince Patches/s3.jpg'
+import seque4 from  '../images/PortfolioImg/Patches/Sequince Patches/s4.jpg'
+import seque5 from  '../images/PortfolioImg/Patches/Sequince Patches/s5.jpg'
+
+import wovenl1 from '../images/PortfolioImg/Patches/Woven Labels/wo1.jpg'
+import wovenl2 from '../images/PortfolioImg/Patches/Woven Labels/wo2.jpg'
+import wovenl3 from '../images/PortfolioImg/Patches/Woven Labels/wo3.jpg'
+import wovenl4 from '../images/PortfolioImg/Patches/Woven Labels/wo4.jpg'
+import wovenl5 from '../images/PortfolioImg/Patches/Woven Labels/wo5.jpg'
 
 // APPERAL -------------------------------------
 import Apperal1 from '../images/PortfolioImg/Apparel Items/Hoodies/h1.jpeg'
@@ -328,7 +339,7 @@ function Portfolio() {
                                             Sublimated</p>|
                                         <p onClick={() => handlePatchClick('Patch2')}
                                             className={`${selectedPatch === 'Patch2' ? 'active' : ''}`}>
-                                            Woven </p>|
+                                            Woven-Patch</p>|
                                         <p onClick={() => handlePatchClick('Patch3')}
                                             className={`${selectedPatch === 'Patch3' ? 'active' : ''}`}
                                         >CHENILLE</p>|
@@ -340,7 +351,13 @@ function Portfolio() {
                                         >lEATEHER</p>|
                                         <p onClick={() => handlePatchClick('Patch6')}
                                             className={`${selectedPatch === 'Patch6' ? 'active' : ''}`}
-                                        >PVC</p>
+                                        >PVC</p>|
+                                        <p onClick={() => handlePatchClick('Patch7')}
+                                            className={`${selectedPatch === 'Patch7' ? 'active' : ''}`}
+                                        >woven Labels</p>|
+                                        <p onClick={() => handlePatchClick('Patch8')}
+                                            className={`${selectedPatch === 'Patch8' ? 'active' : ''}`}
+                                        >sequince</p>
 
 
                                     </div>
@@ -476,6 +493,44 @@ function Portfolio() {
                                             <Image src={PVC7} />
                                             <Image src={PVC8} />
 
+                                        </motion.div>
+                                    }
+                                    {selectedPatch === 'Patch7' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={wovenl1} />
+                                            <Image src={wovenl2} />
+                                            <Image src={wovenl3} />
+                                            <Image src={wovenl4} />
+                                            <Image src={wovenl5} />
+                                        </motion.div>
+                                    }
+                                    {selectedPatch === 'Patch8' &&
+                                    <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image src={seque1} />
+                                            <Image src={seque2} />
+                                            <Image src={seque3} />
+                                            <Image src={seque4} />
+                                            <Image src={seque5} />
                                         </motion.div>
                                     }
 

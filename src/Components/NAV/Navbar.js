@@ -157,7 +157,11 @@ const Navbar = () => {
         <nav className={`helo ${scrolled ? 'scrolled' : ''}`}>
           <Container >
             <div className='head-item' >
-              <div className="logo"></div>
+            
+            <Link className="logo" as={Link} to='/'>
+                
+              </Link>
+            
               <div className='Nav-buttons'>
                 <div className="nav-links">
                   {/* <Link className='main-menu' to={'/'}>Home</Link>

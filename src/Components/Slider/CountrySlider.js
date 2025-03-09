@@ -27,7 +27,7 @@ function CountrySlider() {
                 once: true, amount: 0.3
             }}
             transition={{ type: 'tween' }}
-            >Coutries That We are Working</motion.h1>
+            >Countries That We are Working</motion.h1>
             <Marquee pauseOnHover={false} speed={50} gradient={true} gradientWidth={50} >
 
                 <div className='marqueeSlide'>

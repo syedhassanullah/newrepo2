@@ -4,7 +4,7 @@ import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import Button from '@mui/material/Button';
 import '../App.css'
-// import { toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 // import { Alert } from 'react-bootstrap';
 
 // import { message } from 'antd';
@@ -66,14 +66,18 @@ function ContactForm() {
     e.preventDefault();
    if(!formData.firstName){
     console.log("something is wrong")
-    alert("some thing wrong")
+    // alert("some thing wrong")
+    toast.success("Your Applications send Successfully", {
+      position: 'top-center'
+    });
+    console.log(toast)
    } else{
     console.log("gooo")
-    alert("googoggoggo")
-    // toast.success("Your Applications send Successfully", {
-    //         position: 'top-center'
-    //       });
-    //       return;
+    // alert("googoggoggo")
+    toast.success("Your Applications send Successfully", {
+            position: 'top-center'
+          });
+          return;
    }
   //   if(formData.firstName === '' || formData.lastname === '' || formData.email === '' || formData.contact === '' ){
   //     toast.warning("Please fill in all the fields.");

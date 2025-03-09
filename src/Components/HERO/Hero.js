@@ -3,20 +3,26 @@ import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import MainButton from '../Buttons/MainButton';
 import { FadeUp } from '../../Varient/Varient2';
-import digitizingImage from '../../images/MainLogo/Beyonddigi-white.png';
-import patchesImage from '../../images/MainLogo/Only BD logo-blue.png';
-import vectorImage from '../../images/MainLogo/Only BD logo-blue.png';
+// import digitizingImage from '../../images/MainLogo/Beyonddigi-white.png';
+// import patchesImage from '../../images/MainLogo/Only BD logo-blue.png';
+// import vectorImage from '../../images/MainLogo/Only BD logo-blue.png';
+import Apperal from '../../images/heroimg/CLOTHES.png'
+import Prmotional from '../../images/heroimg/PROMOTIONAL2.png'
+import Patch from '../../images/heroimg/patches.png'
+import Hats from '../../images/heroimg/CAPS.png'
+import Vector from '../../images/heroimg/vector.png'
+import Digi from '../../images/heroimg/disitizing.png'
 import './Hero.css';
 
 function Hero() {
     // Create an array with objects containing both text and image for each state
     const contentData = [
-        { text: 'DIGITIZING', image: digitizingImage },
-        { text: 'PATCHES', image: patchesImage },
-        { text: 'VECTOR', image: vectorImage },
-        { text: 'Apperal Items', image: vectorImage },
-        { text: 'Hats & Beanies', image: vectorImage },
-        { text: 'Promotional Products', image: vectorImage }
+        { text: 'DIGITIZING', image: Digi },
+        { text: 'PATCHES', image: Patch },
+        { text: 'VECTOR', image: Vector },
+        { text: 'Apperal Items', image: Apperal },
+        { text: 'Hats & Beanies', image: Hats },
+        { text: 'Promotional Products', image: Prmotional }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,7 +42,7 @@ function Hero() {
             <div className='hero'>
                 <Container>
                     <div className='hero-comp'>
-                        <div className='hero-text col-md-8'>
+                        <div className='hero-text col-md-7'>
                             <h3>Beyond Digitizing <br />Agency</h3>
                             <h1>We are working on </h1>
                             <div className='chngecontent'>
@@ -57,7 +63,7 @@ function Hero() {
                             </div>
                             <MainButton />
                         </div>
-                        <div className='about-image-sec col-md-4 heroimg' md={6} sm={12}>
+                        <div className='about-image-sec col-md-5 heroimg' md={6} sm={12}>
                             <motion.img
                                 key={currentContent}
                                 variants={FadeUp(1.3)}
@@ -69,7 +75,7 @@ function Hero() {
                                     stiffness: 300,
                                     damping: 20,
                                 }}
-                                src={currentImage} alt='HERO' className=' img-fluid'
+                                src={currentImage} alt='HERO' className='img-fluid' style={{width:'400px' ,height:'400px'}}
                             />
                         </div>
                     </div>

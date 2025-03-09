@@ -7,6 +7,8 @@ import './ServicesDetail.css'
 import ApparelItemsData from '../../../DataFile/ServicesData/ApparelItemsData'
 import Process from '../../Process/ProcessApperal'
 import digi from '../../../images/ServiceShowsIMG/flatlay-outfit-travel.jpg'
+import { motion } from 'framer-motion';
+import { FadeUp } from '../../../Varient/Varient2';
 function ApparelItems() {
     return (
         <MainLayout>
@@ -21,10 +23,25 @@ function ApparelItems() {
                 <div className='ServicesDetailcard'>
                     {ApparelItemsData?.map((data) => {
                         return (
-                            <div className="card" key={data.id}>
+                            <motion.div
+                                  variants={FadeUp(5.3)}
+                                  initial="hidden"
+                                  whileInView="show"
+                                  viewport={{ once: true, amount: 0.9 }}
+                                  transition={{
+                                    type: 'tween',
+                                    stiffness: 300,
+                                    damping: 20,
+                                  }}
+                                  whileHover={{
+                                    scale: 1.05,
+                                    boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.27)',
+                                    rotate: -3,
+                                  }}
+                                   className="card" key={data.id}>
                                 <h3>{data.name}</h3>
                                 <p>{data.description}</p>
-                            </div>
+                            </motion.div>
                         );
                     })}
                 </div>

@@ -12,7 +12,6 @@
   --primary-colorbg: #0061a24d;
   --secondary-color: #52cc47ec;
   --text-heading2: "Montserrat Alternates", serif;
-  /* --text-heading3: "Montserrat Alternates", serif; */
   --text-heading3: 'MyCustomFont', serif;
   --text-heading: "Orbitron", serif;
   --transaction1: right 0.3s ease;
@@ -23,7 +22,7 @@
     url('./images/footer/backimg.jpg');
   --borderradius: 5px 100px 5px 100px;
   --borderradius2: 100px 5px 100px 5px;
-  --borderradiushero: 0px 5px 150px 5px;
+  --borderradiushero: 0px 0px 150px 0px;
   --borderradiusCard: 5px 60px 5px 60px;
   --backdrop-filter: blur(20px);
 }
@@ -32,13 +31,12 @@
 
 /* BODY */
 body {
-  position: relative; /* Make sure the pseudo-element is positioned correctly */
+  position: relative; 
   background-image: url(./images/MainLogo/Only\ BD\ logo-blue\ low\ opacity.png);
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
 }
 
 body::after {
@@ -47,7 +45,7 @@ body::after {
 
 
 body::-webkit-scrollbar {
-  width: 2px;
+  width: 4px;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -55,7 +53,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.452);
+  background-color: rgb(0, 0, 0);
 }
 
 .section-padding {
@@ -79,10 +77,10 @@ body::-webkit-scrollbar-track {
 .buttonLink {
   text-decoration: none;
   color: var(--primary-color);
-  display: block; /* This ensures the link takes up the full button area */
+  display: block; 
   width: 100%;
   height: 100%;
-  line-height: 40px; /* Vertically centers the text */
+  line-height: 40px;
   text-align: center;
   letter-spacing: 1px;
 }
@@ -386,23 +384,6 @@ body::-webkit-scrollbar-track {
   display: flex;
   border-radius: 10px;
 }
-/* 
-.icons .ibtn a:hover{
-  color: var(--primary-colorbg);
-} */
-
-
-/* 
-.icons .ibtn:hover {
-  transform: scale(1.8);
-} */
-
-
-.iconcol {
-  display: flex;
-  align-items: center;
-}
-
 
 
 
@@ -441,9 +422,6 @@ body::-webkit-scrollbar-track {
   max-width: 900px;
 }
 
-
-.portfolio-image-div {}
-
 .portfolio-Item {
   margin: 20px 0px;
 }
@@ -454,13 +432,11 @@ body::-webkit-scrollbar-track {
 
 .portfolio_select_item{
   display: flex;
-  /* background-color: #0091d4; */
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   gap: 13px;
   color: black;
-  /* font-family: var(--text-heading2); */
   text-transform: uppercase; 
   margin-bottom: 10px;
 }
@@ -472,9 +448,6 @@ body::-webkit-scrollbar-track {
 .portfolio_select_item .active{
   color:var(--primary-color);
 }
-/* .segment{
-  display: flex;
-} */
 
 
 
@@ -490,7 +463,6 @@ body::-webkit-scrollbar-track {
   padding: 180px 0px;
   font-family: var(--text-heading3);
   border-radius: var(--borderradiushero);
-  /* margin: 0px 20px; */
   text-align: center;
   margin-bottom: 20px;
 }
@@ -542,8 +514,14 @@ body::-webkit-scrollbar-track {
   box-sizing: border-box;
 }
 
-/* Component Headings */
 
+
+
+
+
+
+
+/* Component Headings */
 .component-heading {
   font-family: var(--text-heading3);
   padding-bottom: 10px;
@@ -554,6 +532,14 @@ body::-webkit-scrollbar-track {
   font-size: 50px;
   color: var(--primary-color);
 }
+
+
+
+
+
+
+
+
 
 /* PROCESS */
 .Process{
@@ -571,27 +557,18 @@ body::-webkit-scrollbar-track {
   margin-top: 30px;
   
 }
-
 .process-card{
   width: 18rem;
   height: 25rem;
   border-radius: 30px;
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.137);
   text-align: center;
-  /* border-top: 1px solid var(--primary-color);
-  border-left: 1px solid var(--primary-color); */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   padding: 20px;
   transition: 0.3s ease all;
   cursor: pointer;
 }
 
-
 .process-csrd-logo{
-  /* background-color: red; */
   height: 150px;
   text-align: center;
   display: flex;
@@ -603,6 +580,16 @@ body::-webkit-scrollbar-track {
   font-size: 70px;
 
 }
+
+
+
+
+
+
+
+
+
+
 /* SERVICE */
 .ServiceSec {
   width: 100%;
@@ -632,8 +619,13 @@ body::-webkit-scrollbar-track {
   height: 22rem;
   position:relative;
   transition: 0.1s ease all;
-  /* background-color: white; */
 }
+
+/* .sCard:hover{
+  background: 
+  linear-gradient(to Top, var(--primary-color), rgb(0, 195, 255));
+} */
+
 .sCard .ServiceSecCard{
   height: 100%;
   display: flex;
@@ -645,34 +637,17 @@ body::-webkit-scrollbar-track {
   gap: 5px;
 }
 
-/* .sCard .ServiceSecCard .buttom{
-  text-align: right;
-  width: 100%;
-  color: red;
-  position: relative;
-}
-.sCard .ServiceSecCard .buttom h6{
-  transform: translateX(50%);
-  opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.sCard .ServiceSecCard:hover .buttom .h6{
-  opacity: 1;
-  transform: translateX(0);
-  
-} */
 .sCard .ServiceSecCard .buttom {
   text-align: right;
   width: 100%;
   color: aliceblue;
-  position: relative; /* Needed to position the h6 element properly */
+  position: relative;
 }
 
 .sCard .ServiceSecCard .buttom h6 {
-  transform: translateX(20%); /* Initially, place the text out of view */
-  opacity: 0; /* Initially hidden */
-  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+  transform: translateX(20%); 
+  opacity: 0; 
+  transition: transform 0.5s ease, opacity 0.5s ease;
   color: aliceblue;
 }
 
@@ -684,6 +659,7 @@ body::-webkit-scrollbar-track {
 .sCard .ServiceSecCard h4{
   color: var(--primary-color);
   margin: 0px;
+  transition:color 0.3s ease;
 }
 
 .sCard .ServiceSecCard p{
@@ -693,6 +669,7 @@ body::-webkit-scrollbar-track {
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.4;
+    transition:color 0.3s ease;
 
 }
 
@@ -715,6 +692,19 @@ body::-webkit-scrollbar-track {
   border-radius: 50%;
   font-size: 28px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* For smaller screens (mobile-first) */
 @media (max-width: 800px) {
   .sCard {
@@ -736,9 +726,8 @@ body::-webkit-scrollbar-track {
     width: 335px;
   }
   .sCard .ServiceSecCard .buttom h6 {
-    transform: translateX(0); /* Initially, place the text out of view */
-    opacity: 1; /* Initially hidden */
-     /* Smooth transition */
+    transform: translateX(0); 
+    opacity: 1; 
     color: var(--primary-color);
 
   }
@@ -771,30 +760,6 @@ body::-webkit-scrollbar-track {
     width: 26% !important; 
   }
 }
-
-
-/* 
-.ServiceSecCard:hover {
-
-  box-shadow: 0px 4px 15px 10px rgba(0, 0, 0, 0.2);
-} */
-
-/* sec1 */
-
-/* .sec1 {
-  background-image: url(./images/images/adrien-olichon-X8o-P23flgI-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 300px;
-  padding: 50px 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-} */
-
 
 
 
@@ -977,19 +942,3 @@ body::-webkit-scrollbar-track {
 
 }
 
-
-
-
-
-
-.sampleDIv {
-  background-color: red;
-  width: 200px !important;
-  height: 200px;
-  transition: 0.3s;
-}
-
-.sampleDIv:hover {
-  width: 500px;
-  height: 500px;
-}
