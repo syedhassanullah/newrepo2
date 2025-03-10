@@ -63,7 +63,7 @@ body::-webkit-scrollbar-track {
   background-color: black;
   /* border-radius: 10px; */
   font-weight: 800;
-  font-size: 17px;
+  font-size: 15px;
   cursor: pointer;
   padding: 5px;
   color: var(--primary-color);
@@ -72,6 +72,7 @@ body::-webkit-scrollbar-track {
   margin-top: 50px;
   box-shadow: 0 0 30px 3px rgba(0, 132, 255, 0.397);
   border: 2px solid var(--primary-color);
+  border-radius: 10px;
 }
 
 .buttonLink {
@@ -83,6 +84,7 @@ body::-webkit-scrollbar-track {
   line-height: 40px;
   text-align: center;
   letter-spacing: 1px;
+  border-radius: 10px;
 }
 
 

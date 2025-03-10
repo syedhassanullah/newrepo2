@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import homeImage from '../images/WhatsApp Image 2025-01-20 at 1.57.28 AM.jpeg'
+import homeImage from '../images/MainLogo/Only BD logo-blue.png'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FadeIn } from '../Varient/Varient'
@@ -57,7 +57,7 @@ function AboutSec() {
                                                 className="mainButton"
                                             >
                                                 <Link to="/about" className="buttonLink">
-                                                    GET STARTED
+                                                    DISCOVER MORE
                                                 </Link>
                                             </motion.div>
 
