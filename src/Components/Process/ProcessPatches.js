@@ -13,19 +13,19 @@ function ProcessPatches() {
       id: '1',
       img: <IoIosCloudUpload />,
       title: 'Submit Design',
-      description: 'Upload your artwork in any format'
+      description: ' Upload your artwork in any format with proper instructions like size, packing and colours of the design.'
     },
     {
       id: '2',
       img: <GiPencilBrush />,
-      title: 'Digitizing & Approval',
-      description: ' Our experts convert it into an embroidery file and send you a preview for approval.'
+      title: 'Sample & Approval',
+      description: ' Our experts will convert into a digital sample and show you the review on approval. We will send it to you for approval. You will approve it according to your requirements.'
     },
     {
       id: '3',
       img: <FaTruckArrowRight />,
       title: 'Production & Delivery',
-      description: ' Our experts convert it into an embroidery file and send you a preview for approval.'
+      description: 'Once you approve the digital sample then we will go from the final prodution and send you the picture before we ship and then we will ship to you and you will get your order 3 to 4 working days'
     }
   ];
 

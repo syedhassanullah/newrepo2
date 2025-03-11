@@ -13,19 +13,19 @@ function ProcessApperal() {
       id: '1',
       img: <IoIosCloudUpload />,
       title: 'Choose & Upload ',
-      description: 'Select t-shirts, hoodies, or jackets and submit your artwork.'
+      description: 'Send Us the proper details of the order like size, quantities, color, fabrication, like all the details of the project that you need.'
     },
     {
       id: '2',
       img: <GiPencilBrush />,
       title: 'Mockup & Approval',
-      description: 'We create a digital preview and adjust it as per your feedback.'
+      description: 'We create a digital preview and show it to you according to your specific needs.'
     },
     {
       id: '3',
       img: <FaTruckArrowRight />,
       title: 'Production & Delivery',
-      description: 'Your custom apparel is printed or embroidered and shipped to you.'
+      description: 'Once you approve the digital preview file, then we go for the final production and show you the picture, and then shipping to you.'
     }
   ];
 

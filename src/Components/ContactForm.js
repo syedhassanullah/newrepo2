@@ -1,3 +1,4 @@
+import 'react-toastify/dist/ReactToastify.css'; // Add this line at the top of your component
 import React, { useState } from 'react'
 import {  Stack, TextField } from '@mui/material'
 import { createTheme } from '@mui/material';
@@ -60,68 +61,114 @@ function ContactForm() {
     })
   }
 
-
-
-  const Clickme = (e) =>{
+  const Clickme = async (e) => {
     e.preventDefault();
-   if(!formData.firstName){
-    console.log("something is wrong")
-    // alert("some thing wrong")
-    toast.success("Your Applications send Successfully", {
-      position: 'top-center'
-    });
-    console.log(toast)
-   } else{
-    console.log("gooo")
-    // alert("googoggoggo")
-    toast.success("Your Applications send Successfully", {
+
+    // Check if all necessary fields are filled
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.contact) {
+        toast.warning("Please fill in all the fields.", {
             position: 'top-center'
-          });
-          return;
-   }
-  //   if(formData.firstName === '' || formData.lastname === '' || formData.email === '' || formData.contact === '' ){
-  //     toast.warning("Please fill in all the fields.");
-  //     // return;
-  //     // console.log('input_______________________________________________')
-  // }
+        });
+        return; // Return early to prevent form submission if validation fails
+    }
 
-  // try {
-  //   const response = await fetch('https://script.google.com/macros/s/AKfycbyR46UvNx_orRyHKO7OGc556p1QI6HewdmzpFI19Wdtk1C0nLicqxj7q-p166Nd_F-r/exec', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',  // Ensure Content-Type is application/json
-  //     },
-  //     body: JSON.stringify(data),
-  //     mode: 'no-cors'
-  //   });
+    // Proceed to send the data
+    try {
+        const data = { ...formData };
 
-  //   const result = await response;
+        console.log(data); // Check if the data is correct
+
+        // API Call to submit form data (Uncomment and complete the fetch request)
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyR46UvNx_orRyHKO7OGc556p1QI6HewdmzpFI19Wdtk1C0nLicqxj7q-p166Nd_F-r/exec', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',  // Ensure Content-Type is application/json
+            },
+            body: JSON.stringify(data),
+            mode: 'no-cors'
+        });
+
+        // Handle response and success
+        if (response.ok) {
+            toast.success("Your Application has been sent successfully!", {
+                position: 'top-center'
+            });
+        } else {
+            console.error('Error sending data:', response);
+            toast.error("There was an issue with your submission.", {
+                position: 'top-center'
+            });
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        toast.error("An error occurred while sending your application.", {
+            position: 'top-center'
+        });
+    }
+};
 
 
-  //   if (result) {
-  //     console.log('send data:', response.data);
-  //     toast.success("Your Applications send Successfully", {
-  //       position: 'top-center'
-  //     });
-  //   } else {
-  //     console.error('Error sending data:', result);
-  //     toast.error(`${result.error}`, {
-  //       position: 'top-center'
-  //     });
-  //   }
 
-  // } catch (error) {
-  //   console.error('Error:', error);
-  // }
+//   const Clickme = (e) =>{
+//     e.preventDefault();
+//    if(!formData.firstName){
+//     console.log("something is wrong")
+//     // alert("some thing wrong")
+//     toast.success("Your Applications send Successfully", {
+//       position: 'top-center'
+//     });
+//     console.log(toast)
+//    } else{
+//     console.log("gooo")
+//     // alert("googoggoggo")
+//     toast.success("Your Applications send Successfully", {
+//             position: 'top-center'
+//           });
+//           return;
+//    }
+//   //   if(formData.firstName === '' || formData.lastname === '' || formData.email === '' || formData.contact === '' ){
+//   //     toast.warning("Please fill in all the fields.");
+//   //     // return;
+//   //     // console.log('input_______________________________________________')
+//   // }
+
+//   // try {
+//   //   const response = await fetch('https://script.google.com/macros/s/AKfycbyR46UvNx_orRyHKO7OGc556p1QI6HewdmzpFI19Wdtk1C0nLicqxj7q-p166Nd_F-r/exec', {
+//   //     method: 'POST',
+//   //     headers: {
+//   //       'Content-Type': 'application/json',  // Ensure Content-Type is application/json
+//   //     },
+//   //     body: JSON.stringify(data),
+//   //     mode: 'no-cors'
+//   //   });
+
+//   //   const result = await response;
 
 
-  const data ={
-    ...formData
-  }
+//   //   if (result) {
+//   //     console.log('send data:', response.data);
+//   //     toast.success("Your Applications send Successfully", {
+//   //       position: 'top-center'
+//   //     });
+//   //   } else {
+//   //     console.error('Error sending data:', result);
+//   //     toast.error(`${result.error}`, {
+//   //       position: 'top-center'
+//   //     });
+//   //   }
+
+//   // } catch (error) {
+//   //   console.error('Error:', error);
+//   // }
+
+
+//   const data ={
+//     ...formData
+//   }
   
 
-  console.log(data);
-}
+//   console.log(data);
+// }
 
 
   return (

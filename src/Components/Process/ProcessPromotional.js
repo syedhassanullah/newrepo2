@@ -13,19 +13,19 @@ function ProcessPromotional() {
       id: '1',
       img: <IoIosCloudUpload />,
       title: 'Select & Upload',
-      description: 'Choose from mugs, keychains, pens, and more, then submit your logo or message.'
+      description: 'To the service that you need in promotional products, like mugs, keychains, etc. Let me have all the details about the order, like quantities, size, and all the basic details of the order.'
     },
     {
       id: '2',
       img: <GiPencilBrush />,
       title: 'Mockup & Approval',
-      description: 'We create a digital preview and make adjustments as needed'
+      description: 'We create a digital mockup for approval according to your needs.'
     },
     {
       id: '3',
       img: <FaTruckArrowRight />,
       title: 'Printing & Shipping',
-      description: 'Once approved, we print your design and send the customized products to you.'
+      description: 'Once you approve the order, we will start the final production and then send you the picture, and then shipping to you.'
     }
   ];
 

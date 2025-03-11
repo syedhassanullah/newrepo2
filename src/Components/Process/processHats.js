@@ -13,19 +13,19 @@ function ProcessHats() {
       id: '1',
       img: <IoIosCloudUpload />,
       title: 'Pick Style & Send',
-      description: 'Pick from a variety of styles and upload your logo or artwork.'
+      description: 'Pick a type of cap and Give us the proper instructions and proper details about the order, like fabric, quantities and sizes. If you want to add any specific feature or requirement, please let me know.'
     },
     {
       id: '2',
       img: <GiPencilBrush />,
       title: 'Preview & Refinements',
-      description: 'We digitize your design and share a preview for approval.'
+      description: 'We will create a digital preview of your order according to your specific needs.'
     },
     {
       id: '3',
       img: <FaTruckArrowRight />,
       title: 'Production & Delivery',
-      description: 'Your design is carefully embroidered, checked for quality, and delivered to you.'
+      description: 'Once you approve the digital files and digital mockup, we will go for the final production and ship to you.'
     }
   ];
 
