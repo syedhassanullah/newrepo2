@@ -5,7 +5,7 @@ import LogoSlider from '../../Slider/LogoSlider';
 import './ServicesDetail.css';
 import VectorData from '../../../DataFile/ServicesData/VectorData';
 import Process from '../../Process/ProcessVector';
-import digi from '../../../images/ServiceShowsIMG/vectorlion.PNG'
+import digi from '../../../images/ServiceShowsIMG/vectorlion.webp'
 import { Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';

@@ -6,7 +6,7 @@ import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
 import ApparelItemsData from '../../../DataFile/ServicesData/ApparelItemsData'
 import Process from '../../Process/ProcessApperal'
-import digi from '../../../images/ServiceShowsIMG/flatlay-outfit-travel.jpg'
+import digi from '../../../images/ServiceShowsIMG/flatlay-outfit-travel.webp'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
 function ApparelItems() {

@@ -5,7 +5,7 @@ import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
 import PromotionalProductsData from '../../../DataFile/ServicesData/PromotionalProducts'
 import Process from '../../Process/ProcessPromotional'
-import digi from '../../../images/ServiceShowsIMG/pro.jpg'
+import digi from '../../../images/ServiceShowsIMG/pro.webp'
 import { Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';

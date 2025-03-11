@@ -6,10 +6,10 @@ import { Col, Row, Container } from "react-bootstrap";
 import ChooseQues from "./ChooseQues";
 import { motion } from "framer-motion";
 import { FadeUp } from '../../Varient/Varient2'
-import img1 from '../../images/Untitled-1.png'
-import img2 from '../../images/Untitled-2.png'
-import img3 from '../../images/Untitled-3.png'
-import img4 from '../../images/Untitled-4.png'
+import img1 from '../../images/Untitled-1.webp'
+import img2 from '../../images/Untitled-2.webp'
+import img3 from '../../images/Untitled-3.webp'
+import img4 from '../../images/Untitled-4.webp'
 
 export default function Counter() {
 

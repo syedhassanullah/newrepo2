@@ -8,7 +8,7 @@ import jre from './helo.jpeg'
 import { motion } from 'framer-motion'
 import { FadeIn } from '../Varient/Varient'
 // import jre1 from '../images/ServiceShowsIMG/Patches.png'
-import jre2 from '../images/ServiceShowsIMG/hello.jpg'
+import jre2 from '../images/ServiceShowsIMG/hello.webp'
 // import jre3 from '../images/ServiceShowsIMG/hello2.jpg'
 
 // PATCHES----------------------------------

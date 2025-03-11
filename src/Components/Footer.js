@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import MotionLink from '../Varient/FooterVarient'
 import Icons from './Icons'
 // import { Link } from 'react-router-dom'
-import Paypal from '../images/MainLogo/Pay-with-paypal.png'
+import Paypal from '../images/MainLogo/Pay-with-paypal.webp'
 // import Whatsapp from '../images/MainLogo/whatsapplogo.png'
 // import beyond from '../images/MainLogo/beyondDigitizing.png'
 

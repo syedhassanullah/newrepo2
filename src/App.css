@@ -19,7 +19,7 @@
   --backgroundimage:
     linear-gradient(to Top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.712)),
     /* Gradient */
-    url('./images/footer/backimg.jpg');
+    url('./images/footer/backimg.webp');
   --borderradius: 5px 100px 5px 100px;
   --borderradius2: 100px 5px 100px 5px;
   --borderradiushero: 0px 0px 150px 0px;
@@ -32,7 +32,7 @@
 /* BODY */
 body {
   position: relative; 
-  background-image: url(./images/MainLogo/Only\ BD\ logo-blue\ low\ opacity.png);
+  background-image: url(./images/MainLogo/Only\ BD\ logo-blue\ low\ opacity.webp);
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
@@ -226,7 +226,7 @@ body::-webkit-scrollbar-track {
 /* fOOTER */
 
 .footer {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.555) 30%, rgba(0, 6, 10, 0.952)),url('../src/images/footer/backimg.jpg');
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.555) 30%, rgba(0, 6, 10, 0.952)),url('../src/images/footer/backimg.webp');
   background-size:cover;
   background-position: Bottom;
   overflow: hidden;

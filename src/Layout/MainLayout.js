@@ -7,7 +7,7 @@ import Footer from '../Components/Footer';
 import '../App.css'
 import { motion } from 'framer-motion';
 import Navbar from '../Components/NAV/Navbar';
-import Whatsapp from '../images/MainLogo/WhatsApp-Logo.wine.png'
+import Whatsapp from '../images/MainLogo/WhatsApp-Logo.wine.webp'
 
 
 

@@ -1,8 +1,8 @@
 import { GiSewingNeedle } from "react-icons/gi";
 import { BsVectorPen } from "react-icons/bs";
-import patch from '../../images/Service_icon/patch.png'
-import apperal from '../../images/Service_icon/apperal.png'
-import promotional from '../../images/Service_icon/promotional-removebg.png'
+import patch from '../../images/Service_icon/patch.webp'
+import apperal from '../../images/Service_icon/apperal.webp'
+import promotional from '../../images/Service_icon/promotional-removebg.webp'
 import { GiWinterHat } from "react-icons/gi";
 
 const ServiceData = [

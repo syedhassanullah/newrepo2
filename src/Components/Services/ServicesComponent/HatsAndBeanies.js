@@ -5,7 +5,7 @@ import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
 import HatsAndBeaniesData from '../../../DataFile/ServicesData/HatsAndBeaniesData'
 import Process from '../../Process/processHats'
-import digi from '../../../images/ServiceShowsIMG/hello.jpg'
+import digi from '../../../images/ServiceShowsIMG/hello.webp'
 import { Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';

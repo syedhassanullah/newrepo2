@@ -1,13 +1,13 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
 import './Slider.css'
-import soft1 from '../../images/sliderIMG/soft/soft1.png.png'
-import soft2 from '../../images/sliderIMG/soft/soft2.png.png'
-import soft3 from '../../images/sliderIMG/soft/soft3.png.png'
-import soft4 from '../../images/sliderIMG/soft/soft4.png.png'
-import soft5 from '../../images/sliderIMG/soft/soft5.png.png'
-import soft6 from '../../images/sliderIMG/soft/soft6.png.png'
-import soft7 from '../../images/sliderIMG/soft/soft7.png.png'
+import soft1 from '../../images/sliderIMG/soft/soft1.png.webp'
+import soft2 from '../../images/sliderIMG/soft/soft2.png.webp'
+import soft3 from '../../images/sliderIMG/soft/soft3.png.webp'
+import soft4 from '../../images/sliderIMG/soft/soft4.png.webp'
+import soft5 from '../../images/sliderIMG/soft/soft5.png.webp'
+import soft6 from '../../images/sliderIMG/soft/soft6.png.webp'
+import soft7 from '../../images/sliderIMG/soft/soft7.png.webp'
 import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FadeIn } from '../../Varient/Varient'

@@ -6,13 +6,14 @@ import { FadeUp } from '../../Varient/Varient2';
 // import digitizingImage from '../../images/MainLogo/Beyonddigi-white.png';
 // import patchesImage from '../../images/MainLogo/Only BD logo-blue.png';
 // import vectorImage from '../../images/MainLogo/Only BD logo-blue.png';
-import Apperal from '../../images/heroimg/CLOTHES.png'
-import Prmotional from '../../images/heroimg/PROMOTIONAL2.png'
-import Patch from '../../images/heroimg/patches.png'
-import Hats from '../../images/heroimg/CAPS.png'
-import Vector from '../../images/heroimg/vector.png'
-import Digi from '../../images/heroimg/disitizing.png'
+import Apperal from '../../images/heroimg/CLOTHES1.webp'
+import Prmotional from '../../images/heroimg/PROMOTIONAL2.webp'
+import Patch from '../../images/heroimg/patches1.webp'
+import Hats from '../../images/heroimg/CAPS1.webp'
+import Vector from '../../images/heroimg/vector.webp'
+import Digi from '../../images/heroimg/disitizing.webp'
 import './Hero.css';
+
 
 function Hero() {
     // Create an array with objects containing both text and image for each state

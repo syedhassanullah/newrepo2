@@ -5,7 +5,7 @@ import LogoSlider from '../../Slider/LogoSlider';
 import './ServicesDetail.css'
 import PatchesData from '../../../DataFile/ServicesData/PatchesData';
 import Process from '../../Process/ProcessPatches';
-import digi from '../../../images/ServiceShowsIMG/Embroidered-Patches.jpg'
+import digi from '../../../images/ServiceShowsIMG/Embroidered-Patches.webp'
 import { Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';

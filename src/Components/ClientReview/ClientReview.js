@@ -4,11 +4,11 @@ import Slider from 'react-slick';
 import './ClientReview.css'
 import { motion } from 'framer-motion';
 import { FadeIn } from '../../Varient/Varient';
-import img1 from '../../images/ClientReview/client1.jpg'
-import img2 from '../../images/ClientReview/client2.jpeg'
-import img3 from '../../images/ClientReview/client4.jpg'
-import img4 from '../../images/ClientReview/client3.jpg'
-import img5 from '../../images/ClientReview/client6.jpg'
+import img1 from '../../images/ClientReview/client1.webp'
+import img2 from '../../images/ClientReview/client2.webp'
+import img3 from '../../images/ClientReview/client4.webp'
+import img4 from '../../images/ClientReview/client3.webp'
+import img5 from '../../images/ClientReview/client6.webp'
 // import { Carousel } from 'antd';
 
 // Sample data for the client reviews

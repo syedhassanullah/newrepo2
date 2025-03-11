@@ -1,15 +1,15 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
 import './Slider.css'
-import flg1 from '../../images/sliderIMG/flgs/flg1.png';
-import flg2 from '../../images/sliderIMG/flgs/flg2.png';
-import flg3 from '../../images/sliderIMG/flgs/flg3.png';
-import flg4 from '../../images/sliderIMG/flgs/flg4.png';
-import flg5 from '../../images/sliderIMG/flgs/flg5.png';
-import flg6 from '../../images/sliderIMG/flgs/flg6.png';
-import flg7 from '../../images/sliderIMG/flgs/flg7.png';
-import flg8 from '../../images/sliderIMG/flgs/flg8.png';
-import flg9 from '../../images/sliderIMG/flgs/flg9.png';
+import flg1 from '../../images/sliderIMG/flgs/flg1.webp';
+import flg2 from '../../images/sliderIMG/flgs/flg2.webp';
+import flg3 from '../../images/sliderIMG/flgs/flg3.webp';
+import flg4 from '../../images/sliderIMG/flgs/flg4.webp';
+import flg5 from '../../images/sliderIMG/flgs/flg5.webp';
+import flg6 from '../../images/sliderIMG/flgs/flg6.webp';
+import flg7 from '../../images/sliderIMG/flgs/flg7.webp';
+import flg8 from '../../images/sliderIMG/flgs/flg8.webp';
+import flg9 from '../../images/sliderIMG/flgs/flg9.webp';
 import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FadeIn } from '../../Varient/Varient'

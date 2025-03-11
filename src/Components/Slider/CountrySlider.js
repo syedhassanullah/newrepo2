@@ -1,13 +1,13 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
 import './Slider.css'
-import flg1 from '../../images/sliderIMG/New folder/top1.png';
-import flg2 from '../../images/sliderIMG/New folder/top2.png';
-import flg3 from '../../images/sliderIMG//New folder/top3.png';
-import flg4 from '../../images/sliderIMG//New folder/top4.png';
-import flg5 from '../../images/sliderIMG//New folder/top5.png';
-import flg6 from '../../images/sliderIMG//New folder/top6.png';
-// import flg7 from '../../images/sliderIMG//New folder/top7.png';
+import flg1 from '../../images/sliderIMG/New folder/top1.webp';
+import flg2 from '../../images/sliderIMG/New folder/top2.webp';
+import flg3 from '../../images/sliderIMG//New folder/top3.webp';
+import flg4 from '../../images/sliderIMG//New folder/top4.webp';
+import flg5 from '../../images/sliderIMG//New folder/top5.webp';
+import flg6 from '../../images/sliderIMG//New folder/top6.webp';
+// import flg7 from '../../images/sliderIMG//New folder/top7.webp';
 // import flg8 from '../../images/sliderIMG//New folder/top8png';
 // import flg9 from '../../images/sliderIMG//New folder/top8.png';
 import { Container } from 'react-bootstrap';

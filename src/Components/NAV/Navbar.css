@@ -18,7 +18,7 @@
 
   
   .helo .logo {
-    background-image: url(../../images/MainLogo/Untitled-1.png);
+    background-image: url(../../images/MainLogo/Untitled-1.webp);
     width: 205px;
     height: 100%;
     background-size: contain;
@@ -28,7 +28,7 @@
   }
   
   .helo.scrolled .logo {
-    background-image: url(../../images/MainLogo/Untitled-2.png);
+    background-image: url(../../images/MainLogo/Untitled-2.webp);
   }
   
   .head-item {
