@@ -8,7 +8,15 @@ import jre from './helo.jpeg'
 import { motion } from 'framer-motion'
 import { FadeIn } from '../Varient/Varient'
 // import jre1 from '../images/ServiceShowsIMG/Patches.png'
-import jre2 from '../images/ServiceShowsIMG/hello.webp'
+import digi1 from '../images/PortfolioImg/Digitizing/digi1.webp'
+import digi2 from '../images/PortfolioImg/Digitizing/digi2.webp'
+import digi3 from '../images/PortfolioImg/Digitizing/digi3.webp'
+import digi4 from '../images/PortfolioImg/Digitizing/digi4.webp'
+import digi5 from '../images/PortfolioImg/Digitizing/digi5.webp'
+import digi6 from '../images/PortfolioImg/Digitizing/digi6.webp'
+import digi7 from '../images/PortfolioImg/Digitizing/digi7.webp'
+import digi8 from '../images/PortfolioImg/Digitizing/digi8.webp'
+import digi9 from '../images/PortfolioImg/Digitizing/digi9.webp'
 // import jre3 from '../images/ServiceShowsIMG/hello2.jpg'
 
 // PATCHES----------------------------------
@@ -295,15 +303,15 @@ function Portfolio() {
                                         damping: 20,
                                     }}
                                     className='portfolio-image'>
-                                    <Image src={jre2} />
-                                    <Image src={jre2} />
-                                    <Image src={jre2} />
-                                    <Image src={jre2} />
-                                    <Image src={jre2} />
-                                    <Image src={jre2} />
-                                    <Image src={jre2} />
-                                    <Image src={jre2} />
-                                    <Image src={jre2} />
+                                    <Image src={digi1} />
+                                    <Image src={digi2} />
+                                    <Image src={digi3} />
+                                    <Image src={digi4} />
+                                    <Image src={digi5} />
+                                    <Image src={digi6} />
+                                    <Image src={digi7} />
+                                    <Image src={digi8} />
+                                    <Image src={digi9} />
                                 </motion.div>
                             }
                             {selectedValue === 'Vector' &&

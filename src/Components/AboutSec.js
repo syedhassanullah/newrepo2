@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import homeImage from '../images/MainLogo/Only BD logo-blue.webp'
+import { Container, Row, Col } from 'react-bootstrap';
+import homeImage from '../images/MainLogo/onlybd.webp';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FadeIn } from '../Varient/Varient'

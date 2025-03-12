@@ -36,7 +36,7 @@
 }
 .review-text {
   font-size: 1.1em;
-  color: #000000;
+  color: white;
   /* text-align: center; */
 }
 
@@ -51,8 +51,8 @@
 
 .review-rating {
   font-size: 1em;
-  color: black;
-  font-weight: 400;
+  color: white;
+  font-weight: 600;
 }
 
 .slick-prev,

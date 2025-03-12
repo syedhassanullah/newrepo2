@@ -4,42 +4,42 @@ import Slider from 'react-slick';
 import './ClientReview.css'
 import { motion } from 'framer-motion';
 import { FadeIn } from '../../Varient/Varient';
-import img1 from '../../images/ClientReview/client1.webp'
-import img2 from '../../images/ClientReview/client2.webp'
-import img3 from '../../images/ClientReview/client4.webp'
-import img4 from '../../images/ClientReview/client3.webp'
-import img5 from '../../images/ClientReview/client6.webp'
+import img1 from '../../images/ClientReview/client11.webp'
+import img2 from '../../images/ClientReview/client22.webp'
+import img3 from '../../images/ClientReview/client44.webp'
+import img4 from '../../images/ClientReview/client33.webp'
+import img5 from '../../images/ClientReview/client66.webp'
 // import { Carousel } from 'antd';
 
 // Sample data for the client reviews
 const reviews = [
     {
-        name: "John Doe",
-        review: "Wonderful work, the results exceeded my expectations.",
+        name: "Teena Black",
+        review: "Beyond Digitizing did an amazing job restoring my old photos! Fast, high-quality service, and great communication throughout. Highly recommend!",
         post: "Manager",
         img: img1
     },
     {
         name: "Jane Smith",
-        review: "Wonderful work, the results exceeded my expectations.",
+        review: "I had vintage artwork digitized, and Beyond Digitizing exceeded my expectations. Amazing attention to detail and excellent service!",
         post: "Team Lead",
         img: img2
     },
     {
-        name: "James Wilson",
-        review: "Wonderful work, the results exceeded my expectations.",
+        name: "Sara Donaho",
+        review: "Wonderful work, the results exceeded my expectations.I’m happy to work with Beyond Digitizing! They digitized my artwork with amazing detail. Fast, professional, and high-quality work!",
         post: "Manager",
         img: img3
     },
     {
-        name: "James Wilson",
-        review: "Wonderful work, the results exceeded my expectations.",
+        name: "John Doe",
+        review: "Beyond Digitizing did an amazing job transforming my old VHS tapes into digital files. The process was so easy, and the quality of the final product exceeded my expectations. I can now enjoy these precious memories on my digital devices! The team was super friendly, professional, and went above and beyond to ensure I was happy with the outcome. Highly recommend their services!",
         post: "CEO",
         img: img4
     },
     {
         name: "James Wilson",
-        review: "Wonderful work, the results exceeded my expectations.",
+        review: "Wonderful work, the results exceeded my expectations.I’ve worked with several digitizing companies before, but Beyond Digitizing stands out as the best. They took my vintage artwork and turned it into high-quality digital files that I could use in various projects. The level of professionalism and expertise they bring to their work is unmatched. Friendly staff, fast service, and fantastic results. A true five-star experience!",
         post: "Manager",
         img: img5
     },

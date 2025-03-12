@@ -7,7 +7,7 @@ body{
     position: absolute;
     width: 40px; /* Set the size of the image */
     height: 40px; /* Set the size of the image */
-    background-image: url('../images/MainLogo/Only\ BD\ logo-blue.webp');  /* Path to your image */
+    background-image: url('../images/MainLogo/onlybd.webp');  /* Path to your image */
     background-size: cover; /* Ensures the image covers the whole cursor area */
     pointer-events: none; /* Prevents the cursor from interacting with the elements */
     transform: translate(-50%, -50%); /* Centers the cursor */
