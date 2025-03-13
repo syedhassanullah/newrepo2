@@ -7,7 +7,7 @@ import { FadeUp } from '../../Varient/Varient2';
 // import patchesImage from '../../images/MainLogo/Only BD logo-blue.png';
 // import vectorImage from '../../images/MainLogo/Only BD logo-blue.png';
 import Apperal from '../../images/heroimg/CLOTHES1.webp'
-import Prmotional from '../../images/heroimg/PROMOTIONAL2.webp'
+import Prmotional from '../../images/heroimg/PROM.webp'
 import Patch from '../../images/heroimg/patches1.webp'
 import Hats from '../../images/heroimg/CAPS1.webp'
 import Vector from '../../images/heroimg/vector.webp'

@@ -18,7 +18,8 @@ import NotFound from './Components/NotFound.js';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Scroll from './PageComponent/Scroll.js';
-
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 // import ScrollToTop from './ScrollZero.js';
 
 
@@ -45,7 +46,7 @@ root.render(
 
         
     </Routes>
-    
+    <ToastContainer/>
   </BrowserRouter>
 );
 

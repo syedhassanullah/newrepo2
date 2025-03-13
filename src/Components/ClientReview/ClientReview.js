@@ -33,13 +33,13 @@ const reviews = [
     },
     {
         name: "John Doe",
-        review: "Beyond Digitizing did an amazing job transforming my old VHS tapes into digital files. The process was so easy, and the quality of the final product exceeded my expectations. I can now enjoy these precious memories on my digital devices! The team was super friendly, professional, and went above and beyond to ensure I was happy with the outcome. Highly recommend their services!",
+        review: "Beyond Digitizing did an amazing job transforming my old VHS tapes into digital files. The process was so easy, and the quality of the final product exceeded my expectations.",
         post: "CEO",
         img: img4
     },
     {
         name: "James Wilson",
-        review: "Wonderful work, the results exceeded my expectations.I’ve worked with several digitizing companies before, but Beyond Digitizing stands out as the best. They took my vintage artwork and turned it into high-quality digital files that I could use in various projects. The level of professionalism and expertise they bring to their work is unmatched. Friendly staff, fast service, and fantastic results. A true five-star experience!",
+        review: "Wonderful work, the results exceeded my expectations.I’ve worked with several digitizing companies before, but Beyond Digitizing stands out as the best.",
         post: "Manager",
         img: img5
     },

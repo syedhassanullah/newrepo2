@@ -13,7 +13,7 @@ import { FadeUp } from '../../../Varient/Varient2';
 function Vector() {
     return (
         <MainLayout>
-            <div className='heroother'>
+            <div className='herootherservice heroimage6'>
                 <Container>
                     <h1>Vector Services</h1>
                 </Container>

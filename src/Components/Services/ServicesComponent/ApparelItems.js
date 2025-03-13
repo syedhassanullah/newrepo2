@@ -12,7 +12,7 @@ import { FadeUp } from '../../../Varient/Varient2';
 function ApparelItems() {
     return (
         <MainLayout>
-            <div className='heroother'>
+            <div className='herootherservice heroimage1'>
                 <Container>
                     <h1>Apparel Items</h1>
                 </Container>

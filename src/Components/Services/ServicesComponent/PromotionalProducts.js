@@ -14,7 +14,7 @@ import { FadeUp } from '../../../Varient/Varient2';
 function PromotionalProducts() {
     return (
         <MainLayout>
-            <div className='heroother'>
+            <div className='herootherservice heroimage5'>
                 <Container>
                     <h1>Promotional Products</h1>
                 </Container>

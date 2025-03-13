@@ -614,8 +614,7 @@ body::-webkit-scrollbar-track {
 
 .sCard {
   backdrop-filter: var(--backdrop-filter);
-  border-radius: var(--borderradiusCard);
-  cursor: pointer;
+  border-radius: var(--borderradiusCard); 
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.137);
   width: 19rem;
   height: 22rem;
@@ -656,6 +655,7 @@ body::-webkit-scrollbar-track {
 .sCard .ServiceSecCard:hover .buttom h6 {
   opacity: 1; /* Make text visible */
   transform: translateX(0); /* Slide text into position */
+  cursor: pointer;
 }
 
 .sCard .ServiceSecCard h4{

@@ -125,3 +125,70 @@ color: aliceblue;
   color: aliceblue;
   margin-top: 10px;
 }
+
+.heroimage1{
+  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+   url(../../../images/footer/360_F_596626503_jrzjZNYStDexiWxQFqO7oCh6M8PdMlJs.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.heroimage2{
+  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+   url(../../../images/footer/digitizing-object.png);
+  background-size: cover;
+  background-position: center;
+}
+.heroimage3{
+  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+   url(../../../images/footer/view-composition-with-neatly-arranged-organized-sport-items.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.heroimage4{
+  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+   url(../../../images/footer/photo-1529458600305-b5bdde535770.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.heroimage5{
+  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+   url(../../../images/footer/surge-promo-items.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.heroimage6{
+  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+   url(../../../images/footer/vector-art-6ttd2h971c0ivqyh.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.herootherservice {
+ 
+  color: aliceblue;
+  padding: 180px 0px;
+  font-family: var(--text-heading3);
+  border-radius: var(--borderradiushero);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.herootherservice h1 {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 480px) {
+.herootherservice{
+  padding: 150px 0px;
+}
+.herootherservice h1 {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 35px;
+  text-transform: uppercase;
+}
+}

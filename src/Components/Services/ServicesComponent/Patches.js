@@ -15,7 +15,7 @@ function Patches() {
     console.log(PatchesData)
     return (
         <MainLayout>
-            <div className='heroother'>
+            <div className='herootherservice heroimage4'>
                 <Container>
                     <h1>Patches</h1>
                 </Container>

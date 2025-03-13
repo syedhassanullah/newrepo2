@@ -35,7 +35,6 @@
   border-left: 3px solid black;
 }
 .review-text {
-  font-size: 1.1em;
   color: white;
   /* text-align: center; */
 }
@@ -80,6 +79,9 @@
     padding: 25px 20px;
     font-family: var(--text-heading2);
     border-left: 0px;
+  }
+  .review-text{
+    height: 153px;
   }
   
 }

@@ -13,7 +13,7 @@ import { FadeUp } from '../../../Varient/Varient2';
 function HatsAndBeanies() {
     return (
         <MainLayout>
-            <div className='heroother'>
+            <div className='herootherservice heroimage3'>
                 <Container>
                     <h1>Hats And Beanies</h1>
                 </Container>

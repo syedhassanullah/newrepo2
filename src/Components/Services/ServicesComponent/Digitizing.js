@@ -12,7 +12,7 @@ import { FadeUp } from '../../../Varient/Varient2';
 function Digitizing() {
     return (
         <MainLayout>
-            <div className='heroother'>
+            <div className='herootherservice heroimage2'>
                 <Container>
                     <h1>Digitizing</h1>
                 </Container>

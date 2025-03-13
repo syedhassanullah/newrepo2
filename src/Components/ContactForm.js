@@ -1,11 +1,12 @@
-import 'react-toastify/dist/ReactToastify.css'; // Add this line at the top of your component
+
 import React, { useState } from 'react'
-import {  Stack, TextField } from '@mui/material'
+import { Stack, TextField } from '@mui/material'
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 import Button from '@mui/material/Button';
 import '../App.css'
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import { Alert } from 'react-bootstrap';
 
 // import { message } from 'antd';
@@ -45,16 +46,16 @@ function ContactForm() {
       },
     },
   });
-  const [formData,SetFormData] = useState({
-    firstName:'',
-    lastname:'',
-    contact:'',
-    email:'',
-    message:''
+  const [formData, SetFormData] = useState({
+    firstName: '',
+    lastname: '',
+    contact: '',
+    email: '',
+    message: ''
   })
 
-  const getValues = (e) =>{
-    const {name , value} = e.target;
+  const getValues = (e) => {
+    const { name, value } = e.target;
     SetFormData({
       ...formData,
       [name]: value,
@@ -65,139 +66,143 @@ function ContactForm() {
     e.preventDefault();
 
     // Check if all necessary fields are filled
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.contact) {
-        toast.warning("Please fill in all the fields.", {
-            position: 'top-center'
-        });
-        return; // Return early to prevent form submission if validation fails
+    if (!formData.firstName || !formData.lastname || !formData.email || !formData.contact) {
+      toast.warning("Please fill in all the fields.", {
+        position: 'top-center',
+      });
+      console.log("emptyyyyyyy______-----__",{toast})
+      return;
+       // Return early to prevent form submission if validation fails
     }
 
     // Proceed to send the data
     try {
-        const data = { ...formData };
+      const data = { ...formData };
 
-        console.log(data); // Check if the data is correct
+      console.log(data); // Check if the data is correct
 
-        // API Call to submit form data (Uncomment and complete the fetch request)
-        const response = await fetch('https://script.google.com/macros/s/AKfycbyR46UvNx_orRyHKO7OGc556p1QI6HewdmzpFI19Wdtk1C0nLicqxj7q-p166Nd_F-r/exec', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',  // Ensure Content-Type is application/json
-            },
-            body: JSON.stringify(data),
-            mode: 'no-cors'
+      // API Call to submit form data (Uncomment and complete the fetch request)
+      const response = await fetch('https://script.google.com/macros/s/AKfycbwUnaS7pcIad_39gf-SjsQEllyp_F5MqIjdQeg27cOz8dkqkQUYRWs5QGcx4_CE9-CT/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',  // Ensure Content-Type is application/json
+        },
+        body: JSON.stringify(data),
+        mode: 'no-cors'
+      });
+
+      // Handle response and success
+      if (response) {
+        toast.success("Your Application has been sent successfully!", {
+          position: 'top-center',
+          
         });
-
-        // Handle response and success
-        if (response.ok) {
-            toast.success("Your Application has been sent successfully!", {
-                position: 'top-center'
-            });
-        } else {
-            console.error('Error sending data:', response);
-            toast.error("There was an issue with your submission.", {
-                position: 'top-center'
-            });
-        }
+        console.log("hell send ______________________________")
+      } else {
+        console.error('Error sending data:', response);
+        toast.error("There was an issue with your submission.", {
+          position: 'top-center'
+        });
+      }
     } catch (error) {
-        console.error('Error:', error);
-        toast.error("An error occurred while sending your application.", {
-            position: 'top-center'
-        });
+      console.error('Error:', error);
+      toast.error("An error occurred while sending your application.", {
+        position: 'top-center'
+      });
     }
-};
+  };
 
 
 
-//   const Clickme = (e) =>{
-//     e.preventDefault();
-//    if(!formData.firstName){
-//     console.log("something is wrong")
-//     // alert("some thing wrong")
-//     toast.success("Your Applications send Successfully", {
-//       position: 'top-center'
-//     });
-//     console.log(toast)
-//    } else{
-//     console.log("gooo")
-//     // alert("googoggoggo")
-//     toast.success("Your Applications send Successfully", {
-//             position: 'top-center'
-//           });
-//           return;
-//    }
-//   //   if(formData.firstName === '' || formData.lastname === '' || formData.email === '' || formData.contact === '' ){
-//   //     toast.warning("Please fill in all the fields.");
-//   //     // return;
-//   //     // console.log('input_______________________________________________')
-//   // }
+  //   const Clickme = (e) =>{
+  //     e.preventDefault();
+  //    if(!formData.firstName){
+  //     console.log("something is wrong")
+  //     // alert("some thing wrong")
+  //     toast.success("Your Applications send Successfully", {
+  //       position: 'top-center'
+  //     });
+  //     console.log(toast)
+  //    } else{
+  //     console.log("gooo")
+  //     // alert("googoggoggo")
+  //     toast.success("Your Applications send Successfully", {
+  //             position: 'top-center'
+  //           });
+  //           return;
+  //    }
+  //   //   if(formData.firstName === '' || formData.lastname === '' || formData.email === '' || formData.contact === '' ){
+  //   //     toast.warning("Please fill in all the fields.");
+  //   //     // return;
+  //   //     // console.log('input_______________________________________________')
+  //   // }
 
-//   // try {
-//   //   const response = await fetch('https://script.google.com/macros/s/AKfycbyR46UvNx_orRyHKO7OGc556p1QI6HewdmzpFI19Wdtk1C0nLicqxj7q-p166Nd_F-r/exec', {
-//   //     method: 'POST',
-//   //     headers: {
-//   //       'Content-Type': 'application/json',  // Ensure Content-Type is application/json
-//   //     },
-//   //     body: JSON.stringify(data),
-//   //     mode: 'no-cors'
-//   //   });
+  //   // try {
+  //   //   const response = await fetch('https://script.google.com/macros/s/AKfycbyR46UvNx_orRyHKO7OGc556p1QI6HewdmzpFI19Wdtk1C0nLicqxj7q-p166Nd_F-r/exec', {
+  //   //     method: 'POST',
+  //   //     headers: {
+  //   //       'Content-Type': 'application/json',  // Ensure Content-Type is application/json
+  //   //     },
+  //   //     body: JSON.stringify(data),
+  //   //     mode: 'no-cors'
+  //   //   });
 
-//   //   const result = await response;
-
-
-//   //   if (result) {
-//   //     console.log('send data:', response.data);
-//   //     toast.success("Your Applications send Successfully", {
-//   //       position: 'top-center'
-//   //     });
-//   //   } else {
-//   //     console.error('Error sending data:', result);
-//   //     toast.error(`${result.error}`, {
-//   //       position: 'top-center'
-//   //     });
-//   //   }
-
-//   // } catch (error) {
-//   //   console.error('Error:', error);
-//   // }
+  //   //   const result = await response;
 
 
-//   const data ={
-//     ...formData
-//   }
-  
+  //   //   if (result) {
+  //   //     console.log('send data:', response.data);
+  //   //     toast.success("Your Applications send Successfully", {
+  //   //       position: 'top-center'
+  //   //     });
+  //   //   } else {
+  //   //     console.error('Error sending data:', result);
+  //   //     toast.error(`${result.error}`, {
+  //   //       position: 'top-center'
+  //   //     });
+  //   //   }
 
-//   console.log(data);
-// }
+  //   // } catch (error) {
+  //   //   console.error('Error:', error);
+  //   // }
+
+
+  //   const data ={
+  //     ...formData
+  //   }
+
+
+  //   console.log(data);
+  // }
 
 
   return (
 
     <>
-            {/* <div onClick={Clickme} style={{backgroundColor:'red'}}>hasssan</div> */}
+      {/* <div onClick={Clickme} style={{backgroundColor:'red'}}>hasssan</div> */}
 
       <ThemeProvider theme={darkTheme}>
         <div className='cform' >
           <div style={{ marginBottom: '30px' }}>
             <h2>Lets Talk</h2>
-            <p style={{color:"aliceblue"}}>We aim to respond to all inquiries within 24 hours on business days. We're here to help!</p>
-            
+            <p style={{ color: "aliceblue" }}>We aim to respond to all inquiries within 24 hours on business days. We're here to help!</p>
+
           </div>
           <Stack spacing={3}>
             <Stack direction='row' spacing={2}>
-              <TextField fullWidth label='First Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='firstName'/>
-              <TextField fullWidth label='Last Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='lasttname'/>
+              <TextField fullWidth label='First Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='firstName' />
+              <TextField fullWidth label='Last Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='lastname' />
             </Stack>
             <Stack direction='row' spacing={2}>
-              <TextField fullWidth label='Phone' variant='outlined' size='small' className='cinput' onChange={getValues} name='contact'/>
-              <TextField fullWidth label='Email' variant='outlined' size='small' className='cinput' onChange={getValues} name='email'/>
+              <TextField fullWidth label='Phone' variant='outlined' size='small' className='cinput' onChange={getValues} name='contact' />
+              <TextField fullWidth label='Email' variant='outlined' size='small' className='cinput' onChange={getValues} name='email' />
             </Stack>
             <Stack direction='row' >
-              <TextField label='Message' variant='outlined' size='small' className='cinputm' fullWidth multiline rows={4} onChange={getValues} name='message'/>
+              <TextField label='Message' variant='outlined' size='small' className='cinputm' fullWidth multiline rows={4} onChange={getValues} name='message' />
             </Stack>
           </Stack>
           <div style={{ right: '0px', textAlign: 'end', marginTop: '30px' }} >
-            
+
             <Button variant="contained" size='medium' onClick={Clickme}>Submit Now</Button>
           </div>
         </div>
