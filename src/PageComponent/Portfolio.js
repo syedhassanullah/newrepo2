@@ -4,9 +4,19 @@ import { Segmented } from 'antd';
 import { useState } from 'react';
 import { Image } from 'antd';
 import LogoSlider from '../Components/Slider/LogoSlider'
-import jre from './helo.jpeg'
 import { motion } from 'framer-motion'
 import { FadeIn } from '../Varient/Varient'
+
+// vector 
+import vector1 from '../images/PortfolioImg/Vector Designs/vec1.webp'
+import vector2 from '../images/PortfolioImg/Vector Designs/vec2.webp'
+import vector3 from '../images/PortfolioImg/Vector Designs/vec3.webp'
+import vector4 from '../images/PortfolioImg/Vector Designs/vac4.webp'
+import vector5 from '../images/PortfolioImg/Vector Designs/vac5.webp'
+import vector6 from '../images/PortfolioImg/Vector Designs/vec6.webp'
+
+
+
 // import jre1 from '../images/ServiceShowsIMG/Patches.png'
 import digi1 from '../images/PortfolioImg/Digitizing/digi1.webp'
 import digi2 from '../images/PortfolioImg/Digitizing/digi2.webp'
@@ -163,7 +173,7 @@ import pwood1 from '../images/PortfolioImg/promotional/wood keychine/w1.jpg'
 import pwood2 from '../images/PortfolioImg/promotional/wood keychine/w2.jpg'
 import pwood3 from '../images/PortfolioImg/promotional/wood keychine/w3.jpg'
 import pwood4 from '../images/PortfolioImg/promotional/wood keychine/w4.jpg'
-import pwood5 from '../images/PortfolioImg/promotional/wood keychine/w5.jpg'
+// import pwood5 from '../images/PortfolioImg/promotional/wood keychine/w5.jpg'
 import pwood6 from '../images/PortfolioImg/promotional/wood keychine/w6.jpg'
 import pwood7 from '../images/PortfolioImg/promotional/wood keychine/w7.jpg'
 import pwood8 from '../images/PortfolioImg/promotional/wood keychine/w8.jpg'
@@ -327,14 +337,12 @@ function Portfolio() {
                                             damping: 20,
                                         }}
                                         className='portfolio-image'>
-                                        <Image src={jre} />
-                                        <Image src={jre} />
-                                        <Image src={jre} />
-                                        <Image src={jre} />
-                                        <Image src={jre} />
-                                        <Image src={jre} />
-                                        <Image src={jre} />
-                                        <Image src={jre} />
+                                        <Image src={vector1} />
+                                        <Image src={vector2} />
+                                        <Image src={vector3} />
+                                        <Image src={vector4} />
+                                        <Image src={vector5} />
+                                        <Image src={vector6} />
                                     </motion.div>
                                 </>
                             }
@@ -793,7 +801,7 @@ function Portfolio() {
                                             <Image src={pwood2} />
                                             <Image src={pwood3} />
                                             <Image src={pwood4} />
-                                            <Image src={pwood5} />
+                                            
                                             <Image src={pwood6} />
                                             <Image src={pwood7} />
                                             <Image src={pwood8} />

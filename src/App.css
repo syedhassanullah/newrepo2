@@ -17,7 +17,7 @@
   --transaction1: right 0.3s ease;
   --transaction2: 0.3s;
   --backgroundimage:
-    linear-gradient(to Top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.712)),
+    linear-gradient(to Top, rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.712)),
     /* Gradient */
     url('./images/footer/backimg.webp');
   --borderradius: 5px 100px 5px 100px;

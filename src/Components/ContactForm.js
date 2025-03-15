@@ -48,7 +48,7 @@ function ContactForm() {
   });
   const [formData, SetFormData] = useState({
     firstName: '',
-    lastname: '',
+    lastName: '',
     contact: '',
     email: '',
     message: ''
@@ -66,7 +66,7 @@ function ContactForm() {
     e.preventDefault();
 
     // Check if all necessary fields are filled
-    if (!formData.firstName || !formData.lastname || !formData.email || !formData.contact) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.contact) {
       toast.warning("Please fill in all the fields.", {
         position: 'top-center',
       });
@@ -131,7 +131,7 @@ function ContactForm() {
   //           });
   //           return;
   //    }
-  //   //   if(formData.firstName === '' || formData.lastname === '' || formData.email === '' || formData.contact === '' ){
+  //   //   if(formData.firstName === '' || formData.lastName === '' || formData.email === '' || formData.contact === '' ){
   //   //     toast.warning("Please fill in all the fields.");
   //   //     // return;
   //   //     // console.log('input_______________________________________________')
@@ -191,7 +191,7 @@ function ContactForm() {
           <Stack spacing={3}>
             <Stack direction='row' spacing={2}>
               <TextField fullWidth label='First Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='firstName' />
-              <TextField fullWidth label='Last Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='lastname' />
+              <TextField fullWidth label='Last Name' variant='outlined' size='small' className='cinput' onChange={getValues} name='lastName' />
             </Stack>
             <Stack direction='row' spacing={2}>
               <TextField fullWidth label='Phone' variant='outlined' size='small' className='cinput' onChange={getValues} name='contact' />
