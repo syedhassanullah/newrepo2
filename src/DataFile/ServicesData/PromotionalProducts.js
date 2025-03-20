@@ -16,7 +16,7 @@ const PromotionalProductsData = [
     },
     {
       "id": 4,
-      "name": "Hand Bands",
+      "name": "Wrist Bands",
       "description": "Custom hand bands, affordable and trendy for events, promotions, and giveaways."
     },
     {

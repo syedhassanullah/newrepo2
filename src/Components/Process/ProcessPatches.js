@@ -19,13 +19,13 @@ function ProcessPatches() {
       id: '2',
       img: <GiPencilBrush />,
       title: 'Sample & Approval',
-      description: ' Our experts will convert into a digital sample and show you the review on approval. We will send it to you for approval. You will approve it according to your requirements.'
+      description: 'Our experts will create a digital sample and send it to you for review and approval. You can approve it based on your requirements.'
     },
     {
       id: '3',
       img: <FaTruckArrowRight />,
       title: 'Production & Delivery',
-      description: 'Once you approve the digital sample then we will go from the final prodution and send you the picture before we ship and then we will ship to you and you will get your order 3 to 4 working days'
+      description: 'Once you approve the digital sample, we will proceed with the final production and send you a picture before shipping. After that, we will ship your order, and you should receive it within 3 to 4 working days.'
     }
   ];
 

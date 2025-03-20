@@ -11,10 +11,14 @@ import { FadeIn } from '../Varient/Varient'
 import vector1 from '../images/PortfolioImg/Vector Designs/vec1.webp'
 import vector2 from '../images/PortfolioImg/Vector Designs/vec2.webp'
 import vector3 from '../images/PortfolioImg/Vector Designs/vec3.webp'
-import vector4 from '../images/PortfolioImg/Vector Designs/vac4.webp'
+// import vector4 from '../images/PortfolioImg/Vector Designs/vac4.webp'
 import vector5 from '../images/PortfolioImg/Vector Designs/vac5.webp'
 import vector6 from '../images/PortfolioImg/Vector Designs/vec6.webp'
-
+import vector7 from '../images/PortfolioImg/Vector Designs/vec7.webp'
+import vector8 from '../images/PortfolioImg/Vector Designs/vec8.webp'
+import vector9 from '../images/PortfolioImg/Vector Designs/vec9.webp'
+import vector10 from '../images/PortfolioImg/Vector Designs/vec10.webp'
+import vector11 from '../images/PortfolioImg/Vector Designs/vec11.webp'
 
 
 // import jre1 from '../images/ServiceShowsIMG/Patches.png'
@@ -340,9 +344,14 @@ function Portfolio() {
                                         <Image src={vector1} />
                                         <Image src={vector2} />
                                         <Image src={vector3} />
-                                        <Image src={vector4} />
+                                        {/* <Image src={vector4} /> */}
                                         <Image src={vector5} />
                                         <Image src={vector6} />
+                                        <Image src={vector7} />
+                                        <Image src={vector8} />
+                                        <Image src={vector9} />
+                                        <Image src={vector10} />
+                                        <Image src={vector11} />
                                     </motion.div>
                                 </>
                             }
