@@ -6,12 +6,12 @@ import { FadeUp } from '../../Varient/Varient2';
 // import digitizingImage from '../../images/MainLogo/Beyonddigi-white.png';
 // import patchesImage from '../../images/MainLogo/Only BD logo-blue.png';
 // import vectorImage from '../../images/MainLogo/Only BD logo-blue.png';
-import Apperal from '../../images/heroimg/CLOTHING copy.png'
+import Apperal from '../../images/heroimg/CLOTHING copy.webp'
 import Prmotional from '../../images/heroimg/PROM1.webp'
-import Patch from '../../images/heroimg/patches1 copy.png'
+import Patch from '../../images/heroimg/heropatch.webp'
 import Hats from '../../images/heroimg/VAPS1.webp'
-import Vector from '../../images/heroimg/vector copy.png'
-import Digi from '../../images/heroimg/Digitizing2.webp'
+import Vector from '../../images/heroimg/herovec.webp'
+import Digi from '../../images/heroimg/herodigi.webp'
 import './Hero.css';
 
 
