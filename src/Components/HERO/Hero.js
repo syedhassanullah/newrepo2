@@ -10,7 +10,7 @@ import Apperal from '../../images/heroimg/CLOTHING copy.webp'
 import Prmotional from '../../images/heroimg/PROM1.webp'
 import Patch from '../../images/heroimg/heropatch.webp'
 import Hats from '../../images/heroimg/VAPS1.webp'
-import Vector from '../../images/heroimg/herovec.webp'
+import Vector from '../../images/heroimg/herovec5.webp'
 import Digi from '../../images/heroimg/herodigi.webp'
 import './Hero.css';
 
