@@ -91,11 +91,11 @@ import PVC6 from '../images/PortfolioImg/Patches/PVC Patches/P6.jpg'
 import PVC7 from '../images/PortfolioImg/Patches/PVC Patches/P7.jpg'
 import PVC8 from '../images/PortfolioImg/Patches/PVC Patches/P8.jpg'
 
-import seque1 from  '../images/PortfolioImg/Patches/Sequince Patches/s1.jpg'
-import seque2 from  '../images/PortfolioImg/Patches/Sequince Patches/s2.jpg'
-import seque3 from  '../images/PortfolioImg/Patches/Sequince Patches/s3.jpg'
-import seque4 from  '../images/PortfolioImg/Patches/Sequince Patches/s4.jpg'
-import seque5 from  '../images/PortfolioImg/Patches/Sequince Patches/s5.jpg'
+import seque1 from '../images/PortfolioImg/Patches/Sequince Patches/s1.jpg'
+import seque2 from '../images/PortfolioImg/Patches/Sequince Patches/s2.jpg'
+import seque3 from '../images/PortfolioImg/Patches/Sequince Patches/s3.jpg'
+import seque4 from '../images/PortfolioImg/Patches/Sequince Patches/s4.jpg'
+import seque5 from '../images/PortfolioImg/Patches/Sequince Patches/s5.jpg'
 
 import wovenl1 from '../images/PortfolioImg/Patches/Woven Labels/wo1.jpg'
 import wovenl2 from '../images/PortfolioImg/Patches/Woven Labels/wo2.jpg'
@@ -317,15 +317,22 @@ function Portfolio() {
                                         damping: 20,
                                     }}
                                     className='portfolio-image'>
-                                    <Image src={digi1} />
-                                    <Image src={digi2} />
-                                    <Image src={digi3} />
-                                    <Image src={digi4} />
-                                    <Image src={digi5} />
-                                    <Image src={digi6} />
-                                    <Image src={digi7} />
-                                    <Image src={digi8} />
-                                    <Image src={digi9} />
+                                    <Image.PreviewGroup
+                                        preview={{
+                                            onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                        }}
+                                    >
+
+                                        <Image src={digi1} />
+                                        <Image src={digi2} />
+                                        <Image src={digi3} />
+                                        <Image src={digi4} />
+                                        <Image src={digi5} />
+                                        <Image src={digi6} />
+                                        <Image src={digi7} />
+                                        <Image src={digi8} />
+                                        <Image src={digi9} />
+                                    </Image.PreviewGroup>
                                 </motion.div>
                             }
                             {selectedValue === 'Vector' &&
@@ -341,17 +348,25 @@ function Portfolio() {
                                             damping: 20,
                                         }}
                                         className='portfolio-image'>
-                                        <Image src={vector1} />
-                                        <Image src={vector2} />
-                                        <Image src={vector3} />
-                                        {/* <Image src={vector4} /> */}
-                                        <Image src={vector5} />
-                                        <Image src={vector6} />
-                                        <Image src={vector7} />
-                                        <Image src={vector8} />
-                                        <Image src={vector9} />
-                                        <Image src={vector10} />
-                                        <Image src={vector11} />
+                                        <Image.PreviewGroup
+                                            preview={{
+                                                onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                            }}
+                                        >
+
+
+                                            <Image src={vector1} />
+                                            <Image src={vector2} />
+                                            <Image src={vector3} />
+                                            {/* <Image src={vector4} /> */}
+                                            <Image src={vector5} />
+                                            <Image src={vector6} />
+                                            <Image src={vector7} />
+                                            <Image src={vector8} />
+                                            <Image src={vector9} />
+                                            <Image src={vector10} />
+                                            <Image src={vector11} />
+                                        </Image.PreviewGroup>
                                     </motion.div>
                                 </>
                             }
@@ -389,6 +404,7 @@ function Portfolio() {
                                     {selectedPatch === 'Patch1' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
+
                                             initial="hidden"
                                             whileInView="show"
                                             viewport={{ once: true, amount: 0.1 }}
@@ -398,18 +414,26 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
-                                            <Image src={Sublimated1} />
-                                            <Image src={Sublimated2} />
-                                            <Image src={Sublimated3} />
-                                            <Image src={Sublimated4} />
-                                            <Image src={Sublimated5} />
-                                            <Image src={Sublimated6} />
-                                            <Image src={Sublimated7} />
-                                            <Image src={Sublimated8} />
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >
+
+                                                <Image src={Sublimated1} />
+                                                <Image src={Sublimated2} />
+                                                <Image src={Sublimated3} />
+                                                <Image src={Sublimated4} />
+                                                <Image src={Sublimated5} />
+                                                <Image src={Sublimated6} />
+                                                <Image src={Sublimated7} />
+                                                <Image src={Sublimated8} />
+                                                </Image.PreviewGroup>
                                         </motion.div>
                                     }
                                     {selectedPatch === 'Patch2' &&
                                         <motion.div
+
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
                                             whileInView="show"
@@ -420,6 +444,11 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
+                                             <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >   
                                             <Image src={Woven1} />
                                             <Image src={Woven2} />
                                             <Image src={Woven3} />
@@ -429,10 +458,12 @@ function Portfolio() {
                                             <Image src={Woven7} />
                                             <Image src={Woven8} />
                                             <Image src={Woven9} />
+                                            </Image.PreviewGroup>
                                         </motion.div>
                                     }
                                     {selectedPatch === 'Patch3' &&
                                         <motion.div
+
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
                                             whileInView="show"
@@ -443,6 +474,11 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
+                                        <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >   
                                             <Image src={Chenille1} />
                                             <Image src={Chenille2} />
                                             <Image src={Chenille3} />
@@ -453,9 +489,11 @@ function Portfolio() {
                                             <Image src={Chenille8} />
                                             <Image src={Chenille9} />
                                             <Image src={Chenille10} />
+                                            </Image.PreviewGroup>
                                         </motion.div>
                                     }{selectedPatch === 'Patch4' &&
                                         <motion.div
+
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
                                             whileInView="show"
@@ -466,6 +504,11 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
+                                        <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >   
                                             <Image src={emb1} />
                                             <Image src={emb2} />
                                             <Image src={emb3} />
@@ -475,10 +518,12 @@ function Portfolio() {
                                             <Image src={emb7} />
                                             <Image src={emb8} />
                                             <Image src={emb9} />
+                                            </Image.PreviewGroup>
                                         </motion.div>
                                     }
                                     {selectedPatch === 'Patch5' &&
                                         <motion.div
+
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
                                             whileInView="show"
@@ -489,16 +534,23 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
+                                                <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >   
                                             <Image src={lather1} />
                                             <Image src={lather2} />
                                             <Image src={lather3} />
                                             <Image src={lather4} />
                                             <Image src={lather5} />
                                             <Image src={lather6} />
+                                            </Image.PreviewGroup>
                                         </motion.div>
                                     }
                                     {selectedPatch === 'Patch6' &&
                                         <motion.div
+
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
                                             whileInView="show"
@@ -509,6 +561,11 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
+                                        <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >   
                                             <Image src={PVC1} />
                                             <Image src={PVC2} />
                                             <Image src={PVC3} />
@@ -517,7 +574,7 @@ function Portfolio() {
                                             <Image src={PVC6} />
                                             <Image src={PVC7} />
                                             <Image src={PVC8} />
-
+</Image.PreviewGroup>
                                         </motion.div>
                                     }
                                     {selectedPatch === 'Patch7' &&
@@ -532,15 +589,21 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >   
                                             <Image src={wovenl1} />
                                             <Image src={wovenl2} />
                                             <Image src={wovenl3} />
                                             <Image src={wovenl4} />
                                             <Image src={wovenl5} />
+                                            </Image.PreviewGroup>
                                         </motion.div>
                                     }
                                     {selectedPatch === 'Patch8' &&
-                                    <motion.div
+                                        <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
                                             whileInView="show"
@@ -551,11 +614,17 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
+                                                <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >   
                                             <Image src={seque1} />
                                             <Image src={seque2} />
                                             <Image src={seque3} />
                                             <Image src={seque4} />
                                             <Image src={seque5} />
+                                            </Image.PreviewGroup>
                                         </motion.div>
                                     }
 
@@ -810,7 +879,7 @@ function Portfolio() {
                                             <Image src={pwood2} />
                                             <Image src={pwood3} />
                                             <Image src={pwood4} />
-                                            
+
                                             <Image src={pwood6} />
                                             <Image src={pwood7} />
                                             <Image src={pwood8} />
