@@ -31,11 +31,17 @@ function MeetourTeam() {
                                 <p>ceo@beyonddigitizing.com</p>
                             </div>
                             <div className='meetbox'>
-                                <h4>Sales Manager</h4>
+                                <h4>CO OWNER</h4>
                                 <h2>Mr. Azan</h2>
                                 <div className='mail'>
-                                    <p>sales@beyonddigitizing.com</p>
                                     <p>info@beyonddigitizing.com</p>
+                                </div>
+                            </div>
+                            <div className='meetbox'>
+                                <h4>Director of Sales</h4>
+                                <h2>Mr. Ayan</h2>
+                                <div className='mail'>
+                                    <p>sales@beyonddigitizing.com</p>
                                 </div>
                             </div>
                         </div>
