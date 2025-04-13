@@ -57,6 +57,7 @@ body.sidebar-open {
 .sidebarin .Sidebarcontent h1 {
   font-family: var(--text-heading3);
   color: var(--primary-color);
+  margin-bottom: 30px;
 }
 
 .close-btn {

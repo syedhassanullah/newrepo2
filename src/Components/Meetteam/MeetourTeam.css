@@ -1,0 +1,24 @@
+.meet{
+    display:flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.meet .meetbox{
+    width: 30rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.meet .meetbox .mail{
+    line-height: 4px;
+    padding-top: 5px;
+}
+
+.meet .meetbox h2{
+   font-family: var(--text-heading3);
+}

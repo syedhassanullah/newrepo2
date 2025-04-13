@@ -74,10 +74,10 @@ function Footer() {
                                     {/* <div style={{width:'7rem',backgroundColor:'white'}} >
                                     <img src={beyond} alt='LOGO' style={{width:'100%'}}/>
                                     </div> */}
-                                    <div style={{display:'flex' }}><h4><ImLocation/></h4><h6>218 W Colorado Ave #104, Colorado Springs, CO 80903, United States</h6></div>
-                                    <div style={{display:'flex' ,alignItems:'center'}}><h4><MdPermPhoneMsg/></h4> <h6>+1-719-900-4662</h6></div>
-                                    <div style={{display:'flex' ,alignItems:'center'}}><h4><MdEmail/></h4><h6>beyonddigitizing7@gmail.com</h6></div>
-                                    <h6>Working Hours: 10:00 - 18:00 GST</h6>
+                                    <div style={{display:'flex' }}><h4><ImLocation/></h4><p>218 W Colorado Ave #104, Colorado Springs, CO 80903, United States</p></div>
+                                    <div style={{display:'flex' }}><h4><MdPermPhoneMsg/></h4> <p>+1-719-900-4662</p></div>
+                                    <div style={{display:'flex' }}><h4><MdEmail/></h4><p>ceo@beyonddigitizing.com <br/>sales@beyonddigitizing.com<br/>info@beyonddigitizing.com</p></div>
+                                    {/* <h6>Working Hours: 10:00 - 18:00 GST</h6> */}
                                 </div>
                                 <div style={{ paddingTop: '40px' }}><Icons /></div>
                             </div>

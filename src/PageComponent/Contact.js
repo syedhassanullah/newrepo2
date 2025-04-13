@@ -6,6 +6,7 @@ import FlagSlider from '../Components/Slider/FlagSlider';
 import Counter from '../Components/Counter/Counter';
 import { motion } from 'framer-motion'
 import { FadeIn } from '../Varient/Varient'
+import MeetourTeam from '../Components/Meetteam/MeetourTeam';
 
 
 function Contact() {
@@ -25,6 +26,7 @@ function Contact() {
       </Container>
     </div>
     <ContactSec/>
+    <MeetourTeam/>
     <Counter/>
     <FlagSlider/>
   </MainLayout>

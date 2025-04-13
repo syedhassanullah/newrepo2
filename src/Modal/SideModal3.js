@@ -190,22 +190,22 @@ function SideModal3({ helo, onClose }) {
 
 
                                 <h1>Our Address</h1>
-                                <div style={{ display: 'flex', alignItems: 'center', paddingTop: '0px', paddingLeft: '10px' }}><h2><ImLocation /></h2>
+                                <div style={{ display: 'flex', paddingTop: '0px', paddingLeft: '10px' }}><h2><ImLocation /></h2>
                                     <div style={{ paddingLeft: '20px' }}>
                                         <h5>Address</h5>
                                         <p>218 W Colorado Ave #104, Colorado Springs, CO 80903, United States</p>
                                     </div>
                                 </div>
-                                <div style={{ display: 'flex', alignItems: 'center', paddingTop: '0px', paddingLeft: '10px' }}><h2><MdPermPhoneMsg /></h2>
+                                <div style={{ display: 'flex', paddingTop: '0px', paddingLeft: '10px' }}><h2><MdPermPhoneMsg /></h2>
                                     <div style={{ paddingLeft: '20px' }}>
                                         <h5>Contact</h5>
                                         <p>+1-719-900-4662</p>
                                     </div>
                                 </div>
-                                <div style={{ display: 'flex', alignItems: 'center', paddingTop: '0px', paddingLeft: '10px' }}><h2><MdEmail /></h2>
+                                <div style={{ display: 'flex', paddingTop: '0px', paddingLeft: '10px' }}><h2><MdEmail /></h2>
                                     <div style={{ paddingLeft: '20px' }}>
                                         <h5>Email</h5>
-                                        <p>beyonddigitizing7@gmail.com</p>
+                                        <p>ceo@beyonddigitizing.com <br/>sales@beyonddigitizing.com<br/>info@beyonddigitizing.com</p>
                                     </div>
                                 </div>
                                 {/* <div style={{ display: 'flex', alignItems: 'center' }}><h2><ImLocation /></h2>

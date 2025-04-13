@@ -12,6 +12,7 @@ import ClientReview from '../Components/ClientReview/ClientReview';
 // import Counter from '../Components/Counter/Counter';
 // import CountrySlider from '../Components/Slider/CountrySlider';
 import Process from '../Components/Process/Process';
+import MeetourTeam from '../Components/Meetteam/MeetourTeam';
 
 
 
@@ -33,9 +34,7 @@ function Home() {
         <AboutSec />
         <ClientReview/>
         <FlagSlider/>
-        
-      
-       
+        <MeetourTeam/> 
         <ContactSec />
         <Process/>
         {/* <Counter/> */}
