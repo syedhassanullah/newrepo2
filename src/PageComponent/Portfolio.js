@@ -230,6 +230,7 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Container } from 'react-bootstrap';
 import { FadeUp } from '../Varient/Varient2'
 
+
 function Portfolio() {
 
     const [selectedValue, setSelectedValue] = useState('Digitizing');
@@ -898,16 +899,16 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
-                                                <Image.PreviewGroup
+                                            <Image.PreviewGroup
                                                 preview={{
                                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                                 }}
-                                            >   
-                                            <Image src={pleather1} />
-                                            <Image src={pleather2} />
-                                            <Image src={pleather3} />
-                                            <Image src={pleather4} />
-                                            <Image src={pleather5} />
+                                            >
+                                                <Image src={pleather1} />
+                                                <Image src={pleather2} />
+                                                <Image src={pleather3} />
+                                                <Image src={pleather4} />
+                                                <Image src={pleather5} />
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }  {selectpromotional === 'promotional2' &&
@@ -922,20 +923,20 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
-                                                <Image.PreviewGroup
+                                            <Image.PreviewGroup
                                                 preview={{
                                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                                 }}
-                                            >   
-                                            <Image src={pwood1} />
-                                            <Image src={pwood2} />
-                                            <Image src={pwood3} />
-                                            <Image src={pwood4} />
+                                            >
+                                                <Image src={pwood1} />
+                                                <Image src={pwood2} />
+                                                <Image src={pwood3} />
+                                                <Image src={pwood4} />
 
-                                            <Image src={pwood6} />
-                                            <Image src={pwood7} />
-                                            <Image src={pwood8} />
-                                            <Image src={pwood9} />
+                                                <Image src={pwood6} />
+                                                <Image src={pwood7} />
+                                                <Image src={pwood8} />
+                                                <Image src={pwood9} />
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
@@ -951,19 +952,19 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
-                                                <Image.PreviewGroup
+                                            <Image.PreviewGroup
                                                 preview={{
                                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                                 }}
-                                            >   
-                                            <Image src={metal1} />
-                                            <Image src={metal2} />
-                                            <Image src={metal3} />
-                                            <Image src={metal4} />
-                                            <Image src={metal5} />
-                                            <Image src={metal6} />
-                                            <Image src={metal7} />
-                                            <Image src={metal8} />
+                                            >
+                                                <Image src={metal1} />
+                                                <Image src={metal2} />
+                                                <Image src={metal3} />
+                                                <Image src={metal4} />
+                                                <Image src={metal5} />
+                                                <Image src={metal6} />
+                                                <Image src={metal7} />
+                                                <Image src={metal8} />
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
@@ -979,16 +980,16 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
-                                                <Image.PreviewGroup
+                                            <Image.PreviewGroup
                                                 preview={{
                                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                                 }}
-                                            >   
-                                            <Image src={pv1} />
-                                            <Image src={pv2} />
-                                            <Image src={pv3} />
-                                            <Image src={pv4} />
-                                            <Image src={pv5} />
+                                            >
+                                                <Image src={pv1} />
+                                                <Image src={pv2} />
+                                                <Image src={pv3} />
+                                                <Image src={pv4} />
+                                                <Image src={pv5} />
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
@@ -1004,19 +1005,19 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
-                                                <Image.PreviewGroup
+                                            <Image.PreviewGroup
                                                 preview={{
                                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                                 }}
-                                            >   
-                                            <Image src={sticker1} />
-                                            <Image src={sticker2} />
-                                            <Image src={sticker3} />
-                                            <Image src={sticker4} />
-                                            <Image src={sticker5} />
-                                            <Image src={sticker6} />
-                                            <Image src={sticker7} />
-                                            <Image src={sticker8} />
+                                            >
+                                                <Image src={sticker1} />
+                                                <Image src={sticker2} />
+                                                <Image src={sticker3} />
+                                                <Image src={sticker4} />
+                                                <Image src={sticker5} />
+                                                <Image src={sticker6} />
+                                                <Image src={sticker7} />
+                                                <Image src={sticker8} />
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
@@ -1032,19 +1033,19 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
-                                                <Image.PreviewGroup
+                                            <Image.PreviewGroup
                                                 preview={{
                                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                                 }}
-                                            >   
-                                            <Image src={wrist1} />
-                                            <Image src={wrist2} />
-                                            <Image src={wrist3} />
-                                            <Image src={wrist4} />
-                                            <Image src={wrist5} />
-                                            <Image src={wrist6} />
-                                            <Image src={wrist7} />
-                                            <Image src={wrist8} />
+                                            >
+                                                <Image src={wrist1} />
+                                                <Image src={wrist2} />
+                                                <Image src={wrist3} />
+                                                <Image src={wrist4} />
+                                                <Image src={wrist5} />
+                                                <Image src={wrist6} />
+                                                <Image src={wrist7} />
+                                                <Image src={wrist8} />
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
@@ -1060,18 +1061,18 @@ function Portfolio() {
                                                 damping: 20,
                                             }}
                                             className='portfolio-image'>
-                                                <Image.PreviewGroup
+                                            <Image.PreviewGroup
                                                 preview={{
                                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                                 }}
-                                            >   
-                                            <Image src={dtf1} />
-                                            <Image src={dtf2} />
-                                            <Image src={dtf3} />
-                                            <Image src={dtf4} />
-                                            <Image src={dtf5} />
-                                            <Image src={dtf6} />
-                                            <Image src={dtf7} />
+                                            >
+                                                <Image src={dtf1} />
+                                                <Image src={dtf2} />
+                                                <Image src={dtf3} />
+                                                <Image src={dtf4} />
+                                                <Image src={dtf5} />
+                                                <Image src={dtf6} />
+                                                <Image src={dtf7} />
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }

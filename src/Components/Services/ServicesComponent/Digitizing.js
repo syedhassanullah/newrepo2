@@ -5,9 +5,14 @@ import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
 import DegitizingData from '../../../DataFile/ServicesData/DegitizingData'
 import Process from '../../Process/Process'
-import digi from '../../../images/ServiceShowsIMG/Capture.webp'
+// import digi from '../../../images/ServiceShowsIMG/Capture.webp'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
+import { ImgComparisonSlider } from '@img-comparison-slider/react';
+import img1 from './use ing.jpg'
+import img2 from './use iimg.jpg'
+
+
 
 function Digitizing() {
     return (
@@ -44,11 +49,18 @@ function Digitizing() {
                         );
                     })}
                 </div>
+
+
+
                 <Row className='servicedesc d-flex flex-wrap align-items-center justify-content-center'>
 
                     <Col md={6} style={{ padding: '0px' }}>
                         <div className='sDescImg '>
-                            <img src={digi} alt='img' />
+                            {/* <img src={digi} alt='img' /> */}
+                            <ImgComparisonSlider hover="hover" style={{ height: '70%' }}>
+                                <img slot="first" width="100%" src={img1} alt="Before" />
+                                <img slot="second" width="100%" src={img2} alt="After" />
+                            </ImgComparisonSlider>
                         </div>
                     </Col>
                     <Col md={6}>
@@ -60,6 +72,8 @@ function Digitizing() {
                     </Col>
 
                 </Row>
+
+
 
 
 
