@@ -11,10 +11,17 @@ import { FadeUp } from '../../../Varient/Varient2';
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
 import img1 from './use ing.jpg'
 import img2 from './use iimg.jpg'
-
+import { useNavigate } from 'react-router-dom'
 
 
 function Digitizing() {
+
+    const navigate = useNavigate();
+
+    const handleCardClick = (patch) => {
+        navigate(`/portfolio?patch=${patch}`);
+    };
+
     return (
         <MainLayout>
             <div className='herootherservice heroimage2'>
@@ -24,6 +31,12 @@ function Digitizing() {
             </div>
 
             <Container>
+
+            <div className="services">
+            <div onClick={() => handleCardClick('Patch1')} className="card">Card 1</div>
+            <div onClick={() => handleCardClick('Patch2')} className="card">Card 2</div>
+            {/* ...more cards */}
+        </div>
 
                 <div className='ServicesDetailcard'>
                     {DegitizingData?.map((data) => {

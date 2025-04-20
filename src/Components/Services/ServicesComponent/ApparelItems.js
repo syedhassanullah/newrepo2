@@ -9,6 +9,7 @@ import Process from '../../Process/ProcessApperal'
 import digi from '../../../images/ServiceShowsIMG/flatlay-outfit-travel.webp'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
+// import img from './use iimg.jpg'
 function ApparelItems() {
     return (
         <MainLayout>
@@ -19,35 +20,38 @@ function ApparelItems() {
             </div>
 
             <Container>
-                
+
                 <div className='ServicesDetailcard'>
                     {ApparelItemsData?.map((data) => {
                         return (
                             <motion.div
-                                  variants={FadeUp(5.3)}
-                                  initial="hidden"
-                                  whileInView="show"
-                                  viewport={{ once: true, amount: 0.9 }}
-                                  transition={{
+                                variants={FadeUp(5.3)}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: true, amount: 0.9 }}
+                                transition={{
                                     type: 'tween',
                                     stiffness: 300,
                                     damping: 20,
-                                  }}
-                                  whileHover={{
+                                }}
+                                whileHover={{
                                     scale: 1.05,
                                     boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.27)',
                                     rotate: -3,
-                                  }}
-                                   className="card" key={data.id}>
-                                <h3>{data.name}</h3>
-                                <p>{data.description}</p>
+                                }}
+                                className="card" key={data.id}>
+                                <div className='smg'> <img src={digi} alt='img' /></div>
+                                <div>
+                                    <h3>{data.name}</h3>
+                                    <p>{data.description}</p>
+                                </div>
                             </motion.div>
                         );
                     })}
                 </div>
                 <Row className=' servicedesc d-flex flex-wrap align-items-center justify-content-center'>
 
-                    <Col md={6} style={{padding:'0px'}}>
+                    <Col md={6} style={{ padding: '0px' }}>
                         <div className='sDescImg '>
                             <img src={digi} alt='img' />
                         </div>
