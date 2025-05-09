@@ -8,103 +8,136 @@
 
 
 .ServicesDetailcard .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 20px;
-    text-align: start;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 17px;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  /* transition: 0.3s ease all; */
+  /* transition: transform 0.3s ease all , background-color 0.3s ease all; */
+  /* position: relative;  */
+  cursor: pointer;
+  /* background:  */
+  /* linear-gradient(to Top, var(--primary-color), rgb(0, 195, 255)); */
+  background-color: var(--primary-color);
+  backdrop-filter: var(--backdrop-filter);
+  min-height: 150px;
+  max-height: 200px;
+  margin: 0px;
+}
+
+.smg {
+  height: 140px;
+}
+
+.smg img {
+  height: 100%;
+}
+
+.servicebtncard {
+  text-align: end;
+}
+
+.servicedesc {
+  background-color: var(--primary-color);
+  margin: 0px 3px;
+  border-radius: 3px;
+}
+
+.servicedesc .sDescImg {
+  width: 100%;
+  /* Adjust as per layout */
+  height: 100%;
+  overflow: hidden;
+  /* Prevent overflow */
+  background-color: black;
+  padding: 40px;
+
+}
+
+.servicedesc .sDescImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Maintain aspect ratio */
+}
+
+.servicedesc .sDescImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.servicedesc .sDesctext h1 {
+  font-family: var(--text-heading3);
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.servicedesc .sDesctext {
+  color: aliceblue;
+  font-family: var(--text-heading2);
+  padding: 35px;
+}
+
+
+/* For smaller screens (mobile-first) */
+@media (max-width: 600px) {
+  .ServicesDetailcard .card {
+    width: 100%;
+    padding: 10px;
+  }
+.smg{
+  height: 100px;
+}
+  .ServicesDetailcard {
     gap: 10px;
-    /* transition: 0.3s ease all; */
-    /* transition: transform 0.3s ease all , background-color 0.3s ease all; */
-    /* position: relative;  */
-    cursor: pointer;
-    /* background:  */
-    /* linear-gradient(to Top, var(--primary-color), rgb(0, 195, 255)); */
-    background-color: var(--primary-color);
-    backdrop-filter: var(--backdrop-filter);
-    min-height: 150px;
-    max-height: 200px;
   }
 
-  .smg{
-    height: 100px;
-  }
-  .smg img{
-    height: 100%;
+  .servicedesc .sDesctext {
+    color: aliceblue;
+
+    padding: 30px 0px;
   }
 
-  .servicedesc{
-    background-color: var(--primary-color);
-    margin: 0px  3px;
-    border-radius: 3px; 
-  }
   .servicedesc .sDescImg {
-    width: 100%; /* Adjust as per layout */
-    height: 100%;
-    overflow: hidden; /* Prevent overflow */
-    background-color: black;
-    padding: 40px;
-
+    padding: 13px;
   }
-  .servicedesc .sDescImg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio */
-  }
-  .servicedesc .sDescImg img{
-    width: 100%;
-    height: 100%;
-  }
-  .servicedesc .sDesctext h1{ 
-    font-family: var(--text-heading3);
-    font-weight: 700;
+  .card p {
+    font-size: 1rem;
     color: aliceblue;
-  }
-  .servicedesc .sDesctext{
-    color: aliceblue;
-    font-family: var(--text-heading2);
-    padding: 35px;
-  }
-
-
-  /* For smaller screens (mobile-first) */
-  @media (max-width: 600px) {
-    .ServicesDetailcard .card {
-      width: 100%;
-      padding: 10px;
-    }
-    .ServicesDetailcard{
-      gap: 10px;
-    }
-    .servicedesc .sDesctext{
-      color: aliceblue;
-      
-      padding: 30px 0px;
-    }.servicedesc .sDescImg{
-      padding: 13px;
-    }
- 
+    margin-bottom: 0px;
+    display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
   }
   
-  /* For medium screens (tablets, small laptops) */
-  @media (min-width: 601px) and (max-width: 1024px) {
-    .ServicesDetailcard .card {
-      width: 45%; /* Two cards in a row */
-    }
-    
-  }
-  
-  /* For larger screens */
-  @media (min-width: 1025px) {
-    .ServicesDetailcard .card {
-      width: 30rem; /* Default width for larger screens */
-    }
-   
+
+}
+
+/* For medium screens (tablets, small laptops) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .ServicesDetailcard .card {
+    width: 45%;
+    /* Two cards in a row */
   }
 
-  .card:hover {
+}
+
+/* For larger screens */
+@media (min-width: 1025px) {
+  .ServicesDetailcard .card {
+    width: 30rem;
+    /* Default width for larger screens */
+  }
+
+}
+
+.card:hover {
   /* transform: scale(1.05); */
   /* background-color: var(--primary-colorbg); */
   /* border-radius:var(--borderradiusCard); */
@@ -119,7 +152,6 @@
 .card h3,
 .card p {
   transition: color 0.3s ease;
-  ;
 }
 
 .card:hover h3,
@@ -128,8 +160,8 @@
 }
 
 .card h3 {
-  font-size: 1.5rem;
-color: aliceblue;
+  font-size: 1.4rem;
+  color: aliceblue;
   font-family: var(--text-heading2);
   font-weight: 600;
 }
@@ -137,48 +169,54 @@ color: aliceblue;
 .card p {
   font-size: 1rem;
   color: aliceblue;
-  margin-top: 10px;
+  margin-bottom: 0px;
+  
 }
 
-.heroimage1{
-  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
-   url(../../../images/footer/other\ aperal.webp);
-  background-size: cover;
-  background-position: center;
-}
-.heroimage2{
-  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
-   url(../../../images/footer/digitizing-object.webp);
-  background-size: cover;
-  background-position: center;
-}
-.heroimage3{
-  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
-   url(../../../images/footer/other1.webp);
-  background-size: cover;
-  background-position: center;
-}
-.heroimage4{
-  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
-   url(../../../images/footer/sublimated-patches-wall-2024-01.webp);
-  background-size: cover;
-  background-position: center;
-}
-.heroimage5{
-  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
-   url(../../../images/footer/surge-promo-items.webp);
+.heroimage1 {
+  background: linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+    url(../../../images/footer/other\ aperal.webp);
   background-size: cover;
   background-position: center;
 }
 
-.heroimage6{
-  background:linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
-   url(../../../images/footer/othervector.webp);
+.heroimage2 {
+  background: linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+    url(../../../images/footer/digitizing-object.webp);
   background-size: cover;
   background-position: center;
 }
+
+.heroimage3 {
+  background: linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+    url(../../../images/footer/other1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.heroimage4 {
+  background: linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+    url(../../../images/footer/sublimated-patches-wall-2024-01.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.heroimage5 {
+  background: linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+    url(../../../images/footer/surge-promo-items.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.heroimage6 {
+  background: linear-gradient(to Top, rgba(0, 41, 88, 0.534), rgba(0, 0, 0, 0.959)),
+    url(../../../images/footer/othervector.webp);
+  background-size: cover;
+  background-position: center;
+}
+
 .herootherservice {
- 
+
   color: aliceblue;
   padding: 180px 0px;
   font-family: var(--text-heading3);
@@ -196,13 +234,14 @@ color: aliceblue;
 }
 
 @media only screen and (max-width: 480px) {
-.herootherservice{
-  padding: 150px 0px;
-}
-.herootherservice h1 {
-  font-weight: 700;
-  color: var(--primary-color);
-  font-size: 35px;
-  text-transform: uppercase;
-}
+  .herootherservice {
+    padding: 150px 0px;
+  }
+
+  .herootherservice h1 {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 35px;
+    text-transform: uppercase;
+  }
 }

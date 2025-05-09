@@ -9,10 +9,18 @@ import digi from '../../../images/ServiceShowsIMG/Embroidered-Patches.webp'
 import { Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function Patches() {
 
-    console.log(PatchesData)
+     const navigate = useNavigate();
+    
+        const handleCardClick = (patch) => {
+            navigate(`/portfolio?patch=${patch}`);
+        };
+
     return (
         <MainLayout>
             <div className='herootherservice heroimage4'>
@@ -40,8 +48,10 @@ function Patches() {
                                 rotate: -3,
                             }}
                             className="card" key={data.id}>
+                                <div onClick={() => handleCardClick(data.patch)}>
                             <h3>{data.name}</h3>
                             <p>{data.description}</p>
+                            </div>
                         </motion.div>
                     ))}
                 </div>

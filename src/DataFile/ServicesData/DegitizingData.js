@@ -2,12 +2,14 @@ const DegitizingData = [
   {
     "id": 1,
     "name": "Left Chest Digitizing",
-    "description": "Digitizing logos or designs for left chest placement on shirts, jackets, and other apparel."
+    "description": "Digitizing logos or designs for left chest placement on shirts, jackets, and other apparel.",
+    "pname":"digi1"
   },
   {
     "id": 2,
     "name": "Custom Digitizing",
-    "description": "Custom embroidery digitizing services tailored to unique designs and specifications."
+    "description": "Custom embroidery digitizing services tailored to unique designs and specifications.",
+    "pname":"digi2"
   },
   {
     "id": 3,

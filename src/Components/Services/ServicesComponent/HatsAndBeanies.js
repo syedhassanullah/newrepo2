@@ -40,8 +40,10 @@ function HatsAndBeanies() {
                                     rotate: -3,
                                 }}
                                 className="card" key={data.id}>
+                                    <div>
                                 <h3>{data.name}</h3>
                                 <p>{data.description}</p>
+                                </div>
                             </motion.div>
                         );
                     })}

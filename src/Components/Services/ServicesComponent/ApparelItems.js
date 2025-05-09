@@ -9,8 +9,17 @@ import Process from '../../Process/ProcessApperal'
 import digi from '../../../images/ServiceShowsIMG/flatlay-outfit-travel.webp'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
+import { useNavigate } from 'react-router-dom'
 // import img from './use iimg.jpg'
 function ApparelItems() {
+
+    const navigate = useNavigate();
+
+    const handleCardClick = (data) => {
+        navigate(`/portfolio?apperal=${data}`);
+    };
+
+
     return (
         <MainLayout>
             <div className='herootherservice heroimage1'>
@@ -40,8 +49,8 @@ function ApparelItems() {
                                     rotate: -3,
                                 }}
                                 className="card" key={data.id}>
-                                <div className='smg'> <img src={digi} alt='img' /></div>
-                                <div>
+
+                                <div onClick={() => handleCardClick(data.apperal)}>
                                     <h3>{data.name}</h3>
                                     <p>{data.description}</p>
                                 </div>

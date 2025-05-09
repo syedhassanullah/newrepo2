@@ -5,7 +5,7 @@ import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
 import DegitizingData from '../../../DataFile/ServicesData/DegitizingData'
 import Process from '../../Process/Process'
-// import digi from '../../../images/ServiceShowsIMG/Capture.webp'
+import digi from '../../../images/ServiceShowsIMG/Capture.webp'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
@@ -18,8 +18,8 @@ function Digitizing() {
 
     const navigate = useNavigate();
 
-    const handleCardClick = (patch) => {
-        navigate(`/portfolio?patch=${patch}`);
+    const handleCardClick = (data) => {
+        navigate(`/portfolio?digitizing=${data}`); 
     };
 
     return (
@@ -32,11 +32,6 @@ function Digitizing() {
 
             <Container>
 
-            <div className="services">
-            <div onClick={() => handleCardClick('Patch1')} className="card">Card 1</div>
-            <div onClick={() => handleCardClick('Patch2')} className="card">Card 2</div>
-            {/* ...more cards */}
-        </div>
 
                 <div className='ServicesDetailcard'>
                     {DegitizingData?.map((data) => {
@@ -56,8 +51,14 @@ function Digitizing() {
                                     boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.27)',
                                     rotate: -3,
                                 }} className="card" key={data.id}>
-                                <h3>{data.name}</h3>
-                                <p>{data.description}</p>
+                                <div className='smg'> <img src={digi} alt='img' /></div>
+                                <div>
+                                    <h3>{data.name}</h3>
+                                    <p>{data.description}</p>
+                                    <div className='servicebtncard'>
+                                        <p onClick={() => handleCardClick(data.pname)}>see picture</p>
+                                    </div>
+                                </div>
                             </motion.div>
                         );
                     })}

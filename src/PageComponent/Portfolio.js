@@ -228,26 +228,86 @@ import dtf7 from '../images/PortfolioImg/promotional/dtf sheets/d7.jpg'
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Container } from 'react-bootstrap';
-import { FadeUp } from '../Varient/Varient2'
+import { FadeUp } from '../Varient/Varient2';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 
 function Portfolio() {
 
+    const location = useLocation();
+
     const [selectedValue, setSelectedValue] = useState('Digitizing');
+
+    const [selectDigitizing, setSelectedDigitizing] = useState('Digitizing');
     const [selectedPatch, setSelectedPatch] = useState('Patch1');
     const [selectedApperal, setSelectedApperal] = useState('apperal1');
     const [selectedHat, setSelectedHat] = useState('hat1');
     const [selectpromotional, setSelectedpromotioanl] = useState('promotional1');
 
-    // Handler for the onChange event
-    const handleChange = (value) => {
-        setSelectedValue(value);
+
+    useEffect(() => {
+
+        const params = new URLSearchParams(location.search);
+
+        const digitizingParam = params.get('digitizing');
+        const patchParam = params.get('patch');
+        const apperalParam = params.get('apperal');
+        const hatParam = params.get('hat');
+        const promotionalParam = params.get('promotional');
+
+
+        if (digitizingParam) {
+            setSelectedValue('Digitizing');
+        }
+
+        if (patchParam) {
+            handlePatchClick(patchParam);
+            setSelectedValue('Patches');
+        }
+
+        if (apperalParam) {
+            handleapperalClick(apperalParam);
+            setSelectedValue('Apparel-Items');
+            console.log(apperalParam,'........................................')
+        }
+
+        if (hatParam) {
+            handleHatClick(hatParam);
+            setSelectedValue('Hats-And-Bean');
+        }
+
+        if (promotionalParam) {
+            handlePromotionalClick(promotionalParam);
+            setSelectedValue('Promotional-Products');
+        }
+    }, [location]);
+
+
+    const handleChange = (val) => {
+
+        setSelectedValue(val);
+
+        if (val !== 'patch') {
+            setSelectedPatch('Patch1');
+        }
+
+        if (val !== 'digitizing') {
+            setSelectedDigitizing('digi1')
+        }
+
+        if (val !== 'apparel') {
+            setSelectedPatch('apparel1');
+        }
     };
 
+    const handleDigitizingClick = (digitizing) => {
+        setSelectedDigitizing(digitizing);
+    }
 
     const handlePatchClick = (patch) => {
-        setSelectedPatch(patch)
-    }
+        setSelectedPatch(patch);
+    };
 
     const handleapperalClick = (apperal) => {
         setSelectedApperal(apperal)
@@ -297,45 +357,79 @@ function Portfolio() {
                         <div style={{ display: 'flex', alignItems: 'center' }}>
                             <MdKeyboardArrowLeft />
                             <div className='justify-content-center segment'>
-                                <Segmented size="large"
+                                <Segmented size="medium"
                                     options={[
                                         'Digitizing', 'Vector', 'Patches', 'Apparel-Items', 'Hats-And-Bean', 'Promotional-Products']}
+                                    value={selectedValue}
                                     onChange={handleChange}
+
                                 />
                             </div>
                             <MdKeyboardArrowRight />
                         </div>
                         <div className='portfolio-Item'>
                             {selectedValue === 'Digitizing' &&
-                                <motion.div
-                                    variants={FadeUp(0.3)}
-                                    initial="hidden"
-                                    whileInView="show"
-                                    viewport={{ once: true, amount: 0.1 }}
-                                    transition={{
-                                        type: 'spring',
-                                        stiffness: 300,
-                                        damping: 20,
-                                    }}
-                                    className='portfolio-image'>
-                                    <Image.PreviewGroup
-                                        preview={{
-                                            onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                        }}
-                                    >
+                                <>
+                                    <div className='portfolio_select_item'>
 
-                                        <Image src={digi1} />
-                                        <Image src={digi2} />
-                                        <Image src={digi3} />
-                                        <Image src={digi4} />
-                                        <Image src={digi5} />
-                                        <Image src={digi6} />
-                                        <Image src={digi7} />
-                                        <Image src={digi8} />
-                                        <Image src={digi9} />
-                                    </Image.PreviewGroup>
-                                </motion.div>
+                                        <p onClick={() => handleDigitizingClick('')}
+                                            className={`${selectDigitizing === '' ? 'active' : ''}`}>
+                                            Sublimated</p>|
+                                        <p onClick={() => handleDigitizingClick('')}
+                                            className={`${selectDigitizing === '' ? 'active' : ''}`}>
+                                            Woven-Patch</p>|
+                                        <p onClick={() => handleDigitizingClick('')}
+                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        >CHENILLE</p>|
+                                        <p onClick={() => handleDigitizingClick('')}
+                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        >Embroidered</p>|
+                                        <p onClick={() => handleDigitizingClick('')}
+                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        >lEATEHER</p>|
+                                        <p onClick={() => handleDigitizingClick('')}
+                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        >PVC</p>|
+                                        <p onClick={() => handleDigitizingClick('')}
+                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        >woven Labels</p>|
+                                        <p onClick={() => handleDigitizingClick('')}
+                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        >sequince</p>
+
+
+                                    </div>
+                                    <motion.div
+                                        variants={FadeUp(0.3)}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        viewport={{ once: true, amount: 0.1 }}
+                                        transition={{
+                                            type: 'spring',
+                                            stiffness: 300,
+                                            damping: 20,
+                                        }}
+                                        className='portfolio-image'>
+                                        <Image.PreviewGroup
+                                            preview={{
+                                                onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                            }}
+                                        >
+
+                                            <Image src={digi1} />
+                                            <Image src={digi2} />
+                                            <Image src={digi3} />
+                                            <Image src={digi4} />
+                                            <Image src={digi5} />
+                                            <Image src={digi6} />
+                                            <Image src={digi7} />
+                                            <Image src={digi8} />
+                                            <Image src={digi9} />
+                                        </Image.PreviewGroup>
+                                    </motion.div>
+                                </>
                             }
+
                             {selectedValue === 'Vector' &&
                                 <>
                                     <motion.div
@@ -371,12 +465,13 @@ function Portfolio() {
                                     </motion.div>
                                 </>
                             }
+
                             {selectedValue === 'Patches' &&
                                 <>
                                     <div className='portfolio_select_item'>
 
-                                        <p onClick={() => handlePatchClick('Patch1')}
-                                            className={`${selectedPatch === 'Patch1' ? 'active' : ''}`}>
+                                        <p onClick={() => handlePatchClick('Patch5')}
+                                            className={`${selectedPatch === 'Patch5' ? 'active' : ''}`}>
                                             Sublimated</p>|
                                         <p onClick={() => handlePatchClick('Patch2')}
                                             className={`${selectedPatch === 'Patch2' ? 'active' : ''}`}>
@@ -384,8 +479,8 @@ function Portfolio() {
                                         <p onClick={() => handlePatchClick('Patch3')}
                                             className={`${selectedPatch === 'Patch3' ? 'active' : ''}`}
                                         >CHENILLE</p>|
-                                        <p onClick={() => handlePatchClick('Patch4')}
-                                            className={`${selectedPatch === 'Patch4' ? 'active' : ''}`}
+                                        <p onClick={() => handlePatchClick('Patch1')}
+                                            className={`${selectedPatch === 'Patch1' ? 'active' : ''}`}
                                         >Embroidered</p>|
                                         <p onClick={() => handlePatchClick('Patch5')}
                                             className={`${selectedPatch === 'Patch5' ? 'active' : ''}`}
@@ -402,7 +497,7 @@ function Portfolio() {
 
 
                                     </div>
-                                    {selectedPatch === 'Patch1' &&
+                                    {selectedPatch === 'Patch5' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
 
@@ -492,7 +587,7 @@ function Portfolio() {
                                                 <Image src={Chenille10} />
                                             </Image.PreviewGroup>
                                         </motion.div>
-                                    }{selectedPatch === 'Patch4' &&
+                                    }{selectedPatch === 'Patch1' &&
                                         <motion.div
 
                                             variants={FadeUp(0.3)}
