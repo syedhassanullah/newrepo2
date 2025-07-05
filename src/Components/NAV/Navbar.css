@@ -80,10 +80,13 @@
     color: aliceblue;
     text-decoration: none;
     font-size: 17px;
-    padding: 0px 12px;
+    padding: 0px 20px;
     transition: color 0.3s ease;
+    text-transform: uppercase;
+    font-family: var(--text-heading1);
     /* padding-bottom: 7px; */
   }
+
   
   .helo.scrolled .nav-links .main-menu {
     color: rgb(0, 0, 0);

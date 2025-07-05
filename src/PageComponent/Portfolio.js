@@ -239,11 +239,12 @@ function Portfolio() {
 
     const [selectedValue, setSelectedValue] = useState('Digitizing');
 
-    const [selectDigitizing, setSelectedDigitizing] = useState('Digitizing');
+    const [selectDigitizing, setSelectedDigitizing] = useState('digi1');
     const [selectedPatch, setSelectedPatch] = useState('Patch1');
     const [selectedApperal, setSelectedApperal] = useState('apperal1');
     const [selectedHat, setSelectedHat] = useState('hat1');
     const [selectpromotional, setSelectedpromotioanl] = useState('promotional1');
+    const [selectKeychain, setSelectedKeychain] = useState('keychain1')
 
 
     useEffect(() => {
@@ -255,21 +256,24 @@ function Portfolio() {
         const apperalParam = params.get('apperal');
         const hatParam = params.get('hat');
         const promotionalParam = params.get('promotional');
+        // const keychainParam = params.get('keychain');
 
 
         if (digitizingParam) {
             setSelectedValue('Digitizing');
+            setSelectedDigitizing(digitizingParam);
+
         }
 
         if (patchParam) {
-            handlePatchClick(patchParam);
             setSelectedValue('Patches');
+            setSelectedPatch(patchParam);
         }
 
         if (apperalParam) {
             handleapperalClick(apperalParam);
             setSelectedValue('Apparel-Items');
-            console.log(apperalParam,'........................................')
+            console.log(apperalParam, '........................................')
         }
 
         if (hatParam) {
@@ -281,6 +285,10 @@ function Portfolio() {
             handlePromotionalClick(promotionalParam);
             setSelectedValue('Promotional-Products');
         }
+        // if (keychainParam) {
+        //     handleKechainClick(keychainParam);
+        //     selectKeychain('Keychains');
+        // }
     }, [location]);
 
 
@@ -288,17 +296,20 @@ function Portfolio() {
 
         setSelectedValue(val);
 
-        if (val !== 'patch') {
-            setSelectedPatch('Patch1');
-        }
+        // if (val !== 'Patches') {
+        //     setSelectedPatch('Patch1');
+        //     console.log(val, 'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh')
+        // }
 
-        if (val !== 'digitizing') {
-            setSelectedDigitizing('digi1')
-        }
+        // if (val !== 'digitizing') {
+        //     setSelectedDigitizing('digi1')
+        //     console.log(val, 'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh')
+        // }
 
-        if (val !== 'apparel') {
-            setSelectedPatch('apparel1');
-        }
+        // if (val !== 'apparel') {
+        //     setSelectedPatch('apparel1');
+        //     console.log(val, 'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh')
+        // }
     };
 
     const handleDigitizingClick = (digitizing) => {
@@ -319,6 +330,10 @@ function Portfolio() {
 
     const handlePromotionalClick = (promotional) => {
         setSelectedpromotioanl(promotional)
+    }
+
+    const handleKechainClick = (keychain) => {
+        setSelectedKeychain(keychain)
     }
 
     // const CustomToken = {
@@ -359,10 +374,10 @@ function Portfolio() {
                             <div className='justify-content-center segment'>
                                 <Segmented size="medium"
                                     options={[
-                                        'Digitizing', 'Vector', 'Patches', 'Apparel-Items', 'Hats-And-Bean', 'Promotional-Products']}
+                                        'Digitizing', 'Vector', 'Patches', 'Apparel-Items', 'Promotional-Products', 'Keychains']}
                                     value={selectedValue}
                                     onChange={handleChange}
-
+                                // 'Hats-And-Bean', 
                                 />
                             </div>
                             <MdKeyboardArrowRight />
@@ -372,64 +387,95 @@ function Portfolio() {
                                 <>
                                     <div className='portfolio_select_item'>
 
-                                        <p onClick={() => handleDigitizingClick('')}
-                                            className={`${selectDigitizing === '' ? 'active' : ''}`}>
+                                        <p onClick={() => handleDigitizingClick('digi1')}
+                                            className={`${selectDigitizing === 'digi1' ? 'active' : ''}`}>
                                             Sublimated</p>|
-                                        <p onClick={() => handleDigitizingClick('')}
-                                            className={`${selectDigitizing === '' ? 'active' : ''}`}>
+                                        <p onClick={() => handleDigitizingClick('digi2')}
+                                            className={`${selectDigitizing === 'digi2' ? 'active' : ''}`}>
                                             Woven-Patch</p>|
-                                        <p onClick={() => handleDigitizingClick('')}
-                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        <p onClick={() => handleDigitizingClick('digi3')}
+                                            className={`${selectDigitizing === 'digi3' ? 'active' : ''}`}
                                         >CHENILLE</p>|
-                                        <p onClick={() => handleDigitizingClick('')}
-                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        <p onClick={() => handleDigitizingClick('digi4')}
+                                            className={`${selectDigitizing === 'digi4' ? 'active' : ''}`}
                                         >Embroidered</p>|
-                                        <p onClick={() => handleDigitizingClick('')}
-                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        <p onClick={() => handleDigitizingClick('digi5')}
+                                            className={`${selectDigitizing === 'digi5' ? 'active' : ''}`}
                                         >lEATEHER</p>|
-                                        <p onClick={() => handleDigitizingClick('')}
-                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        <p onClick={() => handleDigitizingClick('digi6')}
+                                            className={`${selectDigitizing === 'digi6' ? 'active' : ''}`}
                                         >PVC</p>|
-                                        <p onClick={() => handleDigitizingClick('')}
-                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        <p onClick={() => handleDigitizingClick('digi7')}
+                                            className={`${selectDigitizing === 'digi7' ? 'active' : ''}`}
                                         >woven Labels</p>|
-                                        <p onClick={() => handleDigitizingClick('')}
-                                            className={`${selectDigitizing === '' ? 'active' : ''}`}
+                                        <p onClick={() => handleDigitizingClick('digi8')}
+                                            className={`${selectDigitizing === 'digi8' ? 'active' : ''}`}
                                         >sequince</p>
 
 
                                     </div>
-                                    <motion.div
-                                        variants={FadeUp(0.3)}
-                                        initial="hidden"
-                                        whileInView="show"
-                                        viewport={{ once: true, amount: 0.1 }}
-                                        transition={{
-                                            type: 'spring',
-                                            stiffness: 300,
-                                            damping: 20,
-                                        }}
-                                        className='portfolio-image'>
-                                        <Image.PreviewGroup
-                                            preview={{
-                                                onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                    {selectDigitizing === 'digi1' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
                                             }}
-                                        >
+                                            className='portfolio-image'>
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >
 
-                                            <Image src={digi1} />
-                                            <Image src={digi2} />
-                                            <Image src={digi3} />
-                                            <Image src={digi4} />
-                                            <Image src={digi5} />
-                                            <Image src={digi6} />
-                                            <Image src={digi7} />
-                                            <Image src={digi8} />
-                                            <Image src={digi9} />
-                                        </Image.PreviewGroup>
-                                    </motion.div>
+                                                <Image src={digi1} />
+                                                <Image src={digi2} />
+                                                <Image src={digi3} />
+                                                <Image src={digi4} />
+                                                <Image src={digi5} />
+                                                <Image src={digi6} />
+                                                <Image src={digi7} />
+                                                <Image src={digi8} />
+                                                <Image src={digi9} />
+                                            </Image.PreviewGroup>
+                                        </motion.div>
+                                    },
+                                    {selectDigitizing === 'digi2' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >
+
+                                                {/* <Image src={digi1} />
+                                                <Image src={digi2} />
+                                                <Image src={digi3} />
+                                                <Image src={digi4} />
+                                                <Image src={digi5} /> */}
+                                                <Image src={digi6} />
+                                                <Image src={digi7} />
+                                                <Image src={digi8} />
+                                                <Image src={digi9} />
+                                            </Image.PreviewGroup>
+                                        </motion.div>
+                                    }
                                 </>
                             }
-
                             {selectedValue === 'Vector' &&
                                 <>
                                     <motion.div
@@ -465,11 +511,13 @@ function Portfolio() {
                                     </motion.div>
                                 </>
                             }
-
                             {selectedValue === 'Patches' &&
                                 <>
                                     <div className='portfolio_select_item'>
 
+                                        <p onClick={() => handlePatchClick('Patch1')}
+                                            className={`${selectedPatch === 'Patch1' ? 'active' : ''}`}
+                                        >Embroidered</p>|
                                         <p onClick={() => handlePatchClick('Patch5')}
                                             className={`${selectedPatch === 'Patch5' ? 'active' : ''}`}>
                                             Sublimated</p>|
@@ -479,11 +527,9 @@ function Portfolio() {
                                         <p onClick={() => handlePatchClick('Patch3')}
                                             className={`${selectedPatch === 'Patch3' ? 'active' : ''}`}
                                         >CHENILLE</p>|
-                                        <p onClick={() => handlePatchClick('Patch1')}
-                                            className={`${selectedPatch === 'Patch1' ? 'active' : ''}`}
-                                        >Embroidered</p>|
-                                        <p onClick={() => handlePatchClick('Patch5')}
-                                            className={`${selectedPatch === 'Patch5' ? 'active' : ''}`}
+
+                                        <p onClick={() => handlePatchClick('Patch9')}
+                                            className={`${selectedPatch === 'Patch9' ? 'active' : ''}`}
                                         >lEATEHER</p>|
                                         <p onClick={() => handlePatchClick('Patch6')}
                                             className={`${selectedPatch === 'Patch6' ? 'active' : ''}`}
@@ -617,7 +663,7 @@ function Portfolio() {
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
-                                    {selectedPatch === 'Patch5' &&
+                                    {selectedPatch === 'Patch9' &&
                                         <motion.div
 
                                             variants={FadeUp(0.3)}
@@ -961,134 +1007,17 @@ function Portfolio() {
                                     <div className='portfolio_select_item'>
 
                                         <p onClick={() => handlePromotionalClick('promotional1')}
-                                            className={`${selectpromotional === 'promotional1' ? 'active' : ''}`}>
-                                            Leather Keychain</p>|
+                                            className={`${selectpromotional === 'promotional1' ? 'active' : ''}`}
+                                        >Sticker</p>|
                                         <p onClick={() => handlePromotionalClick('promotional2')}
-                                            className={`${selectpromotional === 'promotional2' ? 'active' : ''}`}>
-                                            wood keychain </p>|
+                                            className={`${selectpromotional === 'promotional2' ? 'active' : ''}`}
+                                        >wrist band</p>|
                                         <p onClick={() => handlePromotionalClick('promotional3')}
                                             className={`${selectpromotional === 'promotional3' ? 'active' : ''}`}
-                                        >Metal keychain</p>|
-                                        <p onClick={() => handlePromotionalClick('promotional4')}
-                                            className={`${selectpromotional === 'promotional4' ? 'active' : ''}`}
-                                        >pvc keychain</p>|
-                                        <p onClick={() => handlePromotionalClick('promotional5')}
-                                            className={`${selectpromotional === 'promotional5' ? 'active' : ''}`}
-                                        >Sticker</p>|
-                                        <p onClick={() => handlePromotionalClick('promotional6')}
-                                            className={`${selectpromotional === 'promotional6' ? 'active' : ''}`}
-                                        >wrist band</p>|
-                                        <p onClick={() => handlePromotionalClick('promotional7')}
-                                            className={`${selectpromotional === 'promotional7' ? 'active' : ''}`}
                                         >dtf sheet</p>
                                     </div>
+                                   
                                     {selectpromotional === 'promotional1' &&
-                                        <motion.div
-                                            variants={FadeUp(0.3)}
-                                            initial="hidden"
-                                            whileInView="show"
-                                            viewport={{ once: true, amount: 0.1 }}
-                                            transition={{
-                                                type: 'spring',
-                                                stiffness: 300,
-                                                damping: 20,
-                                            }}
-                                            className='portfolio-image'>
-                                            <Image.PreviewGroup
-                                                preview={{
-                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                                }}
-                                            >
-                                                <Image src={pleather1} />
-                                                <Image src={pleather2} />
-                                                <Image src={pleather3} />
-                                                <Image src={pleather4} />
-                                                <Image src={pleather5} />
-                                            </Image.PreviewGroup>
-                                        </motion.div>
-                                    }  {selectpromotional === 'promotional2' &&
-                                        <motion.div
-                                            variants={FadeUp(0.3)}
-                                            initial="hidden"
-                                            whileInView="show"
-                                            viewport={{ once: true, amount: 0.1 }}
-                                            transition={{
-                                                type: 'spring',
-                                                stiffness: 300,
-                                                damping: 20,
-                                            }}
-                                            className='portfolio-image'>
-                                            <Image.PreviewGroup
-                                                preview={{
-                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                                }}
-                                            >
-                                                <Image src={pwood1} />
-                                                <Image src={pwood2} />
-                                                <Image src={pwood3} />
-                                                <Image src={pwood4} />
-
-                                                <Image src={pwood6} />
-                                                <Image src={pwood7} />
-                                                <Image src={pwood8} />
-                                                <Image src={pwood9} />
-                                            </Image.PreviewGroup>
-                                        </motion.div>
-                                    }
-                                    {selectpromotional === 'promotional3' &&
-                                        <motion.div
-                                            variants={FadeUp(0.3)}
-                                            initial="hidden"
-                                            whileInView="show"
-                                            viewport={{ once: true, amount: 0.1 }}
-                                            transition={{
-                                                type: 'spring',
-                                                stiffness: 300,
-                                                damping: 20,
-                                            }}
-                                            className='portfolio-image'>
-                                            <Image.PreviewGroup
-                                                preview={{
-                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                                }}
-                                            >
-                                                <Image src={metal1} />
-                                                <Image src={metal2} />
-                                                <Image src={metal3} />
-                                                <Image src={metal4} />
-                                                <Image src={metal5} />
-                                                <Image src={metal6} />
-                                                <Image src={metal7} />
-                                                <Image src={metal8} />
-                                            </Image.PreviewGroup>
-                                        </motion.div>
-                                    }
-                                    {selectpromotional === 'promotional4' &&
-                                        <motion.div
-                                            variants={FadeUp(0.3)}
-                                            initial="hidden"
-                                            whileInView="show"
-                                            viewport={{ once: true, amount: 0.1 }}
-                                            transition={{
-                                                type: 'spring',
-                                                stiffness: 300,
-                                                damping: 20,
-                                            }}
-                                            className='portfolio-image'>
-                                            <Image.PreviewGroup
-                                                preview={{
-                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
-                                                }}
-                                            >
-                                                <Image src={pv1} />
-                                                <Image src={pv2} />
-                                                <Image src={pv3} />
-                                                <Image src={pv4} />
-                                                <Image src={pv5} />
-                                            </Image.PreviewGroup>
-                                        </motion.div>
-                                    }
-                                    {selectpromotional === 'promotional5' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
@@ -1116,7 +1045,7 @@ function Portfolio() {
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
-                                    {selectpromotional === 'promotional6' &&
+                                    {selectpromotional === 'promotional2' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
@@ -1144,7 +1073,7 @@ function Portfolio() {
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
-                                    {selectpromotional === 'promotional7' &&
+                                    {selectpromotional === 'promotional3' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
@@ -1173,11 +1102,136 @@ function Portfolio() {
                                     }
                                 </>
                             }
-                        </div>
+                            {selectedValue === 'Keychains' &&
+                                <>
+                                    <div className='portfolio_select_item'>
+
+                                        <p onClick={() => handleKechainClick('keychain1')}
+                                            className={`${selectKeychain === 'keychain1' ? 'active' : ''}`}>
+                                            Leather Keychain</p>|
+                                        <p onClick={() => handleKechainClick('keychain2')}
+                                            className={`${selectKeychain === 'keychain2' ? 'active' : ''}`}>
+                                            wood keychain </p>|
+                                        <p onClick={() => handleKechainClick('keychain3')}
+                                            className={`${selectKeychain === 'keychain3' ? 'active' : ''}`}
+                                        >Metal keychain</p>|
+                                        <p onClick={() => handleKechainClick('keychain4')}
+                                            className={`${selectKeychain === 'keychain4' ? 'active' : ''}`}
+                                        >pvc keychain</p>
+                                    </div>
+                                    {selectKeychain === 'keychain1' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >
+                                                <Image src={pleather1} />
+                                                <Image src={pleather2} />
+                                                <Image src={pleather3} />
+                                                <Image src={pleather4} />
+                                                <Image src={pleather5} />
+                                            </Image.PreviewGroup>
+                                        </motion.div>
+                                    }  {selectKeychain === 'keychain2' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >
+                                                <Image src={pwood1} />
+                                                <Image src={pwood2} />
+                                                <Image src={pwood3} />
+                                                <Image src={pwood4} />
+
+                                                <Image src={pwood6} />
+                                                <Image src={pwood7} />
+                                                <Image src={pwood8} />
+                                                <Image src={pwood9} />
+                                            </Image.PreviewGroup>
+                                        </motion.div>
+                                    }
+                                    {selectKeychain === 'keychain3' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >
+                                                <Image src={metal1} />
+                                                <Image src={metal2} />
+                                                <Image src={metal3} />
+                                                <Image src={metal4} />
+                                                <Image src={metal5} />
+                                                <Image src={metal6} />
+                                                <Image src={metal7} />
+                                                <Image src={metal8} />
+                                            </Image.PreviewGroup>
+                                        </motion.div>
+                                    }
+                                    {selectKeychain === 'keychain4' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >
+                                                <Image src={pv1} />
+                                                <Image src={pv2} />
+                                                <Image src={pv3} />
+                                                <Image src={pv4} />
+                                                <Image src={pv5} />
+                                            </Image.PreviewGroup>
+                                        </motion.div>
+                                    }
+                                    </>
+                            }
+                                </div>
 
                     </div>
-                </div>
-                <LogoSlider />
+                    </div>
+                    <LogoSlider />
             </Container>
         </MainLayout >
     )

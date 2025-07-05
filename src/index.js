@@ -20,6 +20,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Scroll from './PageComponent/Scroll.js';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import Kechain from './Components/Services/ServicesComponent/Kechain.js';
 // import ScrollToTop from './ScrollZero.js';
 
 
@@ -42,6 +43,7 @@ root.render(
         <Route path='/services/apparel-item' element={<Apparel />} />
         <Route path='/services/hats-beanies' element={<HatsAndBeanies />} />
         <Route path='/services/promotional' element={<PromotionalProducts />} />
+        <Route path='/services/keychain' element={<Kechain/>} />
         <Route path='*' element={<NotFound />} />
 
         

@@ -2,8 +2,14 @@
 @font-face {
   font-family: 'MyCustomFont';
   src: url('./Fonts/Batangas\ Bold\ 700.otf') format('opentype'); /* You can use 'opentype' for .otf files */
+
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face{
+  font-family: 'MyCustomFont1';
+  src: url('./Fonts/violendy_qishega/Violendy\ Qishega.otf') format('opentype');
 }
 
 
@@ -13,6 +19,7 @@
   --secondary-color: #52cc47ec;
   --text-heading2: "Montserrat Alternates", serif;
   --text-heading3: 'MyCustomFont', serif;
+  --text-heading4: 'MyCustomFont1', serif;
   --text-heading: "Orbitron", serif;
   --transaction1: right 0.3s ease;
   --transaction2: 0.3s;
@@ -452,7 +459,7 @@ body::-webkit-scrollbar-track {
   gap: 13px;
   color: black;
   text-transform: uppercase; 
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .portfolio_select_item p{
   font-weight: 500;
@@ -542,7 +549,7 @@ body::-webkit-scrollbar-track {
 }
 
 .component-heading h1 {
-  font-weight: 800;
+  font-weight: 400;
   font-size: 50px;
   color: var(--primary-color);
 }
@@ -900,15 +907,15 @@ body::-webkit-scrollbar-track {
   }
 
 
-  .component-heading {
+  /* .component-heading {
     padding-bottom: 10px;
   }
   
   .component-heading h1 {
-    font-weight: 800;
+    font-weight: 400;
     font-size: 30px;
-    color: var(--primary-color);
-  }
+    color: var(--primary-color); */
+  
   /*  */
 
   .heroother{

@@ -1,37 +1,28 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
 import MainLayout from '../../../Layout/MainLayout'
 import { Container } from 'react-bootstrap'
 import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
-import ApparelItemsData from '../../../DataFile/ServicesData/ApparelItemsData'
-import Process from '../../Process/ProcessApperal'
-import digi from '../../../images/ServiceShowsIMG/flatlay-outfit-travel.webp'
+import HatsAndBeaniesData from '../../../DataFile/ServicesData/KechainData'
+import Process from '../../Process/processHats'
+import digi from '../../../images/ServiceShowsIMG/hello.webp'
+import { Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
-import { useNavigate } from 'react-router-dom'
-// import img from './use iimg.jpg'
-function ApparelItems() {
 
-    const navigate = useNavigate();
-
-    const handleCardClick = (data) => {
-        navigate(`/portfolio?apperal=${data}`);
-    };
-
-
+function Kechain() {
     return (
         <MainLayout>
-            <div className='herootherservice heroimage1'>
+            <div className='herootherservice heroimage7'>
                 <Container>
-                    <h1>Apparel Items</h1>
+                    <h1>KEYCHAINS</h1>
                 </Container>
             </div>
 
             <Container>
 
                 <div className='ServicesDetailcard'>
-                    {ApparelItemsData?.map((data) => {
+                    {HatsAndBeaniesData?.map((data) => {
                         return (
                             <motion.div
                                 variants={FadeUp(5.3)}
@@ -49,20 +40,15 @@ function ApparelItems() {
                                     rotate: -3,
                                 }}
                                 className="card" key={data.id}>
-
-                                <div className='smg'> <img src={data.image} alt='img' /></div>
-                                <div>
-                                    <h3>{data.name}</h3>
-                                    <p>{data.description}</p>
-                                    <div className='servicebtncard'>
-                                        <p onClick={() => handleCardClick(data.apperal)}>see picture</p>
-                                    </div>
+                                    <div>
+                                <h3>{data.name}</h3>
+                                <p>{data.description}</p>
                                 </div>
                             </motion.div>
                         );
                     })}
                 </div>
-                <Row className=' servicedesc d-flex flex-wrap align-items-center justify-content-center'>
+                <Row className='servicedesc d-flex flex-wrap align-items-center justify-content-center'>
 
                     <Col md={6} style={{ padding: '0px' }}>
                         <div className='sDescImg '>
@@ -71,13 +57,13 @@ function ApparelItems() {
                     </Col>
                     <Col md={6}>
                         <div className='sDesctext'>
-                            <h1>Apparel-Item</h1>
-                            <p>Enhance your wardrobe with customized apparel featuring high-quality embroidery and printing. From t-shirts to jackets, we bring your designs to life with precision and lasting impact.
-                            </p>
+                            <h1>
+                                Hats & Beanies</h1>
+                            <p>Make a statement with custom-embroidered hats and beanies. Whether for a brand, event, or personal style, we deliver premium embroidery that stands out and lasts.</p>
                         </div>
                     </Col>
-                </Row>
 
+                </Row>
             </Container>
             <Process />
             <LogoSlider />
@@ -85,4 +71,4 @@ function ApparelItems() {
     )
 }
 
-export default ApparelItems
+export default Kechain;

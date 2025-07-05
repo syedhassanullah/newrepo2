@@ -51,7 +51,7 @@ function Digitizing() {
                                     boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.27)',
                                     rotate: -3,
                                 }} className="card" key={data.id}>
-                                <div className='smg'> <img src={digi} alt='img' /></div>
+                                <div className='smg'> <img src={data.image} alt='img' /></div>
                                 <div>
                                     <h3>{data.name}</h3>
                                     <p>{data.description}</p>

@@ -9,7 +9,7 @@ const ServiceData = [
   {
     id: 1,
     title: "DIGITIZING",
-    description: "Precision-crafted embroidery files with optimal stitch count, minimal trims, and seamless color changes—compatible with all embroidery machines.",
+    description: "Precision-crafted embroidery files with optimal stitch count, minimal trims, and seamless color changes compatible with all embroidery machines.",
     icon: <GiSewingNeedle/>,
     url: "/services/digitizing",
   },

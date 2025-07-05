@@ -1,9 +1,5 @@
 const PromotionalProductsData = [
-    {
-      "id": 1,
-      "name": "Keychains",
-      "description": "Customizable keychains that are practical and keep your brand visible every day."
-    },
+    
     {
       "id": 2,
       "name": "Bottles",

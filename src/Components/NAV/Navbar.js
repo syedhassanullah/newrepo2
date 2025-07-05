@@ -79,11 +79,11 @@ const Navbar = () => {
           activeClassName="active"
           className="main-menu"
         >
-          Digitizing
+          DIGITIZING
         </NavLink>
       ),
       key: '0',
-      
+
     },
     {
       label: (
@@ -92,7 +92,7 @@ const Navbar = () => {
           activeClassName="active"
           className="main-menu"
         >
-          Patches
+          PATCH
         </NavLink>
       ),
       key: '1',
@@ -104,7 +104,7 @@ const Navbar = () => {
           activeClassName="active"
           className="main-menu"
         >
-          Vector
+          VECTOR
         </NavLink>
       ),
       key: '2',
@@ -116,23 +116,23 @@ const Navbar = () => {
           activeClassName="active"
           className="main-menu"
         >
-          Apparel-item
+          APPAREL-ITEM
         </NavLink>
       ),
       key: '3',
     },
-    {
-      label: (
-        <NavLink
-          to="/services/hats-beanies"
-          activeClassName="active"
-          className="main-menu"
-        >
-          Hats-Beanies
-        </NavLink>
-      ),
-      key: '4',
-    },
+    // {
+    //   label: (
+    //     <NavLink
+    //       to="/services/hats-beanies"
+    //       activeClassName="active"
+    //       className="main-menu"
+    //     >
+    //       Hats-Beanies
+    //     </NavLink>
+    //   ),
+    //   key: '4',
+    // },
     {
       label: (
         <NavLink
@@ -140,10 +140,22 @@ const Navbar = () => {
           activeClassName="active"
           className="main-menu"
         >
-          Promotional
+          PROMOTIONAL
         </NavLink>
       ),
       key: '5',
+    },
+    {
+      label: (
+        <NavLink
+          to="/services/keychain"
+          activeClassName="active"
+          className="main-menu"
+        >
+          KEYCHAINS
+        </NavLink>
+      ),
+      key: '6',
     },
     // {
     //   type: 'divider',
@@ -157,11 +169,11 @@ const Navbar = () => {
         <nav className={`helo ${scrolled ? 'scrolled' : ''}`}>
           <Container >
             <div className='head-item' >
-            
-            <Link className="logo" as={Link} to='/'>
-                
+
+              <Link className="logo" as={Link} to='/'>
+
               </Link>
-            
+
               <div className='Nav-buttons'>
                 <div className="nav-links">
                   {/* <Link className='main-menu' to={'/'}>Home</Link>
@@ -192,7 +204,7 @@ const Navbar = () => {
                     to={'/about'}
                     activeClassName="active"
                   >
-                    About
+                    About us
                   </NavLink>
                   {/* <div className="services-link">
                   <NavLink
@@ -257,14 +269,14 @@ const Navbar = () => {
                       <Space>
                         <Link
                           className="main-menu"
-                          //  activeClassName="active"
-                          //  to={'/services/digitizing'}
-                          // style={{paddingBottom:'5px'}}
-                          >
-                            
+                        //  activeClassName="active"
+                        //  to={'/services/digitizing'}
+                        // style={{paddingBottom:'5px'}}
+                        >
+
                           Services
                           {/* <DownOutlined/> */}
-                          <MdKeyboardArrowDown/>
+                          <MdKeyboardArrowDown />
                         </Link>
                       </Space>
                     </Link>

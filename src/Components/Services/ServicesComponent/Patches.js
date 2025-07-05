@@ -48,10 +48,14 @@ function Patches() {
                                 rotate: -3,
                             }}
                             className="card" key={data.id}>
-                                <div onClick={() => handleCardClick(data.patch)}>
-                            <h3>{data.name}</h3>
-                            <p>{data.description}</p>
-                            </div>
+                              <div className='smg'> <img src={data.image} alt='img' /></div>
+                                <div>
+                                    <h3>{data.name}</h3>
+                                    <p>{data.description}</p>
+                                    <div className='servicebtncard'>
+                                        <p onClick={() => handleCardClick(data.patch)}>see picture</p>
+                                    </div>
+                                </div>
                         </motion.div>
                     ))}
                 </div>
