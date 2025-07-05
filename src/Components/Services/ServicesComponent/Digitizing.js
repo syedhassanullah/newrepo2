@@ -5,7 +5,7 @@ import LogoSlider from '../../Slider/LogoSlider'
 import './ServicesDetail.css'
 import DegitizingData from '../../../DataFile/ServicesData/DegitizingData'
 import Process from '../../Process/Process'
-import digi from '../../../images/ServiceShowsIMG/Capture.webp'
+// import digi from '../../../images/ServiceShowsIMG/Capture.webp';
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
