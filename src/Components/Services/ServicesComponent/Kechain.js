@@ -9,8 +9,15 @@ import digi from '../../../images/ServiceShowsIMG/hello.webp'
 import { Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
+import { useNavigate } from 'react-router-dom'
 
 function Kechain() {
+
+    const navigate = useNavigate();
+    
+    const handleCardClick = (key) => {
+        navigate(`/portfolio?keychain=${key}`);
+    };
     return (
         <MainLayout>
             <div className='herootherservice heroimage7'>
@@ -40,9 +47,13 @@ function Kechain() {
                                     rotate: -3,
                                 }}
                                 className="card" key={data.id}>
-                                    <div>
-                                <h3>{data.name}</h3>
-                                <p>{data.description}</p>
+                                   <div className='smg'> <img src={data.image} alt='img' /></div>
+                                <div>
+                                    <h3>{data.name}</h3>
+                                    <p>{data.description}</p>
+                                    <div className='servicebtncard'>
+                                        <p onClick={() => handleCardClick(data.key)}>see picture</p>
+                                    </div>
                                 </div>
                             </motion.div>
                         );

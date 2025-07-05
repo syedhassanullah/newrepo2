@@ -256,7 +256,7 @@ function Portfolio() {
         const apperalParam = params.get('apperal');
         const hatParam = params.get('hat');
         const promotionalParam = params.get('promotional');
-        // const keychainParam = params.get('keychain');
+        const keychainParam = params.get('keychain');
 
 
         if (digitizingParam) {
@@ -285,10 +285,10 @@ function Portfolio() {
             handlePromotionalClick(promotionalParam);
             setSelectedValue('Promotional-Products');
         }
-        // if (keychainParam) {
-        //     handleKechainClick(keychainParam);
-        //     selectKeychain('Keychains');
-        // }
+        if (keychainParam) {
+            handleKechainClick(keychainParam);
+            setSelectedValue('Keychains');
+        }
     }, [location]);
 
 
