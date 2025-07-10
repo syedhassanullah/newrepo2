@@ -8,6 +8,8 @@
     background-color: rgba(44, 0, 0, 0);
     z-index: 1000;
     color: aliceblue;
+    /* background-color: rgba(0, 0, 0, 0.092); */
+    /* backdrop-filter: blur(20px); */
   }
   
   .helo.scrolled {
