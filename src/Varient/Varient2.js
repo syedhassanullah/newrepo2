@@ -8,12 +8,12 @@ export const FadeUp = (delay) => {
             opacity: 1,   // Fade to full opacity
             scale: 1,     // Scale to normal size (zoom in)
             transition: {
-                // type: 'spring',   // Use spring for smoothness
-                // duration: 5.5,     // Adjust duration for smooth zoom   // Add delay for when the animation starts
-                // stiffness: 300,    // Adjust stiffness for smooth bounce
-                // damping: 25,       // Adjust damping for bounce effect
-                 type: 'tween',
-                duration: 1.3,
+                type: 'spring',   // Use spring for smoothness
+                duration: 5.5,     // Adjust duration for smooth zoom   // Add delay for when the animation starts
+                stiffness: 300,    // Adjust stiffness for smooth bounce
+                damping: 25,       // Adjust damping for bounce effect
+                //  type: 'tween',
+                // duration: 1.3,
             }
         }
     };

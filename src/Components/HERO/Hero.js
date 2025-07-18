@@ -1,8 +1,8 @@
-import { React, useState, useEffect } from 'react';
+import {  useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import MainButton from '../Buttons/MainButton';
-import { FadeUp } from '../../Varient/Varient2';
+// import { FadeUp } from '../../Varient/Varient2';
 // import digitizingImage from '../../images/MainLogo/Beyonddigi-white.png';
 // import patchesImage from '../../images/MainLogo/Only BD logo-blue.png';
 // import vectorImage from '../../images/MainLogo/Only BD logo-blue.png';
@@ -13,14 +13,15 @@ import { FadeUp } from '../../Varient/Varient2';
 // import Vector from '../../images/heroimg/herovec4.webp'
 // import Digi from '../../images/heroimg/digitizing4.webp'
 import Apperal from '../../images/footer/360_F_596626503_jrzjZNYStDexiWxQFqO7oCh6M8PdMlJs.webp'
-import Prmotional from '../../images/footer/surge-promo-items.webp'
+import Prmotional from '../../images/footer/download.webp'
 import Patch from '../../images/footer/sublimated-patches-wall-2024-01.webp'
 // import Hats from '../../images/heroimg/VAPS1.webp'
 import Vector from '../../images/footer/vector-art-6ttd2h971c0ivqyh.webp'
 import Digi from '../../images/footer/digitizing-object.webp'
+import mobileimg from '../../images/footer/backimg.webp'
 import './Hero.css';
 
-import testimg from '../../images/footer/store-clothing-shop-bouique.jpg'
+// import testimg from '../../images/footer/store-clothing-shop-bouique.jpg'
 
 
 function Hero() {
@@ -39,52 +40,47 @@ function Hero() {
         const interval = setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex + 1) % contentData.length);
         }, 4000); // Change every 3 seconds
-    
+
         return () => clearInterval(interval); // Cleanup on component unmount
     }, [contentData.length]); // Add contentData.length as a dependency
-    
+
 
     const { text: currentContent, image: currentImage } = contentData[currentIndex];
 
     return (
         <>
             <div className='hero'>
-                 <motion.img
-                                key={currentContent}
-                                variants={FadeUp(1.3)}
-                                initial="hidden"
-                                whileInView="show"
-                                viewport={{ once: true, amount: 0.7 }}
-                                transition={{
-                                    type: 'spring',
-                                    stiffness: 300,
-                                    damping: 20,
-                                }}
-                                src={currentImage} alt='HERO'
-                            />
+                <motion.img
+                    className='backimage'
+                    key={currentContent}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 1 }}
+                    src={currentImage} alt='HERO'
+                />
+
+                <img src={mobileimg} alt='vack' className='mimage' />
                 <div className='herogra'></div>
-               
-                
+
+
                 <Container>
                     <div className='hero-comp'>
                         <div className='hero-text col-md-7'>
                             <h3>Beyond Digitizing <br />Agency</h3>
                             <h1>We are working on </h1>
                             <div className='chngecontent'>
-                                <motion.h2
-                                    key={currentContent}
-                                    variants={FadeUp(1.3)}
-                                    initial="hidden"
-                                    whileInView="show"
-                                    viewport={{ once: true, amount: 0.7 }}
-                                    transition={{
-                                        type: 'spring',
-                                        stiffness: 300,
-                                        damping: 20,
-                                    }}
-                                >
-                                    {currentContent}
-                                </motion.h2>
+                                <AnimatePresence mode="wait">
+                                    <motion.h2
+                                        key={currentContent}
+                                        initial={{ opacity: 0, y: -50 }} // -50 means left se start kare
+                                        animate={{ opacity: 1, y: 0 }}   // x: 0 means center pe aajaye
+                                        exit={{ opacity: 0, y: +50 }}    // exit bhi left ki taraf jaaye
+                                        transition={{ duration: 1 }}
+                                    >
+                                        {currentContent}
+                                    </motion.h2>
+                                </AnimatePresence>
                             </div>
                             <MainButton />
                         </div>
