@@ -27,7 +27,7 @@ function MeetourTeam() {
                         <div className='meet'>
                             <div className='meetbox'>
 
-                                <h4>CEO</h4><h2>Mr. Zayn</h2>
+                                <h4>Founder & Owner</h4><h2>Mr. Zayn</h2>
                                 <p>ceo@beyonddigitizing.com</p>
                             </div>
                             <div className='meetbox'>

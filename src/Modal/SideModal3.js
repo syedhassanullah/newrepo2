@@ -199,7 +199,7 @@ function SideModal3({ helo, onClose }) {
                                 <div style={{ display: 'flex', paddingTop: '0px', paddingLeft: '10px' }}><h2><MdPermPhoneMsg /></h2>
                                     <div style={{ paddingLeft: '20px' }}>
                                         <h5>Contact</h5>
-                                        <p>+1-719-900-4662</p>
+                                        <p>+1-409-995-3047</p>
                                     </div>
                                 </div>
                                 <div style={{ display: 'flex', paddingTop: '0px', paddingLeft: '10px' }}><h2><MdEmail /></h2>
