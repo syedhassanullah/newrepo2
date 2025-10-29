@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 function Icons() {
     const icons = [
         { component: <FaFacebookSquare />, id: 'facebook', url: 'https://www.facebook.com/beyonddigitizingofficial' },
-        { component: <FaWhatsappSquare />, id: 'whatsapp', url: 'https://wa.me/03173347824' },  
+        { component: <FaWhatsappSquare />, id: 'whatsapp', url: 'https://wa.me/+14099953047' },  
         { component: <FaInstagramSquare />, id: 'instagram', url: 'https://www.instagram.com/william_beyond/#' },
         { component: <FaSquareXTwitter />, id: 'twitter', url: 'http://x.com/customsbybd' }, 
         { component: <IoLogoLinkedin />, id: 'twitter', url: 'https://www.linkedin.com/in/beyonddigitizing' }  

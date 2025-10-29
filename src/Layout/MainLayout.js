@@ -62,7 +62,7 @@ export default function MainLayout({ children }) {
                     <Footer />
 
                     <a
-                        href={`https://wa.me/03173347824`}
+                        href={`https://wa.me/+14099953047`}
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
