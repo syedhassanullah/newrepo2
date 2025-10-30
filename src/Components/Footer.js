@@ -46,7 +46,7 @@ function Footer() {
                                             <MotionLink to={'/services/patches'}>Custom Patches</MotionLink>
                                             <MotionLink to={'/services/promotional'}>Promotional Products</MotionLink>
                                             <MotionLink to={'/services/apparel-item'}>Apparel Items</MotionLink>
-                                            <MotionLink to={'/services/hats-beanies'}>Hats & Beanies</MotionLink>
+                                            {/* <MotionLink to={'/services/hats-beanies'}>Hats & Beanies</MotionLink> */}
 
                                         </div>
                                     </div>

@@ -70,9 +70,9 @@ import emb2 from '../images/PortfolioImg/Patches/Embroidered Patches/E2.jpg'
 import emb3 from '../images/PortfolioImg/Patches/Embroidered Patches/E3.jpg'
 import emb4 from '../images/PortfolioImg/Patches/Embroidered Patches/E4.jpg'
 import emb5 from '../images/PortfolioImg/Patches/Embroidered Patches/E5.jpg'
-import emb6 from '../images/PortfolioImg/Patches/Embroidered Patches/E6.jpg'
+// import emb6 from '../images/PortfolioImg/Patches/Embroidered Patches/E6.jpg'
 import emb7 from '../images/PortfolioImg/Patches/Embroidered Patches/E7.jpg'
-import emb8 from '../images/PortfolioImg/Patches/Embroidered Patches/E8.jpg'
+// import emb8 from '../images/PortfolioImg/Patches/Embroidered Patches/E8.jpg'
 import emb9 from '../images/PortfolioImg/Patches/Embroidered Patches/E9.jpg'
 
 import lather1 from '../images/PortfolioImg/Patches/Leather Patches/L1.jpg'
@@ -239,11 +239,13 @@ function Portfolio() {
 
     const [selectedValue, setSelectedValue] = useState('Digitizing');
 
-    const [selectDigitizing, setSelectedDigitizing] = useState('digi1');
+    const [selectDigitizing, setSelectedDigitizing] = useState('digi');
     const [selectedPatch, setSelectedPatch] = useState('Patch1');
     const [selectedApperal, setSelectedApperal] = useState('apperal1');
     const [selectedHat, setSelectedHat] = useState('hat1');
     const [selectpromotional, setSelectedpromotioanl] = useState('promotional1');
+    const [selectvector, setSelectedvector] = useState('vector-img');
+
     // const [selectKeychain, setSelectedKeychain] = useState('keychain1')
 
 
@@ -256,6 +258,7 @@ function Portfolio() {
         const apperalParam = params.get('apperal');
         const hatParam = params.get('hat');
         const promotionalParam = params.get('promotional');
+        const vector = params.get('vector');
         // const keychainParam = params.get('keychain');
 
 
@@ -284,6 +287,12 @@ function Portfolio() {
         if (promotionalParam) {
             handlePromotionalClick(promotionalParam);
             setSelectedValue('Promotional-Products');
+        }
+
+        if (vector) {
+            setSelectedValue('Vector')
+            setSelectedvector(vector)
+
         }
         // if (keychainParam) {
         //     handleKechainClick(keychainParam);
@@ -330,7 +339,7 @@ function Portfolio() {
 
     const handlePromotionalClick = (promotional) => {
         setSelectedpromotioanl(promotional)
-        console.log(promotional,'--------------------------------------------')
+        console.log(promotional, '--------------------------------------------')
     }
 
     // const handleKechainClick = (keychain) => {
@@ -387,7 +396,7 @@ function Portfolio() {
                             {selectedValue === 'Digitizing' &&
                                 <>
                                     <div className='portfolio_select_item'>
-{/* 
+                                        {/* 
                                         <p onClick={() => handleDigitizingClick('digi1')}
                                             className={`${selectDigitizing === 'digi1' ? 'active' : ''}`}>
                                             Sublimated</p>|
@@ -415,7 +424,7 @@ function Portfolio() {
 
 
                                     </div>
-                                    {selectDigitizing === 'digi1' &&
+                                    {selectDigitizing === 'digi' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
@@ -475,37 +484,40 @@ function Portfolio() {
                             }
                             {selectedValue === 'Vector' &&
                                 <>
-                                    <motion.div
-                                        variants={FadeUp(0.3)}
-                                        initial="hidden"
-                                        whileInView="show"
-                                        viewport={{ once: true, amount: 0.1 }}
-                                        transition={{
-                                            type: 'spring',
-                                            stiffness: 300,
-                                            damping: 20,
-                                        }}
-                                        className='portfolio-image'>
-                                        <Image.PreviewGroup
-                                            preview={{
-                                                onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+
+                                    {selectvector === 'vector-img' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
                                             }}
-                                        >
+                                            className='portfolio-image'>
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >
 
 
-                                            <Image src={vector1} />
-                                            <Image src={vector2} />
-                                            <Image src={vector3} />
-                                            {/* <Image src={vector4} /> */}
-                                            <Image src={vector5} />
-                                            <Image src={vector6} />
-                                            <Image src={vector7} />
-                                            <Image src={vector8} />
-                                            <Image src={vector9} />
-                                            <Image src={vector10} />
-                                            <Image src={vector11} />
-                                        </Image.PreviewGroup>
-                                    </motion.div>
+                                                <Image src={vector1} />
+                                                <Image src={vector2} />
+                                                <Image src={vector3} />
+                                                {/* <Image src={vector4} /> */}
+                                                <Image src={vector5} />
+                                                <Image src={vector6} />
+                                                <Image src={vector7} />
+                                                <Image src={vector8} />
+                                                <Image src={vector9} />
+                                                <Image src={vector10} />
+                                                <Image src={vector11} />
+                                            </Image.PreviewGroup>
+                                        </motion.div>
+                                    }
                                 </>
                             }
                             {selectedValue === 'Patches' &&
@@ -653,9 +665,9 @@ function Portfolio() {
                                                 <Image src={emb3} />
                                                 <Image src={emb4} />
                                                 <Image src={emb5} />
-                                                <Image src={emb6} />
+                                                {/* <Image src={emb6} /> */}
                                                 <Image src={emb7} />
-                                                <Image src={emb8} />
+                                                {/* <Image src={emb8} />     */}
                                                 <Image src={emb9} />
                                             </Image.PreviewGroup>
                                         </motion.div>
@@ -1016,7 +1028,7 @@ function Portfolio() {
                                             className={`${selectpromotional === 'promotional4' ? 'active' : ''}`}
                                         >pvc keychain</p>
                                     </div>
-                                   
+
                                     {selectpromotional === 'promotional1' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
@@ -1100,7 +1112,7 @@ function Portfolio() {
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
-                                     {selectpromotional === 'promotional4' &&
+                                    {selectpromotional === 'promotional4' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
@@ -1252,11 +1264,11 @@ function Portfolio() {
                                     }
                                     </>
                             } */}
-                                </div>
+                        </div>
 
                     </div>
-                    </div>
-                    <LogoSlider />
+                </div>
+                <LogoSlider />
             </Container>
         </MainLayout >
     )

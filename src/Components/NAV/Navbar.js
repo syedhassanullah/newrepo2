@@ -145,18 +145,18 @@ const Navbar = () => {
       ),
       key: '5',
     },
-    {
-      label: (
-        <NavLink
-          to="/services/keychain"
-          activeClassName="active"
-          className="main-menu"
-        >
-          KEYCHAINS
-        </NavLink>
-      ),
-      key: '6',
-    },
+    // {
+    //   label: (
+    //     <NavLink
+    //       to="/services/keychain"
+    //       activeClassName="active"
+    //       className="main-menu"
+    //     >
+    //       KEYCHAINS
+    //     </NavLink>
+    //   ),
+    //   key: '6',
+    // },
     // {
     //   type: 'divider',
     // },

@@ -9,8 +9,18 @@ import digi from '../../../images/ServiceShowsIMG/vectorlion.webp'
 import { Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function Vector() {
+
+    const navigate = useNavigate();
+    
+        const handleCardClick = (data) => {
+            navigate(`/portfolio?vector=${data}`); 
+        };
+
     return (
         <MainLayout>
             <div className='herootherservice heroimage6'>
@@ -21,29 +31,34 @@ function Vector() {
 
             <Container>
                 <div className="ServicesDetailcard">
-                    {VectorData?.map((data) => (
-                        <motion.div
-                            variants={FadeUp(5.3)}
-                            initial="hidden"
-                            whileInView="show"
-                            viewport={{ once: true, amount: 0.9 }}
-                            transition={{
-                                type: 'tween',
-                                stiffness: 300,
-                                damping: 20,
-                            }}
-                            whileHover={{
-                                scale: 1.05,
-                                boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.27)',
-                                rotate: -3,
-                            }}
-                            className="card" key={data.id}>
+                    {VectorData?.map((data) => {
+                        return (
+                            <motion.div
+                                variants={FadeUp(5.3)}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: true, amount: 0.9 }}
+                                transition={{
+                                    type: 'tween',
+                                    stiffness: 300,
+                                    damping: 20,
+                                }}
+                                whileHover={{
+                                    scale: 1.05,
+                                    boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.27)',
+                                    rotate: -3,
+                                }} className="card" key={data.id}>
+                                {/* <div className='smg'> <img src={data.image} alt='img' /></div> */}
                                 <div>
-                            <h3>{data.name}</h3>
-                            <p>{data.description}</p>
-                            </div>
-                        </motion.div>
-                    ))}
+                                    <h3>{data.name}</h3>
+                                    <p>{data.description}</p>
+                                    <div className='servicebtncard'>
+                                        <p onClick={() => handleCardClick(data.pname)}>see picture</p>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        );
+                    })}
                 </div>
                 <Row className=' servicedesc d-flex flex-wrap align-items-center justify-content-center'>
 
