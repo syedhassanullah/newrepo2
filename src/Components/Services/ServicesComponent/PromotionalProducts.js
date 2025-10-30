@@ -9,9 +9,15 @@ import digi from '../../../images/ServiceShowsIMG/pro.webp'
 import { Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
+import { useNavigate } from 'react-router-dom'
 
 
 function PromotionalProducts() {
+    const navigate = useNavigate();
+        
+        const handleCardClick = (key) => {
+            navigate(`/portfolio?keychain=${key}`);
+        };
     return (
         <MainLayout>
             <div className='herootherservice heroimage5'>
@@ -43,6 +49,9 @@ function PromotionalProducts() {
                                 <div>
                                     <h3>{data.name}</h3>
                                     <p>{data.description}</p>
+                                </div>
+                                <div className='servicebtncard'>
+                                    <p onClick={() => handleCardClick(data.key)}>see picture</p>
                                 </div>
                             </motion.div>
                         );

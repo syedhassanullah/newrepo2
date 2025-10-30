@@ -1,3 +1,5 @@
+import Keycahin4 from '../../images/PortfolioImg/promotional/pvc keychine/p5.jpg'
+
 const PromotionalProductsData = [
     
     {
@@ -19,7 +21,14 @@ const PromotionalProductsData = [
       "id": 5,
       "name": "Stickers",
       "description": "Versatile, easy-to-distribute stickers that help spread brand awareness on any surface."
-    }
+    },
+    {
+        id: 6,
+        name: "PVC Keychain",
+        description: "Flexible and colorful PVC keychains—perfect for fun, bold, and creative brand expressions.",
+        key: "keychain4",
+        image: Keycahin4
+      },
   ];
   
   export default PromotionalProductsData;

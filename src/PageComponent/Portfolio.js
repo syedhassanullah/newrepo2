@@ -131,11 +131,11 @@ import sweetShirt8 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s8.jpe
 import sweetShirt9 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s9.jpeg'
 import sweetShirt10 from '../images/PortfolioImg/Apparel Items/Sweatshirts/s10.jpeg'
 
-import towel1 from '../images/PortfolioImg/Apparel Items/Towels/t1.jpg'
-import towel2 from '../images/PortfolioImg/Apparel Items/Towels/t2.jpg'
-import towel3 from '../images/PortfolioImg/Apparel Items/Towels/t3.jpg'
-import towel4 from '../images/PortfolioImg/Apparel Items/Towels/t4.jpg'
-import towel5 from '../images/PortfolioImg/Apparel Items/Towels/t5.jpg'
+// import towel1 from '../images/PortfolioImg/Apparel Items/Towels/t1.jpg'
+// import towel2 from '../images/PortfolioImg/Apparel Items/Towels/t2.jpg'
+// import towel3 from '../images/PortfolioImg/Apparel Items/Towels/t3.jpg'
+// import towel4 from '../images/PortfolioImg/Apparel Items/Towels/t4.jpg'
+// import towel5 from '../images/PortfolioImg/Apparel Items/Towels/t5.jpg'
 
 import tshirt1 from '../images/PortfolioImg/Apparel Items/T-Shirts/ts1.jpg'
 import tshirt2 from '../images/PortfolioImg/Apparel Items/T-Shirts/ts2.jpg'
@@ -167,30 +167,30 @@ import Beanies5 from '../images/PortfolioImg/Caps/Beanies/b5.jpeg'
 
 
 // promotional products
-import pleather1 from '../images/PortfolioImg/promotional/leather keychine/l1.jpg'
-import pleather2 from '../images/PortfolioImg/promotional/leather keychine/l2.jpg'
-import pleather3 from '../images/PortfolioImg/promotional/leather keychine/l3.jpg'
-import pleather4 from '../images/PortfolioImg/promotional/leather keychine/l4.jpg'
-import pleather5 from '../images/PortfolioImg/promotional/leather keychine/l5.jpg'
+// import pleather1 from '../images/PortfolioImg/promotional/leather keychine/l1.jpg'
+// import pleather2 from '../images/PortfolioImg/promotional/leather keychine/l2.jpg'
+// import pleather3 from '../images/PortfolioImg/promotional/leather keychine/l3.jpg'
+// import pleather4 from '../images/PortfolioImg/promotional/leather keychine/l4.jpg'
+// import pleather5 from '../images/PortfolioImg/promotional/leather keychine/l5.jpg'
 
-import pwood1 from '../images/PortfolioImg/promotional/wood keychine/w1.jpg'
-import pwood2 from '../images/PortfolioImg/promotional/wood keychine/w2.jpg'
-import pwood3 from '../images/PortfolioImg/promotional/wood keychine/w3.jpg'
-import pwood4 from '../images/PortfolioImg/promotional/wood keychine/w4.jpg'
+// import pwood1 from '../images/PortfolioImg/promotional/wood keychine/w1.jpg'
+// import pwood2 from '../images/PortfolioImg/promotional/wood keychine/w2.jpg'
+// import pwood3 from '../images/PortfolioImg/promotional/wood keychine/w3.jpg'
+// import pwood4 from '../images/PortfolioImg/promotional/wood keychine/w4.jpg'
 // import pwood5 from '../images/PortfolioImg/promotional/wood keychine/w5.jpg'
-import pwood6 from '../images/PortfolioImg/promotional/wood keychine/w6.jpg'
-import pwood7 from '../images/PortfolioImg/promotional/wood keychine/w7.jpg'
-import pwood8 from '../images/PortfolioImg/promotional/wood keychine/w8.jpg'
-import pwood9 from '../images/PortfolioImg/promotional/wood keychine/w9.jpg'
+// import pwood6 from '../images/PortfolioImg/promotional/wood keychine/w6.jpg'
+// import pwood7 from '../images/PortfolioImg/promotional/wood keychine/w7.jpg'
+// import pwood8 from '../images/PortfolioImg/promotional/wood keychine/w8.jpg'
+// import pwood9 from '../images/PortfolioImg/promotional/wood keychine/w9.jpg'
 
-import metal1 from '../images/PortfolioImg/promotional/metal keychines/m1.jpg'
-import metal2 from '../images/PortfolioImg/promotional/metal keychines/m2.jpg'
-import metal3 from '../images/PortfolioImg/promotional/metal keychines/m3.jpg'
-import metal4 from '../images/PortfolioImg/promotional/metal keychines/m4.jpg'
-import metal5 from '../images/PortfolioImg/promotional/metal keychines/m5.jpg'
-import metal6 from '../images/PortfolioImg/promotional/metal keychines/m6.jpg'
-import metal7 from '../images/PortfolioImg/promotional/metal keychines/m7.jpg'
-import metal8 from '../images/PortfolioImg/promotional/metal keychines/m8.jpg'
+// import metal1 from '../images/PortfolioImg/promotional/metal keychines/m1.jpg'
+// import metal2 from '../images/PortfolioImg/promotional/metal keychines/m2.jpg'
+// import metal3 from '../images/PortfolioImg/promotional/metal keychines/m3.jpg'
+// import metal4 from '../images/PortfolioImg/promotional/metal keychines/m4.jpg'
+// import metal5 from '../images/PortfolioImg/promotional/metal keychines/m5.jpg'
+// import metal6 from '../images/PortfolioImg/promotional/metal keychines/m6.jpg'
+// import metal7 from '../images/PortfolioImg/promotional/metal keychines/m7.jpg'
+// import metal8 from '../images/PortfolioImg/promotional/metal keychines/m8.jpg'
 
 import pv1 from '../images/PortfolioImg/promotional/pvc keychine/p1.jpg'
 import pv2 from '../images/PortfolioImg/promotional/pvc keychine/p2.jpg'
@@ -244,7 +244,7 @@ function Portfolio() {
     const [selectedApperal, setSelectedApperal] = useState('apperal1');
     const [selectedHat, setSelectedHat] = useState('hat1');
     const [selectpromotional, setSelectedpromotioanl] = useState('promotional1');
-    const [selectKeychain, setSelectedKeychain] = useState('keychain1')
+    // const [selectKeychain, setSelectedKeychain] = useState('keychain1')
 
 
     useEffect(() => {
@@ -256,7 +256,7 @@ function Portfolio() {
         const apperalParam = params.get('apperal');
         const hatParam = params.get('hat');
         const promotionalParam = params.get('promotional');
-        const keychainParam = params.get('keychain');
+        // const keychainParam = params.get('keychain');
 
 
         if (digitizingParam) {
@@ -285,10 +285,10 @@ function Portfolio() {
             handlePromotionalClick(promotionalParam);
             setSelectedValue('Promotional-Products');
         }
-        if (keychainParam) {
-            handleKechainClick(keychainParam);
-            setSelectedValue('Keychains');
-        }
+        // if (keychainParam) {
+        //     handleKechainClick(keychainParam);
+        //     setSelectedValue('Keychains');
+        // }
     }, [location]);
 
 
@@ -312,9 +312,9 @@ function Portfolio() {
         // }
     };
 
-    const handleDigitizingClick = (digitizing) => {
-        setSelectedDigitizing(digitizing);
-    }
+    // const handleDigitizingClick = (digitizing) => {
+    //     setSelectedDigitizing(digitizing);
+    // }
 
     const handlePatchClick = (patch) => {
         setSelectedPatch(patch);
@@ -333,9 +333,9 @@ function Portfolio() {
         console.log(promotional,'--------------------------------------------')
     }
 
-    const handleKechainClick = (keychain) => {
-        setSelectedKeychain(keychain)
-    }
+    // const handleKechainClick = (keychain) => {
+    //     setSelectedKeychain(keychain)
+    // }
 
     // const CustomToken = {
     //     token: {
@@ -784,9 +784,9 @@ function Portfolio() {
                                             <p onClick={() => handleapperalClick('apperal3')}
                                                 className={`${selectedApperal === 'apperal3' ? 'active' : ''}`}
                                             >Sweat Shirt </p>|
-                                            <p onClick={() => handleapperalClick('apperal4')}
+                                            {/* <p onClick={() => handleapperalClick('apperal4')}
                                                 className={`${selectedApperal === 'apperal4' ? 'active' : ''}`}
-                                            >Towels</p>|
+                                            >Towels</p>| */}
                                             <p onClick={() => handleapperalClick('apperal5')}
                                                 className={`${selectedApperal === 'apperal5' ? 'active' : ''}`}
                                             >T-Shirts</p>
@@ -877,7 +877,7 @@ function Portfolio() {
                                             </motion.div>
                                         }
 
-                                        {selectedApperal === 'apperal4' &&
+                                        {/* {selectedApperal === 'apperal4' &&
                                             <motion.div
                                                 variants={FadeUp(0.3)}
                                                 initial="hidden"
@@ -901,7 +901,7 @@ function Portfolio() {
                                                     <Image src={towel5} />
                                                 </Image.PreviewGroup>
                                             </motion.div>
-                                        }
+                                        } */}
 
                                         {selectedApperal === 'apperal5' &&
                                             <motion.div
