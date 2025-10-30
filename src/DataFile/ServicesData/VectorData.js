@@ -7,7 +7,7 @@ const VectorData = [
     },
     {
       id: 2,
-      name: "Image to Vector Conversion",
+      name: "Image to Vectorization",
       description: "Transforming raster images (JPG, PNG) into clean, scalable vector files for various uses.",
       "pname":"vector-img",
     },

@@ -8,17 +8,17 @@ import { motion } from 'framer-motion'
 import { FadeIn } from '../Varient/Varient'
 
 // vector 
-import vector1 from '../images/PortfolioImg/Vector Designs/vec1.webp'
-import vector2 from '../images/PortfolioImg/Vector Designs/vec2.webp'
-import vector3 from '../images/PortfolioImg/Vector Designs/vec3.webp'
+import vector1 from '../images/PortfolioImg/Vector Designs/vec14.webp'
+import vector2 from '../images/PortfolioImg/Vector Designs/vec12.webp'
+import vector3 from '../images/PortfolioImg/Vector Designs/vec13.webp'
 // import vector4 from '../images/PortfolioImg/Vector Designs/vac4.webp'
-import vector5 from '../images/PortfolioImg/Vector Designs/vac5.webp'
-import vector6 from '../images/PortfolioImg/Vector Designs/vec6.webp'
-import vector7 from '../images/PortfolioImg/Vector Designs/vec7.webp'
-import vector8 from '../images/PortfolioImg/Vector Designs/vec8.webp'
-import vector9 from '../images/PortfolioImg/Vector Designs/vec9.webp'
-import vector10 from '../images/PortfolioImg/Vector Designs/vec10.webp'
-import vector11 from '../images/PortfolioImg/Vector Designs/vec11.webp'
+import vector5 from '../images/PortfolioImg/Vector Designs/vec15.webp'
+import vector6 from '../images/PortfolioImg/Vector Designs/vec16.webp'
+import vector7 from '../images/PortfolioImg/Vector Designs/vec17.webp'
+import vector8 from '../images/PortfolioImg/Vector Designs/vec18.webp'
+import vector9 from '../images/PortfolioImg/Vector Designs/vec19.webp'
+// import vector10 from '../images/PortfolioImg/Vector Designs/vec10.webp'
+// import vector11 from '../images/PortfolioImg/Vector Designs/vec11.webp'
 
 
 // import jre1 from '../images/ServiceShowsIMG/Patches.png'
@@ -513,8 +513,8 @@ function Portfolio() {
                                                 <Image src={vector7} />
                                                 <Image src={vector8} />
                                                 <Image src={vector9} />
-                                                <Image src={vector10} />
-                                                <Image src={vector11} />
+                                                {/* <Image src={vector10} />
+                                                <Image src={vector11} /> */}
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
@@ -1026,7 +1026,16 @@ function Portfolio() {
                                         >dtf sheet</p>|
                                         <p onClick={() => handlePromotionalClick('promotional4')}
                                             className={`${selectpromotional === 'promotional4' ? 'active' : ''}`}
-                                        >pvc keychain</p>
+                                        >pvc keychain</p>|
+                                         <p onClick={() => handlePromotionalClick('promotional5')}
+                                            className={`${selectpromotional === 'promotional5' ? 'active' : ''}`}
+                                        >Flags</p>|
+                                         <p onClick={() => handlePromotionalClick('promotional6')}
+                                            className={`${selectpromotional === 'promotional6' ? 'active' : ''}`}
+                                        >Custom Pens</p>|
+                                         <p onClick={() => handlePromotionalClick('promotional7')}
+                                            className={`${selectpromotional === 'promotional7' ? 'active' : ''}`}
+                                        >Custom Lanyards</p>
                                     </div>
 
                                     {selectpromotional === 'promotional1' &&
@@ -1113,6 +1122,82 @@ function Portfolio() {
                                         </motion.div>
                                     }
                                     {selectpromotional === 'promotional4' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >
+                                                <Image src={pv1} />
+                                                <Image src={pv2} />
+                                                <Image src={pv3} />
+                                                <Image src={pv4} />
+                                                <Image src={pv5} />
+                                            </Image.PreviewGroup>
+                                        </motion.div>
+                                    }
+
+                                     {selectpromotional === 'promotional5' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >
+                                                <Image src={pv1} />
+                                                <Image src={pv2} />
+                                                <Image src={pv3} />
+                                                <Image src={pv4} />
+                                                <Image src={pv5} />
+                                            </Image.PreviewGroup>
+                                        </motion.div>
+                                    }
+                                     {selectpromotional === 'promotional6' &&
+                                        <motion.div
+                                            variants={FadeUp(0.3)}
+                                            initial="hidden"
+                                            whileInView="show"
+                                            viewport={{ once: true, amount: 0.1 }}
+                                            transition={{
+                                                type: 'spring',
+                                                stiffness: 300,
+                                                damping: 20,
+                                            }}
+                                            className='portfolio-image'>
+                                            <Image.PreviewGroup
+                                                preview={{
+                                                    onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+                                                }}
+                                            >
+                                                <Image src={pv1} />
+                                                <Image src={pv2} />
+                                                <Image src={pv3} />
+                                                <Image src={pv4} />
+                                                <Image src={pv5} />
+                                            </Image.PreviewGroup>
+                                        </motion.div>
+                                    }
+                                     {selectpromotional === 'promotional7' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"

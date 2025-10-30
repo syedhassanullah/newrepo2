@@ -29,6 +29,28 @@ const PromotionalProductsData = [
         key: "keychain4",
         image: Keycahin4
       },
+      {
+        id: 7,
+        name: "Flags",
+        description: "Flexible and colorful PVC keychains—perfect for fun, bold, and creative brand expressions.",
+        key: "keychain4",
+        image: Keycahin4
+      },
+      {
+        id: 8,
+        name: "Custom Pens",
+        description: "Flexible and colorful PVC keychains—perfect for fun, bold, and creative brand expressions.",
+        key: "keychain4",
+        image: Keycahin4
+      },
+      
+      {
+        id: 9,
+        name: "Custom Lanyards",
+        description: "Flexible and colorful PVC keychains—perfect for fun, bold, and creative brand expressions.",
+        key: "keychain4",
+        image: Keycahin4
+      },
   ];
   
   export default PromotionalProductsData;
