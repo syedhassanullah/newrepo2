@@ -225,8 +225,8 @@ import dtf6 from '../images/PortfolioImg/promotional/dtf sheets/d6.jpg'
 import dtf7 from '../images/PortfolioImg/promotional/dtf sheets/d7.jpg'
 
 
-import flg1 from '../images/PortfolioImg/promotional/flag/Flag (2).png'     
-import flg2 from '../images/PortfolioImg/promotional/flag/Flag.jpg'     
+import flg1 from '../images/PortfolioImg/promotional/flag/Flag (2).png'
+import flg2 from '../images/PortfolioImg/promotional/flag/Flag.jpg'
 import flg3 from '../images/PortfolioImg/promotional/flag/Flag.png'
 
 
@@ -255,7 +255,7 @@ function Portfolio() {
     const [selectedPatch, setSelectedPatch] = useState('Patch1');
     const [selectedApperal, setSelectedApperal] = useState('apperal1');
     const [selectedHat, setSelectedHat] = useState('hat1');
-    const [selectpromotional, setSelectedpromotioanl] = useState('promotional1');
+    const [selectpromotional, setSelectedpromotioanl] = useState('sticker');
     const [selectvector, setSelectedvector] = useState('vector-img');
 
     // const [selectKeychain, setSelectedKeychain] = useState('keychain1')
@@ -1027,30 +1027,30 @@ function Portfolio() {
                                 <>
                                     <div className='portfolio_select_item'>
 
-                                        <p onClick={() => handlePromotionalClick('promotional1')}
-                                            className={`${selectpromotional === 'promotional1' ? 'active' : ''}`}
+                                        <p onClick={() => handlePromotionalClick('sticker')}
+                                            className={`${selectpromotional === 'sticker' ? 'active' : ''}`}
                                         >Sticker</p>|
-                                        <p onClick={() => handlePromotionalClick('promotional2')}
-                                            className={`${selectpromotional === 'promotional2' ? 'active' : ''}`}
+                                        <p onClick={() => handlePromotionalClick('bands')}
+                                            className={`${selectpromotional === 'bands' ? 'active' : ''}`}
                                         >wrist band</p>|
                                         <p onClick={() => handlePromotionalClick('promotional3')}
                                             className={`${selectpromotional === 'promotional3' ? 'active' : ''}`}
                                         >dtf sheet</p>|
-                                        <p onClick={() => handlePromotionalClick('promotional4')}
-                                            className={`${selectpromotional === 'promotional4' ? 'active' : ''}`}
+                                        <p onClick={() => handlePromotionalClick('keychain')}
+                                            className={`${selectpromotional === 'keychain' ? 'active' : ''}`}
                                         >pvc keychain</p>|
-                                         <p onClick={() => handlePromotionalClick('promotional5')}
-                                            className={`${selectpromotional === 'promotional5' ? 'active' : ''}`}
+                                        <p onClick={() => handlePromotionalClick('flag')}
+                                            className={`${selectpromotional === 'flag' ? 'active' : ''}`}
                                         >Flags</p>|
-                                         <p onClick={() => handlePromotionalClick('promotional6')}
-                                            className={`${selectpromotional === 'promotional6' ? 'active' : ''}`}
+                                        <p onClick={() => handlePromotionalClick('pen')}
+                                            className={`${selectpromotional === 'pen' ? 'active' : ''}`}
                                         >Custom Pens</p>|
-                                         <p onClick={() => handlePromotionalClick('promotional7')}
-                                            className={`${selectpromotional === 'promotional7' ? 'active' : ''}`}
+                                        <p onClick={() => handlePromotionalClick('lanyard')}
+                                            className={`${selectpromotional === 'lanyard' ? 'active' : ''}`}
                                         >Custom Lanyards</p>
                                     </div>
 
-                                    {selectpromotional === 'promotional1' &&
+                                    {selectpromotional === 'sticker' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
@@ -1078,7 +1078,7 @@ function Portfolio() {
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
-                                    {selectpromotional === 'promotional2' &&
+                                    {selectpromotional === 'bands' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
@@ -1133,7 +1133,7 @@ function Portfolio() {
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
-                                    {selectpromotional === 'promotional4' &&
+                                    {selectpromotional === 'keychain' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
@@ -1158,8 +1158,7 @@ function Portfolio() {
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
-
-                                     {selectpromotional === 'promotional5' &&
+                                    {selectpromotional === 'flag' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
@@ -1182,7 +1181,7 @@ function Portfolio() {
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
-                                     {selectpromotional === 'promotional6' &&
+                                    {selectpromotional === 'pen' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"
@@ -1204,7 +1203,7 @@ function Portfolio() {
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
-                                     {selectpromotional === 'promotional7' &&
+                                    {selectpromotional === 'lanyard' &&
                                         <motion.div
                                             variants={FadeUp(0.3)}
                                             initial="hidden"

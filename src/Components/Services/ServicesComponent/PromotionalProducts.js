@@ -16,7 +16,7 @@ function PromotionalProducts() {
     const navigate = useNavigate();
 
     const handleCardClick = (key) => {
-        navigate(`/portfolio?keychain=${key}`);
+        navigate(`/portfolio?promotional=${key}`);
     };
     return (
         <MainLayout>
@@ -51,7 +51,7 @@ function PromotionalProducts() {
                                     <h3>{data.name}</h3>
                                     <p>{data.description}</p>
                                     <div className='servicebtncard'>
-                                        <p onClick={() => handleCardClick(data.patch)}>see picture</p>
+                                        <p onClick={() => handleCardClick(data.key)}>see picture</p>
                                     </div>
                                 </div>
                             </motion.div>
