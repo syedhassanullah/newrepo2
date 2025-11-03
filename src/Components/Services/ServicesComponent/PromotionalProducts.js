@@ -14,10 +14,10 @@ import { useNavigate } from 'react-router-dom'
 
 function PromotionalProducts() {
     const navigate = useNavigate();
-        
-        const handleCardClick = (key) => {
-            navigate(`/portfolio?keychain=${key}`);
-        };
+
+    const handleCardClick = (key) => {
+        navigate(`/portfolio?keychain=${key}`);
+    };
     return (
         <MainLayout>
             <div className='herootherservice heroimage5'>
@@ -46,12 +46,13 @@ function PromotionalProducts() {
                                     rotate: -3,
                                 }}
                                 className="card" key={data.id}>
+                                <div className='smg'> <img src={data.image} alt='img' /></div>
                                 <div>
                                     <h3>{data.name}</h3>
                                     <p>{data.description}</p>
-                                </div>
-                                <div className='servicebtncard'>
-                                    <p onClick={() => handleCardClick(data.key)}>see picture</p>
+                                    <div className='servicebtncard'>
+                                        <p onClick={() => handleCardClick(data.patch)}>see picture</p>
+                                    </div>
                                 </div>
                             </motion.div>
                         );

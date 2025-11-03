@@ -225,6 +225,18 @@ import dtf6 from '../images/PortfolioImg/promotional/dtf sheets/d6.jpg'
 import dtf7 from '../images/PortfolioImg/promotional/dtf sheets/d7.jpg'
 
 
+import flg1 from '../images/PortfolioImg/promotional/flag/Flag (2).png'     
+import flg2 from '../images/PortfolioImg/promotional/flag/Flag.jpg'     
+import flg3 from '../images/PortfolioImg/promotional/flag/Flag.png'
+
+
+import lanyard from '../images/PortfolioImg/promotional/lanyard/Lanyard (2).jpg'
+import lanyard1 from '../images/PortfolioImg/promotional/lanyard/Lanyard.jpg'
+
+
+import pen1 from '../images/PortfolioImg/promotional/pens/Pr Pens.jpeg'
+import pen2 from '../images/PortfolioImg/promotional/pens/Promotional Pens.jpeg'
+
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Container } from 'react-bootstrap';
@@ -1164,11 +1176,9 @@ function Portfolio() {
                                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                                 }}
                                             >
-                                                <Image src={pv1} />
-                                                <Image src={pv2} />
-                                                <Image src={pv3} />
-                                                <Image src={pv4} />
-                                                <Image src={pv5} />
+                                                <Image src={flg1} />
+                                                <Image src={flg2} />
+                                                <Image src={flg3} />
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
@@ -1189,11 +1199,8 @@ function Portfolio() {
                                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                                 }}
                                             >
-                                                <Image src={pv1} />
-                                                <Image src={pv2} />
-                                                <Image src={pv3} />
-                                                <Image src={pv4} />
-                                                <Image src={pv5} />
+                                                <Image src={pen1} />
+                                                <Image src={pen2} />
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }
@@ -1214,11 +1221,8 @@ function Portfolio() {
                                                     onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
                                                 }}
                                             >
-                                                <Image src={pv1} />
-                                                <Image src={pv2} />
-                                                <Image src={pv3} />
-                                                <Image src={pv4} />
-                                                <Image src={pv5} />
+                                                <Image src={lanyard} />
+                                                <Image src={lanyard1} />
                                             </Image.PreviewGroup>
                                         </motion.div>
                                     }

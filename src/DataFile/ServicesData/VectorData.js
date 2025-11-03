@@ -1,59 +1,46 @@
 const VectorData = [
-    {
-      id: 1,
-      name: "Logo Vectorization",
-      description: "Converting your logos into scalable vector formats (SVG, EPS, AI) for better print quality and flexibility.",
-      "pname":"vector-img",
-    },
-    {
-      id: 2,
-      name: "Image to Vectorization",
-      description: "Transforming raster images (JPG, PNG) into clean, scalable vector files for various uses.",
-      "pname":"vector-img",
-    },
-    {
-      id: 3,
-      name: "Custom Vector Artwork",
-      description: "Creating unique, hand-crafted vector illustrations and designs for your brand or project.",
-      "pname":"vector-img",
-    },
-    {
-      id: 4,
-      name: "Vector Tracing",
-      description: "Manually tracing low-resolution images to create high-quality vector files, perfect for print and digital use.",
-      "pname":"vector-img",
-    },
-    {
-      id: 5,
-      name: "Vector Editing",
-      description: "Editing existing vector files, including resizing, color adjustments, and modifications for your needs.",
-      "pname":"vector-img",
-    },
-    {
-      id: 6,
-      name: "Vector Conversion for Embroidery",
-      description: "Converting vector files into embroidery-ready files compatible with embroidery machines and printers.",
-      "pname":"vector-img",
-    },
-    {
-      id: 7,
-      name: "3D Vector Design",
-      description: "Designing advanced 3D vector illustrations for logos, product mockups, and branding.",
-      "pname":"vector-img",
-    },
-    {
-      id: 8,
-      name: "Infographic Design",
-      description: "Designing visually engaging infographics using vector illustrations for better communication of your message.",
-      "pname":"vector-img",
-    },
-    {
-      id: 9,
-      name: "Web and App Vector Icons",
-      description: "Creating clean, scalable vector icons for web and mobile applications, ensuring they look crisp at any resolution.",
-      "pname":"vector-img",
-    }
-  ];
-  
-  export default VectorData;
-  
+  {
+    id: 1,
+    name: "Logo Designing",
+    description: "Creating professional and creative logo designs that represent your brand identity in vector format.",
+    "pname": "vector-img",
+  },
+  {
+    id: 2,
+    name: "Logo Vectorization",
+    description: "Converting existing logo images into scalable vector formats (AI, SVG, EPS) for perfect printing and resizing.",
+    "pname": "vector-img",
+  },
+  {
+    id: 3,
+    name: "Vector Color Separation",
+    description: "Preparing vector artwork with precise color separations, ideal for screen printing and DTF processes.",
+    "pname": "vector-img",
+  },
+  {
+    id: 4,
+    name: "Image Vectorization",
+    description: "Transforming raster images (JPG, PNG) into clean, editable, and scalable vector graphics.",
+    "pname": "vector-img",
+  },
+  {
+    id: 5,
+    name: "DTF Design",
+    description: "Designing and preparing high-quality DTF-ready vector artwork optimized for print transfers.",
+    "pname": "vector-img",
+  },
+  {
+    id: 6,
+    name: "Print Ready Files",
+    description: "Delivering complete vector files ready for printing on any medium with perfect resolution and color setup.",
+    "pname": "vector-img",
+  },
+  {
+    id: 7,
+    name: "JPG To Vector",
+    description: "Converting JPG or other raster images into clean, scalable vector formats suitable for editing and printing.",
+    "pname": "vector-img",
+  }
+];
+
+export default VectorData;
