@@ -18,7 +18,7 @@ const PatchesData = [
     },
     {
       id: 2,
-      name: "Iron-On Patches",
+      name: "Puff Embroidered Patches",
       description: "Easy-to-apply iron-on patches for quick customization of clothes, backpacks, and other fabric items.",
       patch:"Patch2",
       "image": digi

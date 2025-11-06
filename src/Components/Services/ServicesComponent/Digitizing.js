@@ -9,8 +9,8 @@ import Process from '../../Process/Process'
 import { motion } from 'framer-motion';
 import { FadeUp } from '../../../Varient/Varient2';
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
-import img1 from './use ing.jpg'
-import img2 from './use iimg.jpg'
+import img1 from '../../../images/WhatsApp Image 2025-11-06 at 10.48.32 AM.jpeg'
+import img2 from '../../../images/WhatsApp Image 2025-11-06 at 10.48.33 AM.jpeg'
 import { useNavigate } from 'react-router-dom'
 
 

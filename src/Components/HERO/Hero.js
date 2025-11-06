@@ -16,7 +16,7 @@ import Apperal from '../../images/heroimg/gil1.webp'
 import Prmotional from '../../images/heroimg/gilp.webp'
 import Patch from '../../images/footer/sublimated-patches-wall-2024-01.webp'
 // import Hats from '../../images/heroimg/VAPS1.webp'
-import Vector from '../../images/footer/vector-art-6ttd2h971c0ivqyh.webp'
+import Vector from '../../images/heroimg/picvector.jpg'
 import Digi from '../../images/footer/digitizing-object.webp'
 import mobileimg from '../../images/footer/backimg.webp'
 import './Hero.css';

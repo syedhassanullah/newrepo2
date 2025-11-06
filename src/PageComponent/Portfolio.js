@@ -40,7 +40,7 @@ import Sublimated3 from '../images/PortfolioImg/Patches/sublimated patches/subli
 import Sublimated4 from '../images/PortfolioImg/Patches/sublimated patches/sublimated4.jpg'
 import Sublimated5 from '../images/PortfolioImg/Patches/sublimated patches/sublimated5.jpg'
 import Sublimated6 from '../images/PortfolioImg/Patches/sublimated patches/sublimated6.jpg'
-import Sublimated7 from '../images/PortfolioImg/Patches/sublimated patches/sublimated7.jpg'
+// import Sublimated7 from '../images/PortfolioImg/Patches/sublimated patches/sublimated7.jpg'
 import Sublimated8 from '../images/PortfolioImg/Patches/sublimated patches/sublimated8.jpg'
 
 
@@ -588,8 +588,7 @@ function Portfolio() {
                                                 <Image src={Sublimated3} />
                                                 <Image src={Sublimated4} />
                                                 <Image src={Sublimated5} />
-                                                <Image src={Sublimated6} />
-                                                <Image src={Sublimated7} />
+                                                <Image src={Sublimated6} />                            
                                                 <Image src={Sublimated8} />
                                             </Image.PreviewGroup>
                                         </motion.div>
