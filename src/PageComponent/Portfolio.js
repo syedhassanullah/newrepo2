@@ -551,7 +551,7 @@ function Portfolio() {
 
                                         <p onClick={() => handlePatchClick('Patch9')}
                                             className={`${selectedPatch === 'Patch9' ? 'active' : ''}`}
-                                        >lEATEHER</p>|
+                                        >lEATHER</p>|
                                         <p onClick={() => handlePatchClick('Patch6')}
                                             className={`${selectedPatch === 'Patch6' ? 'active' : ''}`}
                                         >PVC</p>|
@@ -806,7 +806,7 @@ function Portfolio() {
                                                 Jerseys </p>|
                                             <p onClick={() => handleapperalClick('apperal3')}
                                                 className={`${selectedApperal === 'apperal3' ? 'active' : ''}`}
-                                            >Sweat Shirt </p>|
+                                            >Sweat Shirts </p>|
                                             {/* <p onClick={() => handleapperalClick('apperal4')}
                                                 className={`${selectedApperal === 'apperal4' ? 'active' : ''}`}
                                             >Towels</p>| */}
@@ -1028,16 +1028,16 @@ function Portfolio() {
 
                                         <p onClick={() => handlePromotionalClick('sticker')}
                                             className={`${selectpromotional === 'sticker' ? 'active' : ''}`}
-                                        >Sticker</p>|
+                                        >Stickers</p>|
                                         <p onClick={() => handlePromotionalClick('bands')}
                                             className={`${selectpromotional === 'bands' ? 'active' : ''}`}
-                                        >wrist band</p>|
+                                        >wrist bands</p>|
                                         <p onClick={() => handlePromotionalClick('promotional3')}
                                             className={`${selectpromotional === 'promotional3' ? 'active' : ''}`}
-                                        >dtf sheet</p>|
+                                        >dtf sheets</p>|
                                         <p onClick={() => handlePromotionalClick('keychain')}
                                             className={`${selectpromotional === 'keychain' ? 'active' : ''}`}
-                                        >pvc keychain</p>|
+                                        >pvc keychains</p>|
                                         <p onClick={() => handlePromotionalClick('flag')}
                                             className={`${selectpromotional === 'flag' ? 'active' : ''}`}
                                         >Flags</p>|

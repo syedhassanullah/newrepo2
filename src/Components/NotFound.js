@@ -17,7 +17,7 @@ const notFoundStyles = {
   },
   heading: {
     fontSize: '6rem',
-    color: '#ff6347',
+    color: '#2382ffff',
     margin: 0,
   },
   paragraph: {
@@ -27,15 +27,15 @@ const notFoundStyles = {
   },
   backHome: {
     fontSize: '1.2rem',
-    color: '#ff6347',
+    color: '#2382ffff',
     textDecoration: 'none',
     padding: '10px 20px',
-    border: '2px solid #ff6347',
+    border: '2px solid #2382ffff',
     borderRadius: '5px',
     transition: 'all 0.3s ease',
   },
   backHomeHover: {
-    backgroundColor: '#ff6347',
+    backgroundColor: '#2382ffff',
     color: 'white',
     borderColor: 'transparent',
   },
@@ -43,8 +43,8 @@ const notFoundStyles = {
 
 function NotFound() {
   return (
-    <div style={notFoundStyles.container}>
-      <div style={notFoundStyles.content}>
+    <div style={notFoundStyles.container} >
+      <div style={notFoundStyles.content} className='container'>
         <h1 style={notFoundStyles.heading}>404</h1>
         <p style={notFoundStyles.paragraph}>Oops! The page you're looking for doesn't exist.</p>
         <a href="/" style={notFoundStyles.backHome} onMouseOver={e => e.target.style = notFoundStyles.backHomeHover} onMouseOut={e => e.target.style = notFoundStyles.backHome}>Go Back to Home</a>

@@ -28,7 +28,7 @@ const PromotionalProductsData = [
   },
   {
     id: 6,
-    name: "PVC Keychain",
+    name: "PVC Keychains",
     description: "Flexible and colorful PVC keychains—perfect for fun, bold, and creative brand expressions.",
     key: "keychain",
     image: Keycahin4
